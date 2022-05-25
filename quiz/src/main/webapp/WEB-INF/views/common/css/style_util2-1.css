@@ -1,0 +1,682 @@
+﻿@charset 'utf-8';
+/* 20180117 스타벅스 카드 충전  */
+.charge_options{display: block;}
+.charge_options:after, .charge_options:before {content: "";display: block;clear: both;}
+.charge_options li {float: left;font-size: 14px;padding: 0 3px 5px 3px;}
+.charge_options li label { display:block; margin-top: 8px; }
+.charge_options li input[type=radio] { margin: 0 3px; }
+.charge_options li input[type=text] { box-sizing: border-box; width: 90px; height: 28px; padding: 10px 30px 10px 8px; border:1px solid #dddddd; border-radius: 2px; font-size: 12px; letter-spacing: -0.05em; background: url('../img/my/charge_price_bg.gif') 90% center no-repeat; margin-top: 2px; }
+.txt_red { color: #a52035; background:url('../img/comon/bullet_star_red.gif') }
+/* //20180117 스타벅스 카드 충전  */  
+
+/*s::20180906 my쿠폰 사용하기 문구 추가*/
+.ecPop2 div.ec_use p.qr {margin-bottom:0;} /*20180911 수정*/
+.ecPop2 div.ec_use p.qr_txt {margin: -6px 0 29px 0; text-align: center; color: #444; font-weight: bold; font-size: 13px;}/*20180911 margin,font-size 수정 */
+/*e::20180906 my쿠폰 사용하기 문구 추가*/
+
+/*s::20180821 월정액 자동충전일 수정*/
+.autoReloadDay span.checkTxt {display:block; color:#777; font-size:12px; font-weight: normal; padding-top:2px; margin-left:-2px;}
+.sel_wrap .charge_options {margin-left:-5px;}
+.sel_wrap .charge_options input[type=checkbox] { position:relative }
+.sel_wrap .charge_options input[type=checkbox]:before { content:''; position:absolute; display:block; background:transparent url('../img/util/ck_icon.jpg') 0 0 no-repeat; width:13px; height:13px; top:0; left:0; }
+.sel_wrap .charge_options input[type=checkbox]:checked:before { background-image:url('../img/util/ck_icon_on.jpg')}
+.sel_wrap .charge_options .ez-checkbox {vertical-align: middle; margin:0 5px;}
+
+@media screen and (max-width: 640px){
+	.autoReloadDay span.checkTxt {display:inline-block; padding-left:5px;}
+	/*.card_charge_wrap article table tr td div.sel_wrap {height:auto;}*//*20181101 삭제*/
+	.card_charge_wrap article table.lowest_limit.chargeWh tr.autoReloadDay td div.sel_wrap,
+	.card_charge_wrap article table.lowest_limit.chargeWh tr.lowestAmount td div.sel_wrap {height:auto;}/*20181101 추가*/
+}
+/*e::20180821 월정액 자동충전일 수정*/
+
+/*s::20181101 월정액 자동충전일_fireFox, 모바일 깨짐현상 수정*/
+.regular_charge.chargeWh tr th, .lowest_limit.chargeWh tr th {width:200px;}
+.regular_charge.chargeWh tr td, .lowest_limit.chargeWh tr td {width:630px;}
+
+@media screen and (max-width: 1000px){
+	.regular_charge.chargeWh tr th, .lowest_limit.chargeWh tr th {width:20%;}
+	.regular_charge.chargeWh tr td, .lowest_limit.chargeWh tr td {width:80%;}
+}
+
+@media screen and (max-width: 640px){
+	.regular_charge.chargeWh tr th, .lowest_limit.chargeWh tr th {width:100%; box-sizing: border-box; height:38px; padding: 9px 10px 9px 15px;}
+	.regular_charge.chargeWh tr td, .lowest_limit.chargeWh tr td {width:100%; box-sizing: border-box; padding:9px 10px;}
+	.card_charge_wrap article table.regular_charge.chargeWh tr td div.sel_wrap p.charge_change {margin-left:5px;}
+	.lowest_limit.chargeWh tr.gopaymethod td {overflow:hidden;}
+	.chargeWh .charge_level_guide {padding-left:0; line-height:120%;}
+	.chargeWh .charge_will {line-height:130%; width: 100%; box-sizing: border-box;}
+	.chargeWh .ctype_guide {padding-left:10px; line-height:120%;}
+}
+
+@media screen and (max-width: 320px){
+	.auto_charge_list_btns ul li a {font-size:12px;}
+	.card_charge_wrap article table.lowest_limit.chargeWh tr td div.tbl_radio_wrap input {width:10%;}
+	.card_charge_wrap article table.lowest_limit.chargeWh tr td div.tbl_radio_wrap label{width:80%;}
+	.chargeWh .ctype_guide {padding-top:20px;}
+	.chargeWh .ctype_guide {background: url(../img/common/bullet_star_grey.gif) 0 22px no-repeat;}
+}
+/*e::20181101 월정액 자동충전일 수정*/
+
+/*s::20181106 전자영수증 기간확대 추가*/
+.my_card_pick_period .my_card_infoTxt {font-size:12px; color:#666; padding:5px 30px 20px 30px;}
+
+@media screen and (max-width:1099px) {
+	.my_card_pick_period .my_card_infoTxt {padding:1% 2% 3% 2%;}
+}
+
+@media screen and (max-width:640px) {
+	.my_card_pick_period .my_card_infoTxt {padding:1% 2% 3% 30px;}
+}
+@media screen and (max-width:480px) {
+	.my_card_pick_period .my_card_infoTxt {padding:3px 10px 20px 10px;}
+}
+/*e::20181106 전자영수증 기간확대 추가*/
+
+/*s::20181205 리워드 및 혜택 수정*/
+div.ms_rewardCard_inner.newReward {padding: 40px 30px; box-sizing:border-box;} /* 20210603 수정 */ 
+div.ms_rewardCard_inner.newReward .ms_rewardCard_btns {bottom:-55px;}
+
+ul.level_wrap.newLaverWrap > li {width:33.33%; box-sizing: border-box;}
+ul.level_wrap.newLaverWrap > li dl {box-sizing: border-box;}
+ul.level_wrap.newLaverWrap > li.level1 dl {padding:0 3% 0 0;}
+ul.level_wrap.newLaverWrap > li.level2 dl {padding:0 3%; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+ul.level_wrap.newLaverWrap > li.level3 dl {padding:0 0 0 3%;}
+
+ul.level_wrap > li.level1 dt strong.num,
+ul.level_wrap > li.level3 dt strong.num {top:87px;}/*20190710 추가*/
+ul.level_wrap > li.level2 dt strong.num {top:84px;}/*20190710 추가*/
+
+/*ul.level_wrap.newLaverWrap > li.level3 dl {padding:0 0 0 10px;}*/
+ul.level_wrap > li dt{width:94%; margin:0 auto;}
+ul.level_wrap.newLaverWrap li dl dd {width:94%; margin:0 auto;}
+ul.level_wrap.newLaverWrap li dl dd p.include_level_adv {margin:30px 0 0 0; width:100%;}
+
+ul.level_wrap.newLaverWrap li dl dd p.leverTxt {text-align:center; padding-top:5px; font-size:14px; color:#666;}
+
+ul.level_wrap.newLaverWrap > li dd ul.leverGList {padding-top:11px;}
+
+@media screen and (max-width:1099px) {
+	ul.level_wrap.newLaverWrap > li {width:32%;}
+	ul.level_wrap.newLaverWrap li dl dd p.include_level_adv {letter-spacing: -1px;}
+}
+@media screen and (max-width:640px) {
+	ul.level_wrap.newLaverWrap > li {width:100%;}
+	ul.level_wrap.newLaverWrap > li.level1 dl, 
+	ul.level_wrap.newLaverWrap > li.level2 dl, 
+	ul.level_wrap.newLaverWrap > li.level3 dl {padding:0 10px}
+	ul.level_wrap.newLaverWrap li dl dd p.include_level_adv {letter-spacing: inherit;}
+}	
+
+/*welcome*/
+section.ms_rewardLevel_info1 dl.ms_info_box1 dd.box.newRewardsTxt {background: url("../img/util/reward/web_rewards_icon_01.png") 656px 30px no-repeat;}
+section.ms_rewardLevel_box ul.rewardLevel_box li.box1.newRewardsIco {background: #f4f4f2 url(../img/util/reward/web_rewards_icon_04.png) 180px 90px no-repeat;}
+
+
+@media screen and (max-width: 1099px) {
+	section.ms_rewardLevel_info1 dl.ms_info_box1 dd.box.newRewardsTxt {background-position: 100% 30px;}
+}
+
+@media screen and (max-width: 640px)  {
+	section.ms_rewardLevel_info1 dl.ms_info_box1 dd.box.newRewardsTxt {background-position: 95% 100%;}
+}
+
+@media screen and (max-width: 1099px)  {
+	section.ms_rewardLevel_box ul.rewardLevel_box li.box1.newRewardsIco {background-position: 90% 104px;}
+}
+
+@media screen and (max-width: 640px) {
+	section.ms_rewardLevel_box ul.rewardLevel_box li.box1.newRewardsIco  {background: #f4f4f2 url(../img/util/reward/web_rewards_icon_04.png) 95% 56% no-repeat; background-size: 10% auto;}
+}
+
+@media screen and (max-width: 480px) {
+	section.ms_rewardLevel_box ul.rewardLevel_box li.box1.newRewardsIco {background-size: 15% auto;}
+}
+
+/*Gold Level*/
+i.level_img1_14.newRewardsIco {background: url(../img/util/reward/web_rewards_icon_02.png) no-repeat; width:117px;}
+i.level_img1_01.newRewardsIco {background: url(../img/util/reward/web_rewards_icon_03.png) no-repeat;}
+
+
+
+/*Green Level*/
+section.ms_rewardLevel_green_info1 dl.ms_info_box1 dd.box.newRewardsIco {background: url("../img/util/reward/web_rewards_icon_02.png") 650px 30px no-repeat;}
+section.ms_rewardLevel_green_info4 dl.ms_info_box4 dd.box.newRewardsIco {background: url("../img/util/reward/web_rewards_icon_03.png") 650px 30px no-repeat;}
+
+@media screen and (max-width: 1099px) {
+	section.ms_rewardLevel_green_info1 dl.ms_info_box1 dd.box.newRewardsIco  {background-position: 100% 30px;}
+}
+
+@media screen and (max-width: 480px) {
+	section.ms_rewardLevel_green_info1 dl.ms_info_box1 dd.box.newRewardsIco {background: url(../img/util/reward/web_rewards_icon_02.png) 95% 100% no-repeat; background-size: 30% auto;}
+}
+
+@media screen and (max-width: 1099px) {
+	section.ms_rewardLevel_green_info4 dl.ms_info_box4 dd.box.newRewardsIco {background-position: 100% 19px;}
+}
+
+@media screen and (max-width: 480px){
+	section.ms_rewardLevel_green_info4 dl.ms_info_box4 dd.box.newRewardsIco {background: url(../img/util/reward/web_rewards_icon_03.png) 95% 100% no-repeat; background-size: auto auto;}
+
+}
+
+
+/*Free Extra(Green/gold)*/
+section.ms_rewardLevel_box02 ul.rewardLevel_box02 li.box1.newRewardsIco {background: #fff url(../img/util/reward/web_rewards_icon_04.png) 180px 90px no-repeat;}
+
+@media screen and (max-width: 1099px)  {
+	section.ms_rewardLevel_box02 ul.rewardLevel_box02 li.box1.newRewardsIco {background-position: 90% 104px;}
+}
+
+@media screen and (max-width: 640px) {
+	section.ms_rewardLevel_box02 ul.rewardLevel_box02 li.box1.newRewardsIco  {background: #f4f4f2 url(../img/util/reward/web_rewards_icon_04.png) 95% 56% no-repeat; background-size: 10% auto;}
+}
+
+@media screen and (max-width: 480px) {
+	section.ms_rewardLevel_box02 ul.rewardLevel_box02 li.box1.newRewardsIco {background-size: 15% auto;}
+}
+
+/*Personalized Offer 쿠폰 모바일 위치수정*/
+@media screen and (max-width: 960px) {
+	i.level_img1_15 {bottom:-5% !important; height:100% !important;}
+}
+
+@media screen and (max-width: 640px) {
+	i.level_img1_15 {width: 20% !important; bottom: -20% !important; right: 10px;} /*20210416 수정*/
+}
+
+
+/*e::20181205 리워드 및 혜택 수정*/
+
+/*s::20181029 비회원 전자 영수증 페이지 추가*/
+.ms_cont_wrap .nomemberTitle h6 {font-size:18px;}
+.my_card_pick_date1.dealArea {position: relative; overflow: hidden;}
+.my_card_pick_period.nomemberReceipt {position:relative; min-height:230px; box-sizing: border-box; padding-bottom:25px;}
+.nomemberReceipt .my_card_pick_bg.withAll {width:365px; box-sizing: border-box; background-position: 16px 0; background-repeat: no-repeat; overflow: hidden; height:auto;}/*20181123 width수정, height추가*/
+.nomemberReceipt .my_card_pick_bg.withAll dt {width:65px;}
+.nomemberReceipt .my_card_pick_bg.withAll dd {width:auto;}
+.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt {font-size:11px; color:#666; text-align:right; width:100%;}/*20181123 추가*/ 
+
+.nomemberReceipt .my_card_pick_date dd input {width:100%;}/*20181126 수정*/
+
+.nomemberReceipt .my_card_pick_date2.dealArea {margin-top:16px; padding-top:15px; border-top:1px solid #dbdbdb;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl {width:350px; height:auto; margin:0; float:left; overflow:inherit; padding:0; }
+.nomemberReceipt .my_card_pick_date2.dealArea dl dt {display:block; float:none; width:100px; padding:0;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl dd {width:100%; margin-top:10px; padding:0; display:block; float:none; overflow: hidden;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl dd div.pick_date_each:after {content: ''; display:block; clear: both;}
+.nomemberReceipt .my_card_pick_date dd div.pick_date_each,
+.nomemberReceipt .hyphen_bg {float:none; display:inline-block;}
+.nomemberReceipt .my_card_pick_date dd div.pick_date_each {width:234px;}
+.nomemberReceipt .pick_date_each_left {width:200px;}
+
+.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea {display:none;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea.creditCheck {display:block;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea.ssgPay {display:block;}
+
+/*승인번호*/
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dt {margin-top:15px;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dt:first-child {margin-top:0;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.approvalCheck input.card_regi_input2.approvalInpit {margin-left:0; width:300px; float:none; text-align: left; padding-bottom:3px;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.approvalCheck p {font-size:11px; color:#666; line-height:120%; padding:10px 0 0 0;}
+
+/*결제금액*/
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck {position:relative; width:100%;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck input.card_regi_input2.paymentInpit {margin-left:0; width:300px; float:none; text-align: right; padding-right:10%; padding-bottom:3px;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck em {position: absolute; top:2px; right:10px; color:#666; font-size:13px; width:19.5%; font-weight: bold; font-style: inherit;}
+
+/*유의사항*/
+.nomemberReceipt .noteArea {margin:25px 30px 0 30px; padding-top:20px; border-top:1px solid #ddd;}
+.nomemberReceipt .noteArea dt {font-weight: bold; font-size:14px; color:#222;}
+.nomemberReceipt .noteArea dd {font-size:12px; color:#656565; padding-top:15px;}
+.nomemberReceipt .noteArea dd span {color:#8f7a4b;}
+
+.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea {width:350px; border-bottom:0; margin-left:45px;}
+.nomemberReceipt .my_card_pick_date2.dealArea dl dd .select_box {margin-left:0;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd input.card_regi_input2 {padding:0 5px 0 5px; width:62px; box-sizing: border-box; height:32px; line-height:32px; text-align:center;}
+
+.nomemberReceipt .my_card_pick_date2.dealArea .pick_date_txt {text-align:left; width:100%;}
+
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd input[type=number]::-webkit-inner-spin-button,
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0; -webkit-text-security:disc;}
+.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd input[type='number'] {-moz-appearance:textfield;}
+
+.receipt_tb_notice.noMemberNotice {margin-top:60px;}
+
+.card_use_info_tbl.noMember {width:100%;}
+.card_use_info_tbl.noMember td.lastTd a.btnReView {display: block; width: 78px; margin: 0 auto; height: 30px; border: 1px solid #ddd; line-height: 30px; border-radius: 2px; color: #222; box-sizing: border-box; font-size:12px;}
+
+/*보안문자*/
+.renew_joinform_v2.dtCaptcha {margin:30px 0 0 0; box-sizing: border-box; max-width:830px; width:100%;}
+.renew_joinform_v2.dtCaptcha dl {position:relative; width:100%; box-sizing: border-box; padding:20px;}
+.renew_joinform_v2.dtCaptcha dl dt, .dtCaptcha dl dd {display:inline-block; vertical-align: top;}
+.renew_joinform_v2.dtCaptcha dl dt {width:100px; font-size:13px; font-weight: bold; color:#232323;}
+.renew_joinform_v2.dtCaptcha dl dd {width:670px; padding:0;}
+.renew_joinform_v2.dtCaptcha dl dd .captcha_infoInput_text {border-right:0;}
+.renew_joinform_v2.dtCaptcha dl dd p.captcha_guidet {padding:0; text-align:left; font-size:12px; color:#232323; font-weight: bold; line-height:120%; vertical-align: top;}
+.renew_joinform_v2.dtCaptcha dl dd p.captcha_guidet:before {content: ''; display:inline-block; width:3px; height:3px; border-radius: 3px; background-color:#989898; vertical-align: top; margin-right:5px; margin-top:4px;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap {width:100%; padding:0; margin-top:15px;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl {padding:0;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd {text-align:center;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd .mem_captcha_img {position:relative; margin:0 auto; display: inline-block; vertical-align: top;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd a.btn_login {vertical-align: top; position:relative; display:inline-block;}
+.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd input {display:block; position:relative; float:none; margin:10px auto 0 auto; padding:0 10px; box-sizing: border-box; width:287px;}
+
+/*조회 버튼*/
+.nomemberArea div.card_regi_btn1 {display:block; margin:30px 0 0 0; position:relative; text-align: right; width:100%;}
+.nomemberArea div.card_regi_btn1 a {display: inline-block; border-radius: 2px; background: #e2c383; border: 1px solid #bb9f65;  font-size: 12px; font-weight: bold; height: 28px; line-height: 28px; text-align: center; width: 86px; color:#222;}
+ 
+@media screen and  (min-width:960px) {
+	.card_use_info_tbl.noMember td.lastTd a.btnReView:hover {background: #222; color:#fff; border-radius: 2px; border:1px solid #222;}
+}
+
+@media screen and  (max-width:1100px) { 
+	.my_card_pick_period.nomemberReceipt {height:auto; padding:20px 0 25px 0;}
+	.nomemberReceipt .my_card_pick_bg.withAll {margin:0 15px; width:100%; background: none;}/*20181123 수정*/
+	.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt {padding-left:77px; text-align:left;}/*20181123 추가*/
+	.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt p {line-height:120%; padding-top:3px;}/*20181123 추가*/
+	.nomemberReceipt .my_card_pick_date2.dealArea {margin:10px 0 0 0; padding-top:0; box-sizing: border-box; border-top:0; position:relative;}
+	.nomemberReceipt .my_card_pick_date2.dealArea:before {content: ''; display:block; width:96%; margin:0 auto; border-top:1px solid #ddd;}
+	.nomemberReceipt .my_card_pick_date2.dealArea dl {padding:0 13px;}	
+	.nomemberReceipt .my_card_pick_date2.dealArea dl,
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea {width:100%; box-sizing: border-box; padding-top:10px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.my_card_pick_date {padding:5px 13px 10px 13px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea dl dd {margin-top:5px; padding-top:0px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea dl dd div.pick_date_each:after {content: ''; display:block; clear: both;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .pick_date_txt {margin-top:-10px;}
+
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea.creditCheck {margin:0; padding:0 13px 0 15px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck {width:300px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck em {width:10px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck input.card_regi_input2.paymentInpit {padding-right:25px;}
+
+	.nomemberReceipt .noteArea {margin:25px 15px 0 15px;}
+
+	.renew_joinform_v2.dtCaptcha dl dt, .dtCaptcha dl dd {display:block;}
+	.renew_joinform_v2.dtCaptcha dl dd {width:100%; padding-top:15px;}
+	.renew_joinform_v2.dtCaptcha dl dd p.captcha_guidet {margin-left:10px;}
+	.renew_joinform_v2.dtCaptcha dl dd p.captcha_guidet::before {margin-left:-10px;}
+}
+
+@media screen and  (min-width:481px) and (max-width:640px) {
+	.nomemberReceipt .my_card_pick_bg dt,
+	.nomemberReceipt .my_card_pick_bg dd,
+	.nomemberReceipt .my_card_pick_date2 dl dt,
+	.nomemberReceipt .my_card_pick_date2 dl dd {font-size:13px;}
+	.nomemberReceipt .card_regi_dl dd span.hyphen_bg17 {height:32px !important;}
+}
+
+@media screen and  (max-width:640px) {
+	.my_card_pick_period.nomemberReceipt {font-size:13px !important;}
+
+	.ms_cont_wrap .nomemberTitle h6 {line-height:120%;}
+	.nomemberReceipt .my_card_pick_bg.withAll dt {width:50px;}/*20181123 수정*/
+	.nomemberReceipt .my_card_pick_bg.withAll dd {width:80%; padding-left:7px; box-sizing: border-box;}
+	.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt {padding-left:55px;}/*20181123 추가*/
+	.nomemberReceipt .my_card_pick_date2.dealArea {padding:0;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dt {line-height:120%;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dt,
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd {background: #f4f4f2; position:relative; overflow: hidden;}
+
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd input.card_regi_input2 {width:22.5%;}
+	.nomemberReceipt .card_regi_dl dd span.hyphen_bg17 {width:3%; height:32px;}
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea dd div.card_regi_btn1 {display:block; float:right; padding-top:4%; padding-right:1%;}
+
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.approvalCheck input.card_regi_input2.approvalInpit,
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck {width:100%;}
+
+	.nomemberReceipt .noteArea {margin-top:10px; padding-top:15px;}
+	.nomemberReceipt .noteArea dd {padding-top:10px; line-height:130%;}
+
+	.nomemberReceipt .my_card_pick_date dd div.pick_date_each {width:100%; box-sizing: border-box; height:30px;}
+	.nomemberReceipt .my_card_pick_date .pick_date_each_left {width:90%;}
+	.nomemberReceipt .my_card_pick_date dd input {height:28px;}
+	.nomemberReceipt .my_card_pick_date .pick_date_each_right label {height:28px; background-repeat: no-repeat;}
+	.nomemberReceipt .my_card_pick_date2.dealArea .card_regi_dl dd.paymentCheck input.card_regi_input2.paymentInpit {width:100%;}
+
+	.renew_joinform_v2.dtCaptcha dl {padding:20px 10px;}
+
+	.receipt_tb_notice.noMemberNotice {line-height:120%;}
+	.card_use_info_tbl.noMember {font-size:13px;}
+	.card_use_info_tbl.noMember td.lastTd a.btnReView {width:60px;}
+}
+
+
+@media screen and  (max-width:480px) {
+	/*.nomemberReceipt .my_card_pick_bg.withAll {background: url("../img/util/my_card_pick_bg-1.gif") 0 0; background-position: 8px 0; background-repeat: no-repeat;}*/ /*20181123 삭제*/
+
+	.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd {padding-top:0;}
+	.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd .mem_captcha_img {width:auto; display:inline-block;}
+	.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd a.btn_login {height:61px; width:50px; box-sizing: border-box; padding:17px 10px; line-height:120%;}
+	.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd a.btn_login br {display:none;}
+	.renew_joinform_v2.dtCaptcha .mem_captcha_input_wrap dl dd input {width:253px;}
+
+	.nomemberArea div.card_regi_btn1 {margin:15px 0 0 0;}
+
+	.receipt_tb_notice.noMemberNotice {margin-top:30px;}
+
+	/*s::20190704 이지나 수정*/
+	section.ms_rewardCard_info1 dl.ms_info_box1 dt.tbox h5 span.en{ display:inline-block; }
+	/*e::20190704 이지나 수정*/
+}
+
+@media screen and  (max-width:400px) {
+	.nomemberReceipt .my_card_pick_bg.withAll {margin:0; padding:0 10px; background-position: 13px 0;}
+	.nomemberReceipt .my_card_pick_bg.withAll dt {width:48px;}
+	.nomemberReceipt .my_card_pick_bg.withAll dd {width:85%; padding-left:10px;}
+	.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt {padding-left:0;}/*20181123 추가*/
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea {padding-top:15px;}
+
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.my_card_pick_date, 	
+	.nomemberReceipt .my_card_pick_date2.dealArea dl.dealTypeArea.creditCheck {padding:5px 10px 10px 10px;}
+
+	.nomemberReceipt .noteArea {margin:5px 10px 0 10px;}	
+}
+
+@media screen and  (max-width:355px) {
+	.my_card_pick_period.nomemberReceipt {padding:10px 0 15px 0; margin-top:20px;}	
+
+	.nomemberReceipt .my_card_pick_bg.withAll {width:100%; height:auto; background:none;}
+	.nomemberReceipt .my_card_pick_bg.withAll dt,
+	.nomemberReceipt .my_card_pick_bg.withAll dd {width:100%; display:block; float:none; padding-left:0;}
+	.nomemberReceipt .my_card_pick_bg.withAll dd {margin-top:-5px;}
+	.nomemberReceipt .my_card_pick_bg.withAll dd.payAreaTxt {margin:0;}/*20181123 추가*/
+}
+/*e::20181029 비회원 전자 영수증 페이지 추가*/
+
+/*s::20190704 이지나 수정*/
+@media screen and  (max-width:320px) {
+	section.ms_rewardCard_info1 dl.ms_info_box1 dt.tbox h5 { width:80%; }
+}
+/*e::20190704 이지나 수정*/
+
+/* 연휴 기간 안내 팝업 */
+.sugNoticePop_body .subPopBox .subPopBoxTxt {line-height: 0;}
+.sugNoticePop_body .subPopBox .subPopBoxTxt strong {display: inline-block; }
+
+/* s::20190904 리워드 혜택 수정 */
+.bgW {background: #fff !important; width:830px !important; border:1px solid #ddd; box-sizing:border-box;}
+.bgG {background: #f4f4f2 !important; border:none !important; width:830px !important; box-sizing:border-box;}
+/*s::20191216 리워드 arrow 수정*/
+.bgG dl dt.tbox span.arrow { display:block; background: url(../img/util/reward/btn_arrow_up.png) 0 0 no-repeat !important; width: 42px; height: 42px; position: absolute; right: 0px; top: -10px }
+.bgW dl dt.tbox span.arrow { display:block; background: url(../img/util/reward/btn_arrow2_up.png) 0 0 no-repeat !important; width: 42px; height: 42px; position: absolute; right: 0px; top: -10px }
+.bgG dl dt.tbox.on span.arrow { display:block; background: url("../img/util/reward/btn_arrow_down.png") 0 0 no-repeat !important; }
+.bgW dl dt.tbox.on span.arrow { display:block; background: url("../img/util/reward/btn_arrow2_down.png") 0 0 no-repeat !important; }
+/*e::20191216 리워드 arrow 수정*/
+section.rewardLast.bgW ul li {background-color: #fff !important; border: 1px solid #ddd; border-radius: 3px; width:270px; box-sizing: border-box; height:183px; padding:20px;} 
+section.rewardLast.bgG ul li {background-color: #f4f4f2 !important; width:270px; box-sizing: border-box; height:183px; padding:20px;}
+
+section.rewardLast.bgW {border:0;}
+section.rewardLast.bgG {background-color: #fff !important;}
+
+section.rewardLevel_wrap { border: 1px solid #ddd; border-radius:3px; margin-bottom:10px; padding:30px 30px 0 30px; width:830px; box-sizing: border-box;}
+section.rewardLevel_wrap dl.ms_info_box { position:relative; }
+section.rewardLevel_wrap dl.ms_info_box dt { padding-bottom:40px; }
+section.rewardLevel_wrap dl.ms_info_box dt.tbox h5 { color:#222; font-size:18px; font-weight:bold; }
+section.rewardLevel_wrap dl.ms_info_box dt.tbox span.arrow { display:block; background: url("../img/util/reward/btn_arrow_down.png") 0 0 no-repeat; width:42px; height:42px; position:absolute; right:0px; top:-10px; }
+section.rewardLevel_wrap dl.ms_info_box dt.tbox.on span.arrow { display:block; background: url("../img/util/reward/btn_arrow_up.png") 0 0 no-repeat; width:42px; height:42px; position:absolute; right:0px; top:-10px; }
+section.rewardLevel_wrap dl.ms_info_box dd.box { position:relative; padding:30px 0; border-top: 1px solid #eceae5; }
+section.rewardLevel_wrap dl.ms_info_box dd.box p.t1 { font-size:14px; color:#222; padding-bottom:15px; }
+section.rewardLevel_wrap dl.ms_info_box dd.box ul.utxt li { font-size:12px; color:#666; line-height:1.6; }
+section.rewardLevel_wrap dl dd i { display:block; position:absolute; }
+
+@media screen and (max-width: 1024px) {
+	section.rewardLast.bgG ul li,
+	section.rewardLast.bgW ul li {width:31.3%;}	
+	.bgW,
+	.bgG {width:100% !important;}
+}
+
+@media screen and (max-width: 960px) {
+	section.rewardLevel_wrap {width:100%;}
+}
+
+@media screen and (max-width: 640px) {
+	section.rewardLevel_wrap {border-radius: 0; padding: 20px 0; margin: 10px auto; width: 96%;}
+	section.rewardLevel_wrap dl.ms_info_box dt.tbox h5 {font-size:13px; padding-left:10px; width:80%;}
+	section.rewardLevel_wrap dl.ms_info_box dd.box p.t1 {font-size: 12px; padding-left: 10px;}
+	section.rewardLevel_wrap dl.ms_info_box dd.box ul.utxt li {font-size:12px; color:#666; line-height:1.6; padding-left:10px;}
+	
+	section.rewardLast ul {width:100%;}
+	section.rewardLast.bgW ul li,
+	section.rewardLast.bgG ul li {width:100%; height:92px; padding:10px 0;}
+	
+	.bgG dl dt.tbox span.arrow, 
+	.bgW dl dt.tbox span.arrow,
+	.bgG dl dt.tbox.on span.arrow, 
+	.bgW dl dt.tbox.on span.arrow {background-size: 100% auto !important; height: 30px !important; right: 10px !important; top: 0 !important; width: 30px !important;}/*20191216 리워드 arrow 수정*/	
+}
+
+@media screen and (max-width: 480px) {
+	.level_alarm_wrap {position:relative; padding-top:15px; top:0;}
+}
+/* e::20190904 리워드 혜택 수정 */
+
+/* s::20191015 리워드 혜택_우수회원 수정 */
+@media screen and (max-width: 640px) {
+	section dl dd.box ul.utxt li span.nbw {display:none;}
+	section dl dd.box ul.utxt li br {display:none;}	
+}
+/* e::20191015 리워드 혜택_우수회원 수정 */
+
+/* s::20190924 My스타벅스 카드(보유카드) */
+.regi_cancel_pop.regi_cance_add,
+.regi_cancel_pop.regi_cance_add .regi_cancel_pop_inner {height:auto; min-height:220px; padding-bottom:2.5%;}/*20191218 모바일상품권_padding-bottom:3% 추가*/
+.regi_cancel_pop.regi_cance_add .regi_cancel_pop_inner article {margin:20px 20px 10px 20px;}
+.regi_cancel_pop.regi_cance_add .regi_cancel_pop_btns {bottom: inherit; height: 30px; left: inherit; margin: 0 auto; position: relative; width: 173px; padding-top: 10px;}/*20191218 모바일상품권_팝업 이슈로 버튼 수정*/
+
+.regi_cancel_pop.regi_cance_no,
+.regi_cancel_pop.regi_cance_no .regi_cancel_pop_inner {height:auto; min-height:210px;}
+.regi_cancel_pop.regi_cance_no .regi_cancel_pop_inner article {margin:20px 20px 10px 20px;}
+.regi_cancel_pop.regi_cance_no .regi_cancel_pop_inner article .regi_txt {font-size:14px; padding:20px 0;}
+.regi_cancel_pop.regi_cance_no .regi_cancel_pop_btns {left:0; right:0; margin:0 auto; width:84px;}
+.regi_cancel_pop.regi_cance_no .regi_cancel_pop_btns li.btn2 {margin-left:0;} /* 20211124 수정 */
+
+.my_ms_card_detail_cont .regiCancelTxt {position: absolute; bottom: 10%; width: 84%; margin: 0 auto; left: 0; right: 0; font-size: 12px; color: #444444; line-height: 1.2; letter-spacing: -0.02em;}
+
+@media screen and (max-width: 480px) {
+	.my_ms_card_detail_cont .regiCancelTxt {width:90%; bottom:6%; letter-spacing:0;}
+}
+/* e::20190924 My스타벅스 카드(보유카드) */
+
+/* s!20200219.wyon 카드 등록 해지 팝업 */
+.otp_pop_wrap {display: none; position: absolute; top: 10%; left: 50%; width: 400px; min-width: 305px; background: #fff; border-radius: 3px; box-shadow: 3px 3px 3px #444; z-index: 98;}
+/* 팝업 타이틀 영역 */
+.otp_pop_wrap .pop .pop_header {width:100%; height: 47px; padding: 16px 19px; border-radius: 3px 3px 0 0; font-size: 14px; color: #fff; background: #8c8279; box-sizing: border-box;}
+.otp_pop_wrap .pop .pop_header a.otp_close {display: block; position: absolute; top: 0; right: 0; width: 14px; height: 14px; padding: 16px 11px 15px; background:url('../img/util/cal/calpop_close2.png') center center no-repeat; transition:transform 1s; -webkit-transition:-webkit-transform 1s;}
+.otp_pop_wrap .pop .pop_header a.otp_close:hover {transform: rotate(180deg);}
+.otp_pop_wrap .pop .pop_header a.otp_close span.blind {position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0);}
+
+/* 팝업 컨텐츠 영역 */
+.otp_pop_wrap .pop .pop_box {width: 100%; height: auto; padding: 20px 20px 15px; font-size: 12px; box-sizing: border-box;}
+.otp_pop_wrap .pop .pop_box .pop_info strong {font-size: 14px; letter-spacing: -0.5px;}
+.otp_pop_wrap .pop .pop_box .pop_info article {margin-top: 22px;}
+.otp_pop_wrap .pop .pop_box .pop_info article:first-child {margin-top: 2px;}
+.otp_pop_wrap .pop .pop_box .pop_info article ul li {letter-spacing: .04px;}
+.otp_pop_wrap .pop .pop_box .pop_info article>strong::before {content:''; margin-left: -1px;}
+.otp_pop_wrap .pop .pop_box .pop_info p {font-size: 14px; color: #222; letter-spacing: -.1px; line-height: 1.4;}
+.otp_pop_wrap .pop .pop_box .pop_info p.mgt20 {margin-top: -1.5px;}
+.otp_pop_wrap .pop .pop_box .pop_info p.font13 {font-size: 13px;}
+.otp_pop_wrap .pop .pop_box .pop_info ul li {margin-top: 4px; padding-left: 8px; color: #666; line-height: 1.5; background:url("../img/util/reward/list_blit.png") 0px 7px no-repeat; text-align: left;}
+.otp_pop_wrap .pop .pop_box .pop_info ul li:first-child {margin-top: 9px;}
+.otp_pop_wrap .pop .pop_box hr {height: 1px; margin-top: 11px; background: #dbdbdb; border: 0;}
+
+
+/* 팝업 버튼 영역 */
+.otp_pop_wrap .pop .pop_box .btn_area {margin-top: 14px; text-align: center;}
+.otp_pop_wrap .pop .pop_box .btn_area.btn_min a.btn {width: 59px; height: 28px; margin: 0 0 3px 0; padding-top: 7px;}
+.otp_pop_wrap .pop .pop_box a.btn {display: inline-block; width: 84px; height: 30px; margin: 0 0 5px 2px; padding: 9px 8px 10px; border: 1px solid #bb9f65; border-radius: 3px; font-size: 12px; font-weight: bold; color: #222; background: #e2c383; text-align: center; box-sizing: border-box;}
+.otp_pop_wrap .pop .pop_box a.btn:first-child {margin-left: 0;}
+.otp_pop_wrap .pop .pop_box a.btn.btn_gray {color: #fff; background: #222; border: 1px solid #222}
+
+/* 팝업 딤 영역 */
+.otp_popup_dim {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10,9,7,.7); z-index: 97;}
+
+/* 인증번호 입력 */
+.otp_pop_wrap .pop .pop_box .pop_info .font_green {color: #006633;}
+.otp_pop_wrap .pop .pop_box .pop_info .note::before {content:'\002A'; margin-right: 3px;}
+.otp_pop_wrap .pop .pop_box .pop_info form {position: relative; margin: 16px auto 20px;}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset legend {position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0);}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset label {display: block; margin-bottom: 11px; font-weight: bold; color: #222;}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset input {width: 286px; height: 28px; padding: 0 10px; border: 1px solid #ddd; border-radius: 5px; color: #000; font-size: 12px; box-sizing: border-box;}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset input::placeholder {color: #959595;}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset input:-ms-input-placeholder {color: #959595;}
+.otp_pop_wrap .pop .pop_box .pop_info form fieldset a.btn.request {width: 66px; height: 28px; margin-left: 5px; padding-top: 8px; vertical-align: top;}
+.otp_pop_wrap .pop .pop_box .pop_info form .time {margin-top: 6px; color: #666666;}
+.otp_pop_wrap .pop .pop_box .pop_info form .time em {font-style: normal; font-weight: bold; color: #b7312c;}
+.otp_pop_wrap .pop .pop_box .pop_info .pop_info_txt {display: inline-block; margin-bottom: 10px;}
+.otp_pop_wrap .pop .pop_box .pop_info .pop_info_txt ul {padding: 9px 20px 16px; background: #f4f4f2;}
+.otp_pop_wrap input[type="text"]::-ms-clear {display: none;} /* ie 'x' 버튼 삭제 */
+
+/* TOAST 팝업 */
+.otp_pop_toast {position: fixed; top: 5px; left: 50%; width: 450px; height:auto; margin-left:-225px; padding: 21px 16px 24px; background-color: #fff; color: #000; font-size: 14px; letter-spacing: 0.3px; border: 1px solid #999a95; border-radius: 3px; -webkit-box-shadow: 2px 2px 5px -1px #999; -moz-box-shadow: 2px 2px 5px -1px #999; box-shadow: 2px 2px 5px -1px #999; box-sizing: border-box; z-index: 9999;}
+.otp_pop_toast .toast_txt {margin-top: 13px; color: #5f646a; line-height: 1.3; letter-spacing: -0.3px;}
+
+    @media screen and (max-width: 960px) {
+        .otp_pop_wrap {z-index: 19; left:0; right:0; margin:0 auto;}
+        .otp_popup_dim {z-index: 18;}
+    }
+    @media screen and (max-width: 480px) {
+        .otp_pop_wrap {width: 96%;}
+        .otp_pop_wrap .pop .pop_box .pop_info form fieldset input {width: 80%;}
+        .otp_pop_wrap .pop .pop_box .pop_info form fieldset a.btn.request {float: right; width: 17%; min-width: 60px;}
+
+        .otp_pop_toast {width: 96%; margin-left: -48%;}
+        
+        .otp_pop_wrap .pop br.br_del,
+        .otp_pop_toast br.br_del {display: none;}
+    }
+    @media screen and (max-width: 400px) {
+        .otp_pop_wrap .pop .pop_box .pop_info form fieldset input {width: 77%;}
+    }
+    @media screen and (max-width: 360px) {
+        .otp_pop_wrap .pop .pop_box .pop_info form fieldset input {width: 75%;}
+    }
+/* e!20200219.wyon 카드 등록 해지 팝업 */
+
+/*s::20190508 선물내역 > 스타벅스 e-gift card보낸 선물 유의사항 툴팁 수정*/
+div.egiftCard_btnZone .icon_info_wrap.info_add dd.info_btn_wrap div.info_btn_inner3 {height:310px; background-color:#fff; background-image: none; box-sizing: border-box; top:-309px;}
+div.egiftCard_btnZone .icon_info_wrap.info_add div.info_btn_box {padding:20px 15px;}
+/*e::20190508 선물내역 > 스타벅스 e-gift card보낸 선물 유의사항 툴팁 수정*/
+
+/*s::20190520 휴대폰 결제 취소 환불요청 버튼 비활성화*/
+.lost_chk_warn a.btn_disable {background: #e0e0e0; cursor:default; text-decoration: none;}
+/*e::20190520 휴대폰 결제 취소 환불요청 버튼 비활성화*/
+
+/*s::20190522 환불 신청 페이지 모바일UI 수정*/
+@media screen and (max-width: 640px) {
+	table.change_transfer_tbl.refundTb tr td {padding: 9px 20px 13px 20px;}
+	table.change_transfer_tbl.refundTb tr td div.sel_wrap {height:auto;}
+	table.change_transfer_tbl.refundTb tr td div.sel_wrap p.card_sel_wrap {float:none;}
+	table.change_transfer_tbl.refundTb tr td div.sel_wrap p.lost_chk_warn {margin-left:0;}
+	table.change_transfer_tbl.refundTb tr td div.sel_wrap p.lost_chk_warn a {position:absolute; left:220px; top:0; }
+}
+@media screen and (max-width: 620px) {
+	table.change_transfer_tbl.refundTb tr th,
+	table.change_transfer_tbl.refundTb tr td {padding: 9px 10px 13px 10px;}
+	table.change_transfer_tbl.refundTb tr td div.sel_wrap p.lost_chk_warn a {left:215px;}
+}
+/*e::20190522 환불 신청 페이지 모바일UI 수정*/
+
+/*s::20190703 분실신고,잔액이전 페이지 높이값 수정*/
+@media screen and (min-width: 640px) {
+	.change_refund_guide.refundGu {min-height:130px; height:auto;}
+	.change_refund_guide.refundGu ul {position: relative; left: auto; left: initial; top: auto; top: initial; padding: 52px 18px 15px 18px; box-sizing: border-box;}
+}
+/*e::20190703 분실신고,잔액이전 페이지 높이값 수정*/
+
+
+/* s::202012 결제 배너 추가 */
+.paymentSlideArea {position: relative;overflow: hidden;width:100%;height:165px;margin-bottom:40px;}
+.paymentSlideArea.type3 {margin-top:30px}
+.paymentSlideArea .bxslide-main {position: relative;width: 100%;z-index: 1;}
+.paymentSlideArea .payslide_btn_wrap {position:absolute;top:50%;width:100%;z-index: 2;}
+.paymentSlideArea .bx-wrapper .bx-prev,
+.paymentSlideArea .bx-wrapper .bx-next {display:none;}
+.paymentSlideArea .prevBtn, 
+.paymentSlideArea .nextBtn {position:absolute;top:50%;width:36px;height:36px;margin:0;background: rgba(0, 0, 0, .15);border-radius: 50%;box-sizing:border-box;transform: translateY(-50%);}
+.paymentSlideArea .prevBtn a,
+.paymentSlideArea .nextBtn a {display:block;width:100%;height:100%;text-indent:-2000px;}
+.paymentSlideArea .prevBtn {left:15px;}
+.paymentSlideArea .nextBtn {right:15px;}
+.paymentSlideArea .prevBtn:before,
+.paymentSlideArea .nextBtn:before {content:'';display:block;position:absolute;width:12px;height:12px;z-index:-1;}
+.paymentSlideArea .prevBtn:before {
+	top:12px;
+    left: 14px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff; 
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+.paymentSlideArea .nextBtn:before {
+	top: 12px;
+    right: 14px;
+    border-bottom:2px solid #fff;
+    border-right:2px solid #fff;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.paymentSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.payment_slider li {position: relative;width:100%;height: 165px;}
+.paymentSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.payment_slider li a { display:block; width:100%; height:100%; }
+.paymentSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.payment_slider li a img {width:100%;height:100%}
+
+.payment_slider_control_pager { position:absolute;bottom:14px;width:100%;text-align:center}
+.payment_slider_controls { display:inline-block; height:15px; position:relative; width:9px;vertical-align:middle;}
+.payment_slider_controls div.bx-controls-auto { position:absolute; }
+.payment_slider_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+.payment_slider_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause.png") 0 0; height:15px; width:15px; }
+.payment_slider_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+.payment_slider_controls div.bx-controls-auto a.bx-stop:hover,
+.payment_slider_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+.payment_slider_pagers {display:inline-block;height:15px; }
+.payment_slider_pagers div.bx-pager div.bx-pager-item { display:inline-block; margin-left:5px;vertical-align:middle; }
+.payment_slider_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+.payment_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { width:15px;height:15px;margin:0 2px;background:#b2b2b2;border:none;border-radius: 50%;box-sizing:border-box; }
+.payment_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { width:15px;height:15px;background:transparent;border:3px solid #006c3e; }
+
+.paymentSlideArea.type1.mobile,
+.paymentSlideArea.type2.mobile,
+.paymentSlideArea.type3.mobile {display:none}
+
+@media screen and (max-width:960px) {
+	.paymentSlideArea {height:115px;margin-bottom:30px}
+	.paymentSlideArea + .gift_card_slider {margin-top : 30px}
+	.paymentSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.payment_slider li{height:115px;}
+}
+
+@media screen and (max-width:640px) {
+	.paymentSlideArea.type1.pc,
+	.paymentSlideArea.type2.pc,
+	.paymentSlideArea.type3.pc {display:none}
+	.paymentSlideArea.type1.mobile,
+	.paymentSlideArea.type2.mobile,
+	.paymentSlideArea.type3.mobile {display:inherit}
+}
+/* e::202012 결제 배너 추가 */
+
+/* s::20211124 추가 */
+i.level_img1_15 {bottom: 5px !important;height: 115px !important;}
+
+@media screen and (max-width:1099px) {
+    i.level_img1_08{right:40px;}
+}
+@media screen and (max-width:960px) {
+    i.level_img1_08{right:50px;}
+}
+@media screen and (max-width:640px) {
+    i.level_img1_08{right:30px;}
+    i.level_img1_15{width: 100px !important; bottom: -20px !important;right: 20px;}
+    i.level_img1_14.newRewardsIco{background-size: 100px; right: 0px;}
+}
+@media screen and (max-width:480PX) {
+    i.level_img1_06{width: 100px;}
+    i.level_img1_08{right:30px;top:60px;}
+    i.level_img1_01{right: 20px;top: 50px;}
+    i.level_img1_14{right: 0px;}
+    i.level_img1_15 {width: 80px !important;}
+}
+/* e::20211124 추가 */

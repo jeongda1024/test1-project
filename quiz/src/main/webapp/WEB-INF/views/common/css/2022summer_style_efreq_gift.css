@@ -1,0 +1,35 @@
+﻿@charset 'utf-8';
+
+.pc-img {display:inline-block;}
+.mo-img {display:none;}
+
+.summer_efreq_gift .section_wrap .section_cont .section_cont_inner {position:relative;width:1300px;margin:0 auto;text-align:center;line-height:0;}
+
+.summer_efreq_gift .section_wrap.gift{background:#ff7d7f url('../../upload/common/img/util/efreq/2022summer_section1_bg.jpg') no-repeat center top; background-size:cover;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.carrybag{background:#f6f6f6 url('../../upload/common/img/util/efreq/2022summer_section2_bg.jpg') no-repeat center top;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.cabinpouch{background:#ffd429 url('../../upload/common/img/util/efreq/2022summer_section3_bg.jpg') no-repeat center top;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.cozyhoodie{background:#f6f6f6 url('../../upload/common/img/util/efreq/2022summer_section4_bg.jpg') no-repeat center top;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.product{background:#138251 url('../../upload/common/img/util/efreq/2022summer_section5_bg.jpg') no-repeat center top;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.product .section_cont_inner{position:relative;}
+.summer_efreq_gift .section_wrap.product .link{display:block;position:absolute;top:31.4%;right:0;left:0;width:46%;height:4.8%;margin-right:auto;margin-left:auto;font-size:0;line-height:0;color:transparent;}
+.summer_efreq_gift .section_wrap.notice{background:#fff;} /*220504 수정*/
+.summer_efreq_gift .section_wrap.notice .section_cont{width:1550px;margin:0 auto;text-align:center;}
+@media screen and (max-width:1550px){
+	.summer_efreq_gift .section_wrap.notice .section_cont{width:100%;}
+	.summer_efreq_gift .section_wrap.notice .section_cont img{width:100%;}
+}
+@media screen and (max-width:1200px){
+	.summer_efreq_gift .section_wrap .section_cont .section_cont_inner{width:100%;}
+	.summer_efreq_gift .section_wrap .section_cont img{width:100%;margin:0 auto;}
+
+	.summer_efreq_gift .section_wrap.gift .section_cont img{width:74%;}
+}
+@media screen and (max-width:640px){
+	.pc-img {display:none;}
+	.mo-img {display:inline-block;width:285px;}
+
+	.summer_efreq_gift .section_wrap{padding-top:0 !important;padding-bottom:0 !important;}
+	.summer_efreq_gift .section_wrap .section_cont img{width:100% !important;}
+
+	.summer_efreq_gift .section_wrap.product .link{top: 39%;width: 80%;height: 3%;}
+}

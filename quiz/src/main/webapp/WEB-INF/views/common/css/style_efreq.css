@@ -1,0 +1,1744 @@
+﻿@charset "UTF-8";
+/**********#####===== 이용안내(index)-START =====#####**********/
+/*프리퀀시 이용조회 상단 설명section */
+.whatis_efreq { background:#fff; border:1px solid #ddd; border-radius:3px; float:left; padding:30px; position:relative; width:768px; }
+.whatis_efreq header { border-bottom:1px solid #ddd; height:38px; width:100%; }
+.whatis_efreq header h5 { color:#222; float:left; font-size:18px; font-weight:bold; }
+.whatis_efreq article { color:#444; float:left; font-size:14px; line-height:1.4; margin-top:28px; }
+.whatis_efreq article strong { color:#006633; font-size:16px; font-weight:normal; line-height:1.4; }
+/*바코드,컵 이미지*/
+i.icon_efreq { background:url("../img/util/efreq/icon_efreq.png"); height:76px; position:absolute; right:48px; top:95px; width:79px; }
+
+/*프리퀀시 이용조회 하단 이용안내 버튼*/
+.btn_efreq_guide { float:left; height:30px; margin:30px 0; width:100%; }
+.btn_efreq_guide p { background:#e2c383; border:1px solid #bb9f65; border-radius:3px; height:28px; margin:0 auto; width:140px; }
+.btn_efreq_guide p a { color:#222; display:block; font-size:12px; font-weight:bold; height:100%; line-height:28px; text-align:center; width:100%; }
+
+.efreq_event_list_wrap { float:left; margin-top:10px; width:100%; }
+.efreq_event_list_wrap ul { margin:-20px 0 0 -20px; }
+.efreq_event_list_wrap ul:after { clear:both; content:""; display:block; }
+.efreq_event_list_wrap ul li { border:1px solid #ddd; border-radius:3px; float:left; margin:20px 0 0 20px; width:403px; }
+.efreq_event_list_wrap ul li a { display:block; height:100%; width:100%; }
+/*2015 여름 e-프리퀀시 이용조회*/
+.efreq_event_list_dl { float:left; }
+.efreq_event_list_dl dt { border-radius:3px 3px 0 0; height:199px; overflow:hidden; width:403px; }
+.efreq_event_list_dl dt img { transition:transform 1s; -webkit-transition:-webkit-transform 1s; width:100%; }
+.efreq_event_list_dl dt img:hover { transform:scale(1.1, 1.1); -webkit-transform:scale(1.1, 1.1); }
+.efreq_event_list_dl dd { background:#fff; border-radius:0 0 3px 3px; float:left; padding:20px; width:363px; }
+.efreq_event_list_dl dd span.efreq_dday_grey { background:#999; border-radius:3px; color:#fff; display:block; font-size:12px; height:24px; line-height:24px; text-align:center; width:62px; }
+.efreq_event_list_dl dd span.efreq_dday_green { background:#006633; border-radius:3px; color:#fff; display:block; font-size:12px; height:24px; line-height:24px; text-align:center; width:62px; }
+.efreq_event_list_dl dd strong { color:#222; float:left; font-size:16px; margin-top:10px; text-overflow:ellipsis; white-space:nowrap; width:100%; }
+.efreq_event_list_dl dd p { color:#444; float:left; font-size:14px; line-height:1.4; margin-top:10px; width:100%; }
+
+/*(이용안내)e-프리퀀시 바코드 발급, 적립, 사용하는 방법*/
+.ms_reward_mem_list { margin-top:50px; width:100%; }
+.ms_reward_mem_list strong { color:#222; font-size:16px; }
+
+.ms_reward_mem_list_each { margin-bottom:30px; width:100%; }
+.ms_reward_mem_list_each:after { clear:both; content:""; display:block; }
+.ms_reward_mem_list_each figure { float:left; }
+
+.ms_reward_mem_list_txt { color:#666; float:left; font-size:14px; line-height:1.4; margin-left:30px; padding-top:10px; width:80%; }
+.ms_reward_mem_list_txt strong.ms_reward_mem_list_ttl { color:#006633; font-weight:bold; line-height:1.8; }
+
+/*(이용안내)e-스티커 적립현황 확인하기*/
+.sticker_save_chk_wrap { margin:30px 0 30px -30px; padding:30px; width:768px; }
+.sticker_save_chk_wrap strong { font-size:16px; }
+.sticker_save_chk_cont { margin-top:10px; }
+.sticker_save_chk_cont:after { clear:both; content:""; display:block; }
+.sticker_save_chk_cont figure { float:left; }
+.sticker_save_chk_cont p { color:#666; float:left; font-size:14px; line-height:1.4; margin:45px 0 0 40px; }
+.sticker_save_chk_cont p strong.sticker_save_chk_ttl { color:#006633; font-size:14px; font-weight:bold; line-height:1.8; }
+
+.sticker_save_chk_list { width:100%; }
+.sticker_save_chk_list li { background:url("../img/util/efreq/bullet_grey.gif") 0 7px no-repeat; color:#666; font-size:14px; line-height:1.2; margin-bottom:10px; padding-left:9px; }
+
+/*회원계정에 등록된바코드확인하기 버튼*/
+a.btn_barcode_chk { background:url("../img/util/efreq/btn_barcode_chk.png"); display:block; height:18px; margin-top:10px; overflow:hidden; text-indent:-20000px; width:200px; }
+/*적립된 e-스티커 조회하기*/
+a.btn_sticker_chk { background:url("../img/util/efreq/btn_sticker_chk.png"); display:block; height:18px; margin-top:10px; overflow:hidden; text-indent:-20000px; width:150px; }
+/*바코드,컵 이미지*/
+i.icon_efreq2 { background:url("../img/util/efreq/icon_efreq.png"); height:76px; position:absolute; right:34px; top:22px; width:79px; }
+/*바코드이미지*/
+i.icon_barcode { background:url("../img/util/efreq/icon_barcode.png"); height:44px; position:absolute; right:8px; top:28px; width:149px; }
+
+.efreq_stat_ttl { border:1px solid #ddd; border-radius:3px; display:table; height:76px; position:relative; width:828px; }
+.efreq_stat_txt { display:table-cell; font-weight:bold; height:100%; padding-left:30px; vertical-align:middle; padding-right: 90px;}
+/* 170104 황기흠 추가 */
+.efreq_line_h { line-height:150%; }
+.w640 { display:block; }
+/* 170104 황기흠 추가 end */
+.btn_exclam { background-size:100% auto; height:35px; margin-top:-17.5px; position:absolute; right:30px; top:50%; width:35px; }
+.btn_exclam a { display:block; height:100%; width:100%; }
+.btn_exclam img { width:100%; }
+/**********#####===== 이용안내(index)-END =====#####**********/
+
+/**********#####===== 현황판(status)-START =====#####**********/
+/*초반진입 팝업*/
+.efreq_entry_popup_wrap{display:block;margin-left:-240px;position: absolute;top:333px;left:50%;width: 480px;box-shadow: 3px 3px 3px #444;border-radius:3px;background: #fff;z-index: 99;}
+.efreq_entry_popup_head{position: relative;width: 100%;height: 56px;background: #8c8279;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.efreq_entry_popup_wrap .btn_close_pop{position: absolute;top: 17px;right: 20px;height: 22px;width: 22px;margin-left:10px;margin-right:10px;}
+.efreq_entry_popup_wrap .btn_close_pop a{display: block;height: 100%;width: 100%;background: url(../img/util/efreq/btn_close_pop.png);overflow: hidden;text-indent: -20000px; -webkit-transition: -webkit-transform 1s;transition: transform 1s;}
+.efreq_entry_popup .efreq_entry{position:relative;background: #ddd;}
+.efreq_entry_popup .efreq_entry img{display:block;width:100%;border-top-left-radius: 3px;border-top-right-radius: 3px;}
+.efreq_entry_popup .efreq_entry .btn_view_pop a{position: absolute;bottom: 3%;left: 50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);font-size:0;width:55%;height:12%;}
+.efreq_entry_popup .btn_list_wrap{padding:12px;}
+.efreq_entry_popup .btn_list_wrap ul{display:table;width:100%;}
+.efreq_entry_popup .btn_list_wrap ul li{display: table-cell;padding-left: 5px;padding-right: 5px;width: 50%;text-align: center;}
+.efreq_entry_popup .btn_list_wrap ul li a{display: inline-block;padding: 12px 0 10px;width: 100%;height: 100%; background: #a09c9c; border-radius:5px;color: #fff;}
+.efreq_entry_popup .btn_list_wrap ul li:last-child a{background:#ddd;}
+
+/*현황판 완료팝업*/
+.efreq_sticker_complete { display:none; position:absolute; top:0; left:0; bottom:0; right:0;  z-index:10; background: url('http:../img/util/efreq/2018winter/web_stamp_complete.png'); background-size: cover; border-radius: 10px }
+/*완료팝업*/
+.pop_efreq_complete { display:none; border-radius:3px; box-shadow:3px 3px 3px #444; left:50%; margin-left:-240px; position:absolute; top:333px; width:480px; z-index:99; }
+.efreq2020summer .pop_efreq_2020_complete{display:block;width:100%;height:auto;box-sizing:border-box;left:auto;top:0;bottom:0;padding:0;position:absolute;background:none;background-size:100% auto;z-index:18;opacity:1;transform:none;}
+.efreq2020summer .pop_efreq_2020_complete .dimm_cpt_popup{position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.6);}
+.efreq2020summer .pop_efreq_2020_complete .complete_2020_guide .complete_2020_guide_period{position:absolute;width:75%;top:50%;left:50%;transform:translate(-50%, -50%);}
+.efreq2020summer .pop_efreq_2020_complete img{margin:0 auto;width:100%;}
+/*완료팝업 닫기버튼*/
+.pop_efreq_2020_complete p.btn_close_pop a{display:block;position:absolute;width:15%;height:9.41%;top:50%;left:50%;text-indent:-99999px;margin-left:22%;margin-top:-63%;tap-highlight-color:rgba(0, 0, 0, 0);-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}/*20190910 수정*/
+.pop_efreq_2020_complete p.btn_close_pop a:after{content:'\276f';font-size:12px;}
+/*현황판 완료팝업 쿠폰발행하기 버튼*/
+.pop_efreq_2020_complete .coupon_take_btn{position:absolute;bottom:1%;left:50%;transform:translateX(-50%);text-indent:-9999px;width:50%;height:65px;}
+/*c타입 완료팝업*/
+.type_c_popup .complete_coupon_notice{position:absolute;top:50%;left:50%;margin-top:13%;width:100%;transform:translate(-50%,-50%);text-align:center;} 
+.type_c_popup .hidden_event_btn,
+.type_c_popup .gift_change_btn,
+.sticker22_complete_notice{position:absolute;bottom:50%;left:50%;margin-bottom:-70%;transform:translate(-50%,-50%);text-align:center;font-family:'nbg';}
+/*선물교환하기 버튼*/
+.type_c_popup .gift_change_btn{display: block;width: 40%;height: 80px;position: absolute;top: 50%;left: 50%;text-indent: -99999px;margin-top: 63%;tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}/*20200917 수정*/
+/*히든이벤트 참여하기 버튼*/
+.type_c_popup .hidden_event_btn{display: block;width: 40%;height: 80px;position: absolute;top: 50%;left: 50%;text-indent: -99999px;margin-top: 39%;border:transparent;background:transparent;}
+/*c타입 완료팝업 닫기버튼*/
+.pop_efreq_2020_complete.type_c_popup p.btn_close_pop a {width:20%; height: 130px; margin-left: 26%;margin-top: -120%;} 
+/*a타입 완료팝업 닫기버튼*/
+.pop_efreq_2020_complete.type_a_popup p.btn_close_pop a{width: 20%;height: 140px;margin-top: -120%;margin-left: 27%;}
+/*a타입쿠폰발행하기 버튼*/
+.type_a_popup .coupon_take_btn{position: absolute;bottom: 7%;left: 50%;transform: translateX(-50%);text-indent: -9999px;width: 50%;height: 80px;}
+
+ /*A타입 완료팝업*/
+/*.type_a_popup.pop_efreq_2020_complete{bottom:-4px;}*/
+.type_a_popup .complete_coupon_notice{position: absolute;bottom: 0;left: 50%;text-align: center;transform: translateX(-50%);-webkit-transform: translateX(-50%);margin-bottom: 13%;width: 100%;}
+.type_a_popup .complete_coupon_notice .complete_text{color:#ffffff;}
+.type_a_popup .complete_coupon_notice img{width:22.5%;padding:23px 0 25px;}
+.type_a_popup .complete_coupon_notice .coupon_take_btn{display: inline-block; margin-top: 20px;padding: 15px 28px;background: rgba(255,255,255,0.2);border-radius: 6px;font-size: 22px;color:#ffffff;}
+
+/*c타입 완료팝업*/
+.type_c_popup .complete_coupon_notice img{padding-bottom:47px;width:inherit;}
+       
+/*상품수령완료팝업 감추기버튼*/
+.sticker_bg_wrap p.btn_efreq_bghide { line-height: 50px;border-radius: 50%;font-size: 18px;text-align: center;font-weight: bold;margin-left: -9.5%;margin-top: -10%;}
+.sticker_bg_wrap p.btn_efreq_bghide a { display:block; height:100%; width:100%; }
+.sticker_bg_wrap p.btn_efreq_bghide img { width:100%; }
+/**/
+.sticker_bg_wrap p.btn_efreq_bgselect { background-size:100% auto; bottom:-47px; height:42px; right:2px; position:absolute; width:42px; z-index:10; }
+.sticker_bg_wrap p.btn_efreq_bgselect a { display:block; height:100%; width:100%; }
+.sticker_bg_wrap p.btn_efreq_bgselect img { width:100%; }
+/**/
+.che_efreq_sticker_bg_inner { height:235px; left:428px; position:absolute; top:150px; width:297px; z-index:7; }
+.chr_efreq_sticker_bg_inner1 { height:200px; left:0; position:absolute; top:20px; width:210px; z-index:7; }
+.chr_efreq_sticker_bg_inner2 { height:311px; left:455px; position:absolute; top:128px; width:326px; z-index:7; }
+.efreq2017_sticker_bg_inner { height:100%; left:50%; margin-left:-50%; position:absolute; top:0; width:100%; z-index:7; }
+/**/
+p.info_txt { font-size:14px; margin-top:10px; }
+
+.efreq_sticker_complete { display:none; position:absolute; top:0; left:0; bottom:0; right:0;  z-index:10; background: url('http:../img/util/efreq/2018winter/web_stamp_complete.png'); background-size: cover; border-radius: 10px } /* 2018winter 20181011 수정 */
+.btn_hide_complete {position: absolute; width: 50px;height: 50px;line-height: 50px;border-radius: 50%;font-size: 18px;background: #cfc392;text-align: center;font-weight: bold;color: #4d4d4d;transform: translate(-50%, -50%) rotate(-16deg); right: auto; bottom: auto; top:100%; left:100%;margin-left: -9.5%;margin-top: -10%;} /*2018winter 20181010 수정*/
+
+/*웹 로딩시 레이아웃유지 height 값 조절*/
+.sticker_bg_wrap { position:relative;height:100%; }/*현황판전체적용*/
+.sticker_plus_5 .sticker_bg_wrap { height:100%; }/*선택형25개*/
+.efreq_sticker_bg > img { width:100%;}
+
+/*바코드 버튼*/
+.sticker_bg_wrap p.btn_barcode{position:absolute;width:16.3%;height:6.9%;top:4.5%;right:5.2%;background:url("../../upload/common/img/util/efreq/19_winter_btn_barcorde.png") no-repeat;background-size:100% 100%;z-index:15;border-radius:4px;} /*22-03-21 수정*/
+.sticker_bg_wrap p.btn_barcode a { display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+/*B타입*/
+.type_b .sticker_bg_wrap p.btn_barcode{margin-top:-66%;}
+.type_b.sticker_plus_5 .sticker_bg_wrap p.btn_barcode{margin-top:-76%;}
+
+/*현황판 바코드 클릭시 노출되는 바코드 팝업*/
+.pop_efreq_barcode { border-radius:3px; box-shadow:3px 3px 3px #444; display:none; left:50%; margin-left:-240px; position:absolute; top:333px; width:480px; z-index:99; }
+.pop_efreq_barcode_head { background:#8c8279; border-top-left-radius:3px; border-top-right-radius:3px; height:56px; position:relative; }
+.pop_efreq_barcode_head h5 { color:#fff; font-size:16px; font-weight:bold; line-height:56px; text-indent:30px; }
+.pop_efreq_barcode_head p.btn_close_pop { height:22px; position:absolute; right:20px; top:17px; width:22px; }
+.pop_efreq_barcode_head p.btn_close_pop a { background:url("../img/util/efreq/btn_close_pop.png"); display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+.pop_efreq_barcode_head p.btn_close_pop a:hover { transform:rotate(180deg); }
+.pop_efreq_barcode_cont { background:#fff; border-bottom-left-radius:3px; border-bottom-right-radius:3px; padding:30px 0; }
+.freqBarcode { font-weight: 800;}
+/*현황판 바코드 클릭시 노출되는 바코드 팝업 안 바코드영역*/
+.efreq_barcode{ /*margin:auto 5px;*/padding:46px 0 49.5px;border-bottom:2px solid #ddd; text-align:center;}
+.efreq_barcode_title{ font-size: 16px;font-weight:bold; color:#1e1e1ee6; padding-top:10px;}
+.efreq_barcode_img{ display:inline-block; margin-bottom:12px; /*width:100%;*/ background-color: #f0f0f0; /*border-radius:5px;*/ }
+.efreq_barcode_img img{ width:260px; height:75px; }
+.efreq_barcode_img .barcode_num{padding-top:12px;font-size:16px;font-weight:bold;color:#1e1e1e;}
+/**/
+.efreq_barcode_notice_wrap{ padding:40px 24px;} 
+.efreq_barcode_notice_wrap .notice_title{ padding-bottom:16px; color:e1e1e1; }
+.efreq_barcode_notice_wrap .notice{ padding-top:16px; line-height:1.5;color: #5c5c5c; letter-spacing:-1px; }
+/*바코드 캡처 화면 사용 시 유의사항*/
+.pop_efreq_guide_wrap { padding:20px; }
+/*현황판 레이아웃*/
+.ms_cont{height:100%;}
+.type_a .ms_cont{height:100%;}
+
+.efreq_texbg_wrap { position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; margin:0 auto; padding:0px; width:640px; height:100%;}
+/*상단 이름,모드버튼*/
+.efreq_name_wrap:after{ content:"";display:block;clear:both; }
+.efreq2020summer.efreq_top_wrap .efreq_name{float:left;font-size:18px;font-weight:bold;}
+.efreq2020summer.efreq_top_wrap .efreq_top_btn{display:none;}
+.btn_exclam_btn{float: right;cursor: pointer;margin-top: -5px; width: 5%;}
+
+/*B타입*/
+.type_b .efreq_top_wrap {padding:26px 24px 10px;border: 1px solid #dfdfdf;border-bottom:none;color:#1e1e1e;border-top-right-radius: 7px;border-top-left-radius: 7px;}
+.type_b .efreq_top_btn,
+.type_b .efreq_func_btn_wrap ul li,.type_b .efreq_cup_count_wrap{border:1px solid #cecece;border-radius:5px;text-align:center;}
+.type_b .efreq2020summer.efreq_top_wrap .efreq_top_btn{width:120px;height:38px;font-size:18px;line-height:38px;}
+/*A,C타입*/
+.type_a .type_c_bg,.type_c .type_c_bg{padding:28px 25px 1px;border-radius:10px;}
+.type_a .efreq_top_wrap,.type_c .efreq_top_wrap {margin:0 18px;padding: 13px 12px 20px;}
+.type_a .efreq_top_wrap{padding-bottom:0;}
+
+/*상단bg*/
+/*C타입*/
+.type_a .type_c_bg{background-color:#a6d2ff;}
+.type_a.night .type_c_bg{background-color:#8ea4f6;}
+.type_c .type_c_bg{background-color:rgba(255,255,255,0.3);}
+.type_a .efreq_texbg_wrap:after,.type_c .efreq_texbg_wrap:after{position:absolute;content:"";top:0;left:0;width:100%;height:70%;z-index:-1;}
+
+.type_a .efreq_texbg_wrap:after{background-color:#a6d2ff;}
+.type_c .efreq_texbg_wrap:after{background-color:#a3d5cf;}
+
+/*night*/
+.type_a.night .efreq_texbg_wrap:after{background-color:#8ea4f6;}
+.type_c.night .efreq_texbg_wrap:after{background-color:#335b76;}
+
+/*저녁타입일떄 텍스트색상변경*/
+/*C타입*/
+.type_c .efreq_top_wrap {color:#0f2e2d;}
+.type_c.night .efreq_top_wrap,
+.type_c.night .period_status_bar_wrap .title .d_day,
+.type_c.night .period_status_bar_wrap .title,
+.type_c.night .change_period_notice_wrap .case,
+.type_c.night .efreq_cup_count_wrap span.text{color:#ffffff;}
+.type_c.night .efreq_func_btn_wrap ul li a{color:#3f4a52;}
+/*A타입*/
+.type_a .efreq_top_wrap{color:#0f2e2d;}
+
+/***** 현황판(status) 상단 박스-START *****/
+/*현황판 상단 히스토리,선물하기버튼*/
+.efreq2020summer .efreq_func_btn_wrap{margin-top:10px;}
+.efreq2020summer .efreq_func_btn_wrap ul{display:table;width:100%;}
+.efreq2020summer .efreq_func_btn_wrap ul li{display:table-cell;}
+.efreq2020summer .efreq_func_btn_wrap ul li.padding{width:1%;border:none;background:none;}
+.efreq2020summer .efreq_func_btn_wrap ul li a{width:100%;height:100%;font-size: 14px;}
+.efreq2020summer .efreq_func_btn_wrap ul li a img{width:20px;height:auto;padding-top:1px;}
+/*B타입*/
+.type_b .efreq_func_btn_wrap{margin-bottom:16px;}
+.type_b .efreq_func_btn_wrap ul li{padding:5px 50px;}
+.type_b .efreq_func_btn_wrap ul li.padding{display:none;}
+.type_b .efreq_func_btn_wrap ul li a{color:#1e1e1e;font-weight:bold;line-height:22px;}
+
+/*A,C타입*/
+.type_a .efreq_func_btn_wrap,.type_c .efreq_func_btn_wrap{margin-top:15px;margin-bottom:15px;}
+.type_c .efreq_func_btn_wrap ul{display:table;width:100%;}
+.type_c .efreq_func_btn_wrap ul li{border:none;background:none;text-align:center;}
+.type_c .efreq_func_btn_wrap ul li:first-child{position:relative;}
+.type_c .efreq_func_btn_wrap ul li:first-child:after{position:absolute;content:"";top:0;right:0;width:1px;height:75%;}
+.type_c .efreq_func_btn_wrap ul li a{font-weight:normal;}
+.type_a .efreq_func_btn_wrap ul li a,.type_c .efreq_func_btn_wrap ul li a{line-height:22px;}
+
+/*A타입*/
+.type_a .efreq_func_btn_wrap ul li:first-child:after{background-color:rgba(0,0,0,0.3);}
+.type_a .efreq_func_btn_wrap ul li a{display: inline-block;padding: 9px 0;color:#6f7473;border: 1px solid rgba(0,0,0,0.3);border-radius: 3px;background: rgba(255,255,255,0.5);text-align: center;}
+/*C타입*/
+.type_c .efreq_func_btn_wrap ul li:first-child:after{background-color:rgba(0,0,0,0.3);}
+.type_c .efreq_func_btn_wrap ul li a{color:#606e6c;}
+
+/*현황판 상단 교환기간*/
+/*전체,스티커모드버튼 클릭시 height길이 조절*/
+.change_period_wrap{/*height:100%;*/transition: all ease 0.5s 0s;opacity:1;}
+.change_period_wrap.sticker_mode{height:0;opacity:0;display:none;}
+.change_period_wrap.all_mode{height:100%;opacity:1;}
+
+.period_status_bar_wrap{font-size:16px;letter-spacing:-0.2px;}
+.period_status_bar_wrap .title{display:inline-block;width:100%;}
+.period_status_bar_wrap .title .d_day{float:right;font-size:16px;line-height:18px;}
+.period_status_bar_wrap .period_status_bar{width:100%;height:6px;border-radius:5px;}
+/*B타입*/
+.type_b .period_status_bar_wrap{color:#5c5c5c;}
+.type_b .period_status_bar_wrap .title .d_day{color:#00ae66;font-weight:bold;}
+.type_b .period_status_bar_wrap .period_status_bar{margin:15px 0 0;background:linear-gradient(to left, #dcdcdc 60%, #00ae66 60%);}
+
+/*A,C타입*/
+/*.type_a .change_period_wrap,.type_c .change_period_wrap{padding-top:15px;}*/
+.type_a .period_status_bar_wrap .title .bar_wrap,
+.type_c .period_status_bar_wrap .title .bar_wrap{margin-top:8px;}
+.type_a .period_status_bar_wrap .title .bar_wrap:after,
+.type_c .period_status_bar_wrap .title .bar_wrap:after{content:"";display:block;clear:both;}
+.type_a .period_status_bar_wrap .title .d_day,
+.type_c .period_status_bar_wrap .title .d_day{font-weight:normal;line-height:1;}
+.type_a .period_status_bar_wrap .period_status_bar,
+.type_c .period_status_bar_wrap .period_status_bar{display:inline-block;vertical-align:middle;width:80%;}
+/*A타입*/
+.type_a .period_status_bar_wrap .title .d_day{color:#0f2e2d;}
+.type_a .period_status_bar_wrap .period_status_bar{background:rgba(0,0,0,0.3);}
+/*C타입*/
+.type_c .period_status_bar_wrap .title .d_day{color:#5e7a7a;}
+.type_c .period_status_bar_wrap .period_status_bar{background:rgba(88,151,150,0.5);}
+
+/*현황판 상단 교환기간 하단 안내문구*/
+.change_period_notice_wrap{height:100%;}
+.change_period_notice_wrap .case{text-align:center;padding:22px 0 8px;}/*20190905 수정*/
+.change_period_notice_wrap .case .title{padding-bottom:17px;font-size:24px;font-weight:bold;letter-spacing:-0.2px;line-height:1;}
+.change_period_notice_wrap .case .text{font-size:14px;letter-spacing:-0.2px;line-height:22px;}
+.change_period_notice_wrap .case .text.twogift{color:#000000;}
+/*B타입*/
+.type_b .change_period_notice_wrap .case .title{color:#1e1e1e;}
+.type_b .change_period_notice_wrap .case .text{color:#5c5c5c;}
+.type_b .change_period_notice_wrap .case .text.twogift{color:#000000;}
+/*A,C타입*/
+.type_a .change_period_notice_wrap .case .text,.type_c .change_period_notice_wrap .case .text{font-size:16px;line-height:1.43; color: #121212;}
+.type_a .change_period_notice_wrap .case .text .text-red {color: #e40031}
+.type_a .change_period_notice_wrap .case .text strong,.type_c .change_period_notice_wrap .case .text strong{display:block;padding-top:10px;font-size:28px;}
+
+/*현황판 상단 스티커 현황*/
+.efreq_cup_count_wrap{position:relative;/*top:-10px;*/display:table;width:100%;z-index:15;padding:15px 0;text-align:center;}/*20190905 수정 */
+.efreq_cup_count_wrap ul.outer_ul{display:inline-block;margin:0 auto;}
+.efreq_cup_count_wrap ul.outer_ul li{position:relative;display:table-cell;vertical-align:bottom;}
+.efreq_cup_count_wrap ul li.arrow_img_area,
+.efreq_cup_count_wrap ul li.plus_img_area,
+.efreq_cup_count_wrap ul li.or_img_area{vertical-align:middle;}
+.efreq_cup_count_wrap ul.outer_ul li .cup_img,
+.efreq_cup_count_wrap ul.outer_ul li .gift_img{position:relative;}
+.type_b .efreq_cup_count_wrap span.number,
+.type_b .efreq_cup_count_wrap span.text,
+.type_a .efreq_cup_count_wrap ul.outer_ul li.gift_img_area .text,
+.type_c .efreq_cup_count_wrap ul.outer_ul li.gift_img_area .text{position:absolute;left:50%;transform:translateX(-50%);width:130%;}
+.efreq_cup_count_wrap span.number{font-size:18px;color:#1e1e1e;}
+.efreq_cup_count_wrap span.text{font-size:15px;letter-spacing:0.5px;}
+.efreq_cup_count_wrap span.text br{display:none;}
+.efreq_cup_count_wrap .refresh_btn {position: absolute;}
+
+.type_b .efreq_cup_count_wrap .refresh_btn{top: 5%;right: 1%;}
+/*B타입*/
+/*li갯수에 따른 +,>아이콘 가로길이 조절 */
+/*증정품2개*/
+.type_b .efreq_cup_count_wrap ul li.plus_img_area,.type_b .efreq_cup_count_wrap ul li.arrow_img_area,.type_b .efreq_cup_count_wrap ul li.or_img_area{width:30px;}
+.type_b .efreq_cup_count_wrap .refresh_btn{top:5%;right:1%;}
+.type_b .efreq_cup_count_wrap ul.outer_ul li .cup_img img,.type_b .efreq_cup_count_wrap ul.outer_ul li .gift_img img{width:90%;}
+/*C타입*/
+.type_c .efreq_cup_count_wrap ul li{width:15%;}
+.type_c .efreq_cup_count_wrap ul li.arrow_img_area,
+.type_c .efreq_cup_count_wrap ul li.plus_img_area{width:7%;}
+
+/*B타입*/
+.type_b .efreq_cup_count_wrap{background-color:#f1f1f1;}
+.type_b .efreq_cup_count_wrap ul.outer_ul li .cup_img,
+.type_b .efreq_cup_count_wrap ul.outer_ul li .gift_img{margin-bottom:30px;}
+.type_b .efreq_cup_count_wrap ul.outer_ul li ul li{position:relative;}
+.type_b .efreq_cup_count_wrap span.number,.type_b .efreq_cup_count_wrap span.text{bottom:0;}
+.type_b .efreq_cup_count_wrap span.number{color:#1e1e1e;}
+.type_b .efreq_cup_count_wrap span.text{color:#5c5c5c;}
+
+/*A타입*/
+.type_a .efreq_cup_count_wrap span.text{font-size:18px;color:rgba(100, 120, 149,0.8);}
+
+/*C타입*/
+.type_c .efreq_cup_count_wrap span.text{color:#387c7b;}
+/***** 현황판(status) 상단 박스-END *****/
+
+/***** 현황판(status) 스티커 위치-START *****/
+/*.sticker_bg_slider li{float:left;}*/
+
+/* 200513 : 2020 summer 스티커 위치 */
+.efreq_sticker_ico .box_mission_cup li {position: absolute;}
+.efreq_sticker_ico .box_mission_cup li.sticker1 {top: 11%; left: 30.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker2 {top: 11%; left: 45.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker3 {top: 11%; left: 61.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker4 {top: 34.5%; left: 14.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker5 {top: 34.5%; left: 30%;}
+.efreq_sticker_ico .box_mission_cup li.sticker6 {top: 34.5%; left: 45.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker7 {top: 34.5%; left: 61.1%;}
+.efreq_sticker_ico .box_mission_cup li.sticker8 {top: 34.5%; left: 76.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker9 {top: 48%; left: 14.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker10 {top: 48%; left: 30%;}
+.efreq_sticker_ico .box_mission_cup li.sticker11 {top: 48%; left: 45.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker12 {top: 48%; left: 61.1%;}
+.efreq_sticker_ico .box_mission_cup li.sticker13 {top: 48%; left: 76.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker14 {top: 61.5%; left: 14.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker15 {top: 61.5%; left: 30%;}
+.efreq_sticker_ico .box_mission_cup li.sticker16 {top: 61.5%; left: 45.5%;}
+.efreq_sticker_ico .box_mission_cup li.sticker17 {top: 61.5%; left: 61.1%;}
+	
+.efreq_sticker_ico .box_mission_cup, .efreq_sticker_ico .box_normal_cup{overflow:hidden;}
+.efreq_sticker_ico .box_mission_cup li:nth-child(-n+4) {width: 8.3%;}
+.efreq_sticker_ico .box_mission_cup li:nth-child(n+4) {width: 8.4%;}
+/*
+개발 쪽에서 ul 구조 변경 요청 css 수정
+.efreq_sticker_ico .box_mission_cup, .efreq_sticker_ico .box_normal_cup{overflow:hidden;}
+.efreq_sticker_ico .box_mission_cup{width:40.94%;margin:13.92% auto 0;}
+.efreq_sticker_ico .box_mission_cup li{width:23.3%;margin-right:15%;}
+.efreq_sticker_ico .box_mission_cup li:last-child{margin-right:0;}
+.efreq_sticker_ico .box_normal_cup{margin:24.7% auto 0;width:70.7%;}
+.efreq_sticker_ico .box_normal_cup li{width:12.6%;margin-right:9.06%;margin-bottom:10.16%;}
+.efreq_sticker_ico .box_normal_cup li:nth-child(5n+0){margin-right:0;}
+*/
+/* e.200406*/
+/***스티커 위치(타입 A)***/
+.type_a .efreq_sticker_ico li img{max-width:100%;height:auto;width:70px;}
+
+/***스티커 위치(타입 B)***/
+/*현황판 확장(스티커5개 추가) 스티커 전체 위치 이동*/
+.type_b .sticker_bg_wrap.sticker_plus_5 .efreq_sticker_ico{top:-6.3%;}
+
+/*스페셜 빨강컵*/
+.type_b .efreq_sticker_ico li.sticker1{margin: -19% auto auto -25%;}
+.type_b .efreq_sticker_ico li.sticker2{margin: -19% auto auto -11.8%;}
+.type_b .efreq_sticker_ico li.sticker3{margin: -19% auto auto 1%;}
+.type_b .efreq_sticker_ico li.sticker4{margin: -19% auto auto 14.2%;}
+.type_b .efreq_sticker_ico li.sticker5{margin: -19% auto auto 27.3%;}
+
+/*일반 초록컵*/
+.type_b .efreq_sticker_ico li.sticker6{margin: 0 auto auto 27.3%;}
+.type_b .efreq_sticker_ico li.sticker7{margin: 0 auto auto 14.2%;}
+.type_b .efreq_sticker_ico li.sticker8{margin: 0 auto auto 1%;}
+.type_b .efreq_sticker_ico li.sticker9{margin: 0 auto auto -11.8%;}
+.type_b .efreq_sticker_ico li.sticker10{margin: 0 auto auto -25%;}
+
+.type_b .efreq_sticker_ico li.sticker11{margin: 10% auto auto -37.5%;}
+
+.type_b .efreq_sticker_ico li.sticker12{margin: 20% auto auto -25%;}
+.type_b .efreq_sticker_ico li.sticker13{margin: 20% auto auto -11.8%;}
+.type_b .efreq_sticker_ico li.sticker14{margin: 20% auto auto 1%;}
+.type_b .efreq_sticker_ico li.sticker15{margin: 20% auto auto 14.2%;}
+.type_b .efreq_sticker_ico li.sticker16{margin: 39% auto auto 27%;}
+
+.type_b .efreq_sticker_ico li.sticker17{margin: 39% auto auto 14.2%;}
+.type_b .efreq_sticker_ico li.sticker18{margin: 39% auto auto 1%;}
+.type_b .efreq_sticker_ico li.sticker19{margin: 39% auto auto -11.8%;}
+.type_b .efreq_sticker_ico li.sticker20{margin: 39% auto auto -25%;}
+/*현황판 확장(스티커5개 추가)*/
+.type_b .efreq_sticker_ico li.sticker21{margin: 58.5% auto auto -25%;}
+.type_b .efreq_sticker_ico li.sticker22{margin: 58.5% auto auto -12%;}
+.type_b .efreq_sticker_ico li.sticker23{margin: 58.5% auto auto 1%;}
+.type_b .efreq_sticker_ico li.sticker24{margin: 58.5% auto auto 14%;}
+.type_b .efreq_sticker_ico li.sticker25{margin: 58.5% auto auto 27%;}
+
+/*현황판 확장 버전2(스페셜,일반 혼합)*/
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker16{margin: 39% auto auto 27%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker17{margin: 39% auto auto 14%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker18{margin: 39% auto auto 1%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker19{margin: 39% auto auto -12%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker20{margin: 39% auto auto -25%;}
+
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker21{margin: 58.5% auto auto -25%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker22{margin: 58.5% auto auto -12%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker23{margin: 58.5% auto auto 1%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker24{margin: 58.5% auto auto 14%;}
+.type_b.sticker_plus_5.ver2 .efreq_sticker_ico li.sticker25{margin: 58.5% auto auto 27%;}
+
+/***스티커 위치(타입 C)***/
+/*스페셜 빨강컵*/
+.type_c .efreq_sticker_ico li img{max-width:100%;height:auto;width:70px;}
+
+.type_c .efreq_sticker_ico li.sticker1{margin: -29% auto auto -32.5%;}
+.type_c .efreq_sticker_ico li.sticker2{margin: -29.5% auto auto -16.5%;}
+.type_c .efreq_sticker_ico li.sticker3{margin: -28.6% auto auto 0;}
+.type_c .efreq_sticker_ico li.sticker4{margin: -26% auto auto 16.5%;}
+.type_c .efreq_sticker_ico li.sticker5{margin: -22% auto auto 34%;}
+
+/*일반 초록컵*/
+.type_c .efreq_sticker_ico li.sticker6{margin: -5% auto auto 87.3%;width:100%;}
+
+.type_c .efreq_sticker_ico li.sticker7{margin: 10.5% auto auto 31%;}
+.type_c .efreq_sticker_ico li.sticker8{margin: 10.5% auto auto 16.5%;}
+.type_c .efreq_sticker_ico li.sticker9{margin: 9.5% auto auto 3%;}
+.type_c .efreq_sticker_ico li.sticker10{margin: 9.5% auto auto -11%;}
+.type_c .efreq_sticker_ico li.sticker11{margin: 11.5% auto auto -24.5%;}
+
+.type_c .efreq_sticker_ico li.sticker12{margin: 21.5% auto auto -37%;}
+.type_c .efreq_sticker_ico li.sticker13{margin: 40.5% auto auto -40%;}
+.type_c .efreq_sticker_ico li.sticker14{margin: 54% auto auto -31%;}
+.type_c .efreq_sticker_ico li.sticker15{margin: 62% auto auto -16%;}
+.type_c .efreq_sticker_ico li.sticker16{margin: 61% auto auto -1.3%;}
+
+.type_c .efreq_sticker_ico li.sticker17{margin: 61% auto auto 13.3%;}
+/*c타입일때 갯수축소*/
+.type_c .efreq_sticker_ico li.greencup13,
+.type_c .efreq_sticker_ico li.greencup14,
+.type_c .efreq_sticker_ico li.greencup15{display:none;}
+
+/***스티커 위치(타입 C-특별이벤트 스티커 5개위치)***/
+.type_c .efreq_sticker_ico.special_five li.sticker1{margin: -9% auto auto -20.5%;}
+.type_c .efreq_sticker_ico.special_five li.sticker2{margin: 9% auto auto -19.5%;}
+
+.type_c .efreq_sticker_ico.special_five li.sticker3{margin: 16.5% auto auto 2.5%;width:auto;}
+.type_c .efreq_sticker_ico.special_five li.sticker4{margin: 48.5% auto auto 28.5%;}
+.type_c .efreq_sticker_ico.special_five li.sticker5{margin: 53% auto auto 8%;}
+
+/*현황판 감추기 버튼*/
+.sticker_bg_wrap p.btn_efreq_bghide{position:absolute;bottom:3.5%; right:5%;}
+
+/*특별이벤트 참여 취소하기 버튼*/
+.special_event_cancel_btn{position:absolute;left:50%;bottom:50%;width:200px;margin-bottom:-75%;padding:8px 0;background-color:rgba(114, 168, 186, 0.7);border:3px solid #ffffff;border-radius:30px;color:#ffffff;text-align:center;font-size:15px;transform:translate(-50%,-50%);-wekkit-transform:translate(-50%,-50%)}
+/***** 현황판(status) 스티커 위치-END *****/
+
+/*현황판 슬라이드 pager*/
+.sticker_bg_wrap .bx-wrapper { position: relative; margin: 0 auto; padding: 0;}
+.sticker_bg_wrap .bx-wrapper .bx-pager .bx-pager-item{vertical-align:middle;}
+.sticker_bg_wrap .bx-wrapper .bx-prev { background:url("../../upload/common/img/util/efreq/19_winter_sticker_slider_arrow_l.png") no-repeat; background-size:100% auto; height:55px; width:55px;top: 50%;transform: translateY(-50%); z-index:7; }
+.sticker_bg_wrap .bx-wrapper .bx-prev:hover { background:url("../../upload/common/img/util/efreq/19_winter_sticker_slider_arrow_l_on.png") no-repeat; background-size:100% auto;}
+.sticker_bg_wrap .bx-wrapper .bx-next { background:url("../../upload/common/img/util/efreq/19_winter_sticker_slider_arrow_r.png") no-repeat; background-size:100% auto; height:55px; width:55px;top: 50%;transform: translateY(-50%); z-index:7; }
+.sticker_bg_wrap .bx-wrapper .bx-next:hover { background:url("../../upload/common/img/util/efreq/19_winter_sticker_slider_arrow_r_on.png") no-repeat; background-size:100% auto;}
+.sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a { position:relative;display: block; margin:5px;width:18px; height:18px; box-sizing: border-box; border-radius:15px; background:rgba(0,0,0,0.2); }
+
+/*타입별 pager색상변경*/
+.type_a .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a.active{padding:3px;background:transparent;border:4px solid #ff6679;}
+.type_b .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a.active,
+.type_c .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a.active {background:rgba(31, 97, 136,0.8);}
+
+/*현황판 하단 버튼3개*/
+.efreq_btns_wrap { height:30px; margin:17px auto 0; width:640px; /*width:100%;*/ }
+.efreq_func_btns { float:left; margin-left:-5px;width:100%;}
+.efreq_func_btns:after { clear:both; content:""; display:block; }
+.efreq_func_btns li { border-radius:3px; float:left; margin-left:5px; }
+.efreq_func_btn1 { background:#222; border:1px solid #222; height:28px; width:130px; }
+.efreq_func_btn1 a {height:20px; color:#fff;display:block;font-size:12px;font-weight:bold;/* height:100%; */text-align:center;width:100%;padding-top: 8px;} /*20180427 수정*/
+.efreq_func_btn2 { background:#006e25; border:1px solid #006e25; height:28px; width:164px; }
+.efreq_func_btn2 a {height:20px; color:#fff;display:block;font-size:12px;font-weight:bold;/* height:100%; */text-align:center;width:100%;padding-top: 8px;} /*20180427 수정*/
+.efreq_func_btn3.efreq_func_btn1 { background-color: #bd9b60; border-color: #bd9b60} /*2018winter 20181005 추가*/
+/*현황판 하단 버튼3개 옆 sns버튼*/
+.efreq_sns_btns { float:right; height:30px; text-align:right; }
+.efreq_sns_btns:after { clear:both; content:""; display:block; }
+.efreq_sns_btns li { position: absolute;top: 0;right: 0;width: 28px; }
+/**********#####===== 현황판(status)-END =====#####**********/
+
+
+/**********#####===== 공통화면-START =====#####**********/
+/**/
+.pop_efreq_guide_add.pop_efreq_guide_add_head{margin-top: 10px;}
+.pop_efreq_guide_add { color:#666; font-size:14px; line-height:1.4; margin-top:5px; padding-left:10px; text-indent:-10px; text-align:left; }
+strong.c063 {color:#063}
+/**/
+.efreq_tbl_wrap { margin-top:30px; width:100%; }
+.efreq_tbl_ttl { color:#222; font-size:14px; font-weight:bold; }
+.efreq_history_tbl { border-top:1px solid #222; margin-top:15px; width:100%; }
+.efreq_history_tbl thead tr th { border-bottom:1px solid #222; color:#222; font-size:12px; font-weight:bold; padding:13px 0; text-align:center; vertical-align:middle; }
+.efreq_history_tbl tbody tr td { border-bottom:1px solid #ddd; color:#666; font-size:12px; background:#f4f4f2; font-weight:normal; padding:9px 0; text-align:center; vertical-align:middle; }
+
+/**/
+.pop_efreq_tbl_icon_wrap { display:inline-block; text-align:center; width:100%; }
+
+.pop_tbl_cup_red_bg { display:inline-table; vertical-align: bottom; height:auto; margin-right:5px; position:relative; width:49px; } 
+.pop_tbl_cup_red_bg img { width:100%; } /* 2018winter 수정 20181010 */
+.pop_tbl_cup_red_bg span { background:#298e88; border-radius:12px; color:#fff; display:block; font-size:12px; font-style:normal; height:22px; line-height:0; padding:11px 7.5px; position:absolute;right:13px;top: 5px; transform: translateX(50%); box-sizing: border-box; }
+
+.pop_tbl_cup_green_bg {display:inline-table; vertical-align: bottom; margin-left: 4px;position:relative;width: 49px;} 
+.pop_tbl_cup_green_bg img { width:100%; }
+.pop_tbl_cup_green_bg span { background:#298e88; border-radius:12px; color:#fff; display:block; font-size:12px; font-style:normal; height:22px; line-height:0; padding:11px 7.5px; position:absolute; right:13px;top: -6px; transform: translateX(50%);  box-sizing: border-box;} 
+
+i.pop_icon_plus { display:inline-table; margin-top:23px; height:13px; width:13px; vertical-align:top; }  
+i.pop_icon_plus img { width:100%; }
+
+i.pop_icon_arrow { display:inline-table; margin-top:25px; height:13px; width:13px; vertical-align:top; }
+i.pop_icon_arrow img { width:100%; }
+
+.btn_barcode_close_wrap { height:30px; margin-top:20px; width:100%; }
+.btn_barcode_close { background:#222; border-radius:3px; height:30px; margin:0 auto; width:60px; }
+.btn_barcode_close a { color:#fff; display:block; font-size:12px; font-weight:bold; line-height:30px; text-align:center; width:100%; }
+
+.pop_sticker_bg_sel { border-radius:3px; box-shadow:3px 3px 3px #444; display:none; left:50%; margin-left:-240px; position:absolute; top:333px; width:480px; z-index:99; }
+.pop_sticker_bg_sel { background:#8c8279; border-top-left-radius:3px; border-top-right-radius:3px; height:0; position:absolute; }
+.pop_sticker_bg_sel h5 { color:#fff; font-size:16px; font-weight:bold; line-height:56px; text-indent:30px; }
+.pop_sticker_bg_sel p.btn_close_pop { height:22px; position:absolute; right:20px; top:17px; width:22px; }
+.pop_sticker_bg_sel p.btn_close_pop a { background:url("../img/util/efreq/btn_close_pop.png") no-repeat; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+.pop_sticker_bg_sel p.btn_close_pop a:hover { transform:rotate(180deg); }
+.pop_sticker_bg { background:#fff; border-bottom-left-radius:3px; border-bottom-right-radius:3px; overflow:hidden; padding:30px 15px; }
+
+.pop_sticker_slider_wrap { margin:0 auto; width:450px; }
+.pop_sticker_slider { height:310px; }
+.pop_sticker_slider:after { clear:both; content:""; display:block; }
+.pop_sticker_slider li { float:left; height:308px; width:220px !important; }
+.pop_sticker_slider li img { width:100%; }
+
+.pop_sticker_slider_wrap .bx-viewport { overflow:visible !important; }
+
+.chked_dimm { background:#000; display:none; height:100%; left:0; opacity:0.8; filter: alpha(opaicty=80); position:absolute; top:0; width:100%; z-index:2; }
+
+.pop_sticker_bg .bx-wrapper .bx-prev { background:url("../img/util/efreq/mscard_arrow_l_off.png") no-repeat; background-size:100% auto; height:55px; left:0; width:55px; z-index:10; }
+.pop_sticker_bg .bx-wrapper .bx-prev:hover { background:url("../img/util/efreq/mscard_arrow_l_on.png") no-repeat; }
+.pop_sticker_bg .bx-wrapper .bx-next { background:url("../img/util/efreq/mscard_arrow_r_off.png") no-repeat; background-size:100% auto; height:55px; width:55px; z-index:10; }
+.pop_sticker_bg .bx-wrapper .bx-next:hover { background:url("../img/util/efreq/mscard_arrow_r_on.png") no-repeat; }
+
+.pop_sticker_bg .bx-wrapper .bx-pager.bx-default-pager a { background:url("../img/util/efreq/pager_off.png") no-repeat; background-size:100% auto; height:15px; width:15px; }
+.pop_sticker_bg .bx-wrapper .bx-pager.bx-default-pager a.active { background:url("../img/util/efreq/pager_on.png") no-repeat; background-size:100% auto; height:15px; width:15px; }
+
+.btn_pop_sicker_select { height:30px; margin-top:20px; }
+.btn_pop_sicker_select ul { height:30px; margin:0 auto; width:125px; }
+.btn_pop_sicker_select ul li { border-radius:3px; float:left; width:60px; }
+.btn_pop_sicker_select ul li a { display:block; font-size:12px; font-weight:bold; height:100%; line-height:30px; text-align:center; width:100%; }
+.btn_pop_sicker_select ul li.btn_pop_sicker1 { background:#e2c383; border:1px solid #bb9f65; height:28px; margin:0; width:58px; }
+.btn_pop_sicker_select ul li.btn_pop_sicker1 a { color:#222; }
+.btn_pop_sicker_select ul li.btn_pop_sicker2 { background:#222; border:1px solid #222; height:28px; margin-left:5px; width:58px; }
+.btn_pop_sicker_select ul li.btn_pop_sicker2 a { color:#fff; }
+
+.pop_sticker_bg_dimm { background:#000; border-radius:3px; height:100%; left:0; opacity:0.5; filter:alpha(opacity=0.5); position:absolute; top:0; width:100%; z-index:2; }
+i.icon_chked { background:url("../img/util/efreq/icon_chked_off.png") no-repeat; background-size:100% auto; display:block; height:54px; left:50%; margin:-27px 0 0 -27px; position:absolute; top:50%; width:54px; z-index:3; }
+i.icon_chked.selected { background:url("../img/util/efreq/icon_chked_on.png") no-repeat; background-size:100% auto; }
+
+/**/
+.esticker_seding_wrap,
+.esticker_done_wrap { margin-top:15px; }
+.esticker_seding_wrap:after,
+.esticker_done_wrap:after { clear:both; content:""; display:block; }
+
+.esticker_seding_barcode .sourceFreqBarcode { line-height: 26px; }
+.esticker_seding_left { background:#f4f4f2; border-radius:3px; float:left; height:343px; padding:30px 20px; width:365px; }
+.esticker_seding_ttl { color:#222; font-size:18px; font-weight:bold; margin-bottom:10px; text-align:center; width:100%; letter-spacing:-1px; white-space: nowrap; }
+.esticker_seding_txt { color:#222; font-size:14px; margin-bottom:15px; text-align:center; width:100%; letter-spacing:-1px; }
+
+.esticker_seding_barcode { background:#fff; border-radius:3px; color:#666; display:table; font-size:14px; height:80px; width:100%; }
+.esticker_seding_barcode p { display:table-cell; position:relative; text-align:right; vertical-align:middle; }
+.esticker_seding_barcode p img { height:44px; left:20px; margin-top:-22px; position:absolute; top:50%; width:149px; }
+span.limitBarcode { font-size: 10px !important }
+
+.efreq_complete { background:#000; border-radius:5px; height:100%; left:0; opacity:0.7; filter:alpha(opacity=0.7); position:absolute; top:0; width:100%; z-index:8; }
+.efreq_complete img { margin:20% auto 0; }
+
+/*공통화면 다른 페이지로 이동 select*/
+.esticker_sel { background:url("../img/util/sbox_arrow_down.png") 95% 10px no-repeat #fff; border:1px solid #ddd; border-radius:3px; height:26px; position:absolute; right:30px; top:20px; width:202px; }
+.esticker_sel label { color:#444; font-size:12px; font-weight:bold; left:5px; position:absolute; top:8px; }
+.esticker_sel select { height:26px; opacity:0; filter:alpha(opacity=0); width:100%; }
+/**/
+.esticker_seding_barcode p span { margin-right:20px; }
+/**/
+.redcup_sel { background:url("../img/util/sbox_arrow_down.png") 90% 10px no-repeat #fff; border:1px solid #ddd; border-radius:3px; height:26px; left:90px; position:absolute; top:69px; width:60px; }
+.redcup_sel label { color:#444; font-size:12px; font-weight:bold; left:5px; position:absolute; top:8px; }
+.redcup_sel select { height:26px; opacity:0; filter:alpha(opacity=0); width:100%; }
+.greencup_sel { background:url("../img/util/sbox_arrow_down.png") 90% 10px no-repeat #fff; border:1px solid #ddd; border-radius:3px; height:26px; left:251px; position:absolute; top:69px; width:60px; }
+.greencup_sel label { color:#444; font-size:12px; font-weight:bold; left:5px; position:absolute; top:8px; }
+.greencup_sel select { height:26px; opacity:0; filter:alpha(opacity=0); width:100%; }
+/**/
+.esticker_seding_right { background:#f4f4f2; border-radius:3px; float:right; height:303px; padding:30px 20px 70px 20px; width:365px; }
+/**/
+.btn_esticker_seding { height:40px; margin-top:20px; }
+.btn_esticker_seding p { background:#666; border-radius:3px; height:40px; margin:0 auto; }
+.btn_esticker_seding p a { color:#fff; display:block; font-size:12px; font-weight:bold; height:100%; line-height:40px; text-align:center; width:100%; }
+
+/********** 이용안내(guide) -START **********/
+/* 이용안내 */
+.efreq_guide_ttl{background:#fff; border:1px solid #ddd; border-radius:3px; height:110px; padding:30px; position:relative; width:92%;}
+.efreq_guide_ttl header{border-bottom:1px solid #ddd; height:38px; width:100%;}
+.efreq_guide_ttl header h5{color:#222; float:left; font-size:18px; font-weight:bold;}
+.efreq_guide_ttl article{color:#444; float:left; font-size:14px; line-height:1.4; margin-top:28px;}
+.efreq_guide_ttl article strong{color:#006633; font-size:16px; font-weight:normal; line-height:1.4;}
+.efreq_guide_list{margin-top:60px; width:100%;}
+.efreq_guide_type1{background:#f4f4f2; border-radius:3px; margin-bottom:10px; padding:30px 0 0 0; width:100%;}
+.efreq_guide_type_dl dt{height:50px; position:relative;}
+.efreq_guide_type_dl dt strong{color:#222; font-size:18px; left:30px; position:absolute;}
+.efreq_guide_type_dl dt span.arrow{background:url("../img/util/reward/btn_arrow_up.png") 0 0 no-repeat; background-size:100% auto; display:block; height:42px; position:absolute; right:30px; top:-10px; width:42px;}
+.efreq_guide_type_dl dt span.arrow a{display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%;}
+.efreq_guide_type_dl dt.on span.arrow{display:block; background: url("../img/util/reward/btn_arrow_down.png") 0 0 no-repeat; width:42px; height:42px; position:absolute; right:30px; top:-10px;}
+.efreq_guide_type_dl dd{border-top:1px solid #eceae5; margin:0 30px; padding:30px 0; position:relative;}
+.efreq_guide_type_dl > dd > p{color:#666; font-size:14px; line-height:1.4;}
+.efreq_guide_type_dl dd p strong{color:#444; font-size:16px; font-weight:normal; line-height:1.4;}
+.efreq_guide_type_dl dd p strong.efreq_term_ttl{color:#006633; font-size:14px; font-weight:bold;}
+.efreq_guide_type_dl dd p span.add_txt{font-size:12px;}
+/*e-프리퀀시란*/
+.egt1 dd p { width:80%; }
+.egt2 dd strong { display:block; margin-bottom:5px; }
+.egt2 dd p { margin-bottom:15px; padding-right:22%; position:relative; width:78%; }
+
+.efreq_guide_type2 { background:#fff; border:1px solid #ddd; border-radius:3px; margin-bottom:10px; padding:30px 0 0 0; width:100%; }
+/*e-프리퀀시 발급방법-회원*/
+.ms_reward_mem_list { margin-top:50px; width:100%; }
+.ms_reward_mem_list strong { color:#222; display:block; font-size:16px; margin:0 0 20px; }
+
+.ms_reward_mem_list_each figure { float:left; width:15%; }
+.ms_reward_mem_list_each figure.mat_minus { margin-top:-90px; }
+.ms_reward_mem_list_each figure img { height:auto; width:114px; }
+
+.ms_reward_mem_list_each .ms_reward_mem_list_txt { color:#666; float:left; font-size:14px; line-height:1.4; margin-left:5%; padding-top:10px; width:80%; }
+.ms_reward_mem_list_each .ms_reward_mem_list_txt strong.ms_reward_mem_list_ttl { color:#006633; font-weight:bold; font-size:14px; margin:0 0 10px; }
+.ms_reward_mem_list_each .ms_reward_mem_list_txt span.ms_reward_mem_list_ttl_tl { color:#006633; display:block; margin:10px 0; }
+/*e-스티커 적립현황 확인하기*/
+.sticker_save_chk_wrap { margin:30px 0 30px 0; padding:0; width:92%; }
+.sticker_save_chk_wrap strong { font-size:16px; }
+.sticker_save_chk_cont { margin-top:10px; }
+.sticker_save_chk_cont:after { clear:both; content:""; display:block; }
+.sticker_save_chk_cont figure { float:left; }
+.sticker_save_chk_cont p { color:#666; float:left; font-size:14px; line-height:1.6; margin:0; }
+.sticker_save_chk_cont p strong.sticker_save_chk_ttl { color:#006633; font-size:14px; font-weight:bold; line-height:1.8; }
+
+.sticker_save_chk_list { width:100%; }
+.sticker_save_chk_list li { background:url("../img/util/efreq/bullet_grey.gif") 0 8px no-repeat; color:#666; font-size:14px; line-height:1.4; margin-bottom:15px; padding-left:9px; word-break:break-all; }
+/*회원계정에 등록된 바코드 확인하기 버튼*/
+a.btn_guide_barcode_chk,
+/*적립된 e스티커 조회하기*/
+a.btn_guide_sticker_chk { border-bottom:1px dotted #000; color:#000; font-weight:bold; }
+/*완성된 프리퀀시 증정상품 교환방법 앱 이동 버튼*/
+.app_btn_appDown { position:relative; }
+.app_btn_appDown ul { width:100%; }
+.app_btn_appDown ul:after { clear:both; content:""; display:block; }
+.app_btn_appDown li { float:left; margin-left:10px; text-align:center; }
+/********** 이용안내(guide) -END **********/
+    /* 공통 *//*스티커 table*/
+    table.efreq_list_tb { font-size:14px; margin-bottom:30px; width:100%; }
+    table.efreq_list_tb th { border-top:1px solid #333; border-bottom:1px solid #333; color:#222; font-size:12px; font-weight:bold; height:36px; vertical-align:middle; }
+    table.efreq_list_tb td {border-bottom:1px solid #dbdbdb;background:#f4f4f2;color:#666;font-size:12px;padding: 22px 0;vertical-align:middle;line-height:1.4;} 
+    table.efreq_list_tb td.center { text-align:center; }
+    table.efreq_list_tb td.no_data { height:80px; font-weight:bold; text-align:center; }
+    table.efreq_list_tb td p.btn { text-align:center; }
+    table.efreq_list_tb td p.btn a {display:inline-block;padding:8px 8px;text-align:center;font-size:12px;line-height: 14px;color:#ffffff;background:#666;border-radius:3px;}
+    table.efreq_list_tb td p.ico_cup_r {background-size:100% auto; margin-left:40px; height:53px; float:left; position:relative; width:32px; }
+    table.efreq_list_tb td p.ico_cup_g {background-size:100% auto; margin-left:40px; height:53px; float:left; position:relative; width:40px; }
+    table.efreq_list_tb td p.ico_plus { background:url("../img/util/efreq/icon_plus.png") 0 20px no-repeat; margin-left:40px; height:53px; float:left; width:30px; }
+    table.efreq_list_tb td p.ico_arrow { background:url("../img/util/efreq/icon_arrow.png") 0 20px no-repeat; margin-left:35px; height:53px; float:left; width:30px; }
+    table.efreq_list_tb td span.ico_book { margin-left:5px; }
+
+    table.efreq_list_tb td span.num,.sticker_img_wrap span.num { background-color:#00356a; border-radius:20px; color:#fff; display:inline-block; height:21px; line-height:23px; padding:0 6px; position:absolute; right:7px; bottom:0;text-align:center; font-style:normal;white-space:nowrap;font-size:16px; }
+    
+    div.select_box{ height:28px; border:1px solid #ddd; border-radius:3px; width:178px; background:#fff url("../img/coffee/select_arrow.png") no-repeat 96% center; position:absolute; right:30px; top:20px; }
+    div.select_box label.value{ display:block; margin:0 10px 0 10px; text-align:left; height:28px; line-height:28px;text-indent:4px; font-size:14px; color:#444; font-family:"nbg"; overflow:hidden; }
+    div.select_box select{ padding:0 10px 0 10px; position:absolute; left:0; top:0px; height:28px; text-align:left; line-height:28px;font-size:14px; color:#444; border:0;background:#fff; font-family:"nbg"; filter:alpha(opacity=0); opacity:0; z-index:20; width:180px; }
+    
+    i.icon_efreq2 { background:url("../img/util/efreq/icon_efreq2.png") no-repeat; height:90px; position:absolute; right:34px; top:20px; width:87px; }
+    i.icon_giftbox { background:url("../img/util/efreq/icon_giftbox.png") no-repeat; height:62px; position:absolute; right:34px; top:22px; width:66px; }
+    i.icon_barcode { background:url("../img/util/efreq/icon_barcode.png") no-repeat; height:44px; position:absolute; right:8px; top:28px; width:149px; }
+    i.icon_coupon { background:url("../img/util/efreq/icon_coupon.png") no-repeat; height:67px; position:absolute; right:34px; top:95px; width:110px; }
+    i.icon_s_phone {position:absolute; top:20px; }
+    i.icon_s_card { background:url("../img/util/efreq/icon_s_card.png") no-repeat; height:57px; position:absolute; right:37px; top:10px; width:55px; }
+    i.icon_s_cup { background:url("../img/util/efreq/icon_s_cup.png") no-repeat; height:57px; position:absolute; right:37px; top:20px; width:55px; }
+    i.icon_s_box { position:absolute; top:20px;}
+    i.icon_s_cup2 {position:absolute; top:10px;} 
+    
+/*안내사항/유의사항 ul list */
+.gift_detail_notice_wrap.notice_wrap{margin-top:25px;padding-left:20px;padding-right:20px;}
+.notice_wrap p.gift_detail_notice_title { font-size:18px; font-weight:bold; color:#333; margin-bottom:15px; }
+.notice_wrap ul.gift_detail_notice_list li { font-size:14px; color:#5c5c5c; padding-left:10px; margin-bottom:8px; background:url("../img/util/efreq/bullet_grey.gif") 0 5px no-repeat; line-height:1.4; }
+.notice_wrap ul.gift_detail_notice_list li span { font-size:14px; color:#666; }
+
+/*공통타이틀-20200717*/
+.efreq_big_title{font-size:20px; color:#1e1e1e; font-weight:bold;}
+.efreq_title{font-size:18px; color:#1e1e1e;font-weight:bold;}
+.efreq_subtitle{font-size:14px;}
+.efreq_text{font-size:14px;}
+/*아이콘 타이틀*/
+.icon_title_wrap{ margin: 18.5px 0 12.5px; }
+.icon_subtitle{ padding-top: 14.5px;line-height: 1.38;color:#5c5c5c;}
+.icon_subtitle .txt-green {color: #00ae66}
+
+/*공통 css*/
+.text_center{text-align:center;}
+.text_right{text-align:right;}
+.text_left{text-align:left;}
+a:hover,a:focus{text-decoration:none;}
+.show_mobile{display:none;}
+
+/*프리퀀시 히스토리-20190718*/
+.efreq_common_title .esticker_title img{width:20px;height:auto;}
+.efreq_common_title .esticker_title span{padding-left:5px;}
+
+/********** 쿠폰발행하기(coupon) -START **********/
+br.efreq_coupon_br { display:none; } 
+/*쿠폰발행하기 테이블*/
+.efreq_coupon_list p.efreq_coupon_list_ttl_tl { font-size:18px; font-weight:bold; color:#333; margin-bottom:15px; }
+.efreq_coupon_list ul.coupon_chk_list li { font-size:14px; color:#5c5c5c; padding-left:10px; margin-bottom:8px; background:url("../img/util/efreq/bullet_grey.gif") 0 5px no-repeat; line-height:1.4; }
+.efreq_coupon_list ul.coupon_chk_list li span { font-size:14px; color:#666; }
+/*쿠폰발행하기 table*/
+.coupon_pay_wrap table.efreq_list_tb td {padding:10px 0;}
+/*쿠폰 발행하기 table 스티커조합*/
+.efreq_tbl_icon_wrap { display:inline-block; text-align:center; position:relative; width:100%; }
+.efreq_tbl_icon_wrap li.icon_arrow {width: 12px;padding-left: 15px;}
+.efreq_tbl_icon_wrap.left .arrow-img{position: absolute;top: 50%;left: 0;width: 13px;transform: translateY(-50%);-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);}
+
+/*스티커+숫자(공통-히스토리,쿠폰발행하기,현황판,선물하기)*/
+.efreq_tbl_icon{display:inline-block; vertical-align: bottom; /*height:70px;*/ margin:0 10px;position:relative;width:52px;}
+.efreq_tbl_icon img{ /*width:100%; position: absolute; transform:translateX(-50%); bottom:0px; left:50%;*/}
+.efreq_tbl_icon span{background: #00ae66;box-sizing: border-box; font-weight: normal;z-index: 1;transform: translateX(50%);}
+/*640이하일때span위치 변경*/
+.tbl_cup_green_bg {box-sizing: border-box;}
+.efreq2020summer .efreq_tbl_icon_wrap li, 
+.efreq2020summer .efreq_tbl_icon_wrap .tbl_cup_total_bg {display: inline-block;vertical-align: middle;margin: 0 10px 0 0;}
+.efreq_tbl_icon_wrap i.icon_plus {display:inline-block;position:absolute;top:50%;transform: translateY(-50%);width:13px;}
+.efreq_tbl_icon_wrap i.icon_plus img { width:100%; margin-left:40%; }
+.efreq_tbl_icon_wrap i.icon_arrow {display:none;position:absolute;right:0;top: 50%;transform: translateY(-50%);width:12px;padding-left:15px;}
+.efreq_tbl_icon_wrap i.icon_arrow img { width:100%; }
+/**/
+.efreq_tbl_icon_wrap2 {float:right;left:-28%;position:relative;top:0;}
+.efreq_tbl_icon_inner {float:left;left:50%;position:relative;}
+/*쿠폰 발행하기 table 교환가능*/
+.tbl_cup_total_bg {/*display:block;float:left;*/position:relative;/*width:34px;*/}
+.tbl_cup_total_bg img { width:75%; margin-top: 3px; }
+.efreq_tbl_icon_inner span.ico_Tcup { display:block; float:left; font-size:12px; font-style:normal; margin-top:20px; text-indent: 10px; text-align:center; margin-left: 35px; }
+.tbl_cup_total_bg span { background:#00ae66; border-radius:13px;  color:#fff; display:block; font-size:12px; font-style:normal; height:22px; line-height:0; padding:11px 7.5px; position:absolute;font-weight: normal; right:0px; top:6.5px; z-index:1; transform: translateX(50%);box-sizing: border-box; }
+.coupon_pay_btn {outline:0;background-color: #5c5c5c;color: #fff;font-size: 12px;width: 80px;border-radius: 5px;border: none;padding: 10px 0;}
+/*쿠폰발행하기 유의사항*/
+.efreq_coupon_list .notice_wrap{padding:0 20px;}
+/***** 쿠폰발행하기 팝업 -START *****/
+/*20181112 app_popup추가*/
+.efrPop_dimm{position:fixed; top:0; left:0; width:100%; height:100%; background: #111111; opacity:0.5; z-index: 100000}
+.efrePopWrap{position:fixed; top:50%; left:50%; margin-left:-130px; width:260px; text-align:center; background:#fff; border-radius:4px; z-index: 100001}
+.efrPopCon{padding-top:25px; line-height:15px; color:#373634}
+.efrPopCon p{min-height:20px; padding:0 15px 10px 15px; font-size:13px; line-height: 16px; letter-spacing: -0.5px; text-align: center}
+
+.efrPopBtn{background: #7b6e66;margin: 10px;}
+.efrPopBtn2{padding:10px;}
+.efrPopBtn a{color:#fff;}
+.efrPopBtn a,
+.efrPopBtn2 a{display:block; height:37px; line-height:35px; padding-bottom:2px; background:#7b6e66; font-size:13px; font-weight:bold; color:#fff; text-align:center; text-decoration:none; border-radius:2px;  box-sizing: border-box}
+.efrPopBtn2 a{float:right; width:49%}
+.efrPopBtn2 a:first-child{float:left; background:#d7d2cc; color:#867872}
+
+.efrPopBtn2 a:first-child:hover,
+.efrPopBtn2 a:first-child:focus,
+.efrPopBtn2 a:first-child:active{background:#b4afaa; color:#5d524c} 
+
+.clear{clear:both !important}
+/***** 쿠폰발행하기 팝업-END *****/
+/********** 쿠폰발행하기(coupon) -END **********/
+
+/*증정품 상세안내*/
+.detail_wrap{margin:35px auto 0;width:640px;}
+.detail_top_border_area .esticker_title{padding-bottom:15px;}
+.esticker_title span.title_date{display:block;padding-left:0; padding-top: 5px;font-size:16px;font-weight:600;letter-spacing:-0.6px;}
+/*증정품 상세안내-상단 tab추가*/
+.top_btn_wrap ul{ display: table; width: 100%; margin: 0 0 15px; border-bottom: 1px solid #ddd; text-align: center;}
+.top_btn_wrap ul li{ display:table-cell;width:50%;position:relative;padding-bottom:10px; }
+.top_btn_wrap ul li a{line-height:1.25;font-size:18px;font-weight:bold;}
+.top_btn_wrap ul li a span.special-code{font-size: 12px;vertical-align: text-top;}
+.top_btn_wrap ul li.active a{color:#00ae66;}
+.top_btn_wrap ul li.active:after{position:absolute;content:"";width:100%;height:3px;bottom:0;left:0;background-color:#00ae66;}
+.detail_wrap .tabcontent{display:none;}
+.detail_wrap .tabcontent.active{display:block;}
+
+/***** 공통화면 스티커현황 공통 *****/
+/*현황갯수 리스트*/
+.sticker_status ul.sticker_num_list{margin-top:3px;}
+.sticker_status ul.sticker_num_list li{padding: 15px 0 16px;border:1px solid #eeeeee;border-left: none;text-align:center;}
+.sticker_status ul.sticker_num_list li p.sticker_name{padding-bottom:9.5px;font-size:15px;}
+.sticker_status ul.sticker_num_list li p.sticker_num{font-size:20px;color:#00ae66;font-weight:bold;}
+
+/*적립현황 테이블 ul li 가로길이 조절*/
+.sticker_status ul.sticker_num_list li:only-child {width: 100%;}
+.sticker_status ul.sticker_num_list li:first-child:nth-last-child(2),.sticker_status ul.sticker_num_list li:first-child:nth-last-child(2)+li {width: 50%;} 
+.sticker_status ul.sticker_num_list li:first-child:nth-last-child(3),.sticker_status ul.sticker_num_list li:first-child:nth-last-child(3)~li {width: 33.33%;}
+.sticker_status ul.sticker_num_list li:first-child:nth-last-child(4),.sticker_status ul.sticker_num_list li:first-child:nth-last-child(4)~li {width: 25%;}
+.sticker_status ul.sticker_num_list li:first-child:nth-last-child(5),.sticker_status ul.sticker_num_list li:first-child:nth-last-child(5)~li {width: 20%;}
+
+/*스티커 주고받은 갯수*/
+.sticker_status ul.sticker_inout_num li{position:relative;width:50%;padding:20px;font-size:18px;}
+.sticker_status ul.sticker_inout_num li span.center_border{position:absolute; top:50%; right:-1px; margin-top:-11px;width:1px;height:25px;background-color:#eee;}
+.sticker_status ul.sticker_inout_num li{font-size: 15px;}
+.sticker_status ul.sticker_inout_num li .inout_num{float:right;}
+.sticker_status ul.sticker_inout_num li .inout_num span{padding-right:4px;font-weight:800;}
+
+/********** 선물하기,히스토리 공통 -START **********/
+/*히스토리,선물하기 타이틀 공통*/
+.efreq_common_title .sticker_status_top_title,
+.sticker_count_select_title,
+.barcode_num_input_title{line-height: 1.4;padding-bottom: 10px;}
+/********** 선물하기,히스토리 공통 -END **********/
+
+/********** 선물하기(gift) -START **********/
+/*e-프리퀀시 바코드 입력 input*/
+.efreq_barcode_numinput { background:#f0f0f0; border-radius:3px; height:30px; width:100%; }
+.efreq_barcode_input input,
+.efreq_barcode_input p { float:left; }
+.efreq_barcode_input input { background:#fff; border:1px solid #ddd; border-radius:3px; color:#666; font-size:12px; height:26px; text-align:center; width:60px;-webkit-appearance: none;appearance: none; }
+.efreq_barcode_input p { color:#666; font-size:14px; height:28px; line-height:28px; text-align:center; width:16px; }
+/*선물완료팝업*/
+.esticker_done_right { margin-top:30px;margin-right:20px;margin-bottom:35px; float:right;width:94%; }
+.esticker_done_left { padding-bottom:24px; width:95%;position:relative;border-radius:3px; float:left; height:213px; padding:30px 20px; }
+.esticker_done_ttl { color:#222; font-size:18px; font-weight:bold; margin-bottom:25px; text-align:center; width:100%; }
+
+.esticker_done_barcode { position:relative;margin-top:14.5px;background:#f0f0f0; border-radius:3px; display:table; font-size:14px; line-height:80px;height:115px; width:100%; }
+.esticker_done_barcode p{ display: table-cell;position: relative;text-align: center;vertical-align: middle;}
+.esticker_done_right .esticker_done_barcode p { display:table-cell; text-align:center; vertical-align:middle; position: absolute;bottom: 5px;left: 50%;margin: 0 auto; width: 100%;transform: translateX(-50%);-webkit-transform: translateX(-50%);line-height: normal; }
+
+.esticker_done_btn { /*float:right;*/ width:62px; margin:0 auto; }
+.esticker_done_btn:after { clear:both; content:""; display:block; }
+.esticker_done_btn li { background:#222; border-radius:3px; float:left; height:30px; width:62px; }/*0722 이지나 수정*/
+.esticker_done_btn li a { color:#fff; display:block; font-size:12px; font-weight:bold; height:100%; line-height:30px; text-align:center; width:100%; }
+/*바코드입력*/
+.efreq_barcode_pass { color:#222; font-size:16px; height:28px; line-height:28px; text-align:center; padding-top:33px; }
+.efreq_barcode_pass input {outline: 0;background:#fff; border:1px solid #ddd; border-radius:3px; color:#666; font-size:12px; height:26px; line-height:26px; width:208px;-webkit-appearance: none;appearance: none; }
+.efreq_barcode_txt { padding:0 20px 42px;font-size:14px; line-height:1.4; margin-top:15px; text-align:center;color:#757575; }
+/*버튼*/
+.esticker_btns_wrap{margin-top:20px;text-align:center;}
+.esticker_send_btns {display:inline-block;}
+.esticker_send_btns li { border-radius:3px; /*float:left;*/ }
+.esticker_send_btn1 { background:#e2c383; border:1px solid #bb9f65; height:30px; width:72px; }
+.esticker_send_btn1 a { color:#222; display:block; font-size:12px; font-weight:bold; height:100%; line-height:28px; text-align:center; width:100%; }
+/********** 선물하기(gift) -END **********/
+
+/********** 히스토리(history) -START **********/
+/*히스토리*/
+.efreq_common_title .sticker_status_top_title span.user_name{color:#00ae66;}
+.sticker_status_title{display:inline-block;padding-top:7px;padding-bottom:9px;padding-left:20px;font-size:15px;}
+.sticker_status_title span{ color:#757575; padding-left:4px;}
+/*스티커 히스토리 ul 공통 css*/
+.ms_cont_wrap ul.list_none{display:table;width:100%;}
+.ms_cont_wrap ul.list_none li{display: table-cell;}
+/********** 히스토리(history) -END **********/
+
+/********** 스티커 발급조건 안내(condition) -START **********/
+/*타이틀*/
+.efreq_common_title.esticker_condition {border-radius: 3px;border: 1px solid #dddddd;position: relative;padding: 30px 30px 20px;margin-bottom: 34px;}
+.esticker_condition_subtitle{line-height:1.38;color:#5c5c5c;}
+.esticker_condition_subtitle span{color:#1e1e1e;font-weight:bold;}
+.esticker_condition .efreq_common_title .esticker_title{padding-bottom: 0;}
+.condition_hr{display:none;}
+/*본문*/
+/*.condition_wrap{margin-bottom:-50px;}*/
+/********** 스티커 발급조건 안내(condition) -END **********/
+/**********#####===== 공통화면-END =====#####**********/
+
+/**********#####===== START =====#####**********/
+/* Webkit browsers like Safari and Chrome */
+.efreq_barcode_input input[type=number]::-webkit-inner-spin-button,
+.efreq_barcode_input input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearance: none;margin: 0;}
+/* For Firefox */
+.efreq_barcode_input input[type='number'] {-moz-appearance:textfield;}
+
+/*eReceipt 바코드영역*/
+article.barcode_wrap { border-bottom:1px solid #ddd; padding-bottom:30px; text-align:center; }
+article.barcode_wrap p { color:#444; font-family:arial; font-size:16px; font-weight:bold; margin-top:10px; }
+article.barcode_wrap div.barcode_guide { color:#666; display:inline-block; font-size:14px; margin:10px auto 0; position:relative; /* width:82%; */ }
+i.icon_black_cup { background:url("../img/util/efreq/2017winter/prevention_ic.gif") no-repeat; background-size:100% auto; display:block; float:left; height:67px; width:32px; }
+article.barcode_wrap div.barcode_guide span { float:left; line-height:1.4; margin-left:10px; padding-top:25px; text-align:left; }
+article.barcode_wrap div.barcode_guide span.barcode_guide_empha { font-size:12px; padding-top:25px; }
+article.barcode_wrap div.barcode_guide span.barcode_guide_empha img { margin-top:1px; width:14px; }
+
+
+/* 20200602 매장 검색 팝업 new */
+.sto_find_cont.stoMdPop {padding:0;} /* 20200604 수정 */
+.sto_find_cont.stoMdPop dl.sto_find_tab > dd div.doro_wrap {padding:20px 20px; margin-bottom:10px; border-radius: 4px;}
+.sto_find_cont.stoMdPop dl.sto_find_tab > dt.hid {display:none;}
+.sto_find_cont.stoMdPop div.doro_wrap ul li {margin-bottom:0; margin-top:15px;}
+.sto_find_cont.stoMdPop div.doro_wrap ul li:first-child {margin-top:0;}
+
+.sto_find_cont.stoMdPop .sto_find_tab {width:100%; box-sizing: border-box; padding:15px;}
+.sto_find_cont.stoMdPop div.select_box { float:left; height:26px; border:1px solid #ddd; border-radius:3px; }
+.sto_find_cont.stoMdPop div.select_box span.value { display:block; margin:0 10px 0 10px; text-align:left; height:26px; line-height:25px;text-indent:4px; font-size:12px; color:#666; font-family:"nbg"; overflow:hidden; }
+.sto_find_cont.stoMdPop div.select_box select { padding:0 10px 0 10px; position:absolute; left:0; top:0px; height:26px;text-align:left;line-height:26px;font-size:12px; color:#666; border:0;background:#fff; font-family:"nbg"; filter:alpha(opacity=0); opacity:0; z-index:20; color:#414141;}
+
+.sto_find_cont.stoMdPop div.select_box01,
+.sto_find_cont.stoMdPop div.select_box02 {top:auto;right:auto;background-color: #fff; background-image: url("../img/coffee/select_arrow.png"); background-repeat: no-repeat; background-position: 94% 50%; position:relative; width:80%; box-sizing: border-box;}
+.sto_find_cont.stoMdPop div.select_box01 select,
+.sto_find_cont.stoMdPop div.select_box02 select { width:100%;}
+
+.sto_find_cont.stoMdPop .pStoreTxtList2 {width:100%;} /* 20200604 수정 */
+.sto_find_cont.stoMdPop div.doro_wrap label {height: 27px; font-size:13px; width:20%; box-sizing: border-box; margin-bottom: 0; line-height: 27px} /* 20200604 수정 */
+ 
+ /* 20200605 수정 */
+@media screen and (max-width:650px) {
+    #wrap.active { z-index: auto; }
+    .pop_stock_wrap {position: absolute; padding-bottom: 5%;}
+}
+
+.stoMdPop ul.findTab {width: 100%; overflow: hidden; text-align:center; border-bottom:1px solid #ababab;} /* 20200605 수정 */
+.stoMdPop ul.findTab li {float:left; width:50%; padding:15px 0; box-sizing: border-box;}
+.stoMdPop ul.findTab li a {display:block; color:#666; text-decoration: none; font-weight: bold; font-size:14px;}
+.stoMdPop ul.findTab li a:hover {text-decoration: none;}
+.stoMdPop ul.findTab li:first-child {border-right:none;}
+.stoMdPop ul.findTab li.on {border-bottom:2px solid #9c8856; color:#9c8856;}
+.stoMdPop ul.findTab li.on a {color:#9b8b5a;}
+.stoMdPop dl.sto_find_tab {display:none;}
+.stoMdPop dl.sto_find_tab.active {display:block;}
+.stoMdPop dl.sto_find_tab.active dd {display: block;}
+
+.stoMdPop dl.sto_store div.doro_wrap {position:relative; width:100%; box-sizing: border-box;}
+.stoMdPop dl.sto_store div.doro_wrap label.lab {width:20%;}
+.stoMdPop dl.sto_store div.doro_wrap input.bar2 {border:1px solid #cdcdcd; border-radius:3px; float:left; height: 40px; line-height: 40px; padding:0 10px; width:80%; box-sizing: border-box; color:#424242; font-size:12px;}
+.stoMdPop dl.sto_store div.doro_wrap input::placeholder {color:#747474; font-size:12px;}
+.stoMdPop button.stoBtn {cursor: default !important; background-color: #9b9b9b; color:#fff;}
+.stoMdPop button.stoBtn.searchBtn {cursor: pointer !important;}
+
+.stoMdPop button.stoBtnAdd {cursor: default !important; background-color: #9b9b9b; color:#fff;}
+.stoMdPop button.stoBtnAdd.searchBtnAdd {cursor: pointer !important; background-color: #7b6e66; color: #fff;}
+
+.sto_find_cont.stoMdPop .btn,
+.egiftResultPop .btn {display: inline-block; width: 100%; height: 44px; margin-top: 5px; border-radius: 2px; font-size: .9375rem; letter-spacing: -.037em; line-height: 44px; text-align: center; border:0; cursor: pointer;}
+.sto_find_cont.stoMdPop .btn.searchBtn {background-color: #7b6e66; color: #fff;}
+.egiftResultPop .moreBtn {background-color: #f4f4f2; margin-top:0; color:#666; height:42px; line-height: 40px; font-size:14px; }
+.egiftResultPop .moreBtn  a {display:block; width:100%; height:100%;}
+
+
+/* //20200602 매장 검색 팝업 new */
+
+/**********#####===== END =====#####**********/
+
+/**********#####===== 미디어 쿼리-START =====#####**********/
+@media screen and (max-width:1099px) {
+    /*프리퀀시 이용조회 상단 설명section */
+    .whatis_efreq { padding:30px 3%; width:94%; }
+    
+    /*스타벅스 e-프리퀀시란?*/
+    .efreq_new_list_wrap dt { width:50%; }
+    .efreq_new_list_wrap dd { padding:5% 20px 20px; width:41%; }   
+    
+    /**/
+    .efreq_event_list_wrap ul { margin:-20px 0 0 -1%; }
+    .efreq_event_list_wrap ul li { margin:20px 0 0 1%; width:48.5%; }
+
+    .efreq_event_list_dl { width:100%; }
+    .efreq_event_list_dl dt { height:auto; width:100%; }
+    .efreq_event_list_dl dd { padding:10px 2%; width:96% }
+
+    .efreq_stat_ttl { width:100%; }
+
+    .esticker_seding_left { padding:30px 2%; width:96%; }
+    .esticker_seding_right { margin-top:30px; padding:30px 2% 70px 2%; width:96%; }
+    /*e-프리퀀시 바코드 입력 input*/
+    .efreq_barcode_input { margin:30px 0 0 3%; width:96%; }
+    .efreq_barcode_input input { width:22.5%; }
+    
+    /*이용안내*/
+    .egt1 > dd > p { width:74%; }
+
+    i.icon_efreq2 { background-size:90% auto; bottom:10px; right:5px; top:inherit; }   
+    
+    /*현황판*/
+    .efreq_texbg_wrap { height:auto; padding:0; } 
+}
+
+@media screen and (max-width:960px) {
+    /*2015 여름 e-프리퀀시 이용조회(index)*/
+    .efreq_new_list_wrap dt { width:50%; }
+    .efreq_new_list_wrap dd { padding:5% 0 0 3%; width:46%; }
+    /*현황판 하단 버튼3개*/
+    .efreq_func_btn1 { margin-bottom:5px; width:166px; }
+    
+    /**/
+    .pop_sticker_slider_wrap { margin-left:0; width:100%; }
+    .pop_sticker_slider li { height:auto; width:11.8777% !important; }
+    .pop_sticker_bg_sel { margin-left:-49%; width:98%; }
+    /**/
+    .pop_planner_efreq { margin-left:-47%; width:94%; }
+    /**/
+    .efreq2017_sticker_bg_inner { margin-left:-50%; width:100%; }   
+}
+
+@media screen and (max-width:760px) {
+    /*바코드 팝업(status)*/
+    .pop_efreq_barcode_head { width:100%; }
+    .pop_efreq_complete_head { width:100%; }
+    
+    /**/
+    .pop_sticker_bg { padding:20px; }
+    /**/
+    .btn_pop_sicker_select ul { width:90%; }
+    .btn_pop_sicker_select ul li.btn_pop_sicker1 { width:45%; }
+    .btn_pop_sicker_select ul li.btn_pop_sicker2 { float:right; width:45%; }
+}
+
+@media screen and (max-width:740px) {
+    /*e-프리퀀시 바코드 입력(coupon)*/
+    .efreq_barcode_input input { width:21.5%; }
+    
+    /**/
+    .redcup_sel { left:20%; }
+    .esticker_seding_cup_sel i.icon_cup_green { right:24%; }
+}
+@media screen and (min-width: 641px){
+	/* 200513 : 2020 summer 스티커 위치 */
+	.efreq_sticker_ico .box_mission_cup li.sticker1 {top: 10%; left: 30%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker2 {top: 10%; left: 45%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker3 {top: 10%; left: 61%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker4 {top: 34.5%; left: 14.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker5 {top: 34.5%; left: 30%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker6 {top: 34.5%; left: 45.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker7 {top: 34.5%; left: 61.1%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker8 {top: 34.5%; left: 76.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker9 {top: 48%; left: 14.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker10 {top: 48%; left: 30%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker11 {top: 48%; left: 45.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker12 {top: 48%; left: 61.1%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker13 {top: 48%; left: 76.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker14 {top: 61.5%; left: 14.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker15 {top: 61.5%; left: 30%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker16 {top: 61.5%; left: 45.5%;}
+	.efreq_sticker_ico .box_mission_cup li.sticker17 {top: 61.5%; left: 61.1%;}
+
+	/*.efreq_sticker_ico .box_mission_cup {margin-top: 89px;}*/
+	.efreq_sticker_ico .box_mission_cup li:nth-child(-n+4) {width: 61px;}
+	.efreq_sticker_ico .box_mission_cup li:nth-child(n+4) {width: 57.6px;}
+	/*
+	개발 쪽에서 ul 구조 변경 요청 css 수정
+	.efreq_sticker_ico .box_mission_cup{width:262px;margin:89px auto 0;}
+	.efreq_sticker_ico .box_mission_cup li{width:61px;margin-right:39.5px;}
+	.efreq_sticker_ico .box_normal_cup{margin:158px auto 0;width:452px;}
+	.efreq_sticker_ico .box_normal_cup li{width:57.6px;margin-right:41px;margin-bottom:46px;}
+	*/
+	/* e.200406*/
+	.sticker_bg_wrap p.btn_barcode{height:66px;/*top:20px;*/} /*22-03-21 수정*/
+}
+@media screen and (min-width:640px) {
+    .efrPopBtn2 a:hover{background:#5d524c;}
+}
+
+@media screen and (max-width:640px) {
+	/*완료팝업*/
+	.type_b.sticker_plus_5 .efreq2020summer .pop_efreq_2020_complete{bottom:-2px;}
+	
+	.ms_cont {margin: 0 auto 50px;padding-top: 0;width: 100%;float: none;}
+    /*전체 페이지 레이아웃*/
+    .ms_cont{width:100%;height:auto;padding-top:0;}
+    /*현황판 선택형일떄 페이지 레이아웃*/
+    .type_b .ms_cont{margin-top:15px;padding-top:0;height:auto;width:90%;}
+    
+    /***** 이용안내-START *****/
+    /*이용안내 타이틀 상단 여백*/
+    .efreq_guide_ttl header { padding: 30px 30px 0; }
+    /* 공통 *//*스티커 table*/
+    table.efreq_list_tb td p.ico_cup_r { height:44px; width:26px; }
+    table.efreq_list_tb td p.ico_cup_g { height:44px; width:32px; }
+    table.efreq_list_tb td span.num { top:inherit; }    
+    
+    /*프리퀀시 이용조회 상단 설명section */
+    .whatis_efreq article { text-align:center; }
+    /*2015 여름 e-프리퀀시 이용조회*/  
+    .efreq_new_list_wrap dt { width:100%; }
+    .efreq_new_list_wrap dd { padding:5% 0 5% 3%; width:auto; }
+    
+    /*이용안내 바코드+컵 이미지*/
+    i.icon_coupon { left:50%; margin-left:-55px; top:110px; }   
+    /*이용안내 아이콘 이미지*/
+    i.icon_s_phone { height:57px; position:absolute; right:0; top:20px; width:55px; }
+    i.icon_s_card { background:url("../img/util/efreq/icon_s_card.png") no-repeat; height:57px; position:absolute; right:0; top:15px; width:55px; }
+    i.icon_s_box { background:url("../img/util/efreq/icon_s_box.png") no-repeat; height:57px; position:absolute; right:0; top:10px; width:55px; }
+    i.icon_s_cup2 { background-size:100% auto; right:0; top:15px; }    
+    /*이용안내 상단*/
+    .efreq_guide_ttl { border:0; border-bottom:1px solid #ddd; height:100%; padding:0; width:100%; }
+    .efreq_guide_ttl article { float:none; margin:28px 0; padding:0 10%; text-align:center; }
+    .efreq_guide_ttl article strong,.efreq_guide_list,.efreq_history_list { margin-top:30px; }
+    /*이용안내 e-프리퀀시 바코드 발급, 적립, 사용하는 방법*/
+    .ms_reward_mem_list_each figure { width:30%; }
+    .ms_reward_mem_list_each figure.mat_minus { margin-top:-140px; }
+    .ms_reward_mem_list_each .ms_reward_mem_list_txt { padding-top:0; width:65%; }
+    /*완성된 프리퀀시 증정상품 교환방법 앱 이동 버튼*/
+    .app_btn_appDown { position:relative; }
+    .app_btn_appDown ul { margin-left:-5px; width:100%; }
+    .app_btn_appDown ul:after { clear:both; content:""; display:block; }
+    .app_btn_appDown li { float:left; margin-left:10px; width:46%; }    
+    /***** 이용안내-END *****/
+    
+    /***** 현황판-START *****/
+    /*초반진입 팝업*/
+    .efreq_entry_popup_wrap{top:0;box-shadow:none;border-radius:0;}
+    
+    /*A타입 완료팝업*/
+    /*현황판 완료팝업 위치조정*/
+    .type_a_popup .complete_coupon_notice .text1{font-size: 30px;}
+    .type_a_popup .complete_coupon_notice .text1 strong.red{padding-bottom: 10px;font-size: 45px;}
+    .type_a_popup .complete_coupon_notice img{width:20%;padding:15px 0 20px;}
+    .type_a_popup .complete_coupon_notice .text2{font-size:18px;line-height:23px;}
+    .type_a_popup .complete_coupon_notice .text2 .notice{ font-size: 18px;}
+    .type_a_popup .complete_coupon_notice .coupon_take_btn{margin-top: 10px;padding: 13px 25px;font-size: 16px;}
+    
+    /*현황판 바코드 클릭시 노출되는 바코드 팝업*/
+    .pop_efreq_barcode { border-radius:0; box-shadow:none; left:0; margin-left:0; top:0; width:100%; }
+    .btn_barcode_close { height:40px; width:60%; }
+    .btn_barcode_close a { font-size:14px; line-height:40px; }    
+    /*현황판 레이아웃*/
+    .type_b .efreq_top_wrap{padding:6px 12px 0;}    
+    /*상단 이름,모드버튼*/
+    .efreq_func_btn_wrap ul{display:table;width:100%;}
+    .type_a .efreq_func_btn_wrap ul li{ display: table-cell;padding-left:0;padding-right:0;width: 49.2%;}
+    .type_b .efreq_func_btn_wrap ul li{display:table-cell;padding-left:0;padding-right:0;}  
+    .type_b .efreq_func_btn_wrap ul li.padding{display:table-cell;width:1.6%;border:none;}
+    .type_b .efreq_func_btn_wrap ul li a img{width:15px;}
+    .type_c .efreq_func_btn_wrap ul li{width:50%;padding:0;}
+    .type_c .efreq_func_btn_wrap ul li:first-child{padding-left:0;}
+    
+    .efreq2020summer .efreq_func_btn_wrap ul li:first-child{margin-right:0;}
+    /*현황판 스티커 위치조정*/
+    /*c타입*/
+    .type_c .efreq_sticker_ico{top:-7px;}
+    /*스티커현황*/
+    .type_b .efreq_cup_count_wrap{top:-10px;}
+    .type_b .efreq_cup_count_wrap .refresh_btn img{width:60%;}
+    .type_b .efreq_cup_count_wrap ul.inner_ul li.cup_img_area, .type_b .efreq_cup_count_wrap ul.outer_ul li.gift_img_area{width:58px;}
+    .type_b .efreq_cup_count_wrap ul.outer_ul li .cup_img, .type_b .efreq_cup_count_wrap ul.outer_ul li .gift_img{margin-bottom:20px;}
+    .efreq_cup_count_wrap span.text, .efreq_cup_count_wrap span.number, .type_a .efreq_cup_count_wrap span.text{font-size:13px;}
+    /*현황판 슬라이더 화면*/
+    .efreq_texbg_wrap{border-radius:0;height:auto;left:50%;margin-left:-50%;margin-top:0;padding:0;position:relative;width:100%;}
+    .sticker_bg_wrap{width:100%;height:auto;}
+    .bx-wrapper{margin:0 auto !important;}
+    .sticker_bg_slider { height:0; /* padding-bottom:160%; */ }
+    /*현황판 B타입*/
+    .type_b .sticker_bg_wrap .bx-viewport { height:0 !important;}
+    /*현황판 B타입 25개일때*/
+    .type_b.sticker_plus_5 .sticker_bg_wrap .bx-viewport { padding:0 0 161% 0 !important; }
+    .type_b.sticker_plus_5 .sticker_bg_wrap{height:auto;}
+    .type_b.sticker_plus_5 .sticker_bg_slider { padding-bottom:150%; }
+    /*현황판 C타입*/
+    .type_c .sticker_bg_wrap .bx-viewport { height:0 !important; padding:0 0 169% 0 !important; }    
+
+    /*현황판 완료팝업*/
+    .efreq_sticker_complete .btn_hide_complete{font-weight: normal; background-color: transparent; color: #fff; transform: translate(-50%, -50%) rotate(-45deg); right: auto; bottom: auto; top:100%; left:100%;margin-left: -19%; margin-top: -16%;} 
+    .efreq_complete img{margin-top:50%;} 
+    .sticker_bg_wrap p.btn_efreq_bghide a{color: #fff; font-size:18px;}
+    .btn_complete_close{height:40px; width:60%;}
+    .btn_complete_close a{font-size:14px;line-height:40px;}
+    /*현황판 c타입 바코드 위치*/
+    .type_c .sticker_bg_wrap p.btn_barcode{margin-top:-60%;width:14%;height:6.5%;}
+    /*현황판 슬라이더 pager 크기*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a { display: block; width:21px; height:21px; box-sizing: border-box; border-radius:10px; }
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a.active { background:#489288;}
+    /*현황판 슬라이더 이전,다음 버튼*/
+    .sticker_bg_wrap .bx-wrapper .bx-prev,
+    .sticker_bg_wrap .bx-wrapper .bx-next {background-size: contain;right: 6%;width:11.2%;height:8.3%;margin-top:-2.4%;top: 50%;transform: translateY(-50%); z-index:7; }    
+    .sticker_bg_wrap .bx-wrapper .bx-prev {right: inherit;left: 6%;background: url("../../upload/common/img/util/efreq/2018winter/2019summer_mscard_arrow_l_off.png") no-repeat;background-size:100%;}
+    .sticker_bg_wrap .bx-wrapper .bx-next {background: url("../../upload/common/img/util/efreq/2018winter/2019summer_mscard_arrow_r_off.png") no-repeat;background-size:100%;}
+    .efreq2020summer .sticker_bg_wrap .bx-wrapper .bx-prev:hover {background: url("../../upload/common/img/util/efreq/2018winter/2019summer_mscard_arrow_l_on.png") no-repeat;background-size:100%;}
+    .efreq2020summer .sticker_bg_wrap .bx-wrapper .bx-next:hover {background: url("../../upload/common/img/util/efreq/2018winter/2019summer_mscard_arrow_r_on.png") no-repeat;background-size:100%;}
+    /*현황판 하단 버튼 3개*/
+    .efreq_btns_wrap { margin-top:20px;width:100%;height:auto;}
+    .efreq_func_btns li { height:65px; margin-bottom:20px; margin-left:3%; }
+    .efreq_func_btns li a {font-size:18px;height:31px; padding-top: 25px; }
+    .efreq_func_btn1,
+    .efreq_func_btn2 { width:46%; }
+    .efreq_func_btn1.efreq_func_btn3 { width:95%; }    
+    /*현황판 하단 버튼3개 옆 sns버튼*/
+    .efreq_sns_btns { float:none; height:auto; text-align:right; display:none;} 
+    .efreq_sns_btns li { display:inline-block; float:none; width:64px; margin-right:2%; }
+    /***** 현황판-END *****/
+    
+    /***** 공통화면-START *****/
+    /*앱버전 상단 여백조정 20190826*/
+    .efreq_common_title{margin:0 13px;padding-top:60px;} 
+    .efreq_common_title.esticker_gift_detail{padding-top:0;margin-top:20px;}
+    
+    .top_border_area.detail_top_border_area{margin-bottom: 15px;border: none;border-bottom: 9px solid #ddd;border-radius:0;padding: 30px 13px 20px;}
+    .detail_top_border_area .efreq_common_title,.coupon_top_border_area  .efreq_common_title{margin:0;padding-top:0;}
+    .detail_top_border_area .efreq_common_title .esticker_title{padding-bottom:0;}
+    
+    .history_select_ul>ul>li>button,
+    .kind_tab_btn_wrap .custum_pager a{border:1px solid #dddddd;}
+    
+    /*스티커 발급조건안내*/
+    .efreq_common_title.esticker_condition{margin: 0;padding: 30px 13px 13px;border-bottom: 9px solid #ddd;border-radius: 0;}
+    
+    /*선물하기 button*/
+    .esticker_done_btn{float:none;margin:40px auto 0;width:93%;}
+    .esticker_send_btns{width:90%;}
+    .esticker_send_btn1,.esticker_done_btn li{width:100%;height:40px;}
+    .esticker_send_btn1 a,.esticker_done_btn li a{font-size:14px;line-height:38px;}
+    /*선물하기 변동내역 웹 640이하*/
+    .esticker_done_wrap.top_border_area{border:none;border-radius:0;}
+    .esticker_done_left,.esticker_done_right{width:100%;}
+    .esticker_done_right{margin-right: 0;}
+    
+    /*공통화면 다른 페이지로 이동 select*/
+    .esticker_sel { background:url("../img/util/sbox_arrow_down.png") 98% 17px no-repeat #fff; height:40px; left:3%; right:auto; top:20px; width:94%; }
+    .esticker_sel label { font-size:14px; left:10px; top:14px; }
+    .esticker_sel select { height:40px; }
+    /*쿠폰발행 table안 스티커조합*/
+    .efreq_tbl_icon_wrap i.tbl_icon_plus { margin-left:5px; margin-top:15px; }
+    .efreq_tbl_icon_wrap i.tbl_icon_plus img { width:100%; margin-left:10%; }
+    .efreq_tbl_icon_wrap i.icon_arrow {right: 0; width: 10px; display: block; top: 50%;}
+    .tbl_cup_green_bg {/* margin: 0 10px 0 30px; */}
+    .efreq_tbl_icon_wrap.efreq_tbl_icon_wrap{padding-right:10%;}
+    /*쿠폰발행 교환가능*/
+    .tbl_cup_total_bg {float:none;left:50%;transform: translateX(-50%);}
+    /*선물하기 스티커 선물화면,스티커 선물완료화면*/
+    .esticker_seding_wrap, .esticker_done_wrap { margin-top:30px; padding: 0 2%; }
+    .esticker_seding_left { height:auto; }
+    .esticker_seding_barcode { height:0; padding:0 0 3% 0; }
+    .esticker_seding_barcode p { text-align:center; }
+    .esticker_seding_barcode p img { height:auto; position:static; margin:4% auto; top:auto; width:230px; }
+    .esticker_seding_barcode p span { display:block; font-size:16px !important; margin:0; text-align:center; width:100%; }
+    .esticker_seding_barcode p span.sourceFreqBarcode, .esticker_done_barcode p.targetFreqBarcode { font-weight: bold }
+    
+    /*선물하기 비밀번호 입력 input*/
+    .efreq_barcode_pass input { font-size:16px; line-height:38px; } 
+    .efreq_barcode_txt{padding-bottom:0;}
+    /*선물하기 보내기 버튼*/
+    .esticker_send_btns li { height:40px; margin-left:auto; box-sizing: border-box; }
+    .esticker_send_btns li a { font-size:14px; line-height:40px; }
+    .esticker_send_btns li.esticker_send_btn2 { margin-left:1%; }
+    /*스티커 변동내역*/
+    .esticker_done_wrap .esticker_done_left {padding-bottom: 24px;width: 100%; padding: 30px 0;}
+    .esticker_done_right { height:auto; margin-top:10px;margin-right: 0;margin-bottom: 35px;padding: 30px 0 0;width: 100%; }
+    .esticker_seding_left > div, .esticker_seding_right > div,  .esticker_done_left > div, .esticker_done_right > div { box-sizing: border-box; margin-left: auto; margin-right:auto; width: 94%; }
+    .esticker_btns_wrap {text-align: center;margin-top:20px; }
+    /*스티커 변동내역 하단 확인버튼*/
+    .esticker_done_btn li { float:none; height:40px; width:100%; }
+    .esticker_done_btn li a { font-size:14px; line-height:40px; }  
+    
+    /*증정품 상세안내*/
+    .detail_wrap{margin:0;width:100%;}
+    .top_tabcontent_wrap{padding-left:20px;padding-right:20px;}
+    /***** 공통화면-END *****/
+    
+    /**/
+    ul.pager { display:block; }
+    div.select_box { right:0; top:34px; width:100%; }    
+    div.select_box select { width:100%; }
+    /**/
+    .pop_tbl_cup_red_bg img{margin-top: 2px;} 
+    /**/
+    .tbl_cup_sticker1 { height:auto; margin-left:-15px; width:54px; }
+    .tbl_cup_sticker2 { height:auto; margin-left:0; width:54px; }
+    .tbl_cup_planner { height:60px; width:90px; }
+    .tbl_cup_sticker1 span { background:#078141; border-radius:10px; color:#fff; display:block; font-size:15px; font-style:normal; height:21px; line-height:21px; padding:0 7px; right:-10px; top:0px; }
+    .tbl_cup_sticker2 span { background:#078141; border-radius:10px; color:#fff; display:block; font-size:15px; font-style:normal; height:21px; line-height:21px; padding:0 7px; right:-10px; top:0px; }
+     
+    /**/
+    .efreq_stat_ttl { border:none; border-bottom:1px solid #ddd; height:auto; left:50%; margin-left:-52%; margin-top:-30px; padding:20px 0; width:104%; word-break: keep-all; }
+    .efreq_stat_txt { font-size:12px; line-height:1.4; padding-left:20px; width:65%; padding-right:0; }  
+    .w640 { display:none; }
+    .btn_exclam { height:40px; margin-top:-25px; width:40px; }
+    /**/
+    .cup_icons_wrap {top:85px;width:90.625%; height: 93px;  left:0; margin:0 4.6785%;}
+    .cup_icons_wrap i{position:relative; display: inline-block; vertical-align: middle}
+    .cup_icons_wrap i.cup_red_bg {width: 80px; left:auto; top:auto; transform: none;}
+    .cup_icons_wrap i.cup_red_bg span { border-radius: 18px;font-size: 24px;line-height: 24px;padding: 6px 11px; top:5px; right:21px; }
+    .cup_icons_wrap i.icon_plus {left:auto; top:auto; transform: none; width: 25px;  height: 25px; margin: 0 15px;}
+    .cup_icons_wrap i.cup_green_bg {left:auto; top:auto; transform: none; width: 80px;}
+    .cup_icons_wrap i.cup_green_bg span { border-radius: 18px;font-size: 24px;line-height: 24px;padding: 6px 11px; top:5px; right:21px;}
+    .cup_icons_wrap i.icon_result {left:auto; top:auto; transform: none; width:15px;  height: 23px; margin: 0 15px;}
+    .cup_icons_wrap i.planner_bg {width:91px; left:auto; top:auto; transform: none;}
+    .cup_icons_wrap i.planner_bg span {border-radius: 18px;font-size: 24px;line-height: 24px;padding: 6px 11px; top:10px; right:16px;}
+    .cup_icons_wrap p.btn_refresh { right: 0; width: 56px;}
+    /**/
+    .sticker_bg_wrap p.btn_efreq_bgselect { bottom:-52.5px;}
+    .efreq_sticker_bg_inner { left:14%; height:44.560%; top:41.707%; width:75%; }
+    .che_efreq_sticker_bg_inner { left:14%; height:44.560%; top:41.707%; width:75%; }
+    .efreq_event_list_wrap { padding-bottom:90px; }
+    .efreq_event_list_wrap ul li { margin:20px 0 0 0; width:100%; } 
+    .efreq_event_list_dl dd { padding:20px 2%; width:96% }  
+    /**/
+    .esticker_gift_ttl { border:none; border-bottom:1px solid #ddd; height:auto; padding:0px 0; width:100%; }
+    .esticker_gift_ttl header { float:none; height:80px;  width:100%; }
+    .esticker_gift_txt { float:none; margin:28px 0; text-align:center; }    
+    /**/
+    .pinkcup_sel {top: 50%;margin-left: -11%;transform: translate(-50%,-50%);padding: 3px 0;background-position: 90% 50%;margin-top: 3%; }
+    .browncup_sel {top: 50%;margin-left: 23%;transform: translate(-50%,-50%);padding: 3px 0;background-position: 90% 50%;margin-top: 3%; }
+    /**/
+    .esticker_seding_right { height:auto; padding:30px 2%; margin-top:10px; }
+    .btn_esticker_seding { height:40px; }
+    .btn_esticker_seding p { height:40px; /*@width:50%;*/ }
+    .btn_esticker_seding p a { font-size:14px; line-height:40px; }
+    /**/
+    .pop_sticker_bg_sel { left:0; margin-left:0; top:0; width:100%; }
+    /**/
+    .efreq_coupon_list p.efreq_coupon_list_ttl { font-size:14px; }
+    br.efreq_coupon_br { display:block; }
+    .pop_sticker_slider_wrap .bx-viewport { height:0 !important; padding-bottom:70%; }
+    .pop_sticker_slider { height:auto; }
+    i.icon_chked { height:0; left:40%; margin:0; margin-top:60%; padding-bottom:25%; top:0; width:24%; }
+    .pop_sticker_bg_dimm { height:0 !important; left:10px; padding-bottom:132.5%; }
+    .pop_sticker_bg .bx-wrapper .bx-prev { left:10px; }
+    /**/
+    .pop_efreq_sns_btns { height:auto; }
+    .pop_efreq_sns_btns li { width:42px; }
+    /**/
+    .efreq_tbl_icon_wrap2 {position:static; float: none; }
+    .efreq_tbl_icon_inner{ float: none; left:0 }
+    /**/
+     .efreq_tbl_icon_inner span.ico_Tcup { display:none }
+    .chr_efreq_sticker_bg_inner1 { height:29%; left:0; top:17%; width:100%; }
+    .chr_efreq_sticker_bg_inner2 { height:50%; left:0; top:46%; width:100%; }
+    .chr_efreq_sticker_bg_inner1 i.chr_cup_red,
+    .chr_efreq_sticker_bg_inner1 i.chr_cup_gre,
+    .chr_efreq_sticker_bg_inner2 i.chr_cup_red,
+    .chr_efreq_sticker_bg_inner2 i.chr_cup_gre { height:auto; width:14.666%; }
+    /**/
+    .efreq_text { font-size:24px; width: 95%; min-width: 160px; padding:0px 0px 0px 5%; }
+    .efreq_text strong.promoTitle { display: inline;}
+}
+@media screen and (max-width:530px) {
+    /*A타입 완료팝업*/
+    .type_a_popup .complete_coupon_notice .text1 strong.red {padding-bottom: 10px;font-size: 40px;}
+
+    /*상단 이름,모드버튼*/
+    .type_a .type_c_bg, .type_c .type_c_bg{padding:10px;}
+    .type_a .efreq_func_btn_wrap ul li a{font-size:12px;padding:5px 0;}
+    .efreq2020summer .efreq_func_btn_wrap ul li.padding{width:1.5%;}
+    .efreq_cup_count_wrap span.text, .efreq_cup_count_wrap span.number, .type_a .efreq_cup_count_wrap span.text{font-size:13px;}
+    table.efreq_list_tb td span.num, .sticker_img_wrap span.num{height:19px;line-height:22px;padding:0 5px;font-size:13px;right:0; bottom:0;}
+    .efreq_history_list table.efreq_list_tb td span.num{right:13px;}
+    /*현황판 슬라이더 화면*/
+    .sticker_bg_slider { height:0; /* padding-bottom:157%; */ }
+    
+    /*e-프리퀀시 바코드 입력 input*/
+    .efreq_barcode_input input { width:21%; }
+}
+@media screen and (max-width:510px) {
+    /*현황판 상단 박스*/
+    .type_a .efreq_top_wrap{padding: 13px 12px 0;}
+    .efreq2020summer .efreq_func_btn_wrap ul li a img{width:17px; padding-top:2px;}
+}
+@media screen and (max-width:480px) {
+	.ms_cont_wrap {left: 0;margin: 0;top: 0;width: 100%;}
+    .ms_cont{padding-top:0;}
+    /***** 이용안내-START *****/
+    /* 이용안내 */
+    /*이용안내 타이틀 상단 여백*/
+    .efreq_guide_ttl header { padding: 30px 10px 0; }
+    .efreq_guide_type_dl dt strong { left:15px; }
+    .efreq_guide_type_dl dd { margin:0 15px; padding:20px 0; }  
+    /*e-프리퀀시란*/
+    .egt1 > dd > p { width:87%; }
+    .efreq_guide_type_dl dd p span.add_txt { width:69%; display:inline-block; }
+    .egt2 dd p{padding-right: 27%;width: 73%;}
+    .egt3 > dt > strong,
+    .egt5 > dt > strong,
+    .egt6 > dt > strong { line-height:1.2; width:70%; }
+    /*이용안내 e-프리퀀시 바코드 발급, 적립, 사용하는 방법*/
+    .ms_reward_mem_list_each figure.mat_minus { margin-top:-175px; }
+    /***** 이용안내-END *****/
+    
+    /***** 현황판-START *****/
+    /*초반진입 팝업*/
+    .efreq_entry_popup_wrap{top:0;left:0;margin-left:0;width:100%;box-shadow:none;border-radius:0;}
+    
+    /*A타입 완료팝업*/
+    .type_a_popup .complete_coupon_notice .text1{font-size: 25px;}
+    .type_a_popup .complete_coupon_notice .text1 strong.red{padding-bottom: 5px;font-size: 35px;}
+    .type_a_popup .complete_coupon_notice img{width:20%;padding:15px 0;}
+    .type_a_popup .complete_coupon_notice .text2{font-size:14px;line-height:20px;}
+    .type_a_popup .complete_coupon_notice .text2 .notice{ margin-top:0;font-size: 14px;}
+    .type_a_popup .complete_coupon_notice .coupon_take_btn{margin-top: 5px;padding: 8px 13px;font-size: 14px;}
+    
+    /*현황판 바코드 클릭시 노출되는 바코드 팝업*/
+    .pop_efreq_barcode_cont { padding: 30px 10px; min-width: 320px; box-sizing: border-box;}
+    /*현황판 숨기기버튼*/
+    .sticker_bg_wrap p.btn_efreq_bghide a{font-size: 13px;}
+    /*현황판 상단 교환기간 하단 안내문구*/
+    .type_c .change_period_notice_wrap .case{margin:10px 0;}
+    .type_c .change_period_notice_wrap .case .text{font-size:13px;}
+    /*스티커현황*/
+    .efreq_cup_count_wrap .refresh_btn img{width:60%;}/*현황판 새로고침 이미지*/
+    .efreq_cup_count_wrap span.text, .efreq_cup_count_wrap span.number{font-size:13px;}/*현황판 스티커 span.text*/
+    /*현황판 슬라이더 화면*/
+    .sticker_bg_wrap {margin-top: 0; width: 100%; padding:0 0 145% 0;}
+    .sticker_bg_slider { height:0; /* padding-bottom:155%; */ }
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a{ width: 15.75px; height: 15.75px; }
+    /*현황판 하단 버튼3개*/
+    .efreq_func_btns li { height:50px; margin-bottom:10px; }
+    .efreq_func_btns li a {height:31px; font-size:13px;padding-top: 18px;}
+    /*현황판 하단 버튼3개 옆 sns버튼*/
+    .efreq_sns_btns li { width:40px; }
+    /***** 현황판-END *****/
+    
+    /***** 공통화면-START *****/
+    /* 공통 *//*스티커 table*/
+    table.efreq_list_tb td { padding: 15px 0; }
+    i.icon_s_cup2{width: 70px; top:25px;}
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq_tbl_icon_wrap { text-align:left; white-space: nowrap; text-align:center;}
+    .efreq_tbl_icon_wrap i.tbl_icon_plus { margin-left:0; margin-top:12px; width:15px; z-index:2; }
+    .efreq_tbl_icon_wrap i.tbl_icon_plus img { width:100%; }
+    .efreq_tbl_icon_wrap i.icon_plus { display: none }
+    .efreq_tbl_icon_wrap i.tbl_cup_red_bg, .efreq_tbl_icon_wrap i.tbl_cup_green_bg { margin: 0; }
+    .tbl_cup_green_bg {/* padding-left: 10px; */vertical-align: middle;}
+    .efreq_coupon_list .efreq_tbl_icon_wrap i.icon_arrow{position:relative; display: inline-block; vertical-align: middle; margin-left: 14%; transform: none; top:auto; right:auto;}
+    .efreq_coupon_list .efreq_tbl_icon_wrap.efreq_tbl_icon_wrap{margin-left: 14%; padding-right: 0} 
+    /*쿠폰 발행하기 table 교환가능*/
+    .tbl_cup_total_bg span { top: 6px }
+    
+    /*히스토리 상단 여백*/
+    .efreq_common_title{padding-top:48px;}
+    /*선물하기 e-프리퀀시 바코드 입력 input*/
+    .efreq_barcode_input input { width:19%; }
+    /*선물하기, 히스토리 스티커 주고받은 갯수*/
+    .sticker_status ul.sticker_inout_num li{font-size:14px;}
+    
+    /*2015 여름 e-프리퀀시 이용조회*/
+    .efreq_event_list_dl dd strong { font-size:14px; }
+    .efreq_event_list_dl dd p { font-size:12px; }  
+    /***** 공통화면-END *****/
+      
+    /**/
+    .pop_tbl_cup_red_bg span {font-size: 12px;font-style: normal;height: 22px;line-height: 0;padding: 11px 7.5px;position: absolute; box-sizing: border-box;}
+    .pop_tbl_cup_green_bg{margin-left:0; }
+    .pop_tbl_cup_green_bg span {font-size: 12px;font-style: normal;height: 22px;line-height: 0;padding: 11px 7.5px;position: absolute; box-sizing: border-box;} 
+    /**/
+    .pop_icon_plus { display: none !important }
+    /**/
+    .tbl_cup_sticker1 { height:auto; width:38px; margin-left:-5px; top:2px; }
+    .tbl_cup_sticker2 { height:auto; width:40px; margin-left:0; top:2px; }
+    .tbl_cup_sticker1 img,
+    .tbl_cup_sticker2 img { margin-top:0; }
+    .tbl_cup_planner { height:50px; width:70px; }
+    .tbl_cup_sticker1 span { background:#078141; border-radius:10px; font-size:13px; height:20px; line-height:21px; right:-5px; top:-5px; }
+    .tbl_cup_sticker2 span { background:#078141; border-radius:10px; font-size:13px; height:20px; line-height:21px; right:-5px; top:-5px; }
+    /**/
+    table.efreq_list_tb td p.btn a {  max-width: 62px; box-sizing:border-box; }
+    table.efreq_list_tb2 td p.btn a { padding:8px 5px; }
+    i.icon_2016efreq2 { background-size:100% auto; bottom: 0; top:auto; width:20%; }
+    /**/
+    .efreq_event_list_wrap { padding-bottom:50px; }
+    /**/
+    .redcup_sel { left:22%; }
+    i.icon_giftbox { background-size:90% auto; right:0; }
+    /**/
+    table.efreq_list_tb td.center{padding:15px 10px 15px;}
+    .efreq_history_list i.icon_plus { display:none; } 
+    .efreq_tbl_icon_inner span.ico_Tcup { display:none; } 
+    /**/
+    .efreq_text { height: 65px; font-size: 18px;} 
+    /*.efreq_sticker_bg{top:12px;}*/
+    .cup_icons_wrap { top:64px; height: 69.75px; }
+    .cup_icons_wrap i.cup_red_bg { width:60px; }
+    /**/
+    .cup_icons_wrap i.icon_plus {width: 14px;height: 14px; margin:0 12px;}
+    .cup_icons_wrap i.cup_green_bg {width: 60px; }
+    .cup_icons_wrap i.icon_result {width: 10px;height: 15px; margin:0 12px;}
+    .cup_icons_wrap i.planner_bg {width:68.25px; }
+    .cup_icons_wrap p.btn_refresh { width:42px; }
+    .sticker_bg_wrap {margin-top: 0;width: 100%;}
+    .cup_icons_wrap i.cup_green_bg img{margin-top: 10px;}
+    .cup_icons_wrap i.cup_red_bg span {border-radius: 18px;font-size: 18px;line-height: 18px;padding: 4.5px 8.25px; top:3.75px; right:14px; }
+    .cup_icons_wrap i.cup_green_bg span {border-radius: 18px;font-size: 18px;line-height: 18px;padding: 4.5px 8.25px; top:3.75px; right:14px; }
+    .cup_icons_wrap i.planner_bg span {border-radius: 18px;font-size: 18px;line-height: 18px;padding: 4.5px 8.25px; top:7.5px; right:14px; }   
+    .browncup_sel { margin-left: 27%; }   
+}
+@media screen and (max-width:430px) {
+    /*A타입 완료팝업*/
+    .type_a_popup .complete_coupon_notice .text1{font-size: 20px;}
+    .type_a_popup .complete_coupon_notice .text1 strong.red{padding-bottom: 5px;font-size: 30px;}
+    .type_a_popup .complete_coupon_notice img{width:20%;padding:15px 0;}
+    .type_a_popup .complete_coupon_notice .text2{font-size:13px;line-height:17px;}
+    .type_a_popup .complete_coupon_notice .text2 .notice{ margin-top:0;font-size: 13px;}
+    .type_a_popup .complete_coupon_notice .coupon_take_btn{padding: 6px 11px;font-size: 13px;}
+}
+@media screen and (max-width:420px) {
+    /*현황판 슬라이더 화면*/
+    .sticker_bg_slider { height:0; /* padding-bottom:156%; */ }
+}
+@media screen and (max-width:415px) {
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a{width:13.536px; height: 13.536px;}
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq_coupon_list .efreq_tbl_icon_wrap.efreq_tbl_icon_wrap{margin-left: 12%;}
+    .efreq_coupon_list .efreq_tbl_icon_wrap i.icon_arrow{margin-left:12%;}
+    /*현황판 상단 교환기간*/
+    .period_status_bar_wrap,/*이벤트기간*/
+    .period_status_bar_wrap .title .d_day,/*디데이 숫자*/
+    .type_a .change_period_notice_wrap .case .text, 
+    .type_c .change_period_notice_wrap .case .text/*스티커 현황 상단 설명글*/{font-size:14px;letter-spacing:-.5px;}
+}
+@media only screen and (max-width:414px) and (min-width: 414px){
+    .cup_icons_wrap i.cup_red_bg span{height:27px; box-sizing: border-box; padding: 3.5px 8.25px;}
+    .cup_icons_wrap i.cup_green_bg span{height:27px; box-sizing: border-box; padding: 3.5px 8.25px;}
+    .cup_icons_wrap i.planner_bg span{height:27px; box-sizing: border-box; padding: 3.5px 8.25px;}
+}
+@media screen and (max-width:414px){
+	/*이용안내 링크버튼*/
+	.btn_exclam_btn{width:7%;}
+	/*현황판 완료팝업 위치조정*/
+	/*.type_a_popup.pop_efreq_2019_complete{bottom:-11.5px;}*/
+	/*완료팝업*/
+    .type_b.sticker_plus_5 .efreq2020summer .pop_efreq_2020_complete{bottom:-3px;}
+     /*A타입 완료팝업*/
+    .type_a_popup.pop_efreq_2020_complete{bottom:-2px;}
+    /*현황판 완료팝업 위치조정*/
+    /*.type_a_popup.pop_efreq_2019_complete{bottom:3px;}*/
+	/*현황판 하단 버튼 3개*/
+    .efreq_btns_wrap { margin-top:10px;}
+	
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq2020summer .efreq_tbl_icon_wrap li{margin:0 5px 0 0;}
+    .efreq2020summer .efreq_tbl_icon_wrap li.efreq_tbl_icon img{width:40px;height:42px;}
+    .efreq_tbl_icon_wrap.left .arrow-img {width: 9.5px;left:3px;}
+    /*증정품 상세안내 -상단탭추가*/
+    .top_btn_wrap ul li a{font-size:14px;}
+    .top_btn_wrap ul li a span.special-code{font-size: 10px;}
+}
+@media screen and (max-width:413px){
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a{width:13.536px; height: 13.536px;}
+}
+@media screen and (max-width:376px){
+	/*바코드 버튼*/
+    /*.sticker_bg_wrap p.btn_barcode{width:16%;}*/
+    /*현황판 슬라이더*/
+    /*.efreq_sticker_bg{top:3px;}*/
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a{width:12.3px; height: 12.3px;}
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq_coupon_list .efreq_tbl_icon_wrap i.icon_arrow{margin-left: 10%;}
+    .efreq_coupon_list .efreq_tbl_icon_wrap.efreq_tbl_icon_wrap{margin-left: 10%; padding-right: 0}
+}
+@media screen and (max-width:375px){
+    /*A타입 완료팝업*/
+    .type_a_popup .complete_coupon_notice img{width:17%;padding:10px 0;}
+    .type_a_popup .complete_coupon_notice .coupon_take_btn{margin-top: 10px;}
+    .pop_efreq_2020_complete.type_a_popup p.btn_close_pop a{height:70px;}
+    /*현황판 완료팝업 숨기기버튼*/
+    .sticker_bg_wrap p.btn_efreq_bghide{bottom:15%;}
+    /*현황판 스티커 이미지*/
+    .type_a .period_status_bar_wrap .period_status_bar{margin-top:-2px;}
+    /*현황판 슬라이더 화면*/
+    .sticker_bg_slider { /*padding-bottom:154%;*/ }
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq2020summer .efreq_tbl_icon_wrap li.efreq_tbl_icon{width:40px;height:42px;}
+    table.efreq_list_tb td.center{padding:15px 5px;}
+    /*히스토리 스티커현황 타이틀*/
+    .sticker_status_title{font-size:13px;}
+    .sticker_status ul.sticker_num_list li p.sticker_name{font-size:13px;}
+    .efreq_history_list table.efreq_list_tb td span.num{right:6px;}
+}
+@media screen and (max-width:370px) {
+    /*현황판 완료팝업*/
+    .efreq_sticker_complete .btn_hide_complete {font-size: 11px;}
+    /*현황판 완료팝업 숨기기버튼*/
+    .sticker_bg_wrap p.btn_efreq_bghide a{font-size: 11px;} 
+    .type_a .period_status_bar_wrap .period_status_bar{margin-top:0;}
+    /*현황판 슬라이더*/
+    /*.efreq_sticker_bg{top:3px;}*/
+    .sticker_bg_wrap {/* margin-top:50px; */padding:0 0 144% 0; width: 100%; }
+    /*현황판 슬라이더 pager*/
+    /* .sticker_bg_wrap .bx-wrapper .bx-pager.bx-default-pager a {width: 12px;height: 12px;} */
+    /*쿠폰 발행하기 table 스티커조합*/
+    .tbl_cup_green_bg{/* padding-left:10px; */} 
+    .tbl_cup_green_bg img{margin-top:7px;}
+    /*쿠폰 발행하기 table 교환가능*/
+    .tbl_cup_total_bg span{top:6px}
+    /**/
+    .pinkcup_sel{margin-left:-13%;}
+    .browncup_sel{margin-left:32%;}
+    .esticker_seding_ttl,.esticker_done_ttl{font-size:14px;letter-spacing:-0.8px;}
+    /**/
+    .efreq_text { height: 50px; font-size: 14px;}
+    .efreq_text_wrap{ height: 60px; }
+}
+@media screen and (max-width:360px) {
+    /*프리퀀시 이용조회 하단 이용안내 버튼*/
+    .btn_efreq_guide:after { content:""; clear:both; display:block; }
+    /*스타벅스 e-프리퀀시란?*/
+    .efreq_new_list_wrap:before { content:""; clear:both; display:block; }
+    .efreq_new_list_wrap { float:left; margin-top:50px; width:100%; }
+    .efreq_new_list_wrap ul { margin:-20px 0 0 -20px; }
+    .efreq_new_list_wrap ul:before { clear:both; content:""; display:block; }
+    .efreq_new_list_wrap ul li { border:1px solid #ddd; border-radius:3px; margin:20px 0 0 20px; }
+    .efreq_new_list_wrap ul li a { display:block; height:100%; width:100%; }
+    .efreq_new_list_wrap dl { width:100%; }
+    .efreq_new_list_wrap dl:after { clear:both; content:""; display:block; }
+    .efreq_new_list_wrap dt { float:left; overflow:hidden; width:459px; }
+    .efreq_new_list_wrap dt img { transition:transform 1s; -webkit-transition:-webkit-transform 1s; width:100%; }
+    .efreq_new_list_wrap dt img:hover { transform:scale(1.1, 1.1); -webkit-transform:scale(1.1, 1.1); }
+    .efreq_new_list_wrap dd { background:#fff; border-radius:0 0 3px 3px; float:left; padding:64px 20px 49px 49px ; width:300px; }
+    .efreq_new_list_wrap dd span.efreq_dday_grey { background:#999; border-radius:3px; color:#fff; display:block; font-size:12px; height:24px; line-height:24px; text-align:center; width:62px; }
+    .efreq_new_list_wrap dd span.efreq_dday_green { background:#006633; border-radius:3px; color:#fff; display:block; font-size:12px; height:24px; line-height:24px; text-align:center; width:62px; }
+    .efreq_new_list_wrap dd strong { color:#222; float:left; font-size:16px; margin-top:10px; text-overflow:ellipsis; white-space:nowrap; width:100%; }
+    .efreq_new_list_wrap dd p { color:#444; float:left; font-size:14px; line-height:1.4; margin-top:10px; width:100%; }
+    /*완료팝업 위치조정*/
+    .type_a_popup.pop_efreq_2020_complete{bottom:-2px;}
+    /*현황판 스티커현황*/
+    .type_b .efreq_cup_count_wrap .refresh_btn{top:2%;right:-2%;}
+    /*현황판 선택형 25개일때 슬라이더*/
+    .type_b.sticker_plus_5 .sticker_bg_slider { padding-bottom:143%; }
+    /*쿠폰 발행하기 table 스티커조합*/
+    .coupon_pay_wrap .efreq_tbl_icon_wrap li.tbl_cup_green_bg {margin-left: 0;}
+    .coupon_pay_wrap .efreq_tbl_icon_wrap li.tbl_cup_red_bg { margin-right: 5px;}
+    /*쿠폰 발행하기 table 교환가능*/
+    .efreq2020summer .efreq_tbl_icon_wrap li, .efreq2020summer .efreq_tbl_icon_wrap .tbl_cup_total_bg { width: 40px;}
+    .coupon_pay_wrap .coupon_pay_btn {font-size: 12px;width: 75px;padding: 7px 0;}
+    /**/
+    table.efreq_list_tb2 { font-size:14px; margin-bottom:30px; width:100%; }
+    table.efreq_list_tb2 th { border-top:1px solid #333; border-bottom:1px solid #333; color:#222; font-size:12px; font-weight:bold; height:36px; vertical-align:middle; }
+    table.efreq_list_tb2 td { background:#f4f4f2; border-bottom:1px solid #dbdbdb; color:#666; font-size:12px; padding:8px 0; vertical-align:middle; }
+    table.efreq_list_tb2 td.center { text-align:center; }
+    table.efreq_list_tb2 td.no_data { height:80px; font-weight:bold; text-align:center; }
+    table.efreq_list_tb2 td p.btn { text-align:center; }
+    table.efreq_list_tb2 td p.btn a { display:inline-block; padding:8px 8px; text-align:center; font-size:12px; color:#fff; background:#666; border-radius:3px; }
+    table.efreq_list_tb2 td p.ico_cup_r { background-size:100% auto; margin-left:40px; height:53px; float:left; position:relative; width:32px; }
+    table.efreq_list_tb2 td p.ico_cup_g { background-size:100% auto; margin-left:40px; height:53px; float:left; position:relative; width:40px; }
+    table.efreq_list_tb2 td p.ico_plus { background:url("../img/util/efreq/icon_plus.png") 0 20px no-repeat; margin-left:40px; height:53px; float:left; width:30px; }
+    table.efreq_list_tb2 td p.ico_arrow { background:url("../img/util/efreq/icon_arrow.png") 0 20px no-repeat; margin-left:35px; height:53px; float:left; width:30px; }
+    table.efreq_list_tb2 td span.num { background-color:#bd9b60; border-radius:20px; color:#fff; display:inline-block; height:20px; line-height:22px; padding:0 6px; position:absolute; right:-10px; top:8px; text-align:center; white-space:nowrap; }
+    table.efreq_list_tb2 td span.ico_book { margin-left:5px; }
+    /**/
+    .tbl_cup_sticker1 { display:inline-table; height:57px; margin-left:-25px; position:relative; width:65px; }
+    .tbl_cup_sticker1 img { margin-top:5px; width:100%; }
+    .tbl_cup_sticker1 span { background:#078141; border-radius:15px; color:#fff; display:block; font-size:22px; font-style:normal; height:31px; line-height:31px; padding:0 10px; position:absolute; right:-15px; text-align:center; top:0; }
+    .tbl_cup_sticker2 { display:inline-table; height:57px; margin-left:20px; position:relative; width:65px; }
+    .tbl_cup_sticker2 img { margin-top:5px; width:100%; }
+    .tbl_cup_sticker2 span { background:#078141; border-radius:15px; color:#fff; display:block; font-size:22px; font-style:normal; height:31px; line-height:31px; padding:0 10px; position:absolute; right:-15px; text-align:center; top:0; white-space:nowrap; }
+    .tbl_cup_planner { display:block; float:left; height:76px; position:relative; width:120px; top:-2px; }
+    .tbl_cup_planner img { width:100%; }
+    i.icon_2016efreq2 { background:url("../img/util/efreq/2018winter/icon_efreq.png") no-repeat; height:82px; position:absolute; right:20px; top:23px; width:99px; }  /* 2018summer 수정 20171017_2 */
+    i.icon_barcode { background:url("../img/util/efreq/icon_barcode.png") no-repeat; height:44px; position:absolute; right:8px; top:28px; width:149px; }
+    /**/
+    .pop_planner_efreq { display:none; border-radius:3px; left:50%; margin:-132px 0 0 -275px; position:fixed; top:50%; width:550px; z-index:99; }
+    .pop_planner_txt { color:#444; font-size:17px; line-height:150%; padding-top:10px; }
+    .pop_planner_txt:first-child { padding-top:0; }
+    .pop_planner_input { font-size:0; margin-top:15px; text-align:right; }
+    .pop_planner_input .ez-checkbox { display:inline-block; vertical-align:middle; }
+    .pop_planner_input label { color:#444; display:inline-block; font-size:15px; line-height:150%; margin-left:10px; vertical-align:middle; }    
+}
+@media screen and (max-width:340px){
+    /*현황판 슬라이더 화면*/
+    .sticker_bg_slider{height:0;/*padding-bottom:152%;*/}
+    /*현황판 상단 버튼*/
+    .efreq2020summer .efreq_func_btn_wrap ul li.padding{width:1.5%;}
+    .efreq2020summer .efreq_func_btn_wrap ul li a{font-size:12px;padding:5px 0;}
+    /**/
+    .efreq_coupon_list p.efreq_coupon_list_ttl{font-size:14px;}
+    br.efreq_coupon_br{display:none;}
+    i.icon_chked{background-size:80% auto;}
+    article.barcode_wrap div.barcode_guide span{width:75%}
+}
+@media screen and (max-width:321px){
+    /* 공통 *//*스티커 table*/
+    table.efreq_list_tb td{padding:15px 2px;}
+    /*쿠폰 발행하기 table 스티커조합*/
+    .efreq_coupon_list .efreq_tbl_icon_wrap i.icon_arrow{margin-left:6%;}
+    /*쿠폰발행 교환가능*/
+    .tbl_cup_total_bg span{top:5px;}
+    .tbl_cup_total_bg{width:32px;}
+    /*이용안내 링크버튼*/
+    .btn_exclam_btn{width:9%;}
+    /*현황판 스티커 크기*/
+    .type_b .efreq_sticker_ico li img{width:46%;}
+    /*현황판 선택형 25개일때 슬라이더*/
+    .type_b.sticker_plus_5 .sticker_bg_slider{padding-bottom:141%;}
+    /**/
+    .sending_cup_sel_innerBox_left{padding-right:5px;}
+    .sending_cup_sel_innerBox_right{padding-left:5px;}
+}
+@media screen and (max-width:320px){
+    /*쿠폰 발행하기 table 쿠폰발행하기 버튼*/
+    .coupon_pay_wrap .coupon_pay_btn{width:70px;}
+    /*증정품 상세안내 -상단탭추가*/
+    .top_btn_wrap ul li a{font-size:13px;}
+    .kind_tab_btn_wrap .custum_pager.pen a{width:88px;font-size:11px;}
+    
+	.efreq_sticker_ico .box_mission_cup li:nth-child(-n+4) {width:30px;}
+	.efreq_sticker_ico .box_mission_cup li:nth-child(n+4) {width:29px;}
+
+    /*
+         개발 쪽에서 ul 구조 변경 요청 css 수정
+    .efreq_sticker_ico .box_mission_cup{width:130px;margin:48px auto 0;}
+    .efreq_sticker_ico .box_mission_cup li{width:30px;margin-right:20px;}
+    .efreq_sticker_ico .box_normal_cup{width:227px;margin:79px auto 0;}
+    .efreq_sticker_ico .box_normal_cup li{width:29px;margin-right:20px;margin-bottom:23px;}
+    */
+}
+@media screen and (min-width:0\0){
+    .esticker_seding_barcode p img{height:44px;left:20px;margin-top:-13px;position:absolute;top:auto; width:149px;}
+}
+@media screen and (max-width: 1099px) and (min-width:961px){
+	.ms_cont_wrap {margin: 50px 0 0 -48%;width: 96%;}
+    .ms_cont {width: 690px;}
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager, .sticker_bg_wrap .bx-wrapper .bx-controls-auto{bottom:11px;}
+}
+@media screen and (max-width: 851px) and (min-width: 641px){
+	.ms_cont_wrap {margin: 50px 0 0 -48%;width: 96%;left:50%;}
+    /*현황판 슬라이더 pager*/
+    .sticker_bg_wrap .bx-wrapper .bx-pager, .sticker_bg_wrap .bx-wrapper .bx-controls-auto{bottom:11px;}
+}
+@media screen and (max-width: 640px) and (min-width: 481px){
+    .ms_cont_wrap {left: 0;margin: 0;top: 0;width: 100%;}
+}
+/**********#####===== 미디어 쿼리-END =====#####**********/

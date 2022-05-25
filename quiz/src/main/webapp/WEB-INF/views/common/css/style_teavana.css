@@ -1,0 +1,1000 @@
+@charset 'utf-8';
+
+	#teavanaVisual { background:url("../img/teavana/bg_teavana.jpg") center 0 no-repeat #000; background-size:cover; height:940px; overflow:hidden; position:relative; }
+
+	#teavanaNewVis { background:url("../img/teavana/teavana_bg.jpg") center 0 no-repeat #000; background-size:cover; height:952px; overflow:hidden; position:relative; } /*20170905수정*/
+
+	.teavanaVisual_inner { margin:0 auto; padding:131px 0 0; width:535px; }
+	.teavana_visual_txt1,
+	.teavana_visual_txt2,
+	.teavana_visual_img { width:535px; opacity:0; }
+	.teavana_visual_txt1 { background:url("../img/teavana/ttl_teavana.png") center center no-repeat; background-size:contain; height:199px;  margin:0 auto 37px; }
+	.teavana_visual_txt2 { background:url("../img/teavana/ttl_teavana_sub.png") center center no-repeat; background-size:contain; height:84px; margin-bottom:5px; margin:0 auto; }
+	.teavana_visual_img { background:url("../img/teavana/visual_teavana.png") center center no-repeat; background-size:contain; height:435px; position:absolute; bottom:0; left:50%; margin-left:-228px;}
+	.teavana_visual_nimg { background:url("../img/teavana/teavana_visual_nimg.png") center center no-repeat; background-size:contain; bottom:0; height:431px; left:50%; margin-left:-427.5px; position:absolute; width:855px; } /*20170905수정*/
+	.teavanaVisual_inner .move-txt { opacity:0; transform: translate(0, 20px); -webkit-transform: translate(0, 20px); transition: 1s ease-in-out }
+	.teavanaVisual_inner .move-txt.move { opacity: 1; transform: translate(0, 0); -webkit-transform: translate(0, 0); }
+
+	.tv_skip_menu_wrap { background:url("../img/teavana/skip_menu_bg.png"); bottom:0; height:84px; left:0; position:absolute; width:100%; z-index:10; }
+	.tv_skip_menu_inner { height:100%; left:50%; margin-left:-547px; position:absolute; top:0; width:1094px; }
+	.tv_skip_menu_inner ul:after { clear:both; content:""; display:block; }
+	.tv_skip_menu_inner ul li { float:left; height:84px; position:relative; }
+	.tv_skip_menu_inner ul li.tv_skip_menu01 { width:364px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu02 { width:363px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu03 { width:364px; }
+	.tv_skip_menu_inner ul li.skip_menu_sep { background:url("../img/teavana/skip_menu_sep.png") center center no-repeat; width:1px; }
+	.tv_skip_menu_inner ul li a { display:block; left:50%; margin-top:-9px; overflow:hidden; position:absolute; text-indent:-20000px; top:50%; z-index:5; -webkit-transition:top .3s; transition:top .3s; }
+	.tv_skip_menu_inner ul li a.on { top:40% ; }
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a { background:url("../img/teavana/sub_menu01.png") no-repeat; background-size:100% auto; height:18px; margin-left:-48px; width:96px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a:hover { background:url("../img/teavana/sub_menu01_on.png") no-repeat; background-size:100% auto; height:18px; margin-left:-48px; width:96px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a { background:url("../img/teavana/sub_menu02.png") no-repeat; background-size:100% auto; height:18px; margin-left:-67px; width:134px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a:hover { background:url("../img/teavana/sub_menu02_on.png") no-repeat; background-size:100% auto; height:18px; margin-left:-67px; width:134px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a { background:url("../img/teavana/sub_menu03.png") no-repeat; background-size:100% auto; height:18px; margin-left:-67px; width:134px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a:hover { background:url("../img/teavana/sub_menu03_on.png") no-repeat; background-size:100% auto; height:18px; margin-left:-67px; width:134px; }
+
+	.tv_skip_menu_inner ul li i { background:url("../img/teavana/menu_dot.png") no-repeat; display:block; height:6px; left:50%; margin:-3px 0 0 -3px; opacity:0 !important; filter:alpha(opacity=0) !important; position:absolute; top:50%; width:6px; z-index:4; }
+	.tv_skip_menu_inner ul li i.on { opacity:1 !important; filter:alpha(opacity=1) !important; top:50%; }
+	.teavana_skip_gnb  { background:#c0d32f; height:72px; z-index:10; }
+	.teavana_skip_gnb  ul {  background:#c0d32f; height:72px; display:table; position:relative; text-align:center; width:100%; z-index:10; }
+	.teavana_skip_gnb  ul li { display:inline-table; margin:0 87.5px; }
+	.teavana_skip_gnb  ul li a { color:#0d0d0d; font-size:14px; line-height:72px; padding-bottom:5px; }
+	.teavana_skip_gnb  ul li a:hover { border-bottom:3px solid #000; }
+
+	.video { height:0; width:100% !important; padding:0 0 33% 0; position:relative; left:0; margin-left:0; top:0; }
+	.video iframe { left:0 !important; margin-left:0 !important; height:100% !important; position:absolute; width:100% !important; }
+	
+	.teavana_inner { margin:0 auto; position:relative; width:1100px; }
+	.btn_teavana_toggle { background:url("../img/teavana/btn_teavana_toggleU.png") 0 0 no-repeat; bottom:0; height:46px; left:50%; margin-left:-13px; position:absolute; text-indent:-20000px; width:46px; }
+	.btn_teavana_toggle.on { background:url("../img/teavana/btn_teavana_toggleD.png") 0 0 no-repeat; bottom:0; height:46px; left:50%; margin-left:-13px; position:absolute; text-indent:-20000px; width:46px; }
+
+	.tv_inner { height:100%; left:50%; margin-left:-640px; position:absolute; top:0; width:1280px; }
+
+	#brandStory { background:url("../img/teavana/brand_story_bg.jpg") fixed no-repeat; background-size:cover; height:1532px; overflow:hidden; position:relative; }
+	.poly_obje01 { background:url("../img/teavana/poly_obje01.png") no-repeat; background-size:100% auto; height:208px; left:-49px; position:absolute; top:1px; width:267px; }
+	.poly_obje02 { background:url("../img/teavana/poly_obje02.png") no-repeat; background-size:100% auto; bottom:-42px; height:309px; position:absolute; right:-37px; width:266px; }
+
+	.subttl_brand_story { background:url("../img/teavana/subttl_brand_story.png") no-repeat; background-size:100% auto; height:89px; left:94px; position:absolute; top:210px; width:336px; }
+	.brand_story_txt01 { background:url("../img/teavana/brand_story_txt01.png") no-repeat; background-size:100% auto; height:237px; left:1px; position:absolute; top:422px; width:444px; } /* 20210809 수정 */
+	.brand_story_img01 { background:url("../img/teavana/brand_story_img01.png") no-repeat; background-size:100% auto; height:692px; left:-524px; position:absolute; top:570px; width:1010px; z-index:3; }
+	.brand_story_txt02 { background:url("../img/teavana/brand_story_txt02.png") no-repeat; background-size:100% auto; bottom:360px; height:238px; left:543px; position:absolute; width:337px; } /* 20210809 수정 */
+	.brand_story_img02 { background:url("../img/teavana/brand_story_img02.png") no-repeat; background-size:100% auto; height:855px; position:absolute; right:-339px; top:-54px; width:1120px; }
+	.brand_story_txt03 { background:url("../img/teavana/brand_story_txt03.png") no-repeat; background-size:100% auto; height:199px; position:absolute; right:17px; top:665px; width:353px; z-index:3 } /* 20210809 수정 */
+	.brand_story_img03 { background:url("../img/teavana/brand_story_img03.png") no-repeat; background-size:100% auto; bottom:-1px; height:601px; position:absolute; right:-48px; width:1045px; }
+
+	.cup_obje01 { background:url("../img/teavana/cup_obje01.png") no-repeat; background-size:100% auto; height:189px; left:-88px; position:absolute; top:449px; width:77px; }
+	.cup_obje02 { background:url("../img/teavana/cup_obje02.png") no-repeat; background-size:100% auto; bottom:-31px; height:157px; left:203px; position:absolute; width:71px; }
+	.cup_obje03 { background:url("../img/teavana/cup_obje03.png") no-repeat; background-size:100% auto; height:91px; position:absolute; right:-165px; top:621px; width:102px; }
+	.cup_obje04 { background:url("../img/teavana/cup_obje04.png") no-repeat; background-size:100% auto; bottom:269px; height:180px; position:absolute; right:346px; width:98px; }
+	.cup_obje05 { background:url("../img/teavana/cup_obje02.png") no-repeat; background-size:100% auto; height:157px; position:absolute; right:57px; top:-31px; width:71px; }
+
+	#teaType { background:url("../img/teavana/tea_type_bg.jpg") center top no-repeat; background-size:cover; height:2816px; overflow:hidden; position:relative; }
+	.subttl_tea_type { background:url("../img/teavana/subttl_tea_type.png") no-repeat; background-size:100% auto; height:151px; left:93px; position:absolute; top:208px; width:287px; }
+	.subtxt_tea_type { background:url("../img/teavana/subtxt_tea_type.png") no-repeat; background-size:100% auto; height:148px; left:93px; position:absolute; top:437px; width:508px; } /* 20210809  수정 */
+	.tea_type_card_wrap { box-shadow:0 0 7px #999599; height:1440px; left:50%; margin-left:-645px; position:absolute; top:667px; width:1290px; }
+
+	.tea_type_card01 { background:url("../img/teavana/tea_type_card01.jpg") no-repeat; background-size:100% auto; border-bottom:1px solid #a6a2a2; height:359px; position:relative; width:1290px; }
+	.tea_type01_img  { background:url("../img/teavana/tea_type01_img.png") no-repeat; background-size:100% auto; height:359px; left:88px; position:absolute; top:0; width:582px; z-index:3; }
+	.tea_type01_txt  { background:url("../img/teavana/tea_type01_txt.png") no-repeat; background-size:100% auto; height:169px; position:absolute; right:116px; top:96px; width:455px; z-index:4; }
+	.zoom_tea_type01 { background:url("../img/teavana/zoom_tea_type01.png") no-repeat; background-size:100% auto; height:134px; left:509px; position:absolute; top:112px; width:202px; z-index:5; }
+	.zoom_tea_type01 a { bottom:0; display:block; height:53px; left:0; overflow:hidden; position:absolute; text-indent:-20000px; width:53px; }
+
+	.tea_type_card01_dimm,
+	.tea_type_card02_dimm,
+	.tea_type_card03_dimm,
+	.tea_type_card04_dimm { background:#000; display:none; height:100%; opacity:.7; filter:alpha(opacity=70); position:absolute; width:100%; z-index:6; }
+	.tea_type_layer { background:#fff; display:none; height:240px; left:50%; margin-left:-545px; position:absolute; top:52px; width:1090px; z-index:7; }
+	.tea_type_layer .swiper-pagination { bottom:-44px; width:100%; }
+	.tea_type_layer .swiper-pagination .swiper-pagination-bullet { margin:0 7.5px; }
+	.tea_type_layer .swiper-pagination-bullet { background:url("../img/teavana/leaf_pager.png") no-repeat; background-size:100% auto; height:14px; opacity:1; width:14px; }
+	.tea_type_layer .swiper-pagination-bullet-active { background:url("../img/teavana/leaf_pager_on.png") no-repeat; background-size:100% auto; height:14px; width:14px; }
+	.tea_type_layer .swiper-button-prev { background:url("../img/teavana/leaf_arrow_l.png") no-repeat; background-size:100% auto; height:46px; left:-56px; width:24px; }
+	.tea_type_layer .swiper-button-next { background:url("../img/teavana/leaf_arrow_r.png") no-repeat; background-size:100% auto; height:46px; right:-56px; width:24px; }
+
+	.tea_type_layer_inner { overflow:hidden; position:absolute; height:100%; width:100%; }
+
+	.btn_leaf_close { display:none; height:29px; position:absolute; right:29px; top:30px; width:29px; z-index:6; }
+	.btn_leaf_close a { background:url("../img/teavana/btn_leaf_close.png") no-repeat; background-size:100% auto; display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+
+	.tea_type_layer_img { height:239px; left:0; position:absolute; top:0; width:260px; }
+	.tea_type_layer_txt { height:203px; position:absolute; right:0; top:37px; width:830px; }
+	.tea_type_level { color:#292929; font-size:15px; margin-top:15px; }
+	.tea_type_subttl { margin-top:20px; }
+	.selling_prod { color:#595959; font-size:15px; line-height:1.6; margin-top:15px; }
+	.selling_prod span,
+	.selling_prod span a { color:#1e2782; }
+
+	.tea_type_card02 { background:url("../img/teavana/tea_type_card02.jpg") no-repeat; background-size:100% auto; border-bottom:1px solid #a6a2a2; border-top:1px solid #fbfbfb; height:358px; position:relative; width:1290px; }
+	.tea_type02_img  { background:url("../img/teavana/tea_type02_img.png") no-repeat; background-size:100% auto; height:358px; left:65px; position:absolute; top:0; width:1218px; z-index:3; }
+	.tea_type02_txt  { background:url("../img/teavana/tea_type02_txt.png") no-repeat; background-size:100% auto; height:169px; left:175px; position:absolute; top:95px; width:397px; z-index:4; }
+	.zoom_tea_type02 { background:url("../img/teavana/zoom_tea_type02.png") no-repeat; background-size:100% auto; height:134px; left:582px; position:absolute; top:113px; width:202px; z-index:5; }
+	.zoom_tea_type02 a { bottom:0; display:block; height:53px; overflow:hidden; position:absolute; right:0; text-indent:-20000px; width:53px; }
+
+	.tea_type_card03 { background:url("../img/teavana/tea_type_card03.jpg") no-repeat; background-size:100% auto; border-bottom:1px solid #a6a2a2; border-top:1px solid #fbfbfb; height:358px; position:relative; width:1290px; }
+	.tea_type03_img  { background:url("../img/teavana/tea_type03_img.png") no-repeat; background-size:100% auto; height:358px; left:73px; position:absolute; top:0; width:708px; z-index:3; }
+	.tea_type03_txt  { background:url("../img/teavana/tea_type03_txt.png") no-repeat; background-size:100% auto; height:146px; position:absolute; right:159px; top:106px; width:412px; z-index:4; }
+	.zoom_tea_type03 { background:url("../img/teavana/zoom_tea_type03.png") no-repeat; background-size:100% auto; height:134px; left:509px; position:absolute; top:120px; width:202px; z-index:5; }
+	.zoom_tea_type03 a { bottom:0; display:block; height:53px; left:0; overflow:hidden; position:absolute; text-indent:-20000px; width:53px; }
+
+	.tea_type_card04 { background:url("../img/teavana/tea_type_card04.jpg") no-repeat; background-size:100% auto; border-bottom:1px solid #a6a2a2; border-top:1px solid #fbfbfb; height:358px; position:relative; width:1290px; }
+	.tea_type04_img  { background:url("../img/teavana/tea_type04_img.png") no-repeat; background-size:100% auto; height:358px; position:absolute; right:0; top:0; width:740px; z-index:3; }
+	.tea_type04_txt  { background:url("../img/teavana/tea_type04_txt.png") no-repeat; background-size:100% auto; height:169px; left:176px; position:absolute; top:95px; width:396px; z-index:4; }
+	.zoom_tea_type04 { background:url("../img/teavana/zoom_tea_type04.png") no-repeat; background-size:100% auto; height:134px; left:582px; position:absolute; top:113px; width:202px; z-index:5; }
+	.zoom_tea_type04 a { bottom:0; display:block; height:53px; overflow:hidden; position:absolute; right:0; text-indent:-20000px; width:53px; }
+
+	.subttl_tea_lineup { background:url("../img/teavana/subttl_tea_lineup.png") no-repeat; background-size:100% auto; height:153px; left:93px; position:absolute; top:2314px; width:287px; }
+	.subtxt_tea_lineup { background:url("../img/teavana/subtxt_tea_lineup.png") no-repeat; background-size:100% auto; height:111px; left:94px; position:absolute; top:2545px; width:656px; }
+
+	/* 161213 황기흠 css 수정 */
+	.tea_lineup_tabs { border-top:1px solid #c0bab5; bottom:0; height:77px; left:0; position:absolute; width:100%; z-index:5; }
+	.tea_lineup_tabs_nav { height:100%; left:50%; margin-left:-543px; position:relative; top:0; width:1086px; }
+	.tea_lineup_tabs_nav ul:after { clear:both; content:""; display:block; }
+	.tea_lineup_tabs_nav ul li { float:left; height:77px; position:relative; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_sep { background:url("../img/teavana/skip_menu_sep.png") center center no-repeat; width:1px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_sep:first-child { display:none; }
+	
+	/*20171221 추가 및 수정*/	
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 { width:216px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 { width:216px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 { width:216px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 { width:216px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 { width:216px; }
+	/*20171221 추가 및 수정*/
+
+	/* 170213 황기흠 수정 */
+	.tea_lineup_tabs_nav ul li a { display:block; left:50%; margin-top:-8px; overflow:hidden; position:absolute; text-indent:-20000px; top:50%; z-index:5; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a { background:url("../img/teavana/lineup_menu01_nw.png") no-repeat; background-size:100% auto; height:16px; margin-left:-46px; width:92px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a:hover { background:url("../img/teavana/lineup_menu01_nw_on.png") no-repeat; background-size:100% auto; height:16px; margin-left:-46px; width:92px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a { background:url("../img/teavana/lineup_menu02_nw.png") no-repeat; background-size:100% auto; height:16px; margin-left:-32px; width:64px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a:hover { background:url("../img/teavana/lineup_menu02_nw_on.png") no-repeat; background-size:100% auto; height:16px; margin-left:-32px; width:64px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a { background:url("../img/teavana/lineup_menu03_nw.png") no-repeat; background-size:100% auto; height:16px; margin-left:-24.5px; width:48px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a:hover { background:url("../img/teavana/lineup_menu03_nw_on.png") no-repeat; background-size:100% auto; height:16px; margin-left:-24px; width:48px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a { background:url("../img/teavana/lineup_menu04_nw.png") no-repeat; background-size:100% auto; height:36px; margin-left:-37px; margin-top:-18px; width:74px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a:hover { background:url("../img/teavana/lineup_menu04_nw_on.png") no-repeat; background-size:100% auto; height:36px; margin-left:-37px; margin-top:-18px; width:74px; }
+
+	/*20171221 추가 및 수정*/
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a { background:url("../img/teavana/lineup_menu05_nw.png") no-repeat; background-size:auto 100%; height:36px; margin-left:-37px; margin-top:-18px; width:74px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a:hover { background:url("../img/teavana/lineup_menu05_nw_on.png") no-repeat; background-size:auto 100%; height:36px; margin-left:-37px; margin-top:-18px; width:74px; }
+	/*20171221 추가 및 수정*/
+
+	.tea_lineup_tabs_nav ul li i { background:#fff; display:block; height:2px; left:50%; opacity:0; position:absolute; top:10px; z-index:3; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 i { margin-left:-51px; width:102px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 i { margin-left:-37px; width:74px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 i { margin-left:-29px; width:58px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 i { margin-left:-42px; width:84px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 i { margin-left:-42px; width:84px; } /*20171221 추가*/
+	/* 170213 황기흠 수정 end */
+
+	/*
+	#teaSlide { background:url("../img/teavana/tea_type_slide_bg.jpg") center top no-repeat; background-size:cover; height:532px; position:relative; }
+	.spoon_tex { background:url("../img/teavana/spoon_tex.png") no-repeat; bottom:0; height:1275px; position:absolute; right:0; width:706px; }
+	.tea_slide_wrap { height:342px; left:50%; margin:-171px 0 0 -545px; position:absolute; top:50%; width:1090px; }
+	.tea_slider { height:304px; overflow-x:hidden; width:100%; }
+	.tea_slider .swiper-slide { width:257px !important; }
+	*/
+	#teaSlide { background:url("../img/teavana/tea_type_slide_bg.jpg") center top no-repeat; background-size:cover; height:434px; position:relative; padding-top:98px;}
+	.spoon_tex { background:url("../img/teavana/spoon_tex.png") no-repeat; bottom:0; height:1275px; position:absolute; right:0; width:706px; }
+	.tea_slide_wrap { height:342px; margin:0 auto ; overflow:hidden; position:relative; width:1090px; }
+	.tea_slider { height:304px; max-width:811px; margin:0 auto;  width:100%; }
+	.tea_slider .swiper-slide { width:257px !important; }				
+	.tea_slider:before { content:''; position:absolute; left:0; width:120px; top:0; bottom:0; opacity:.9; background:#fff;  z-index:5;}
+	.tea_slider:after { content:''; position:absolute; right:0; width:120px; top:0; bottom:0; opacity:.9; background:#fff;  z-index:5;}
+	.tea_slider .swiper-scrollbar-drag { background:#1e2782; }
+	.tea_slider .tea_name { color:#595959; display:block; font-size:15px; margin-top:15px; text-align:center; }
+	
+	#teaSlide{position:relative}
+	.teaTxt {position:absolute; top:40px; left:0; width:100%; color:#595959; display:block; font-size:17px; text-align:center; }
+
+	#teavanaStory { overflow:hidden; }
+	.teavanaStory1 { background:url("../img/teavana/teavanaStory1_bg.png") 20% center no-repeat #000; background-size:cover; height:360px; overflow:hidden; position:relative; }
+	.teavanaStory1_txt { background:url("../img/teavana/teavanaStory1_txt.png") 0 0 no-repeat; height:112px; width:493px; position:absolute; right:-23px; top:125px; }
+
+	.teavanaStory2 { background:url("../img/teavana/teavanaStory2_bg.png") center center no-repeat #000; background-size:cover; height:360px; overflow:hidden; position:relative; }
+	.teavanaStory2_txt { background:url("../img/teavana/teavanaStory2_txt.png") 0 0 no-repeat; height:112px; width:377px; position:absolute; left:-23px; top:115px; }
+
+	#teavanaLineup { overflow:hidden; width:100%; }
+	.lineup_visual { background:url("../img/teavana/lineup_visual_visual_bg.png") center center fixed no-repeat #000; background-size:cover; height:570px; position:relative; }
+	.lineup_visual_txt1 { background:url("../img/teavana/lineup_visual_visual_txt1.png") center center no-repeat; background-size:contain; height:216px;  margin:0 auto 0; position:relative; }
+	.lineup_visual_txt2 { background:url("../img/teavana/lineup_visual_visual_txt2.png") center center no-repeat; background-size:contain; height:79px; margin-bottom:5px; margin:0 auto; position:relative; }
+	.lineup01, .lineup02, .lineup03, .lineup04 { border-bottom:1px solid #1e2782; overflow:hidden; }
+	.lineup01 { background:url("../img/teavana/lineup01_bg.png") center 0 no-repeat #000; background-size:cover; min-height:360px; overflow:hidden; position:relative; }
+	.lineup01_txt1 { background:url("../img/teavana/lineup01_txt1.png") 0 0 no-repeat; height:112px; width:453px; position:absolute; top:97px; }
+	.lineup01_txt2 { background:url("../img/teavana/lineup01_txt2.png") 0 0 no-repeat; height:114px; width:453px; position:absolute; top:150px; }
+
+	.lineup02 { background:url("../img/teavana/lineup02_bg.png") center 0 no-repeat #000; background-size:cover; height:360px; overflow:hidden; position:relative; }
+	.lineup02_txt1 { background:url("../img/teavana/lineup02_txt1.png") right 0 no-repeat; height:112px; width:396px; position:absolute; top:97px; }
+	.lineup02_txt2 { background:url("../img/teavana/lineup02_txt2.png") right 0 no-repeat; height:114px; width:396px; position:absolute; top:150px; }
+
+	.lineup03 { background:url("../img/teavana/lineup03_bg.png") center 0 no-repeat #000; background-size:cover; height:360px; overflow:hidden; position:relative; }
+	.lineup03_txt1 { background:url("../img/teavana/lineup03_txt1.png") 0 0 no-repeat; height:112px; width:409px; position:absolute; top:97px; }
+	.lineup03_txt2 { background:url("../img/teavana/lineup03_txt2.png") 0 0 no-repeat; height:114px; width:409px; position:absolute; top:150px; }
+
+	.lineup04 { background:url("../img/teavana/lineup04_bg.png") center 0 no-repeat #000; background-size:cover; height:360px; overflow:hidden; position:relative; }
+	.lineup04_txt1 { background:url("../img/teavana/lineup04_txt1.png") right 0 no-repeat; height:112px; width:394px; position:absolute; top:97px; }
+	.lineup04_txt2 { background:url("../img/teavana/lineup04_txt2.png") right 0 no-repeat; height:114px; width:394px; position:absolute; top:150px; }
+
+	.lineup_sub01, 
+	.lineup_sub02, 
+	.lineup_sub03, 
+	.lineup_sub04 { background:url("../img/teavana/lineup_sub_bg.png") 0 bottom no-repeat #f1f1f1; background-size:100% auto; position:relative; }
+
+	.lineup_sub01:after, 
+	.lineup_sub02:after, 
+	.lineup_sub03:after, 
+	.lineup_sub04:after { bottom:-2px; box-shadow:0 -3px 17px #001; -webkit-box-shadow:0 -3px 15px #001; content:''; position:absolute; left:0; right:0; height:1px; }
+	.lineup_sub01 .swiper-wrapper, 
+	.lineup_sub02 .swiper-wrapper, 
+	.lineup_sub03 .swiper-wrapper, 
+	.lineup_sub04 .swiper-wrapper { display:block; margin:0 auto; width:1090px;  }
+	.lineup_sub01 .swiper-wrapper.re, 
+	.lineup_sub02 .swiper-wrapper.re, 
+	.lineup_sub03 .swiper-wrapper.re, 
+	.lineup_sub04 .swiper-wrapper.re { transform:inherit !important; }
+	
+	.lineup_sub01 .swiper-slide, 
+	.lineup_sub02 .swiper-slide, 
+	.lineup_sub03 .swiper-slide, 
+	.lineup_sub04 .swiper-slide{ border-top:1px solid #d9d9d9; float:none; height:260px; width:100% !important; }
+
+	.lineup_sub01 .swiper-pagination, 
+	.lineup_sub02 .swiper-pagination, 
+	.lineup_sub03 .swiper-pagination, 
+	.lineup_sub04 .swiper-pagination { bottom:10px !important; display:none; position:relative; z-index:1; }
+	.lineup_sub01 .swiper-pagination-bullet, 
+	.lineup_sub02 .swiper-pagination-bullet, 
+	.lineup_sub03 .swiper-pagination-bullet , 
+	.lineup_sub04 .swiper-pagination-bullet { background:#c3c3c3; height:10px; opacity:1; width:10px; }
+	.lineup_sub01 .swiper-pagination-bullet.swiper-pagination-bullet-active, 
+	.lineup_sub02 .swiper-pagination-bullet.swiper-pagination-bullet-active, 
+	.lineup_sub03 .swiper-pagination-bullet.swiper-pagination-bullet-active, 
+	.lineup_sub04 .swiper-pagination-bullet.swiper-pagination-bullet-active { background:#1e2782; }
+
+
+	.lineup_sub_inner { display:table; width:100%; }
+	.lineup_sub_inner figure { display:inline-table; height:240px; vertical-align:middle; text-align:center; width:260px; }
+	.lineup_sub_inner figure img { max-width:100%; }
+	.lineup_sub_text { display:inline-table; vertical-align:middle; margin-top:-10px; width:70%; }
+	.lineup_sub_text p img { margin-bottom:10px; }
+	
+	.sub_text1 { font-size:15px; line-height:1.2; margin-top:10px; position:relative; padding-left:77px; }
+	.sub_text2 { font-size:15px; line-height:1.2; margin-top:10px; position:relative; padding-left:107px; }
+	.sub_text1 a,
+	.sub_text2 a {  color:#1e2782; }
+	.sub_text1 span,
+	.sub_text2 span { color:#595959; position:absolute; left:0; top:0;}
+	
+	#teavanaFaq{ display:block; }
+	.teavana_faq_slider { background:url("../img/teavana/faq_slider_bg.png") 0 0 no-repeat; background-size:cover; height:194px; position:relative; }
+	.teavana_faq_slider .faq_slider_inner { width:996px; height:100%; margin:0 auto; position:relative;  overflow:hidden; }
+	.teavana_faq_slider .swiper-slide { text-align:center; width:100% !important; position:relative; }
+	.faq_slider_box { width:1090px; height:100%; margin:0 auto; position:relative; }
+	.faq_text {  position:absolute; left:0; right:0; top:0; bottom:0; }
+	.faq_text_inner { display:table; height:100%; width:100%; text-align:center; }
+	.faq_slider_inner p { background:url("../img/teavana/icon_teavana_faq.png") 0 0 no-repeat; color:#1e2782; display:table; font-size:25px; font-weight:bold; letter-spacing:1px; line-height:30px; margin:0 auto;  padding-left:46px;text-align:center; }
+	.faq_slider_box .swiper-button-next { background:url("../img/teavana/teavana_faq_next.png") 0 0 no-repeat; height:46px; right:0; width:46px; z-index:5;}
+	.faq_slider_box .swiper-button-prev { background:url("../img/teavana/teavana_faq_prev.png") 0 0 no-repeat; height:46px;; left:0; width:46px; z-index:5;}
+	.faq_slider_inner .swiper-pagination { bottom:44px !important; z-index:5; }
+	.faq_slider_inner .swiper-pagination-bullet { background:#c3c3c3; height:10px; opacity:1; width:10px; }
+	.faq_slider_inner .swiper-pagination-bullet.swiper-pagination-bullet-active { background:#1e2782; }
+
+	.teavana_answer_slider { background:#1e2782; height:196px; position:relative; }
+	.teavana_answer_slider .answer_slider_inner { height:100%;  width:100%; max-width:996px; margin:0 auto; overflow:hidden; text-align:center; }
+	.answer_slider_inner .swiper-slide { text-align:center; width:100% !important; height:100%; position:relative; }
+	.answer_text {  position:absolute; left:0; right:0; top:0; bottom:0; }
+	.answer_text_inner { display:table; height:100%; width:100%; text-align:center; }
+	.text_box { display:table-cell; vertical-align:middle; }
+	.answer_text p { background:url("../img/teavana/icon_teavana_answer.png") 0 0 no-repeat; color:#fff; display:table; font-size:18px; letter-spacing:0.7px; line-height:28px; margin:0 auto; padding-left:39px; text-align:left; white-space:normal; word-break:normal;  }
+	
+	
+	#teavanaFooter { background:url("../img/teavana/teavana_bottom_bg.png") center 0 no-repeat #000; background-size:cover; height:195px; overflow:hidden; position:relative; }
+	.dot_bg { background:url("../img/teavana/teavana_bottom_dot.png") 0 0 repeat-x ; height:195px; left:0; position:absolute; top:0; width:100%; }
+	.teavanaFooter_inner { margin:0 auto; width:980px; position:relative; }
+	.teavana_footer_img { background:url("../img/teavana/teavana_footer_img.png") 0 0 no-repeat; height:112px; left:0; position:absolute; top:57px; width:211px; }
+	/* 161208 이미지 위치 수정 */
+	.teavana_footer_txt1 { background:url("../img/teavana/teavana_footer_txt1_1.png") 0 0 no-repeat; height:112px; left:303px; position:absolute; top:70px; width:665px; }
+	/* 161208 이미지 위치 수정 end */
+	
+	/* 161208 이미지 삭제 */
+	/*.teavana_footer_txt2 { background:url("../img/teavana/teavana_footer_txt2.png") 0 0 no-repeat; height:23px; left:303px; position:absolute; top:80px; width:665px; }*/
+	/* 161208 이미지 삭제 end */
+	.btn_teavana_footer { width:134px; border:1px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:303px; top:115px; z-index:2; }
+	.btn_teavana_footer a { color:#fff; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	.btn_teavana_footer a:hover { background:#fff; color:#222; }
+	
+
+	.for_pc{ display:block; }
+	.for_m { display:none; }
+	
+	/* 170213 황기흠 수정 */
+	.tea_slider02,
+	.tea_slider03,
+	.tea_slider04,
+	.tea_slider01 { display:none; }
+	/* 170213 황기흠 수정 end */
+
+
+@media screen and (max-width:1280px) {
+
+	.tv_inner { margin-left:-49%; width:98%; }
+
+	.subttl_brand_story { height:82px; left:30px; top:160px; width:306px; }
+	.brand_story_txt01 { height:217px; left:30px; width:395px; } /* 20210809 수정 */
+	.brand_story_img01 { height:692px; left:-454px; top:560px; width:950px; }
+	.brand_story_txt02 { bottom:632px; height:215px; left:693px; width:298px; } /* 20210809 수정 */
+	.brand_story_img02 { height:818px; right:-539px; top:-164px; width:1070px; }
+	.brand_story_txt03 { height:185px; right:377px; top:1215px; width:325px; } /* 20210809 수정 */
+	.brand_story_img03 { bottom:-81px; height:601px; right:-58px; width:995px; }
+
+	#teaType { background-position:right top; height:0; padding-bottom:220%; }
+
+	.subttl_tea_type { height:151px; left:30px; top:148px; width:267px; }
+	.subtxt_tea_type { height:148px; left:30px; top:387px; width:508px; }
+
+	.tea_type_card_wrap { height:auto; margin-left:-49%; top:637px; width:98%; }
+	.tea_type_card01 { height:0; padding-bottom:27.7%; width:100%; }
+	.tea_type_card02 { height:0; padding-bottom:27.6%; width:100%; }
+	.tea_type_card03 { height:0; padding-bottom:27.7%; width:100%; }
+	.tea_type_card04 { height:0; padding-bottom:27.6%; width:100%; }
+
+	.tea_type01_img { height:359px; left:38px; width:422px; }
+	.tea_type01_txt { right:5%; top:22%; width:415px; }
+	.zoom_tea_type01 { height:0; left:34%; padding-bottom:10.5%; top:27%; width:16%; }
+	.zoom_tea_type01 a { height:40%; width:26%; }
+	.tea_type02_txt { left:5%; height:169px; top:20%; width:357px; }
+	.zoom_tea_type02 { height:0; left:44%; padding-bottom:10.5%; top:30%; width:16%; }
+	.zoom_tea_type02 a { height:40%; width:26%; }
+	.tea_type02_img { height:358px; left:auto; right:0; width:898px; }
+	.tea_type03_img { height:358px; left:33px; width:508px; }
+	.tea_type03_txt { height:146px; right:4%; top:25%; width:372px; }
+	.zoom_tea_type03 { height:0; left:38%; padding-bottom:10.5%; top:34%; width:16%; }
+	.zoom_tea_type03 a { height:40%; width:26%; }
+	.tea_type04_txt { left:5%; height:204px; top:22%; width:346px; } /* 20210809 수정 */
+	.tea_type04_img { height:358px; width:530px; }
+	.zoom_tea_type04 { height:0; left:42%; padding-bottom:10.5%; top:26%; width:16%; }
+	.zoom_tea_type04 a { height:40%; width:26%; }
+
+	.tea_type_layer { height:0; margin-left:-500px; padding-bottom:21%; top:32px; width:1000px; }
+	.tea_type_layer_img { height:0; padding-bottom:22%; width:220px; }
+	.tea_type_layer_txt { top:18px; width:700px; }
+
+	.subttl_tea_lineup { top:80%; }
+	.subtxt_tea_lineup { top:88%; }
+
+}
+
+@media screen and (max-width:1200px) {
+
+	.teavana_inner { width:100%; }
+	.teavanaStory1 { background:url("../img/teavana/teavanaStory1_bg.png") 35% center no-repeat #000; }
+	.teavanaStory2 { background:url("../img/teavana/teavanaStory2_bg.png") center center no-repeat #000; background-size:cover; height:360px; position:relative; }
+	
+	.tv_skip_menu_inner { margin-left:-49%; width:98%; }
+	.tv_skip_menu_inner ul li.tv_skip_menu01,
+	.tv_skip_menu_inner ul li.tv_skip_menu02,
+	.tv_skip_menu_inner ul li.tv_skip_menu03 { width:33.15%; }
+
+	.lineup01 { background:url("../img/teavana/lineup01_bg.png") 35% 0 no-repeat #000; background-size:cover; }
+
+	.lineup02 { background:url("../img/teavana/lineup02_bg.png") 70% 0 no-repeat #000; background-size:cover;  }
+
+	.lineup03 { background:url("../img/teavana/lineup03_bg.png") 35% 0 no-repeat #000; background-size:cover; }
+
+	.lineup04 { background:url("../img/teavana/lineup04_bg.png") 65% 0 no-repeat #000; background-size:cover;  }
+	.lineup05 { background:url("../img/teavana/lineup04_bg.png") 65% 0 no-repeat #000; background-size:cover;  } /*20171221 추가*/
+	.lineup_sub .swiper-wrapper { width:100%; }
+	.lineup_sub_text { width:65%; }
+
+	.faq_slider_box { width:100%; }
+	.faq_slider_box .swiper-button-next { right:20px; }
+	.faq_slider_box .swiper-button-prev { left:20px; }
+	.teavana_faq_slider .faq_slider_inner { width:75%; }
+
+	.teavana_answer_slider .answer_slider_inner { width:75%; }
+
+	/* 170213 황기흠 수정 */
+	.tea_lineup_tabs_nav { margin-left:-49%; width:98%; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 { width:19.7%; } /*20171221 수정*/
+	/* 170213 황기흠 수정 end */
+	
+}
+
+@media screen and (max-width:1100px) {
+	
+	.tea_type_layer { margin-left:-400px; width:800px; }
+	.tea_type_layer_img { top:18px; width:180px; }
+	.tea_type_layer_txt { height:180px; top:12px; width:640px; }
+	.tea_type_level { font-size:13px; }
+	.tea_type_subttl img { width:80%; }
+	.selling_prod { font-size:13px; }
+	
+	.tea_type_layer .swiper-pagination { bottom:-25px; }
+	
+}
+
+@media screen and (max-width:1024px) {
+
+	.teavana_skip_gnb  ul { top:0px !important; }
+	.teavana_skip_gnb { margin-top:0; padding-bottom:0; }
+
+	.teavanaFooter_inner { width:90%; }
+	.teavana_footer_img {  height:112px; top:57px; width:211px; }
+	/* 161208 이미지 위치 수정 
+	.teavana_footer_txt1 { height:112px; top:73px; width:534px; background-size:100%; }
+	161208 이미지 위치 수정 end */
+	.teavana_footer_txt2 { height:23px; top:80px; width:534px; }
+	.btn_teavana_footer { top:115px; }
+
+	.tea_slide_wrap { width:90%; }
+	.tea_slider  { max-width:100%; }
+	.tea_slider:before { display:none; }
+	.tea_slider:after { display:none; }
+	
+	.brand_story_txt01 { height:190px; width:360px; }
+	.brand_story_img01 { height:542px; left:-344px; top:590px; width:790px; }
+	.brand_story_txt02 { bottom:650px; height:200px; left:503px; width:278px; } /* 20210809 수정 */
+	.brand_story_img02 { height:764px; right:-489px; top:-143px; width:1000px; }
+	.brand_story_txt03 { height:170px; right:377px; top:1165px; width:290px; } /* 20210809 수정 */
+	.brand_story_img03 { bottom:-10px; height:520px; right:-48px; width:905px; }
+	
+}
+
+@media screen and (max-width:960px) {
+
+	.teavana_skip_gnb  ul { top:70px !important; }
+	.teavana_skip_gnb { margin-top:-72px; padding-bottom:70px; }
+	
+	.video { padding:0 0 57% 0; }
+	
+	.lineup_visual { background:url("../img/teavana/lineup_visual_visual_bg.png") center center fixed no-repeat #000; background-size:cover; }
+	.lineup_visual_txt1 { background:url("../img/teavana/lineup_visual_visual_txt1.png") center center no-repeat; background-size:contain; width:70%; }
+	.lineup_visual_txt2 { background:url("../img/teavana/lineup_visual_visual_txt2.png") center center no-repeat; background-size:contain; width:53%; }
+
+	.teavanaStory1 { background:url("../img/teavana/teavanaStory1_bg.png") 40% 0 no-repeat #000; background-size:auto 100%; height:0; padding-bottom:31%; position:relative; }
+	.teavanaStory1_txt { background:url("../img/teavana/teavanaStory1_txt.png") 0 0 no-repeat; background-size:auto 100%; height:0; margin-top:-2%; padding-bottom:12%; position:absolute; right:-23px; top:95px; width:56%; }
+
+	.teavanaStory2 { background:url("../img/teavana/teavanaStory2_bg.png") 60% center no-repeat #000; background-size:auto 100%; height:0; padding-bottom:31%; position:relative; }
+	.teavanaStory2_txt { background:url("../img/teavana/teavanaStory2_txt.png") right 0 no-repeat; background-size:auto 100%; height:0; margin-top:-2%; padding-bottom:12%; position:absolute; left:-23px; top:95px; width:50%; }
+	
+	.lineup01,
+	.lineup02,
+	.lineup03,
+	.lineup04 { height:0; padding-bottom:30%; min-height:0; }
+
+	.lineup01_txt1,
+	.lineup01_txt2,
+	.lineup02_txt1,
+	.lineup02_txt2,
+	.lineup03_txt1,
+	.lineup03_txt2,
+	.lineup04_txt1,
+	.lineup04_txt2 { background-size:auto 100% !important; height:0; }
+
+	.lineup01 { background:url("../img/teavana/lineup01_bg.png") 40% 0 no-repeat #000; background-size:cover; }
+	.lineup01_txt1 { padding-bottom:2.7%; top:57px; width:45%; }
+	.lineup01_txt2 { padding-bottom:11%; top:100px; width:45%; }
+	.lineup02 { background:url("../img/teavana/lineup02_bg.png") 60% 0 no-repeat #000; background-size:cover;  }
+	.lineup02_txt1 { padding-bottom:2.7%; top:57px; width:40%; }
+	.lineup02_txt2 { padding-bottom:11%; top:100px; width:40%; }
+	.lineup03 { background:url("../img/teavana/lineup03_bg.png") 40% 0 no-repeat #000; background-size:cover; }
+	.lineup03_txt1 { padding-bottom:2.7%; top:57px; width:43%; }
+	.lineup03_txt2 {  padding-bottom:9%; top:100px; width:43%; }
+	.lineup04 { background:url("../img/teavana/lineup04_bg.png") 60% 0 no-repeat #000; background-size:cover;  }
+	.lineup04_txt1 { padding-bottom:2.7%; top:57px; width:40%; }
+	.lineup04_txt2 { padding-bottom:11%; top:100px; width:40%; }
+	
+	.lineup_sub01 .swiper-wrapper,
+	.lineup_sub02 .swiper-wrapper,
+	.lineup_sub03 .swiper-wrapper,
+	.lineup_sub04 .swiper-wrapper { display:flex; margin:0 auto; width:100%; }
+
+	.lineup_sub01 .swiper-slide,
+	.lineup_sub02 .swiper-slide,
+	.lineup_sub03 .swiper-slide,
+	.lineup_sub04 .swiper-slide{ border-top:1px solid #d9d9d9; float:none; height:auto; }
+	.lineup_sub01 .swiper-pagination, 
+	.lineup_sub02 .swiper-pagination, 
+	.lineup_sub03 .swiper-pagination, 
+	.lineup_sub04 .swiper-pagination { display:block; }
+	.lineup_sub_text { width:60%; }
+	.faq_slider_inner .swiper-pagination { bottom:24px !important; z-index:5; }
+
+	.teavana_footer_img { background-size:100% auto; width:25%; }
+	.teavana_footer_txt1 { background-size:100% auto; left:220px; width:75%; }
+	.teavana_footer_txt2 { background-size:100% auto; left:220px; width:75%; }
+	.btn_teavana_footer { left:220px; top:115px; }
+	
+	.brand_story_img01 { height:488px; left:6%; margin-left:-400px; right:auto; top:590px; width:710px; }
+	.brand_story_txt02 { bottom:722px; left:auto; right:30px; }
+	.brand_story_img02 { height:644px; right:auto; left:53%; top:-113px; width:840px; }
+	.brand_story_txt03 { right:auto; left:8%; top:1300px; }
+	.brand_story_img03 { bottom:-10px; height:480px; right:0; width:845px; }
+
+	#teaType { background:url("../img/teavana/m/tea_type_bg.png") center top no-repeat; background-size:cover; height:0; padding-bottom:290%; }
+	.subttl_tea_type { left:140px; top:128px; }
+	.subtxt_tea_type { background:url("../img/teavana/m/subtxt_tea_type.png") no-repeat; background-size:100% auto; height:0; padding-bottom:30%; left:138px; top:357px; width:56%; }
+	.tea_type_card_wrap { top:28%; }
+	.tea_type_layer { width:86%; margin-left:7%; left:0; top:9%; padding-bottom:29%; }
+	.tea_type_layer_img { top:12%; width:30%; }
+	.tea_type_layer_txt { width:70% }
+	.tea_type_level { width:90%; margin-top:10px; }
+	.tea_type_layer .swiper-button-prev { left:-36px; }
+	.tea_type_layer .swiper-button-next { right:-36px; }
+	.btn_leaf_close { right:10px; width:20px; }
+	.tea_type_subttl { margin-top:10px; }
+	.tea_type_subttl img { width:70%; }
+	.tea_type_subttl .for_web { display:none !important;  }
+	.tea_type_subttl .for_mob { display:block !important;  }
+	.selling_prod { margin-top:10px; line-height:1.4; }
+	
+	.tea_type_card01 { background:url("../img/teavana/tea_type_card01.jpg") no-repeat 0 bottom; background-size:cover; padding-bottom:35%; }
+	.tea_type01_img { background-size:100%; width:45% }
+	.tea_type01_txt { background:url("../img/teavana/m/tea_type01_txt.png") no-repeat; background-size:100% auto; width:45%; }
+	.zoom_tea_type01 { width:14%; left:35%; top:29%; }
+	.zoom_tea_type01 a {}
+
+	.tea_type_card02 { background:url("../img/teavana/m/tea_type_card02.jpg") no-repeat; background-size:cover; padding-bottom:35%; }
+	.tea_type02_img { background-size:100%; width:100%  }
+	.tea_type02_txt {  background:url("../img/teavana/m/tea_type02_txt.png") no-repeat; background-size:100% auto; width:45%; }
+	.zoom_tea_type02 { width:14%; left:50%; top:29%; }
+	.zoom_tea_type02 a {  }
+	
+	.tea_type_card03 { background:url("../img/teavana/tea_type_card03.jpg") no-repeat 0 bottom; background-size:cover; padding-bottom:35%; }
+	.tea_type03_img { background-size:100%; width:59% }
+	.tea_type03_txt { background:url("../img/teavana/m/tea_type03_txt.png") no-repeat; background-size:100% auto; width:45%; }
+	.zoom_tea_type03 { width:14%; left:35%; top:29%; }
+	.zoom_tea_type01 a {}
+
+	.tea_type_card04 { background:url("../img/teavana/m/tea_type_card04.jpg") no-repeat; background-size:cover; padding-bottom:35%; }
+	.tea_type04_img { background-size:100%; width:55%  }
+	.tea_type04_txt {  background:url("../img/teavana/m/tea_type04_txt.png") no-repeat; background-size:100% auto; width:45%; }
+	.zoom_tea_type04 { width:14%; left:50%; top:29%; }
+	.zoom_tea_type02 a {  }
+	.subttl_tea_lineup { left:20px; top:78%; width:34%; background-size:100%; padding-bottom:2%; }
+	.subtxt_tea_lineup { left:20px; width:80%;  background-size:100%; padding-bottom:2%; }
+/*
+	.tea_type_card01 { background:url("../img/teavana/m/tea_type_card01.jpg") no-repeat; background-size:100% auto; padding-bottom:100%; }
+	.tea_type01_txt { background:url("../img/teavana/m/tea_type01_txt.png") no-repeat; background-size:100% auto; height:204px; left:50%; margin-left:-255px; right:auto; top:65%; width:510px; }
+	.zoom_tea_type01 { background:url("../img/teavana/m/zoom_tea_type01.png") no-repeat; background-size:100% auto; height:141px; left:24%; top:45%; width:262px; }
+	.zoom_tea_type01 a { bottom:auto; height:25%; left:auto; right:0; top:0; width:21%; }
+	.tea_type01_img { background:url("../img/teavana/m/tea_type01_img.png") no-repeat; background-size:100% auto; height:0; left:0; margin-left:0; padding-bottom:62%; width:100%; }
+
+	.tea_type_card02 { background:url("../img/teavana/m/tea_type_card02.jpg") no-repeat; background-size:100% auto; padding-bottom:100%; }
+	.tea_type02_txt { background:url("../img/teavana/m/tea_type02_txt.png") no-repeat; background-size:100% auto; height:204px; left:50%; margin-left:-242px; right:auto; top:65%; width:484px; }
+	.zoom_tea_type02 { background:url("../img/teavana/m/zoom_tea_type02.png") no-repeat; background-size:100% auto; height:141px; left:34%; top:45%; width:262px; }
+	.zoom_tea_type02 a { bottom:auto; height:25%; left:0; top:0; width:21%; }
+	.tea_type02_img { background:url("../img/teavana/m/tea_type02_img.png") no-repeat; background-size:100% auto; height:0; left:0; margin-left:0; padding-bottom:62%; width:100%; }
+
+	.tea_type_card03 { background:url("../img/teavana/m/tea_type_card03.jpg") no-repeat; background-size:100% auto; padding-bottom:100%; }
+	.tea_type03_txt { background:url("../img/teavana/m/tea_type03_txt.png") no-repeat; background-size:100% auto; height:141px; left:50%; margin-left:-252px; right:auto; top:70%; width:504px; }
+	.zoom_tea_type03 { background:url("../img/teavana/m/zoom_tea_type01.png") no-repeat; background-size:100% auto; height:141px; left:24%; top:49%; width:262px; }
+	.zoom_tea_type03 a { bottom:auto; height:25%; left:auto; right:0; top:0; width:21%; }
+	.tea_type03_img { background:url("../img/teavana/m/tea_type03_img.png") no-repeat; background-size:100% auto; height:0; left:0; margin-left:0; padding-bottom:66%; width:100%; }
+
+	.tea_type_card04 { background:url("../img/teavana/m/tea_type_card04.jpg") no-repeat; background-size:100% auto; padding-bottom:100%; }
+	.tea_type04_txt { background:url("../img/teavana/m/tea_type04_txt.png") no-repeat; background-size:100% auto; height:204px; left:50%; margin-left:-241px; right:auto; top:65%; width:482px; }
+	.zoom_tea_type04 { background:url("../img/teavana/m/zoom_tea_type02.png") no-repeat; background-size:100% auto; height:141px; left:34%; top:45%; width:262px; }
+	.zoom_tea_type04 a { bottom:auto; height:25%; left:0; top:0; width:21%; }
+	.tea_type04_img { background:url("../img/teavana/m/tea_type04_img.png") no-repeat; background-size:100% auto; height:0; left:0; margin-left:0; padding-bottom:65.5%; width:100%; }
+	
+	.subttl_tea_lineup { left:10px; top:88%; right:10px; width:auto; padding-bottom:1%; background-size:auto 100%; }
+	.subtxt_tea_lineup { left:10px; top:93%; right:10px; width:auto; padding-bottom:0.8%; background-size:100%; }
+*/	
+	#teaSlide { height:auto; padding:98px 0; }
+	.tea_slide_wrap { height:auto; padding-bottom:35px; }
+	.tea_slider { height:auto; }
+	.tea_slider .swiper-slide { width:31% !important; }
+}
+
+@media screen and (max-width:780px) {
+	#teaType { padding-bottom:320%; }
+	.tea_type_layer_img { top:12%; }
+	.tea_type_subttl img { width:80%; }
+	
+
+	.tea_type_layer { width:86%; margin-left:7%; left:0; top:9%; padding-bottom:31%; }
+
+	.tea_type_card01 { background:url("../img/teavana/tea_type_card01.jpg") no-repeat 0 bottom; background-size:cover; padding-bottom:38%; }
+	.tea_type01_img { background-size:100%; left:0; width:50%; }
+	.tea_type01_txt { background:url("../img/teavana/m/tea_type01_txt.png") no-repeat; background-size:100% auto; top:25%; width:45%; }
+	.zoom_tea_type01 { width:14%; left:35%; top:29%; }
+	.zoom_tea_type01 a {}
+
+	.tea_type_card02 { background:url("../img/teavana/m/tea_type_card02.jpg") no-repeat; background-size:cover; padding-bottom:38%; }
+	.tea_type02_img { background-size:100%; width:100%  }
+	.tea_type02_txt {  background:url("../img/teavana/m/tea_type02_txt.png") no-repeat; background-size:100% auto; top:25%; width:45%; }
+	.zoom_tea_type02 { width:14%; left:50%; top:29%; }
+	.zoom_tea_type02 a {  }
+	
+	.tea_type_card03 { background:url("../img/teavana/tea_type_card03.jpg") no-repeat 0 bottom; background-size:cover; padding-bottom:38%; }
+	.tea_type03_img { background-size:100%; width:59% }
+	.tea_type03_txt { background:url("../img/teavana/m/tea_type03_txt.png") no-repeat; background-size:100% auto; top:30%; width:45%; }
+	.zoom_tea_type03 { width:14%; left:35%; top:29%; }
+	.zoom_tea_type01 a {}
+
+	.tea_type_card04 { background:url("../img/teavana/m/tea_type_card04.jpg") no-repeat; background-size:cover; padding-bottom:38%; }
+	.tea_type04_img { background-size:100%; width:55%  }
+	.tea_type04_txt {  background:url("../img/teavana/m/tea_type04_txt.png") no-repeat; background-size:100% auto; top:23%; width:45%; }
+	.zoom_tea_type04 { width:14%; left:50%; top:29%; }
+	.zoom_tea_type02 a {  }
+	.subttl_tea_lineup { left:20px; top:78%; width:34%; background-size:100%; padding-bottom:2%; }
+	.subtxt_tea_lineup { left:20px; width:80%;  background-size:100%; padding-bottom:2%; }
+	
+	.teavana_skip_gnb  ul li { margin:0; width:33%; }
+
+	.teavanaStory1_txt { margin-top:-4%; }
+	.teavanaStory2_txt { margin-top:-4%; }
+	.lineup01_txt1 { margin-top:-2%; }
+	.lineup01_txt2 { margin-top:-3%; }
+	.lineup02_txt1 { margin-top:-2%; }
+	.lineup02_txt2 { margin-top:-3%; }
+	.lineup03_txt1 { margin-top:-2%; }
+	.lineup03_txt2 { margin-top:-3%; }
+	.lineup04_txt1 { margin-top:-2%; }
+	.lineup04_txt2 { margin-top:-3%; }
+
+	.btn_teavana_toggle { background-size:100%; height:36px; margin-left:-18px; width:36px; }
+	.btn_teavana_toggle.on { background-size:100%; height:36px; margin-left:-18px; width:36px; }
+	.lineup_sub_inner figure { height:auto; width:30%; }
+	.lineup_sub_inner figure img { vertical-align:middle; }
+	.lineup_sub_text { width:63%; }
+	.lineup_sub_text p { font-size:13px; margin-top:5px; }
+
+	.sub_text1 { color:#1e2782; font-size:15px; line-height:1.2; margin-top:10px; position:relative; padding-left:68px; }
+	.sub_text2 { color:#1e2782; font-size:15px; line-height:1.2; margin-top:10px; position:relative; padding-left:95px; }
+	.teavana_footer_txt1 { left:190px; }
+	.teavana_footer_txt2 { left:190px; }
+	.btn_teavana_footer { left:190px; }
+	
+	.faq_slider_inner p { background-position:0 2px; background-size:27px auto; font-size:20px; padding-left:30px; }
+	.answer_text p { background-position:0 2px; background-size:20px auto; font-size:15px; padding-left:23px; }
+
+}
+
+@media screen and (max-width:640px) {
+	
+	.teaTxt {top:10px; width:80%;left:50%; margin-left:-40%; font-size:15px}
+	
+	.for_pc{ display:none; }
+	.for_m { display:block; }
+	#teavanaVisual { height:0px; padding-bottom:175%; }
+	.teavanaVisual_inner { width:100%; padding-top:15%; }
+	.teavana_visual_txt1 { background:url("../img/teavana/m/ttl_teavana.png") center center no-repeat; background-size:contain; height:0;  margin:2% auto 10%; padding-bottom:28%; width:90%; }
+	.teavana_visual_txt2 { background:url("../img/teavana/m/ttl_teavana_sub.png") center center no-repeat; background-size:contain; height:0; margin:0 auto; padding-bottom:23%; width:100%; }
+	.teavana_visual_img { bottom:0%; background:url("../img/teavana/m/visual_teavana.png") center center no-repeat; background-size:100%; height:0; width:100%; right:0; left:inherit; padding-bottom:87%; }
+	
+	.teavanaStory1 { background:url("../img/teavana/m/teavanaStory1_bg.png") 20% center no-repeat #000; background-size:cover; height:0; padding-bottom:120%; }
+	.teavanaStory1_txt { background:url("../img/teavana/m/teavanaStory1_txt.png") center 0 no-repeat; background-size:contain; height:0; width:90%; right:5%; top:0; padding-bottom:30%; }
+
+	.teavanaStory2 { background:url("../img/teavana/m/teavanaStory2_bg.png") bottom center no-repeat #000; background-size:cover; height:0; padding-bottom:120%; }
+	.teavanaStory2_txt { background:url("../img/teavana/m/teavanaStory2_txt.png") center 0 no-repeat; background-size:contain; height:0; width:90%; left:5%; top:0; padding-bottom:30%; }
+
+	.teavana_inner { bottom:0; left:0; position:absolute; right:0; top:0; }
+
+	.lineup_visual { background:url("../img/teavana/m/lineup_visual_bg.png") center center no-repeat #000; background-size:cover; height:0; padding-bottom:130%; position:relative; }
+	.lineup_visual_txt1 { height:160px; width:80%; }
+	.lineup_visual_txt2 { background:url("../img/teavana/m/lineup_visual_txt2.png") center center no-repeat; background-size:contain; height:0; padding-bottom:29%; margin-bottom:5px; margin:0 auto; position:relative; width:80%; }
+
+	.lineup01 { background:url("../img/teavana/m/lineup01_bg.png") center 0 no-repeat #000; background-size:cover; height:0; min-height:0; overflow:hidden; padding-bottom:130%; position:relative; }
+	.lineup01_txt1 { background:url("../img/teavana/m/lineup01_txt1.png") center 0 no-repeat; height:0; width:90%; padding-bottom:5%; top:57%; }
+	.lineup01_txt2 { background:url("../img/teavana/m/lineup01_txt2.png") center 0 no-repeat; background-size:auto 100%; height:0; width:90%; padding-bottom:24%; top:65%; }
+
+	.lineup02 { background:url("../img/teavana/m/lineup02_bg.png") center 0 no-repeat #000; background-size:100%; height:0; min-height:0; overflow:hidden; padding-bottom:130%; position:relative; }
+	.lineup02_txt1 { background:url("../img/teavana/m/lineup02_txt1.png") center 0 no-repeat; height:0; width:90%; padding-bottom:5%; top:57%; }
+	.lineup02_txt2 { background:url("../img/teavana/m/lineup02_txt2.png") center 0 no-repeat;background-size:auto 100%; height:0; width:90%; padding-bottom:24%; top:65%; }
+
+	.lineup03 { background:url("../img/teavana/m/lineup03_bg.png") center 0 no-repeat #000; background-size:cover; height:0; min-height:0; overflow:hidden; padding-bottom:130%; position:relative; }
+	.lineup03_txt1 { background:url("../img/teavana/m/lineup03_txt1.png") center 0 no-repeat; height:0; width:90%; padding-bottom:5%; top:57%; }
+	.lineup03_txt2 { background:url("../img/teavana/m/lineup03_txt2.png") center 0 no-repeat;background-size:auto 100%; height:0; width:90%; padding-bottom:20%; top:65%; }
+
+	.lineup04 { background:url("../img/teavana/m/lineup04_bg.png") center 0 no-repeat #000; background-size:cover; height:0; min-height:0; overflow:hidden; padding-bottom:130%; position:relative; }
+	.lineup04_txt1 { background:url("../img/teavana/m/lineup04_txt1.png") center 0 no-repeat; height:0; width:90%; padding-bottom:4.9%; top:57%; }
+	.lineup04_txt2 { background:url("../img/teavana/m/lineup04_txt2.png") center 0 no-repeat;background-size:auto 100%; height:0; width:90%; padding-bottom:24%; top:65%; }
+
+	.lineup_sub01, 
+	.lineup_sub02, 
+	.lineup_sub03, 
+	.lineup_sub04 {  }
+
+	.lineup_sub_inner { text-align:center; }
+	.lineup_sub_inner figure { height:auto; width:90%; }
+	.lineup_sub_inner figure img { vertical-align:middle; width:60%; }
+	.lineup_sub_text { width:90%; margin:0 auto; }
+	.lineup_sub_text p { text-align:left; font-size:15px; margin-top:5px; }
+	.sub_text1 { line-height:1.2; margin-top:20px !important; padding-left:77px; }
+	.sub_text2 { line-height:1.2; padding-left:107px; }
+	.lineup_sub01 .swiper-pagination,
+	.lineup_sub02 .swiper-pagination,
+	.lineup_sub03 .swiper-pagination,
+	.lineup_sub04 .swiper-pagination { bottom:50px !important; margin-top:90px; position:relative; }
+
+	.swiper-button-prev { display:none; }
+	.swiper-button-next { display:none; }
+
+	
+
+	.tea_type_level { line-height:1.6; }
+
+	.teavana_faq_slider { height:0; padding-bottom:50%; }
+	.faq_slider_inner p {  background-position:center top; background-position:center top; background-size:37px; font-size:22px; margin-top:-20%; padding:0; padding-top:15%; }
+	.faq_slider_box { position:absolute; left:0; top:0; bottom:0; right:0; }
+	.faq_slider_inner .swiper-pagination { bottom:20% !important; position:relative; z-index:5; }
+	.faq_slider_inner .swiper-pagination-bullet { background:#c3c3c3; height:10px; opacity:1; width:10px; }
+	.faq_slider_inner .swiper-pagination-bullet.swiper-pagination-bullet-active { background:#1e2782; }
+
+	.teavana_answer_slider .answer_slider_inner { bottom:0; left:0; position:absolute; right:0; top:0; }
+	.teavana_answer_slider { height:0; padding-bottom:45%; }
+	.answer_text p { background-position:center top; background-size:30px; font-size:18px; padding:0; padding-top:20%; }
+
+	#teavanaFooter { background:url("../img/teavana/m/teavana_bottom_bg.png") center 0 no-repeat #000; background-size:cover; height:0; padding-bottom:60%;  }
+	.dot_bg { background:url("../img/teavana/m/teavana_bottom_dot.png") 0 0 repeat-x; background-size:4px auto; bottom:0; height:auto; left:0; position:absolute; right:0; top:0; width:100%; }
+	.teavanaFooter_inner { bottom:0; left:0; position:absolute; right:0; top:0; }
+	.teavana_footer_img { background:url("../img/teavana/m/teavana_footer_img.png") center 0 no-repeat; background-size:contain; height:0; left:0; margin-left:0; padding-bottom:15%; top:15%; width:100%; }
+	/* 161208 이미지 위치 수정 */
+	.teavana_footer_txt1 { background:url("../img/teavana/m/teavana_footer_txt1_1.png") center 0 no-repeat; background-size:contain; height:0; left:0; margin-left:0; padding-bottom:10%; top:48%; width:100%; }
+	/* 161208 이미지 위치 수정 end */
+	.teavana_footer_txt2 { display:none; }
+	
+	.btn_teavana_footer { width:134px; bottom:37px; left:50%; margin-left:-67px; top:80%; z-index:2; }
+
+	.btn_teavana_footer a { color:#fff; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	
+	
+	
+	#brandStory { background:url("../img/teavana/m/brand_story_bg.jpg") center top no-repeat; background-size:cover; height:0; padding-bottom:320%; }
+	.subttl_brand_story { height:82px; left:10px; top:2%; width:60%; }
+	.brand_story_txt01 { height:317px; left:20px; top:10%; width:73%; } /* 20210809 수정 */
+	.brand_story_img01 { height:692px; left:auto; right:-20px; top:17%; width:130%; }
+	.brand_story_txt02 { bottom:auto; height:290px; left:20px; top:58.3%; width:57%; } /* 20210809 수정 */
+	.brand_story_img02 { height:818px; right:auto; left:20px; top:27%; width:130%; }
+	.brand_story_txt03 { height:279px; right:auto; left:20px; top:85%; width:63%; } /* 20210809 수정 */
+	.brand_story_img03 { bottom:auto; height:601px; right:-18px; top:68%; width:150%; background-size:100% auto; }
+
+	#teaSlide { height:auto; padding:50px 0; }
+	.tea_slide_wrap { height:auto; padding-bottom:35px; }
+	.tea_slider { height:auto; }
+	.tea_slider .swiper-slide { width:50% !important; padding: 0 10px; box-sizing: border-box; } /* 20180116 수정 */
+	.tea_type_card_wrap { top:16%; }
+	.tea_type_layer { padding-bottom:100%; top:40px; }
+
+	.tea_type_card01_dimm,
+	.tea_type_card02_dimm,
+	.tea_type_card03_dimm,
+	.tea_type_card04_dimm { height:100%; }
+	
+	.tea_type_layer_img { height:0; left:50%; margin-left:-35%; padding-bottom:68%; width:70%; top:0; text-align:center; }
+	.tea_type_layer_txt { left:50%; margin-left:-45%; right:auto; text-align:center; top:45%; width:90%; }
+	.tea_type_subttl img { width:100%; }
+	.tea_type_level { width:100%; }
+	.selling_prod { text-align:left; }
+
+	.btn_leaf_close { height:19px; right:10px; top:10px; width:19px; }
+
+	#teaType { padding-bottom:690%; }
+	.tea_type_card_wrap { width:96%; margin-left:-48%; }
+	.subttl_tea_type { background:url("../img/teavana/m/subttl_tea_type.png") no-repeat; background-size:100%; left:20%; top:4%; width:43%; }
+	.subtxt_tea_type { left:20%; top:9%; width:75%; }
+	
+	.tea_type_card01 { background:url("../img/teavana/m/tea_type_card01.jpg") no-repeat; background-size:100%; padding-bottom:120%; }
+	.tea_type01_img { background:url("../img/teavana/m/tea_type01_img.png") no-repeat; background-size:100% auto; height:359px; left:0%; margin-left:0px; width:100%; padding-bottom:0; }
+	.tea_type01_txt { left:0%; margin-left:30px; padding-bottom:5%; right:auto; top:65%; width:85%; }
+	.zoom_tea_type01 { background:url("../img/teavana/m/zoom_tea_type01.png") no-repeat; background-size:100% auto; height:141px; left:10%; top:43%; width:45%; }
+	.zoom_tea_type01 a { bottom:auto; height:25%; left:auto; right:0; top:0; width:21%; }
+	
+
+	.tea_type_card02 { background:url("../img/teavana/m/tea_type_card01.jpg") no-repeat; background-size:100%; padding-bottom:120%; }
+	.tea_type02_img { background:url("../img/teavana/m/tea_type02_img.png") no-repeat; background-size:100% auto; height:359px; left:0%; margin-left:0px; width:100%; }
+	.tea_type02_txt { left:0%; margin-left:30px; padding-bottom:5%; right:auto; top:65%; width:85%; }
+	.zoom_tea_type02 { background:url("../img/teavana/m/zoom_tea_type02.png") no-repeat; background-size:100% auto; height:134px; left:42%; top:43%; width:45%; }
+	.zoom_tea_type02 a { left:0; top:0; }
+
+	.tea_type_card03 { background:url("../img/teavana/m/tea_type_card01.jpg") no-repeat; background-size:100%; padding-bottom:120%; }
+	.tea_type03_img { background:url("../img/teavana/m/tea_type03_img.png") no-repeat; background-size:100% auto; height:359px; left:0%; margin-left:0px; width:100%; }
+	.tea_type03_txt { left:0%; margin-left:30px; padding-bottom:5%; right:auto; top:65%; width:85%; }
+	.zoom_tea_type03 { background:url("../img/teavana/m/zoom_tea_type01.png") no-repeat; background-size:100% auto; height:134px; left:11%; top:44%; width:45%; }
+	.zoom_tea_type03 a { bottom:auto; left:auto; right:0; top:0; }
+
+	.tea_type_card04 { background:url("../img/teavana/m/tea_type_card01.jpg") no-repeat; background-size:100%; padding-bottom:120%; }
+	.tea_type04_img {  background:url("../img/teavana/m/tea_type04_img.png") no-repeat; background-size:100% auto; height:359px; left:0%; margin-left:0px; width:100%; }
+	.tea_type04_txt {  left:0%; margin-left:30px; padding-bottom:5%; right:auto; top:65%; width:85%; }
+	.zoom_tea_type04 { background:url("../img/teavana/m/zoom_tea_type02.png") no-repeat; background-size:100% auto; height:134px; left:42%; top:43%; width:45%; }
+	.zoom_tea_type04 a { left:0; top:0; }
+
+	.subttl_tea_lineup { background:url("../img/teavana/m/subttl_tea_lineup.png") no-repeat; background-size:100% auto; height:170px; left:20px; padding-bottom:1%; top:83.5%; width:90%; }
+	.subtxt_tea_lineup { background:url("../img/teavana/m/subtxt_tea_lineup.png") no-repeat; background-size:100% auto; height:0; left:20px; padding-bottom:30%; top:89%; width:90%; }
+
+	/* 170213 황기흠 수정 */
+	.tea_lineup_tabs { height:78px; }
+	.tea_lineup_tabs_nav { left:0; margin-left:0; width:100%; }
+	.tea_lineup_sep { display:none; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 { width:19%; } /*20171221 수정*/
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01{ width:21%; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 { border-right:1px solid #fff; }
+	/* 170213 황기흠 수정 end */
+}
+
+@media screen and (max-width:480px) {
+	
+	
+
+	.tv_skip_menu_wrap,
+	.tv_skip_menu_wrap ul li { height:50px !important; }
+
+	#teavanaNewVis { height:620px; }
+	.teavana_visual_nimg { height:250px; margin-left:-340px; width:686px; bottom:50px} /*20170907수정*/
+	
+	#teaSlide { height:auto; padding:50px 0; }
+	.tea_slide_wrap { height:auto; padding-bottom:35px; }
+	.tea_slider { height:auto; }
+	/* .tea_slider .swiper-slide { width:45.3% !important; } 20180116 삭제 */
+
+	.tv_skip_menu_inner { margin-left:-49%; width:98%; }
+	.tv_skip_menu_inner ul li.tv_skip_menu01 { width:31%; }
+	.tv_skip_menu_inner ul li.tv_skip_menu02 { width:34%; }
+	.tv_skip_menu_inner ul li.tv_skip_menu03 { width:34%; }
+	
+
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a,
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu01 a:hover { margin-left:-38px; width:76px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a,
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu02 a:hover { margin-left:-49px; width:98px; }
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a,
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a.on,
+	.tv_skip_menu_inner ul li.tv_skip_menu03 a:hover { margin-left:-49px; width:98px; }
+
+	/*#brandStory { background:url("../img/teavana/m/brand_story_bg.jpg") center top no-repeat; background-size:cover; height:1452px; }
+	.subttl_brand_story { height:82px; left:10px; top:60px; width:60; }
+	.brand_story_txt01 { height:217px; left:10px; top:162px; width:80%; }
+	.brand_story_img01 { height:692px; left:-27%; top:270px; width:130%; }
+	.brand_story_txt02 { bottom:412px; height:190px; left:20px; width:50%; }
+	.brand_story_img02 { height:818px; right:-32%; top:396px; width:130%; }
+	.brand_story_txt03 { height:179px; right:auto; left:20px; top:1245px; width:45%; }
+	.brand_story_img03 { bottom:-131px; height:601px; right:-18px; width:150%; background-size:100% auto; }
+*/
+	/* 170213 황기흠 수정 */
+	.tea_lineup_tabs { height:61px; }
+	.tea_lineup_tabs_nav ul li { height:60px; }
+	.tea_lineup_tabs_nav ul li a { margin-top:-6px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a{ height:12px; margin-left:-35px; width:69px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a{ height:12px; margin-left:-24px; width:48px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a{ height:12px; margin-left:-18px; width:36px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a{ height:26px; margin-left:-21.5px; margin-top:-13px; width:53px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a{ height:26px; margin-left:-21.5px; margin-top:-13px; width:53px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 a:hover { height:12px; margin-left:-35px; width:69px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 a:hover { height:12px; margin-left:-24px; width:48px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 a:hover { height:12px; margin-left:-18px; width:36px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 a:hover { height:26px; margin-left:-21.5px; margin-top:-13px; width:53px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a.on,
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 a:hover { height:26px; margin-left:-23px; margin-top:-13px; width:50px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab01 i { margin-left:-35px; width:69px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab02 i { margin-left:-24px; width:48px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab03 i { margin-left:-18px; width:36px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab04 i { margin-left:-21.5px; width:53px; }
+	.tea_lineup_tabs_nav ul li.tea_lineup_tab05 i { margin-left:-23px; width:50px; }
+	/* 170213 황기흠 수정 end */
+	
+	
+	
+}
+
+@media screen and (max-width:420px) {
+	.teavana_skip_gnb { height:35px; margin-top:-72px; padding-bottom:70px; }
+	.teavana_skip_gnb  ul { height:35px; top:70px !important; }
+
+	.teavana_skip_gnb  ul li a { font-size:11px; line-height:35px; }
+
+	.lineup_visual_txt1 { height:142px; }
+
+	.faq_slider_inner p { background-position:center top; background-size:34px; font-size:16px; line-height:1.5; margin-top:-15%; padding:0; padding-top:15%; }
+	.teavana_answer_slider { padding-bottom:70%; }
+	.answer_text p { background-position:center top; background-size:27px; font-size:15px; line-height:1.5; padding:0; padding-top:18%; }
+
+	#teavanaFooter { padding-bottom:75%; }
+
+	.tea_type_layer { padding-bottom:135%; top:40px; }
+	.tea_type_card01_dimm,
+	.tea_type_card02_dimm,
+	.tea_type_card03_dimm,
+	.tea_type_card04_dimm { height:135%; }
+	
+	
+}
+
+@media screen and (max-width:340px) {
+	.tea_type_layer { padding-bottom:148%; top:40px; }
+	.tea_type_card01_dimm,
+	.tea_type_card02_dimm,
+	.tea_type_card03_dimm,
+	.tea_type_card04_dimm { height:148%; }
+
+
+	.teavana_skip_gnb  ul li a { font-size:10px;  }
+
+	#teaType { padding-bottom:700%; }
+	.subttl_tea_lineup { top:83%; }
+}
+
+@media screen and (max-width:320px) {
+	.lineup_sub_text p { font-size:12px; }
+	.sub_text1 { padding-left:63px; }
+	.sub_text2 { padding-left:86px; }
+}
+
+/*s::20190621 수정*/
+.teavanaTobe .teavanaVisual_inner .teavana_visual_txt1 {background: url("../img/teavana/ttl_teavana_new.png") center center no-repeat;}
+
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav {overflow:hidden; left:0; right:0; margin:0 auto;}
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav li {width:25%; box-sizing: border-box; vertical-align:middle;}
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_sep {display:none;}
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li::before {content: ''; display:inline-block; width:1px; height:77px; background: url("../img/teavana/skip_menu_sep.png") center center no-repeat; vertical-align: middle;}/*20190626 수정*/
+/*.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05::before {display:none;}*//*20190626 수정*/
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab03::after {content: ''; display:inline-block; width:1px; height:77px; background: url("../img/teavana/skip_menu_sep.png") center center no-repeat; vertical-align: middle; position:absolute; right:0;}/*20190626 수정*/
+
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a {background: url("../img/teavana/lineup_menu05_nw_02.png") no-repeat; width:103px; height:16px; left :0; right:0; margin:-8px auto 0 auto;}
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a.on,
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a:hover {background: url("../img/teavana/lineup_menu05_nw_on_02.png") no-repeat; width:103px; height:16px; margin-top:-8px;}
+
+.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 i {left:0; right:0; margin:0 auto;}
+
+/*footer 배너*/
+.teavabaTobe .teavana_footer_img {background: url("../img/teavana/teavana_footer_img_new.png") 0 0 no-repeat; top:75px;}
+.teavabaTobe .teavana_footer_txt1 {background: url("../img/teavana/teavana_footer_txt1_new.png") 0 0 no-repeat; top:75px;}
+
+@media screen and (max-width:640px) {
+	.teavanaTobe .teavanaVisual_inner .teavana_visual_txt1 {background: url("../img/teavana/m/m_ttl_teavana_new.png") center center no-repeat; background-size: contain; width:80%; margin:2% auto 5% auto;}
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li::before,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li::after {display:none !important;}/*20190626 수정*/
+	/*footer 배너*/
+	.teavabaTobe .teavana_footer_img {background: url("../img/teavana/m/m_teavana_footer_img_new.png") center center no-repeat; background-size: contain; top:17%;}
+	.teavabaTobe .teavana_footer_txt1 {background: url("../img/teavana/m/m_teavana_footer_txt1_1.png") center center no-repeat; background-size: contain; top:50%;}
+}
+
+@media screen and (max-width:480px) {
+	#teavanaNewVis.teavanaTobe {height:650px;}
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a.on,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a:hover {width:100%; height:13px; margin-top:-6px; background-size: auto 100%; background-position: center center;}	
+}
+
+@media screen and (max-width:320px) {
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a.on,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab05 a:hover {height:13px; background-size: auto 90%;}	
+	
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab01 a,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab01 a.on,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab01 a:hover {height: 12px; width: 100%; margin: -6px auto 0 auto; left: 0; right: 0; background-size: auto 90%; background-position: center center;}
+	
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab02 a,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab02 a.on,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab02 a:hover {height: 12px; width: 100%; margin: -6px auto 0 auto; left: 0; right: 0; background-size: auto 90%; background-position: center center;}
+
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab03 a,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab03 a.on,
+	.teaTypeTobe .tea_lineup_tabs .tea_lineup_tabs_nav ul li.tea_lineup_tab03 a:hover {height: 12px; width: 100%; margin: -6px auto 0 auto; left: 0; right: 0; background-size: auto 90%; background-position: center center;}
+}
+
+/*e::20190621 수정*/

@@ -1,0 +1,193 @@
+﻿@charset 'utf-8';
+
+	.campaign_renew_each { position:relative; width:100%; }
+	.campaign_renew_each img { width:100%; }
+
+	.campaign_renew_each p.btn_renew_open01 { background:#fff; height:3.196%; left:78.3%; opacity:0; filter:alpha(opacity=0); position:absolute; top:85.127%; width:15%; }
+	.campaign_renew_each p.btn_renew_open02 { background:#fff; height:5.022%; left:32.2%; opacity:0; filter:alpha(opacity=0); position:absolute; top:91.585%; width:36.9%; }
+	.campaign_renew_each p.btn_renew_open03 { background:#fff; height:7.358%; left:4.1%; opacity:0; filter:alpha(opacity=0); position:absolute; top:75.283%; width:13%; }
+	.campaign_renew_each p.btn_renew_open04 { background:#fff; height:4.756%; left:4.4%; opacity:0; filter:alpha(opacity=0); position:absolute; top:47.146%; width:16%; }
+	.campaign_renew_each p.btn_renew_open09 { background:#fff; height:11.196%; left:37.5%; opacity:0; filter:alpha(opacity=0); position:absolute; top:34.4%; width:40%; }
+	.campaign_renew_each p.btn_renew_open10 { background:#fff; height:11.196%; left:37.5%; opacity:0; filter:alpha(opacity=0); position:absolute; top:51.4%; width:40%; }
+	.campaign_renew_each p.btn_renew_open11 { background:#fff; height:11.196%; left:37.5%; opacity:0; filter:alpha(opacity=0); position:absolute; top:68.6%; width:40%; }
+
+	.campaign_renew_each p a,
+	p.pop_renew_regist_close a,
+	p.pop_mysb_update_close a,
+	p.pop_renew_congu_close a { display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+
+	.for_mob { display:none; }
+	
+	/* 당첨여부 팝업 */
+	/* 이벤트당첨자 확인 팝업 */
+	.evenprizewinner_popUp { max-width:366px; width:100%; margin-left:-183px; position:absolute; left:50%; top:50%; border:1px solid #2b8a16; z-index:100; background:#fff;  display:block; }/*  display:none;  */
+	.evenprizewinner_popUp .evenprizewinner_popUp_close { position:relative; }
+	.evenprizewinner_popUp p.close { position:absolute; right:14px; top:8px; }
+	.evenprizewinner_popUp p.close a { display:block; width:17px; height:17px; background:url('../img/whatsnew/summer/ep_close.png') 0 0 no-repeat; text-indent:-9999px; transition:transform 1s; -webkit-transition:-webkit-transform 1s; }
+	.evenprizewinner_popUp p.close a:hover { transform: rotate(180deg); }	
+	
+	.evenprizewinner_popUp div.cont { padding:5%; }
+	.evenprizewinner_popUp div.cont img { width:100%; }
+	.evenprizewinner_popUp header.evenprizewinner { width:100%; height:36px; background:#4da325; padding:0; border:none; border-radius:0; }
+	.evenprizewinner_popUp header.evenprizewinner h4 { font-size:14px; color:#fff; line-height:36px; padding-left:15px;  }
+	
+	.evenpriz { padding:10px 0 20px 0; }
+    .input_q_box  label.label_q { ont-size:14px; color:#222; font-weight:bold; display:block; margin-bottom:20px; }
+    .input_q_box .input_q { font-size:14px; color:#666; padding:5px; background:#ececec; border:1px solid #ececec; height:20px; width:80%; }
+    .input_q_box p.pint { font-size:12px; color:#666; margin:10px 0 30px; }
+    .input_q_box p.btn_eq { margin-bottom:30px; }
+    .input_q_box p.btn_eq a { width:72px; height:21px; display:block; margin:0 auto; text-indent: inherit;}
+	/* 당첨일때  */
+	.btn_smt_pimg { position:relative; }
+	.btn_smt_ptext { position:absolute; left:14px; top:30px; font-size:14px; color:#444; line-height:1.4; }
+	.btn_smt_ptext strong { font-size:18px; color:#4da325;  } 
+	.btn_smt_ptext span { font-size:12px; color:#666; } 
+	/* 꽝일때  */
+	.btn_smt_zimg { position:relative; }
+	.btn_smt_ztext { position:absolute; left:14px; top:20px; font-size:14px; color:#444; line-height:1.4; }
+	.btn_smt_ztext strong { font-size:18px; color:#4da325;  } 
+	.btn_smt_ztext span { font-size:12px; color:#666; } 
+	
+	.prizewinner_indfo dt { background:url('../img/whatsnew/summer/prizewinner_indfo_dt-1.gif') 0 6px no-repeat; font-size:14px; color:#222; line-height:1.4; font-weight:bold; padding-left:8px; margin:40px 0 5px 0; }
+	.prizewinner_indfo dd { background:url('../img/whatsnew/summer/prizewinner_indfo_dd-1.gif') 0 7px no-repeat; font-size:12px; color:#666; line-height:1.4; padding-left:8px; }
+	
+	p.btn_pz_close { padding:30px 0; }
+	p.btn_pz_close a { width:70px; height:23px; display:block; float:right; text-indent: inherit; }
+	/* 당첨여부 팝업 end */
+	
+
+	.pop_renew_regist { border-radius:3px; display:none; left:50%; margin-left:-345px; position:absolute; top:1150px; width:690px; z-index:99; }
+	.pop_renew_regist header.pop_renew_regist_ttl { background:#8c8279; border:none; border-radius:3px 3px 0 0; color:#fff;  font-size:22px; height:55px; left:0; line-height:55px; padding:0; position:relative; text-indent:40px; top:0; width:100%; }
+	.pop_renew_regist header.pop_renew_regist_ttl h4 { font-weight:normal; }
+	.pop_renew_regist header.pop_renew_regist_ttl p.pop_renew_regist_close { background:url("../img/whatsnew/rn_open/btn_pop_close.png"); height:22px; position:absolute; right:31px; top:17px; width:22px; }
+
+	.pop_renew_regist_cont { background:#fff; border-radius:0 0 3px 3px; padding:20px 40px 30px 40px; }
+	.pop_renew_regist_cont p.regist_stat_txt { color:#007042; font-size:14px; }
+
+	.pop_renew_regist_each { margin-top:30px; }
+	.pop_renew_regist_each_ttl { height:57px; }
+	.pop_renew_regist_each_ttlt { height:23px; }
+	.pop_renew_regist_each_ttlb { margin-top:12px; }
+	.pop_renew_regist_each_ttlt img,
+	.pop_renew_regist_each_ttlb img { float:left; max-width:100%; width:auto; }
+	.ttl_fade_line { margin:9px 0 0 5px; }
+	.pop_renew_regist_each_ttlb img.chk_stat { float:right; }
+
+	.pop_renew_stamp_wrap { background:#f5f5f5; margin-top:20px; padding:3% 18px 6% 18px; }
+	.pop_renew_stamp_wrap ul:after { clear:both; content:""; display:block; }
+	.pop_renew_stamp_wrap ul li { background:url("../img/whatsnew/rn_open/stamp_off.png") no-repeat; background-size:100% auto; float:left; height:88px; margin:3% 0 0 6px; width:88px; }
+	.pop_renew_stamp_wrap ul li img { width:100%; }
+
+	.btn_evt2_join { height:55px; margin-top:20px; }
+	.btn_evt2_join img { max-width:100%; width:auto; }
+
+	.regist_stat_warn { color:#444; font-size:14px; margin-top:80px; }
+
+	.pop_mysb_update { border-radius:3px; display:none; left:50%; margin-left:-275px; position:absolute; top:150px; width:550px; z-index:99; }
+	.pop_mysb_update header.pop_mysb_update_ttl { background:#8c8279; border:none; border-radius:3px 3px 0 0; color:#fff;  font-size:22px; height:55px; left:0; line-height:55px; padding:0; position:relative; text-indent:40px; top:0; width:100%; }
+	.pop_mysb_update header.pop_mysb_update_ttl h4 { font-weight:normal; }
+	.pop_mysb_update header.pop_mysb_update_ttl p.pop_mysb_update_close { background:url("../img/whatsnew/rn_open/btn_pop_close.png"); height:22px; position:absolute; right:31px; top:17px; width:22px; }
+
+	.pop_mysb_update_cont { background:#fff; border-radius:0 0 3px 3px; padding:20px 40px 30px 40px; }
+	.pop_mysb_update_cont fieldset dl { float:left; margin-top:10px; width:100%; }
+	.pop_mysb_update_cont fieldset dl dt,
+	.pop_mysb_update_cont fieldset dl dd { float:left; }
+	.pop_mysb_update_cont fieldset dl dt { background:url("../img/whatsnew/rn_open/bullet_khaki.gif") 0 11px no-repeat; color:#222; font-size:14px; height:28px; line-height:28px; padding-left:8px; width:15%; }
+	.pop_mysb_update_cont fieldset dl dd { width:83%; }
+	.pop_mysb_update_cont fieldset dl dd:after { clear:both; content:""; display:block; }
+	.pop_mysb_update_cont fieldset dl dd div { float:left; height:28px; width:100%; }
+	.pop_mysb_update_cont fieldset dl dd div input { color:#444; float:left; padding:0; }
+	.mysb_input_type1 { border:1px solid #ddd; border-radius:3px; font-size:12px; height:26px; width:100px; }
+	.mysb_input_type2 { border:1px solid #ddd; border-radius:3px; font-size:12px; height:26px; width:50px; }
+	.mysb_input_type3 { border:1px solid #ddd; border-radius:3px; font-size:12px; height:26px; width:99%; }
+	.mysb_input_txt { color:#444; float:left; font-size:14px; height:28px; line-height:28px; padding:0 2px; }
+
+	.mysb_mail_select { background:url("../img/util/sbox_arrow_down.png") 94% 10px no-repeat #fff; border:1px solid #ddd; border-radius:3px; float:left; height:26px; margin-left:5px; position:relative; width:100px; }
+	.mysb_mail_select label { color:#444; font-size:12px; font-weight:bold; left:5px; position:absolute; top:8px; }
+	.mysb_mail_select select { height:26px; opacity:0; width:100px; }
+
+	.mysb_radio { height:13px; margin:7px 5px 0 0; width:13px; }
+	.mysb_label { color:#444; float:left; font-size:14px; height:28px; line-height:28px; margin-right:20px; }
+
+	.btn_mysb_find_addr { background:#fff; border:1px solid #ddd; border-radius:3px; float:left; height:26px; margin-left:10px; width:70px; }
+	.btn_mysb_find_addr a.btn_find_addr { color:#444; display:block; font-size:14px; font-size:12px; font-weight:bold; height:100%; line-height:26px; text-align:center; text-indent:initial; width:100%; }
+
+	.btn_mysb_info_wrap { float:left; height:28px; margin-top:30px; width:100%; }
+	.btn_mysb_info_wrap a.btn_mysb_info { background:#222; color:#fff; display:block; font-size:14px; height:28px; line-height:28px; margin:0 auto; text-align:center; width:82px; }
+
+	.mysb_info_notice { color:#444; font-size:14px; margin-top:30px; }
+
+	
+
+@media screen and (max-width:700px) {
+
+	.pop_renew_regist { margin-left:-50%; width:100%; }
+	.ttl_fade_line { display:none; }
+
+	.pop_renew_stamp_wrap ul li { height:68px; margin:3% 0 0 3%; width:68px; }
+
+	.pop_mysb_update { margin-left:-45%; width:90%; }
+	.pop_mysb_update_cont { padding:20px 5% 30px 5%; }
+
+	
+}
+
+@media screen and (max-width:640px) {
+
+	.for_mob { display:block; }
+	.for_web { display:none; }
+
+	.campaign_renew_each p.btn_renew_open01 { height:2.899%; left:73.281%; top:85.207%; width:23.437%; }
+	.campaign_renew_each p.btn_renew_open02 { height:4.556%; left:21.562%; top:91.479%; width:57.656%; }
+	.campaign_renew_each p.btn_renew_open03 { height:7.5%; left:3.593%; top:61.879%; width:20.312%; }
+	.campaign_renew_each p.btn_renew_open04 { height:4.615%; left:4.687%; top:32.224%; width:25%; }
+	.campaign_renew_each p.btn_renew_open09 { height:9.4%; left:29%; top:40.2%; width:66%; }
+	.campaign_renew_each p.btn_renew_open10 { height:9.4%; left:29%; top:55%; width:66%; }
+	.campaign_renew_each p.btn_renew_open11 { height:9.4%; left:29%; top:70.2%; width:66%; }
+
+	.pop_renew_regist_each_ttl { height:auto; }
+
+	.pop_renew_regist_each_ttlb img,
+	.pop_renew_regist_each_ttlb img.chk_stat { float:none; }
+	.pop_renew_regist_each_ttlb img.chk_stat { margin-top:5px;; }
+
+	
+
+}
+
+@media screen and (max-width:520px) {
+
+	.pop_mysb_update { margin-left:-50%; width:100%; }
+
+	.pop_mysb_update_cont fieldset dl dd { width:100%; }
+	.pop_mysb_update_cont fieldset dl dd div { height:auto; }
+
+}
+
+@media screen and (max-width:480px) {
+
+	.pop_renew_regist header.pop_renew_regist_ttl { font-size:18px; text-indent:20px; }
+	.pop_renew_regist header.pop_renew_regist_ttl p.pop_renew_regist_close { right:20px; }
+	.pop_renew_regist_cont { padding:20px 10px 30px 10px; }
+
+	.pop_renew_regist_each_ttlt img,
+	.pop_renew_regist_each_ttlb img,
+	.btn_evt2_join img { height:80%; }
+
+	.pop_renew_stamp_wrap { padding:3% 10px 6% 10px; }
+
+	.pop_renew_regist { top:400px; }
+
+	 /* 이벤트당첨자 확인 팝업 */
+    .evenprizewinner_popUp { width:96%; margin-left:-48%; position:absolute; left:50%; top:50%; border:1px solid #2b8a16; z-index:100; background:#fff; }
+    .btn_smt_ptext { top:20px; }
+    .btn_smt_ztext { top:15px; }
+
+}
+
+
+@media screen and (max-width:380px) {
+
+	.mysb_mail_select { margin:5px 0 0 0; }
+
+}

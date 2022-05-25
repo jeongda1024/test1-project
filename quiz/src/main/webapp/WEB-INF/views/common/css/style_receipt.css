@@ -1,0 +1,282 @@
+
+@charset 'utf-8';
+
+
+.receipt_wrap { max-width:640px; margin:0 auto; padding-bottom:30px; }
+.receipt_wrap_inner { background:url("../img/receipt/receipt_bg.png") center 0 repeat-y; background-size:100% auto; margin:0 58px; color:#020202; }
+.receipt_header { }
+.receipt_header strong { display:block; font-size:42px; line-height:; text-align:center; }
+.store_area_info { font-size:20px; border-bottom:2px dashed #808080; line-height:1.2; padding:15px 0; }
+.store_area_info1:after,
+.store_area_info2:after,
+.store_area_info3:after { clear:both; content:""; display:block; }
+.store_area_name { float:left; }
+.store_area_add { float:left; }
+.brand_master { float:left; }
+.store_biz_id { float:right; }
+.store_area_tel { float:right; }
+
+.receipt_bnr_wrap { background:url("../img/receipt/receipt_bnr_bg.png") no-repeat; background-size:100% auto; height:60px; width:100%; }
+.receipt_bnr_wrap .receipt_bnr_ttl { float:left; font-size:18px; letter-spacing:-.5px; margin:3.5% 0 0 3%; }
+.receipt_bnr_wrap .receipt_bnr_ttl strong { color:#9d2235; font-size:22px; }
+.receipt_bnr_wrap .receipt_bnr_btn { float:right; margin:4.25% 8.5% 0 0; }
+.receipt_bnr_wrap .receipt_bnr_btn a { color:#fff; display:block; font-size:20px; height:100%; width:100%; }
+
+.receipt_bnr_wrap2{background:#49ad98; text-align:center} /*20180523 추가*/
+.receipt_bnr_wrap2 img{max-width:640px} /*20180523 추가*/
+
+.hard_nick { display:block; font-size:20px; line-height:1.4; padding:15px 0 0 0; }
+.user_nickname { border-bottom:2px dashed #808080; font-size:42px; font-weight:bold; letter-spacing:2px; padding:15px 0; text-align:center; }
+.pos_info { float:left; }
+.date_time { float:right; }
+
+.buy_list_wrap { border-bottom:2px dashed #808080; padding:15px 0 5px; font-size:28px; letter-spacing:-2px; }
+.buy_list_wrap ul li { margin-bottom:10px; }
+.buy_list_wrap ul li:after { clear:both; content:""; display:block; }
+.buy_list_wrap ul > li > p { float:left /*; font-family:'Lucida Sans';*/ } /*20180202 수정*/
+
+.buy_list_wrap .prduct_name{ letter-spacing:-1px; width:51.71%; }
+.buy_list_wrap .prduct_price{ width:19%; text-align:right; }
+.buy_list_wrap .prduct_num { text-align:right; width:7.68%; }
+.buy_list_wrap .prduct_price_sum { float:right;  text-align:right; }
+
+.buy_list_wrap_down ul li{ margin-bottom:10px; }
+.buy_list_wrap_down ul li:after { clear:both; content:""; display:block; }
+.buy_list_wrap_down ul > li > p >{ float:left /*; font-family:'Lucida Sans';*/ } /*20180202 수정*/
+
+.buy_list_wrap .prduct_option_name{ letter-spacing:-1px; width:51.71%; text-indent:5px; }
+.buy_list_wrap .prduct_option_price{ width:19%; text-align:right; }
+.buy_list_wrap .prduct_option_num { text-align:right; width:7.68%; }
+.buy_list_wrap .prduct_option_price_sum { float:right;  text-align:right; }
+
+.buy_subtotal_wrap { border-bottom:2px dashed #808080; padding:15px 0; font-size:28px; letter-spacing:-2px; }
+.buy_subtotal_wrap ul li { margin-bottom:10px; }
+.buy_subtotal_wrap ul li:after { clear:both; content:""; display:block; }
+.buy_subtotal_wrap ul > li > p { float:left /*; font-family:'Lucida Sans';*/ } /*20180202 수정*/
+.buy_subtotal_wrap ul > li > p img { vertical-align:middle; }
+.buy_subtotal_wrap .subtotal1 { width:47.7%; }
+.buy_subtotal_wrap .subtotal2 { width:26px; }
+.buy_subtotal_wrap .subtotal3 { float:right; text-align:center; font-family:'Lucida Sans' } /*20180202 수정*/
+.buy_subtotal_wrap .subtotal4 { float:right; text-align:right; width:36%; }
+
+.buy_total_wrap { border-bottom:2px dashed #808080; padding:15px 0; font-size:38px; font-weight:bold; }
+.buy_total_wrap:after { clear:both; content:""; display:block; }
+.total_txt { float:left; }
+.total_price { float:right; }
+/* 신포맷에서 사용 */
+.total_tax_txt { float:left; font-weight:normal; line-height:1.2; }
+.total_tax_price { float:right; font-weight:normal; line-height:1.2; }
+/* 신포맷에서 사용 */
+
+.order_num_wrap { border-bottom:2px dashed #808080; font-size:28px; line-height:1.2; padding:15px 0; }
+.order_num_wrap > div:after { clear:both; content:""; display:block; }
+.order_num1 { float:left; letter-spacing:1px;}
+.order_num2 { float:right; font-size:28px; } 
+.sirenoder_num { font-weight:bold; font-size:28px; letter-spacing:-2px; }
+
+.card_payment_info { border-bottom:2px dashed #808080; font-size:28px; line-height:1.2; margin-bottom:1px; padding:15px 0; }
+.card_payment_info:after { clear:both; content:""; display:block; }
+.card_name { float:left; }
+.card_payment_num { float:right; }
+
+.msr_info { border-bottom:2px dashed #808080; font-size:28px; line-height:1.2; padding:15px 0; }
+
+.event_info { border-bottom:2px dashed #808080; font-size:28px; line-height:1.2; /* padding:15px 0; */ }
+
+.lucida { letter-spacing:-1px /*; font-family:'Lucida Sans';*/ } /*20180202 수정*/
+.cash_receipt_wrap { border-bottom: 2px dashed #808080; font-size:28px; padding:15px 0; }
+.cash_receipt_wrap div:after { clear:both; content:""; display:block; }
+.cash_receipt1 { float:left; }
+.cash_receipt2 { float:right; }
+
+.partner_wrap { border-top:2px dashed #808080; font-size:28px; margin-top:1px; padding:15px 0; }
+.partner_wrap:after { clear:both; content:""; display:block; }
+.partner_ttl { float:left; }
+.partner_name {  float:right;}
+
+.payment_option_txt { font-size:24px; line-height:1.2; text-align:center; }
+
+.barcode_wrap { /* border-bottom:2px dashed #808080; */ font-size:28px; padding:15px 0 0; position:relative; text-align:center; }
+/* .barcode_num { margin-bottom:10px; } */
+.msr_event { border-bottom:2px dashed #808080; font-size:28px; padding:15px 0; text-align:center; }
+
+.qr_code_wrap { padding:20px 0; font-size:28px; line-height:1.2; text-align:center; }
+.qr_code_wrap p { margin-bottom:10px;}
+
+.txt_border { font-size:28px;  overflow:hidden;  }
+.ta_center { text-align:center; }
+.event_url { font-size:20px; }
+
+
+/* 김민 추가 */
+
+.re_buy_wrap{ border-bottom: 2px dashed #808080; font-size:28px; padding:15px 0; }
+.re_buy_wrap ul li:after { clear:both; content:""; display:block; }
+.re_buy_wrap ul li p { display:inline; }
+.re_buy_wrap .re_buy_text1 { float:left;}
+.re_buy_wrap .re_buy_text2 { float:right;}
+.re_buy_wrap .re_buy_price{float:right; text-align:right; width:38%; }
+
+
+.starbucks_card_wrap{ width:100%;  border-bottom: 2px dashed #808080; font-size:28px; padding:15px 0;}
+.starbucks_card_wrap ul li:after { clear:both; content:""; display:block; }
+.starbucks_card_wrap .re_buy_text1 {float:left;}
+.starbucks_card_wrap .re_buy_text2 {float:left;}
+.starbucks_card_wrap .re_buy_price {float:right;}
+
+.cash_receipt_wrap2 { border-bottom: 2px dashed #808080; font-size:28px; padding:15px 0; word-spacing:5px;}
+.cash_receipt_wrap2 div:after { clear:both; content:""; display:block; }
+
+/* 김민 추가 end */
+
+/* 영수증팝업 320 */
+    .pop_receipt_dimm { background:#000; display:none; height:100%; left:0; opacity:0.7; filter:alpha(opacity=70); position:fixed; top:0; width:100%; z-index:98; }
+    .pop_receipt { display:none; background:#f4f4f2; left:50%; margin-left:-200px; padding:30px 40px; position:absolute; top:22%; z-index:99; } /* 전자영수증 팝업창 노출 수정 20190604 */
+    
+    .pop_receipt_header { margin-bottom:15px; line-height:30px; }
+    .pop_receipt_print { background:#006633; border-radius:3px; color:#fff; font-size:12px; float:right; display:block; line-height:25px; text-align:center; width:64px; }
+    .pop_receipt_print img { margin-right:5px; vertical-align:middle; }
+    
+    .pop_receipt_close { background:url("../img/receipt/pop_receipt_close.png"); height:38px; position:absolute; right:-58px; text-indent:-20000px; top:20px; width:38px; -webkit-transition:-webkit-transform 1s; transition:transform 1s;} 
+    .pop_receipt_close:hover { transform:rotate(180deg); }
+
+    .pop_receipt_cont { background:#fff; border:1px solid #eaeaea; height:700px; overflow:hidden; } 
+    .pop_receipt_cont .mCSB_inside > .mCSB_container { margin-right:0; }
+    .pop_receipt_cont .mCustomScrollBox { overflow:visible; }
+    .pop_receipt_cont .mCSB_scrollTools .mCSB_draggerContainer { }
+    .pop_receipt .buy_subtotal_wrap .subtotal2 { width:13px; }
+    .pop_receipt .icon_receipt_arrow { width:50%; }
+    .pop_receipt .receipt_wrap { max-width:320px; margin:0 auto; }
+    .pop_receipt .receipt_wrap_inner { margin:0 30px; }
+    .pop_receipt .receipt_header strong { font-size:21px; }
+    .pop_receipt .store_area_info { font-size:10px; }
+    .pop_receipt .user_nickname { font-size:21px; }
+    .pop_receipt .buy_list_wrap { font-size:14px; }
+    .pop_receipt .buy_total_wrap { font-size:19px; }
+    /* 신포맷에서 사용 */
+	.pop_receipt .total_tax_txt { font-size:13px; }
+	.pop_receipt .total_tax_price { font-size:13px; }
+    /* 신포맷에서 사용 */
+    .pop_receipt .buy_subtotal_wrap { font-size:14px; letter-spacing:0; line-height:14px; }
+    .pop_receipt .buy_subtotal_wrap .subtotal2 { word-spacing:0px; }
+    .pop_receipt .order_num_wrap { font-size:14px; }
+    .pop_receipt .order_num2 { font-size:14px; letter-spacing:-1px;}
+    .pop_receipt .sirenoder_num { font-weight:bold; letter-spacing:-1px; font-size:14px; }
+    .pop_receipt .msr_info { font-size:14px; }
+    .pop_receipt .event_info { font-size:14px; }
+    .pop_receipt .card_payment_info { font-size:14px; }
+    .pop_receipt .cash_receipt_wrap { font-size:14px; }
+    .pop_receipt .partner_wrap { font-size:14px; }
+    .pop_receipt .payment_option_txt { font-size:14px; }
+    .pop_receipt .barcode_wrap { font-size:14px; }
+    .pop_receipt .msr_event { font-size:14px; }
+    
+    .pop_receipt .txt_border { font-size:14px; }
+    .pop_receipt .qr_code_wrap { font-size:14px; }
+    .pop_receipt .event_url { font-size:10px; }
+
+    .pop_receipt .re_buy_wrap { font-size:14px; }
+    .pop_receipt .starbucks_card_wrap { font-size:14px; }
+    .pop_receipt .cash_receipt_wrap2 { font-size:14px; word-spacing:5px;}
+    
+    /* 161130 추가 */
+    .pop_receipt_cont .mCSB_scrollTools .mCSB_draggerContainer { margin:10px 0; padding-left:2px; }
+    .pop_receipt_cont  .mCSB_scrollTools .mCSB_draggerRail { width:6px; background:#f4f4f2; }
+    .pop_receipt_cont  .mCSB_scrollTools .mCSB_dragger { height:33px !important; }
+    .pop_receipt_cont  .mCSB_dragger_bar { width:10px; background:#666 !important; }
+    .pop_receipt_cont  .mCSB_dragger_bar:hover { background:#666; }
+    .pop_receipt .pop_receipt_cont .receipt_service_wrap { max-width:320px; margin:0 auto; }
+    /* 161130 추가 end */
+
+/* 영수증팝업 320 end */
+    .barcode_img { /* height:132px; */ margin-bottom:5px; background:no-repeat center center; }
+    .sb_url, 
+    .barcode_num { left:50%; margin-left:-150px; position:absolute; top:25px; width:300px; }
+    .barcode_num { top:105px; }
+
+/* 161202 수정 */
+    .receipt_wait { display:table-cell; height:700px; font-size:16px; max-width:320px; vertical-align:middle; }
+/* 161202 수정 end */
+
+    .qr_code_img { height:120px; margin:20px auto; width:120px; }
+
+@media screen and (max-width:640px) {
+
+    .receipt_bnr_wrap2 img{max-width:320px} /*20180523 추가*/
+    
+    .pop_receipt { left:4%; margin-left:0; right:4%;; padding:3%; }
+    .pop_receipt_close { background-size:100% auto; height:30px; top:-40px; right:0; width:30px; }
+    .pop_receipt_cont { height:400px; }
+    .pop_receipt .receipt_wrap_inner { margin:0 4%; }
+    .buy_subtotal_wrap .subtotal2 { width:13px; }
+    .icon_receipt_arrow { width:50%; }
+    .receipt_wrap { max-width:320px; margin:0 auto; }
+    .receipt_wrap_inner { margin:0 15px; }
+    .receipt_header strong { font-size:21px; }
+    .store_area_info { font-size:10px; }
+    .hard_nick { font-size:12px; }
+    .user_nickname { font-size:21px; }
+    .buy_list_wrap { font-size:14px; }
+    .buy_total_wrap { font-size:19px; }
+    /* 신포맷에서 사용 */
+    .total_tax_txt { font-size:13px; }
+    .total_tax_price { font-size:13px; }
+    /* 신포맷에서 사용 */
+    .buy_subtotal_wrap { font-size:14px; letter-spacing:0; line-height:14px; }
+    .buy_subtotal_wrap .subtotal2 { word-spacing:0px; }
+    .order_num_wrap { font-size:14px; }
+    .order_num2 { font-size:14px; letter-spacing:-1px;}
+    .sirenoder_num { font-weight:bold; letter-spacing:-1px; font-size:14px; }
+    .msr_info { font-size:14px; }
+    .event_info { font-size:14px; }
+    .event_info p { line-height:1.25; }
+    .card_payment_info { font-size:14px; }
+    .cash_receipt_wrap { font-size:14px; }
+    .partner_wrap { font-size:14px; }
+    .payment_option_txt { font-size:14px; }
+    .barcode_wrap { font-size:14px; }
+    .msr_event { font-size:14px; }
+    
+    .txt_border { font-size:14px; }
+    .qr_code_wrap { font-size:14px; }
+    .event_url { font-size:10px; }
+
+/* 161202 추가 */
+.pop_receipt_cont_serv { background:#fff; border:1px solid #eaeaea; height:700px; overflow:hidden; }
+.pop_receipt .receipt_wrap { max-width:320px; margin:0 auto; }
+.pop_receipt .receipt_wrap .receipt_wrap_inner .receipt_wait { width:320px; text-align:center; }
+/* 161202 추가 end */
+
+
+/* 김민 추가 */
+    .re_buy_wrap { font-size:14px; }
+    .starbucks_card_wrap { font-size:14px; }
+    .cash_receipt_wrap2 { font-size:14px; word-spacing:5px;}
+/* 김민 추가 end */
+
+    .receipt_bnr_wrap { height:43px; }
+    .receipt_bnr_wrap .receipt_bnr_ttl { font-size:11px; }
+    .receipt_bnr_wrap .receipt_bnr_ttl strong { font-size:13px; }
+    .receipt_bnr_wrap .receipt_bnr_btn a { font-size:11px; }
+}
+
+/* 20171010 프린트 메디아 추가 */
+@media print {
+	.receipt_wrap {width: 210mm;  padding: 0mm 50mm; box-sizing: border-box; }
+	.receipt_wrap * {background-image: none; }
+	.receipt_header strong {font-size: 16px; }
+	.receipt_wrap_inner {margin: 0; }
+	.store_area_info {font-size: 9px; }
+	.user_nickname {font-size: 15px; padding: 8px 0; }
+	.buy_list_wrap {font-size: 9px; }
+	.buy_list_wrap ul li {margin-bottom: 5px; }
+	.buy_subtotal_wrap {font-size: 12px; padding: 10px 0 3px 0; }
+	.buy_total_wrap {font-size: 13px; }
+	.cash_receipt_wrap2, .partner_wrap {font-size: 9px; padding: 10px 0; }
+	.order_num_wrap, .order_num2 {font-size: 9px; }
+    .payment_option_txt {padding: 0 10px 10px 10px ; font-size: 8.5px;  }
+    .payment_option_txt br {display: none; }
+    .barcode_wrap {font-size: 11px; padding: 3px 0 10px 0; }
+    .sb_url, .barcode_num {position: static; text-align: center; margin: 0; width: auto; }
+    .event_info {font-size: 9px; }
+}

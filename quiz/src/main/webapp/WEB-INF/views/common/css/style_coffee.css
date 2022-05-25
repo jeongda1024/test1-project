@@ -1,0 +1,2636 @@
+﻿@charset 'utf-8';
+	/* 로컬 확인용*/
+	/* @font-face{font-family:'nbg'; src:url("../fonts/NanumBarunGothic.eot")}
+	@font-face{font-family:'nbg'; src:url("../fonts/NanumBarunGothic.woff")}
+
+	body{font-family:'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif;} */
+/* 로컬 확인용 끝 */
+
+
+	h2.h2_reserve img { margin-top:-15px; }
+	
+	/* 160718 상세 프로모션 및 사이렌오더 추가 */
+	div.productView_footmenu { padding:40px 0 60px 0; background:#f4f4f2; }
+	div.productView_footmenu_inner { width:1100px; margin:0 auto; }
+	div.productView_top { margin-bottom:26px; } /* 160718수정 margin-bottom:40px; */
+	div.productView_top:after { content:""; display:block; clear:both; }
+	div.productView_top_left { width:550px; float:left; position:relative; }
+	div.productView_top_right { width:549px; float:right; border-left:1px solid #ddd; }
+
+	div.productView_top_left p.tit { font-size:18px; font-weight:bold; color:#222; margin-bottom:15px; }
+	div.productView_top_left ul li { font-size:14px; background:url("../img/menu/dot-1.jpg") 0 center no-repeat; padding-left:10px; margin-bottom:10px; }
+	div.productView_top_left ul li a { color:#444; }
+	div.productView_top_left p.more { position:absolute; top:0; right:40px; }
+	div.productView_top_right dl { width:549px; }
+	div.productView_top_right dt { width:228px; float:left; text-align:center; position:relative; }
+	div.productView_top_right dt p.sirenOrder { position:absolute; left:30px; top:-10px; } /* 160718수정 top:-20px; */
+	div.productView_top_right dt p.xmasCake { position:absolute; left:30px; top:0; }
+	div.productView_top_right dt p.tumbler_pic { width:90%; margin-left:10px; }
+	div.productView_top_right dt p.card_pic { width:90%; margin-left:10px; }
+	div.productView_top_right dd { width:321px; float:right; }
+	div.productView_top_right p.tit { font-size:18px; font-weight:bold; color:#222; margin-bottom:14px; }
+	div.productView_top_right p.b_tit { font-size:17px; font-weight:bold; color:#222; margin-bottom:14px; }
+	div.productView_top_right p.g_tit { font-size:16px; color:#006633; margin-bottom:14px; line-height:1.4; }
+	div.productView_top_right p.s_tit { font-size:14px; font-weight:bold; color:#222; margin-bottom:14px; line-height:1.4; }
+	div.productView_top_right p.txt { font-size:14px; font-weight:normal; color:#555; margin-bottom:15px; line-height:1.6; }
+	div.productView_top_right p.txt_xmas { font-size:14px; font-weight:normal; color:#555; margin-bottom:10px; line-height:1.4; }
+	div.productView_top_right p.reserve_btn a { display:block; width:82px; height:30px; line-height:30px; background:#006633; border-radius:3px; font-size:12px; font-weight:bold; color:#fff; text-align:center; }
+	div.productView_top_right p.xmasc_btn a { display:block; width:82px; height:30px; line-height:30px; background:#b7312c; border-radius:3px; font-size:12px; font-weight:bold; color:#fff; text-align:center; }
+	div.productView_top_right p.egift_btn a { display:block; width:143px; height:30px; line-height:30px; background:#006633; border-radius:3px; font-size:12px; font-weight:bold; color:#fff; text-align:center; }
+	.productView_footmenu p.m_hidden_btn { display:none; }
+	.product_view_info p.m_card_btn { display:none; }
+
+	div.productView_bottom { border-top:1px solid #ddd; padding-top:40px; }
+	div.productView_bottom p.tit { font-size:18px; font-weight:bold; color:#333; margin-bottom:20px; }
+
+	div.productRel_wrap ul { width:100%; }
+	div.productRel_wrap ul:after { content:""; display:block; clear:both; }
+	div.productRel_wrap li { width:33.3333333%; float:left; }
+	div.productRel_wrap li dl { width:350px; }
+	div.productRel_wrap li dl:after { content:""; display:block; clear:both; }
+	div.productRel_wrap li dt { float:left; width:160px; height:160px; }
+	div.productRel_wrap li dd { float:right; width:170px; height:160px; position:relative; }
+	div.productRel_wrap li dd p.t1 { font-size:16px; color:#222; font-weight:bold; margin-bottom:10px; line-height:1.4; }
+	div.productRel_wrap li dd p.t2 { font-size:14px; color:#666; line-height:1.4; }
+	div.productRel_wrap li dd p.more_btn { position:absolute; left:0; bottom:0; font-size:12px; font-weight:bold; width:65px; }
+
+	div.m_view_slide { display:none; }
+	/* 160718 상세 프로모션 및 사이렌오더 추가 end */
+
+	.coffeeSlideArea ul.coffee_slider li a { display:block; width:100%; height:100%; }
+
+	/* 메인 동영상 슬라이드 추가 - 구명준 */
+	.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div.video { height:0; width:100% !important; padding:0 0 21% 0; position:relative; left:0; margin-left:0; top:0; }
+	ul.coffee_slider li div.video iframe { left:0 !important; margin-left:0 !important; height:100% !important; position:absolute; width:100% !important; }
+
+	/* 메인 동영상 슬라이드 추가 end */
+    
+    div.wrap_inner { left: 50%; margin-left: -550px; position: absolute; top: 0; width: 1100px; }
+    div.coffee_wrap_inner { width:1100px; margin:0 auto; position: relative; }
+    div.coffee_content {width: 1100px;  margin: 0 auto 80px ; } /* 20170718 수정*/
+    /* 비쥬얼 슬라이드 */
+    /* 20150611 서브 메인 슬라이드 bxslider 로 교체 */
+    .m_main_b_slide { display:none; }
+    .coffeeSlideArea { width:100%; height:400px; position:relative; overflow:hidden; }
+    .coffeeSlideArea .bxslide-main { width:100%; position:relative; z-index:1; }
+    .coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider { width:100%; }
+    .coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div { height:400px; width:2000px !important; position:relative; left:50%; margin-left:-1000px; top:0; }
+
+    .coffeeSlideArea .bxslide_btn_wrap { width:100%; height:55px; position:absolute; left:0; top:175px; z-index:2; }
+    .coffeeSlideArea .bx-wrapper .bx-prev { display:none; }
+    .coffeeSlideArea .bx-wrapper .bx-next { display:none; }
+
+    /* 150708 성연욱 - 투명한 버튼으로 수정 */
+    .coffeeSlideArea #prevBtn { position:absolute; left:3%; top:175px; z-index:2; }
+    .coffeeSlideArea #nextBtn { position:absolute; right:3%; top:175px; z-index:2; }
+    .coffeeSlideArea #prevBtn a { display:block; width:55px; height:55px; }
+    .coffeeSlideArea #prevBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+    .coffeeSlideArea #prevBtn a img.arrow_on { opacity:0; }
+    .coffeeSlideArea #prevBtn a img.arrow_on:hover { opacity:1; }
+
+    .coffeeSlideArea #nextBtn a { display:block; width:55px; height:55px; }
+    .coffeeSlideArea #nextBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+    .coffeeSlideArea #nextBtn a img.arrow_on { opacity:0; }
+    .coffeeSlideArea #nextBtn a img.arrow_on:hover { opacity:1; }
+    /* 150708 성연욱 - 투명한 버튼으로 수정 end */
+
+    .coffee_slider_control_pager { bottom:40px; height:12px; position:absolute; text-align:center; width:100%; z-index:9999; }
+    /*.coffee_slider_control_pager { bottom:30px; height:12px; position:absolute; text-align:center; width:40%; z-index:9999; margin-left:-20%; left:50%; }*/
+
+    .coffee_slider_controls { display:inline-block; height:12px; position:relative; width:9px; }
+    .coffee_slider_controls div.bx-controls-auto { position:absolute; }
+    .coffee_slider_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+    .coffee_slider_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause.png") 0 0; height:15px; width:15px; }
+    .coffee_slider_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+    .coffee_slider_controls div.bx-controls-auto a.bx-stop:hover,
+    .coffee_slider_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+    .coffee_slider_pagers { display:inline-block; height:12px; }
+    .coffee_slider_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:8px; }
+    .coffee_slider_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+    .coffee_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/coffee/icon/visual_off.png") 0 0; height:15px; width:15px; }
+    .coffee_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/coffee/icon/visual_on.png") 0 0; height:15px; width:15px; }
+    /* 20150611 서브 메인 슬라이드 bxslider 로 교체 end */
+
+    /* line_coffee_notice */
+    section.line_coffee_notice { height:70px; position:relative; width:100%; background:url("../img/coffee/line_coffee_notice_right_bg.png"); }
+    div.line_coffee_notice_left { background:#333; float:left; height:70px; width:50%; }
+    div.line_coffee_notice_right { float:right; height:70px; width:50%; }
+    div.line_coffee_notice_bg { background:url("../img/coffee/line_coffee_notice_bg.jpg"); height:70px; left:50%; margin-left:-640px; position:absolute; top:0; width:1280px; }
+
+    div.line_coffee_notice_bgl { float:left; height:70px; width:819px; }
+    div.line_coffee_notice_inner { float:left; height:43px; margin:27px 0 0 108px; width:711px; }
+    p.line_coffee_notice_inner_l { float:left; height:43px; position:relative; width:580px; }
+    p.line_coffee_notice_inner_l span.coffee_notice_text { background:url("../img/coffee/coffee_notice_text.png"); height:17px; left:0; position:absolute; top:0px; width:63px; }
+    p.line_coffee_notice_inner_l span.coffee_notice_area { height:16px; left:78px; position:absolute; text-indent:15px; top:1px; width:500px; }
+    p.line_coffee_notice_inner_l span.coffee_notice_area a { color:#fff; display:block; font-size:14px; height:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%; }
+
+    p.line_coffee_notice_inner_r { float:right; height:43px; position:relative; width:109px; }
+    p.line_coffee_notice_inner_r span { background:url("../img/coffee/icon_coffee_notice_more-1.png") 0 0 no-repeat; height:36px; left:0; position:absolute; top:-9px; width:36px; }
+    p.line_coffee_notice_inner_r span a { color:#c19d55; display:block; font-size:14px; height:100%; width:100%; text-indent:-20000px;}
+    
+    div.line_coffee_notice_bgr { background:url("../img/coffee/line_coffee_notice_right_bg.png"); float:right; height:70px; position:relative; width:461px; }
+    p.line_coffee_notice_bgr_l { float:left; height:43px; position:relative; width:321px; }
+    p.line_coffee_notice_bgr_l span.coffee_notice_area {  background:url("../img/coffee/coffee_notice_bgr_text.png") 0 0 no-repeat; height:59px; left:20px; position:absolute; text-indent:15px; top:11px; width:278px; }
+    p.line_coffee_notice_bgr_l span.coffee_notice_area a { color:#fff; display:block; font-size:14px; height:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%; text-indent:-20000px;}
+    
+    p.line_coffee_notice_bgr_r { float:right; height:43px; position:relative; width:140px; }
+    p.line_coffee_notice_bgr_r span { background:url("../img/coffee/icon_coffee_notice_up_more.png") 0 0 no-repeat; height:36px; left:0; position:absolute; top:18px; width:36px; }
+    p.line_coffee_notice_bgr_r span.on { background:url("../img/coffee/icon_coffee_notice_down_more.png") 0 0 no-repeat; height:36px; left:0; position:absolute; top:18px; width:36px; }
+    p.line_coffee_notice_bgr_r span a { color:#c19d55; display:block; font-size:14px; height:100%; width:100%; text-indent:-20000px;}
+
+    /* 나와 어울리는 커피 찾기 */
+    section.coffee_choice_wrap { width:100%; height:430px; position:relative; background: url("../img/coffee/coffee_choice_wrap_bg.jpg") 20% 50% no-repeat; background-size:cover; }
+
+    p.coffee_choice_txt { left:697px; position:absolute; top:100px; width:343px; }
+    div.coffee_choice_btn { border:2px solid #fff; border-radius:3px; height:34px; left:697px; line-height:34px; position:absolute; top:275px; width:121px; z-index:5; }
+    div.coffee_choice_btn a { color:#fff; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    div.coffee_choice_btn a:hover { background:#fff; color:#222;  }
+
+    /* 스타벅스 리저브 */
+    section.coffee_reserve_wrap { width:100%; height:430px; position:relative; background: url("../img/coffee/coffee_reserve_wrap_bg.jpg") 80% 50% no-repeat; background-size:cover; }
+    
+    p.coffee_reserve_txt { left:0; position:absolute; top:107px; width:446px; }
+    div.coffee_reserve_btn { border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:0; top:282px; width:121px; z-index:4; }
+    div.coffee_reserve_btn a { color:#222; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    div.coffee_reserve_btn a:hover { background:#222; color:#fff; }
+
+    p.coffee_reserve_btn { border:2px solid #222; border-radius:3px; height:34px; line-height:34px; width:121px; z-index:4; position:absolute; left:50%; margin-left:-551px; top:280px; }
+    p.coffee_reserve_btn a { color:#222; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    p.coffee_reserve_btn a:hover { background:#222; color:#fff; }
+
+    /* 에스프레소 음료 */
+    section.coffee_espresso_wrap { width:100%; height:430px; position:relative; background: url("../img/coffee/coffee_espresso_wrap_bg.jpg") 20% 50% no-repeat; background-size:cover; }
+    
+    p.coffee_espresso_txt { left:697px; position:absolute; top:116px; width:379px; }
+    div.coffee_espresso_btn { border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:697px; top:292px; width:121px; }
+    div.coffee_espresso_btn a { color:#fff; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    div.coffee_espresso_btn a:hover { background:#fff; color:#222; }
+
+    /* 최상의 커피를 즐기는 법 */
+    dt.box_bg { display:none; }
+
+    section.coffee_best_wrap { width:100%; height:430px; position:relative; background: url("../img/coffee/coffee_best_wrap_bg.jpg") 80% 50% no-repeat;  background-size:cover; }
+    
+    p.coffee_best_txt { left:0; position:absolute; top:119px; width:331px; }
+    div.coffee_best_btn { border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:0; top:297px; width:121px; z-index:4; }
+    div.coffee_best_btn a { color:#222; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    div.coffee_best_btn a:hover { background:#222; color:#fff; }
+
+	/* 150806 추가 */
+	section.coffee_hs_wrap { width:100%; height:430px; position:relative; background: url("../img/coffee/coffee_hs_wrap_bg.jpg") 20% 50% no-repeat; background-size:cover; }
+    
+    p.coffee_hs_txt { left:697px; position:absolute; top:116px; width:379px; }
+    div.coffee_hs_btn { border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:697px; top:292px; width:121px; }
+    div.coffee_hs_btn a { color:#fff; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    div.coffee_hs_btn a:hover { background:#fff; color:#222; }
+	/* 150806 추가 end */
+
+    /* coffee_slid_bottom 슬라이드 */
+    /* 20150611 서브 메인 슬라이드 bxslider 로 교체 */
+    .coffee_bottomSlideArea { width:100%; height:430px; position:relative; overflow:hidden; }
+    .coffee_bottomSlideArea .bxslide-main { width:100%; position:relative; z-index:1; }
+    .coffee_bottomSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_bottom_slider { width:100%; }
+    .coffee_bottomSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_bottom_slider li div.bg { height:430px; width:2000px !important; position:relative; left:50%; margin-left:-1000px; top:0; }
+
+    .coffee_bottomSlideArea .bxslide_btn_wrap { width:100%; height:55px; position:absolute; left:0; top:180px; z-index:2; }
+    .coffee_bottomSlideArea .bx-wrapper .bx-prev { display:none; }
+    .coffee_bottomSlideArea .bx-wrapper .bx-next { display:none; }
+
+    /* 150708 성연욱 - 투명한 버튼으로 수정 */
+    .coffee_bottomSlideArea #prevBtn2 { position:absolute; left:3%; top:175px; z-index:2; }
+    .coffee_bottomSlideArea #nextBtn2 { position:absolute; right:3%; top:175px; z-index:2; }
+    .coffee_bottomSlideArea #prevBtn2 a { display:block; width:55px; height:55px; }
+    .coffee_bottomSlideArea #prevBtn2 a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+    .coffee_bottomSlideArea #prevBtn2 a img.arrow_on { opacity:0; }
+    .coffee_bottomSlideArea #prevBtn2 a img.arrow_on:hover { opacity:1; }
+
+    .coffee_bottomSlideArea #nextBtn2 a { display:block; width:55px; height:55px; }
+    .coffee_bottomSlideArea #nextBtn2 a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+    .coffee_bottomSlideArea #nextBtn2 a img.arrow_on { opacity:0; }
+    .coffee_bottomSlideArea #nextBtn2 a img.arrow_on:hover { opacity:1; }
+    /* 150708 성연욱 - 투명한 버튼으로 수정 end */
+
+    .coffee_bottom_slider_control_pager { bottom:20px; height:12px; position:absolute; text-align:center; width:100%; z-index:9999; }
+
+    .coffee_bottom_slider_controls { display:inline-block; height:12px; position:relative; width:9px; }
+    .coffee_bottom_slider_controls div.bx-controls-auto { position:absolute; }
+    .coffee_bottom_slider_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+    .coffee_bottom_slider_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause.png") 0 0; height:15px; width:15px; }
+    .coffee_bottom_slider_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+    .coffee_bottom_slider_controls div.bx-controls-auto a.bx-stop:hover,
+    .coffee_bottom_slider_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+    .coffee_bottom_slider_pagers { display:inline-block; height:12px; }
+    .coffee_bottom_slider_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:8px; }
+    .coffee_bottom_slider_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+    .coffee_bottom_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/coffee/icon/visual_off.png") 0 0; height:15px; width:15px; }
+    .coffee_bottom_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/coffee/icon/visual_on.png") 0 0; height:15px; width:15px; }
+    
+    ul.coffee_bottom_slider li.slide-main_01 div.text { height:129px; position:absolute; left:50%; top:128px; margin-left:144px; width:392px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_01 div.btn_text { border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:50%; top:282px; margin-left:144px; width:121px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_01 div.btn_text a { color:#fff; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    ul.coffee_bottom_slider li.slide-main_01 div.btn_text a:hover { background:#fff; color:#222; }
+    
+    ul.coffee_bottom_slider li.slide-main_02 div.text { height:126px; position:absolute; left:50%; top:118px; margin-left:-550px; width:455px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_02 div.btn_text { border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:50%; top:282px; margin-left:-550px; width:121px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_02 div.btn_text a { color:#222; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    ul.coffee_bottom_slider li.slide-main_02 div.btn_text a:hover { background:#222; color:#fff; }
+
+    ul.coffee_bottom_slider li.slide-main_03 div.text { height:128px; position:absolute; left:50%; top:125px; margin-left:144px; width:400px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_03 div.btn_text { border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:50%; top:282px; margin-left:144px; width:121px; z-index:4; }
+    ul.coffee_bottom_slider li.slide-main_03 div.btn_text a { color:#222; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    ul.coffee_bottom_slider li.slide-main_03 div.btn_text a:hover { background:#222; color:#fff; }
+    /* 20150611 서브 메인 슬라이드 bxslider 로 교체 end */
+    
+    /* product_list */
+    div.product_kind_wrap { padding:30px 30px 0 30px; border:1px solid #ddd; position:relative; border-radius:3px; margin-bottom:40px; }
+    div.product_kind_wrap p.tit { font-size:16px; font-weight:bold; padding-bottom:30px; }
+    div.product_kind_wrap div.product_kind_btn { position:absolute; right:30px; top:17px; }
+
+    div.product_toggle_wrap { border-top:1px solid #ddd; padding:30px 0; position:relative; }
+    div.product_kind_wrap ul.product_kind_tab { width:222px; margin-bottom:20px; }
+    div.product_kind_wrap ul.product_kind_tab:after { content:""; display:block; clear:both; }
+    div.product_kind_wrap ul.product_kind_tab li { float:left; width:105px; }
+    div.product_kind_wrap ul.product_kind_tab li.li1 { margin-right:10px; }
+    div.product_kind_wrap ul.product_kind_tab li a { display:block; width:105px; height:30px; line-height:30px; border-radius:3px; background:#f4f4f1; color:#222; font-size:12px; font-weight:bold; text-align:center; }
+    div.product_kind_wrap ul.product_kind_tab li a.selected { background:#006633; color:#fff; }
+
+    /* 20150522 탭수정 */
+    dl.product_kind_tab dt { position:absolute; top:30px; }
+    dl.product_kind_tab dt.dt1 { left:0; }
+    dl.product_kind_tab dt.dt2 { left:210px; }
+    dl.product_kind_tab dt.dt3 { left:420px; }
+    dl.product_kind_tab dt a { background:#f4f4f1; color:#222; display:block; height:35px; line-height:35px; border-radius:3px; font-size:14px; font-weight:normal; text-align:center; width:200px; }
+    dl.product_kind_tab dt a.selected { background:#006633; color:#fff; }
+    dl.product_kind_tab dd { padding-top:55px; }
+    dl.product_kind_tab dd.dd1 { display:block; }
+    dl.product_kind_tab dd.dd2 { display:none; }
+    dl.product_kind_tab dd.dd3 { display:none; }
+    /* 20150522 탭수정 end */
+
+    div.product_kind_wrap div.product_select_wrap ul { width:1040px; }
+    div.product_kind_wrap div.product_select_wrap ul:after { content:""; display:block; clear:both; }
+    div.product_kind_wrap div.product_select_wrap ul li { font-size:12px; font-weight:bold; color:#666; float:left; margin-right:30px; font-weight:normal; }
+
+    div.product_kind_wrap ul.service_bn { width:1053px; position:relative; left:-8px; top:-5px; }
+    div.product_kind_wrap ul.service_bn:after { content:""; display:block; clear:both; }
+    div.product_kind_wrap ul.service_bn li { float:left; margin:5px 8px; width:335px; height:90px; }
+
+    div.coffee_product_list div.product_result_wrap { position:relative; padding-top:80px; }    
+    div.coffee_product_list div.product_result_wrap01 { display:block;} 
+    div.coffee_product_list div.product_result_wrap02 { display:none;}  
+    div.coffee_product_list div.product_result_wrap03 { display:none;}  
+    div.product_select_view { height:30px; float:right; margin-top:-48px; }
+    div.product_select_view div.select_box{  position:relative; left:0; top:8px; float:left; width:178px; height:28px; border:1px solid #ddd; border-radius:3px; background:#fff url("../img/coffee/select_arrow.png") no-repeat 160px center; }
+    div.product_select_view div.select_box label.value{ display:block; margin:0 10px 0 10px; text-align:left; height:28px; line-height:28px;text-indent:4px; font-size:12px; color:#444; font-family:"nbg"; overflow:hidden; }
+    div.product_select_view div.select_box select{ padding:0 10px 0 10px; position:absolute; left:0; top:0px; width:180px; height:28px;text-align:left;line-height:28px;font-size:12px; color:#444; border:0;background:#fff; font-family:"nbg"; filter:alpha(opacity=0); opacity:0; z-index:20; }
+    
+    div.product_list > dl > dt { padding:20px; background:#f4f4f2; margin-bottom:20px; }
+    div.product_list > dl > dt.icon_blond { background:#f4f4f2 url("../img/coffee/icon_blond-1.png") 20px center no-repeat; }
+    div.product_list > dl > dt.icon_medium { background:#f4f4f2 url("../img/coffee/icon_medium-1.png") 20px center no-repeat; }
+    div.product_list > dl > dt.icon_dark { background:#f4f4f2 url("../img/coffee/icon_dark-1.png") 20px center no-repeat; }
+    div.product_list > dl > dt.icon_flavor { background:#f4f4f2 url("../img/coffee/icon_flavor-1.png") 20px center no-repeat; }
+    div.product_list > dl > dt.icon_reserve_bean { background:#f4f4f2 url("../img/coffee/icon_reserve_bean.png") 20px center no-repeat; } /* 20210727 추가 */
+    div.product_list > dl > dt.icon_plane_latte { background:#f4f4f2 url("../img/coffee/icon_plane_latte.png") 20px center no-repeat; } /* 20210915 추가 */
+    div.product_list > dl > dt.icon_flavor_latte { background:#f4f4f2 url("../img/coffee/icon_flavor_latte.png") 20px center no-repeat; } /* 20210915 추가 */
+
+    div.product_list > dl > dt > a { font-size:18px; font-weight:bold; color:#222; margin-left:50px; }
+    div.product_list > dl > dd { margin-bottom:40px; }
+    div.product_list > dl > dd > ul { width: 1120px; position:relative; left:-10px; top:-10px; }
+    div.product_list > dl > dd > ul:after { content:""; display:block; clear:both; }
+    div.product_list > dl > dd > ul > li { width:260px; float:left; margin:10px; position:relative; }
+    div.product_list > dl > dd > ul > li > div.product_list_cover { width:262px; height:302px; background:url("../img/coffee/product_cover.png") 0 0 no-repeat; position:absolute; left:0; top:0; cursor:pointer; }
+    div.product_list > dl > dd > ul li dl { width:260px; }
+    div.product_list > dl > dd > ul li dt { width:260px; height:245px; position:relative; overflow:hidden; }
+    div.product_list > dl > dd > ul li dt > a > img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    div.product_list > dl > dd > ul li dt > a > img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    div.product_list > dl > dd > ul li dt ul { position:absolute; left:9px; bottom:10px; }
+    div.product_list > dl > dd > ul li dt ul li { float:left; margin-right:4px; }
+    div.product_list > dl > dd > ul li dd { font-size:14px; color:#444; height:54px; line-height:54px; text-align:center; background:#fff; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+    div.product_list > dl > dd > ul li dd a { display:block; }
+
+	.product_no_result { height:150px; line-height:150px; padding-top:50px; text-align:center; width:100%; }
+	.product_no_result p { border-bottom:1px solid #ddd; border-top:1px solid #ddd; color:#222; }
+
+    /* coffee_reserve_info 스타벅스 리저브™ */
+    div.summary_full p.big_img { padding-bottom:30px; }
+/* coffee_reserve_info 초록색    
+    div.summary_full h3 { font-size:18px; font-weight:bold; color:#222; margin-bottom:12px; }
+    div.summary_full p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; }
+    div.summary_full p.t2 { font-size:14px; color:#444; line-height:1.6; padding-bottom:50px; }*/
+	  /* 150625 ì¶”ê°€ css ë¦¬ì  ìƒì„¸ 
+    .cfrsTitl { font-size:20px; color:#006633; font-style:italic; padding:10px 0 20px 0; } */
+	div.summary_full h3 { font-size:18px; font-weight:bold; color:#222; margin: 0 15px 12px 15px; text-align: center } /* 20170713 수정  골드색으로 수정*/
+	div.summary_full p.t1 { font-size:14px; color:#444; line-height:1.6; margin: 0 15px; padding-bottom:30px;  text-align: center; letter-spacing: -.1px; } /* 20170713 수정 */
+	div.summary_full p.t2 { font-size:14px; color:#444; line-height:1.6; margin: 0 15px; padding-bottom:50px;  text-align: center} /* 20170713 수정*/
+	 .cfrsTitl {line-height: 1.2em; padding:10px 15px 20px 15px;  font-size:20px; color:#b06546; font-style:italic; text-align: center}  /* 20170713 수정*/
+
+	.bnr_rseminar { background:url("../img/coffee/rseminar/bnr_rs.jpg") center top no-repeat; background-size:100% auto; height:0; margin-bottom:45px; padding-bottom:27.3%; position:relative; width:100%; }
+	.bnr_rseminar_txt { background:url("../img/coffee/rseminar/bnr_rs_txt.png") no-repeat; background-size:100% auto; height:136px; left:52.0909%; position:absolute; top:49px; width:497px; }
+
+	.btn_rs_view { border:2px solid #d5b192; border-radius:3px; height:34px; line-height:34px; left:52.2727%; position:absolute; top:71.3333%; width:121px; z-index:7; }
+	.btn_rs_view a { color:#d5b192; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	.btn_rs_view a:hover { background:#d5b192; color:#fff; }
+	/* 리저브 세미나 end */
+
+    div.content_bottom { background:#f4f4f2; width:100%; padding:40px 0 70px 0; }
+    div.product_list_wrap ul.product_list { width: 1120px; position:relative; left:-10px; top:-10px; }
+    div.product_list_wrap ul.product_list:after { content:""; display:block; clear:both; }
+    div.product_list_wrap ul.product_list > li { width:260px; float:left; margin:10px; position:relative; }
+    div.product_list_wrap ul > li > div.product_list_cover { width:262px; height:302px; background:url("../img/coffee/product_cover.png") 0 0 no-repeat; position:absolute; left:0; top:0; cursor:pointer; }
+    div.product_list_wrap ul.product_list li dl { width:260px; }
+    div.product_list_wrap ul.product_list li dt { width:260px; height:245px; position:relative; overflow:hidden; }
+    div.product_list_wrap ul.product_list li dt ul.icon { position:absolute; left:9px; bottom:10px; }
+    div.product_list_wrap ul.product_list li dt ul.icon li { float:left; margin-right:4px; }
+    div.product_list_wrap ul.product_list li dt > a > img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    div.product_list_wrap ul.product_list li dt > a > img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    div.product_list_wrap ul.product_list li dd { font-size:14px; color:#444; height:54px; line-height:54px; text-align:center; }
+    div.product_list_wrap ul.product_list li dd a { display:block; }
+	div.product_list_wrap ul.product_list li dd a img {width: 26px; vertical-align: middle; margin-right: 5px; } /* 20170713 추가*/
+
+    /* coffee_higher_enjoy 최상의 커피를 즐기는 법 */
+    /* 탭메뉴 */
+    div.coffee_higher_enjoy { position:relative; }
+	/* 
+	div.coffee_higher_enjoy dl.content_tabmenu { position:relative; padding-top:60px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab { position:absolute; left:0; top:0; z-index:5; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { display:block; width:274px; height:48px; line-height:48px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#ffffff; border-top:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_first a { display:block; width:273px; height:48px; line-height:48px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#ffffff; border:1px solid #ddd; border-top-left-radius:3px; border-bottom-left-radius:3px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_last a { display:block; width:273px; height:48px; line-height:48px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#ffffff; border:1px solid #ddd; border-top-right-radius:3px; border-bottom-right-radius:3px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_first.on a { display:block; width:275px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_last.on a { display:block; width:275px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { display:block; width:275px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel { display:none; z-index:4; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel.on { display:block; }
+
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:50%; margin-left:-550px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:50%; margin-left:-275px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:50%; margin-left:0px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:50%; margin-left:274px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:50%; margin-left:5px; } 
+	*/
+	
+	div.coffee_higher_enjoy dl.content_tabmenu { position:relative; padding-top:90px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab { position:absolute; left:0; top:0; z-index:5; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { display:block; width:219px; height:48px; line-height:48px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#fff; border-top:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_first a { display:block; width:218px; height:48px; line-height:48px; text-align:center; font-size:14px;font-weight:normal; color:#444; background:#fff; border:1px solid #ddd; border-top-left-radius:3px; border-bottom-left-radius:3px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_last a { display:block; width:218px; height:48px; line-height:43px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#fff; border:1px solid #ddd; border-top-right-radius:3px; border-bottom-right-radius:3px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_first.on a { display:block; width:220px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_last.on a { display:block; width:220px; height:50px; line-height:43px !important; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { display:block; width:220px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel { display:none; z-index:4; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel.on { display:block; }
+	
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:50%; margin-left:-550px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:50%; margin-left:-330px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:50%; margin-left:-110px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:50%; margin-left:110px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 { left:50%; margin-left:329px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 a { height:38px; padding-top:10px; line-height:1.2; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05.on a { height:40px; line-height:1.2 !important; }
+	div.higher_enjoy_titl { padding:30px 50px 32px 50px; }
+	
+	/* 20170713 추가 (리저브 수정)*/
+	div.coffee_higher_enjoy dl:after {content: ''; display: block; clear: both; width: 0; height: 0; overflow: hidden; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap{width: 1100px;  margin: 0 auto 60px;}
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap:after{content: '' ; display: block ;clear: both; width: 0; height: 0; overflow: hidden; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap h4 {text-align: center; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap h5 {margin: 30px 0 0 0; text-align: center; font-size: 40px; color: #222; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap  p {line-height: 24px; margin: 30px 0 0 0 ; text-align: center; font-size: 14px; color: #444444; }
+	div.coffee_higher_enjoy dl.content_tabmenu dd.panel  .cloverExtraction_wrap    small {display: block; margin: 40px 0 0 0; text-align: center; font-size: 14px; color: #222222; font-weight: bold; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy {position: relative; width: 915px; margin: 30px auto; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li {position: relative; float: left;  width: 260px; height: 298px; margin-left: 60px; text-align: center; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(1), div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(4) {margin-left: 0; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(1), div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(3),div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(4), div.coffee_higher_enjoy dl dd .howtoEnjoy li:nth-child(6) {margin-top: 40px; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li  > a  { display: inline-block;   transition: .5s }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li  > a  img{ width:95%; vertical-align: middle; transition: .5s}
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li  > a  img.m {display: none; }
+	div.coffee_higher_enjoy dl dd .howtoEnjoy li  > a:hover  img{width: 100%; }
+
+	/* 20170713 팝업 추가 */
+	.dimd {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: #000; opacity: .5;  z-index: 900}
+	.layer_howtoEnjoy {position: absolute; width: 642px; top: 50%; left: 50%;  background: #fff;  z-index: 1000; }
+	.layer_howtoEnjoy h3 {height: 73px; line-height: 73px; background: #b06546; font-size: 25px; color: #fff; text-align: center; font-weight: 500; }
+	.layer_howtoEnjoy .layerConts {padding: 40px 60px 80px 60px; }
+	.layer_howtoEnjoy  .close_Layer{position: absolute; top: 22px; right: 22px; }
+	.layer_howtoEnjoy   #showBox > div {width: 518px; overflow: hidden;}
+	.layer_howtoEnjoy #imgBox {position: relative; width:10000px;  }
+	.layer_howtoEnjoy #imgBox li{float: left; width: 518px; }
+	.layer_howtoEnjoy #imgBox li h4:before {content: ''; display: block; width: 32px; height: 4px; margin-bottom: 25px; background: #292929}
+	.layer_howtoEnjoy #imgBox li h4 {color: #222; font-size: 23px; font-weight: normal; color: #222222; font-family: nbg; } /* 20210923 문법오류 수정 */
+	.layer_howtoEnjoy #imgBox li h4 strong{display: block;  margin-bottom: 10px; font-size: 25px; font-family: "Arial", sans-serif; }
+	.layer_howtoEnjoy #imgBox li img {margin-top: 30px; }
+	.layer_howtoEnjoy #imgBox li  p{line-height: 24px; margin-top: 24px; font-size: 14px; color: #444444; }
+	.layer_howtoEnjoy  #showBox > a {position: absolute; display: block ; top: 50%; margin-top: -15px; }
+	.layer_howtoEnjoy  #showBox > a.prev {left: 22px}
+	.layer_howtoEnjoy  #showBox > a.next{right: 22px; }
+
+	.reserve_bt_txt { margin-bottom:50px; padding:0px; text-align:center; }
+	.reserve_bt_txt i { font-size:16px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+    /* 아이콘 이미지 백그라운드 */
+    div.icon_coffee_press { background:url("../img/coffee/icon_coffee_press.png") 0 22px no-repeat; }
+    div.icon_pour_over { background:url("../img/coffee/icon_pour_over.png") 0 31px no-repeat; }
+    div.icon_iced_pour_over { background:url("../img/coffee/icon_iced_pour_over.png") 0 29px no-repeat; }
+    div.icon_coffee_brewer { background:url("../img/coffee/icon_coffee_brewer.png") 0 32px no-repeat; }
+
+    div.higher_enjoy_titl h3 { font-size:18px; color:#222; padding-bottom:15px; }
+    div.higher_enjoy_titl p { font-size:14px; color:#666; }
+
+    div.higher_enjoy_youtube { width:1100px; height:600px; margin-bottom:40px; }
+
+    div.coffee_info_bottom { background:#f4f4f2; width:100%; padding:40px 0 80px 0;}
+    ul.coffee_info li { padding-bottom:20px; }
+    ul.coffee_info li:after { content:""; display:block; clear:both; }
+    ul.coffee_info li p.coffee_info_img{ float:left; width:480px; height:280px; overflow:hidden; margin-right:70px; }
+    ul.coffee_info li p.coffee_info_img img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    ul.coffee_info li p.coffee_info_img img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    ul.coffee_info li dl.coffee_info_text{ float:left; width:550px; }
+    
+    /* 아이콘 숫자 백그라운드 */
+    ul.coffee_info li dl.icon_coffee_info_01 { background:url("../img/coffee/icon_coffee_info_01.png") 0 5px no-repeat; }
+    ul.coffee_info li dl.icon_coffee_info_02 { background:url("../img/coffee/icon_coffee_info_02.png") 0 5px no-repeat; }
+    ul.coffee_info li dl.icon_coffee_info_03 { background:url("../img/coffee/icon_coffee_info_03.png") 0 5px no-repeat; }
+    ul.coffee_info li dl.icon_coffee_info_04 { background:url("../img/coffee/icon_coffee_info_04.png") 0 5px no-repeat; }
+    ul.coffee_info li dl.icon_coffee_info_05 { background:url("../img/coffee/icon_coffee_info_05.png") 0 5px no-repeat; }
+    ul.coffee_info li dl.icon_coffee_info_06 { background:url("../img/coffee/icon_coffee_info_06.png") 0 5px no-repeat; }
+
+    ul.coffee_info li dl.coffee_info_text dt h4{ padding-left:50px; padding-top:5px; font-size:16px; color:#006633; margin-bottom:15px; font-weight:normal; }
+    ul.coffee_info li dl.coffee_info_text dd p{ padding-left:50px; font-size:14px; color:#444; line-height:24px; }
+    ul.coffee_info li dl.coffee_info_text dd span.icon_coffee_info_tip { display:block; padding:34px 0 0 50px; font-size:14px; color:#666; line-height:24px; }
+    ul.coffee_info li dl.coffee_info_text dd span { display:block; padding-left:50px; font-size:14px; color:#666; line-height:24px; }
+
+    /* coffee_story 커피이야기 탭5개 */
+	div.coffee_story dl.content_tabmenu { position:relative; padding-top:90px; }
+    div.coffee_story dl.content_tabmenu dt.tab { position:absolute; left:0; top:0; z-index:5; }
+    div.coffee_story dl.content_tabmenu dt.tab a { display:block; width:219px; height:48px; line-height:48px;text-align:center; font-size:14px; font-weight:normal; color:#444; background:#fff; border-top:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+    div.coffee_story dl.content_tabmenu dt.tab_first a { width:218px; border:1px solid #ddd; border-top-left-radius:3px; border-bottom-left-radius:3px; }/* 20210914 수정 */
+    div.coffee_story dl.content_tabmenu dt.tab_last a { width:218px; /*border-top-right-radius:3px; border-bottom-right-radius:3px; */} /* 20210914 수정 *//* 20170821  수정 */
+    div.coffee_story dl.content_tabmenu dt.tab_first.on a { display:block; width:220px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dt.tab_last.on a { display:block; width:220px; height:50px; line-height:43px /*!important*/; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dt.tab.on a { display:block; width:220px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dd.panel { display:none; z-index:4; }
+    div.coffee_story dl.content_tabmenu dd.panel.on { display:block; }
+
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:50%; margin-left:-550px; }
+    div.coffee_story dl.content_tabmenu dt.tab_02 { left:50%; margin-left:-330px; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:50%; margin-left:-110px; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:50%; margin-left:110px;} /* 20210914 수정 */
+  /*  div.coffee_story dl.content_tabmenu dt.tab_04 a {line-height:43px !important;} 20170821 수정 2차*/
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:50%; margin-left:330px;} /* 20210914 수정 */
+	 div.coffee_story dl.content_tabmenu dt.tab_05 a {border-radius: 0 3px 3px 0; line-height:41px/* !important; */}/* 20210914 수정 *//*20170821 수정 2차*/
+	 div.coffee_story dl.content_tabmenu dt.tab_05.on a {line-height:43px;}/* 20210914 추가 */
+
+	/* 탭메뉴 160829 수정 탭4개
+	div.coffee_story dl.content_tabmenu { position:relative; padding-top:90px; }
+    div.coffee_story dl.content_tabmenu dt.tab { position:absolute; left:0; top:0; z-index:5; }
+    div.coffee_story dl.content_tabmenu dt.tab a { display:block; width:274px; height:48px; line-height:48px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#fff; border-top:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+    div.coffee_story dl.content_tabmenu dt.tab_first a { display:block; width:273px; height:48px; line-height:48px; text-align:center; font-size:14px;font-weight:normal; color:#444; background:#fff; border:1px solid #ddd; border-top-left-radius:3px; border-bottom-left-radius:3px; }
+    div.coffee_story dl.content_tabmenu dt.tab_last a { display:block; width:273px; height:48px; line-height:43px; text-align:center; font-size:14px; font-weight:normal; color:#444; background:#fff; border:1px solid #ddd; border-top-right-radius:3px; border-bottom-right-radius:3px; }
+    div.coffee_story dl.content_tabmenu dt.tab_first.on a { display:block; width:275px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dt.tab_last.on a { display:block; width:275px; height:50px; line-height:43px !important; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dt.tab.on a { display:block; width:275px; height:50px; line-height:50px; background:#006633; color:#fff; border:0; } 
+    div.coffee_story dl.content_tabmenu dd.panel { display:none; z-index:4; }
+    div.coffee_story dl.content_tabmenu dd.panel.on { display:block; }
+
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:50%; margin-left:-550px; }
+    div.coffee_story dl.content_tabmenu dt.tab_02 { left:50%; margin-left:-330px; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:50%; margin-left:-275px; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:50%; margin-left:0px; }
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:50%; margin-left:274px; }
+	*/
+
+    /* coffee_story 커피이야기 1번 탭 - 스타벅스 로스트 스팩트럼 */
+    div.cfs01_full_top p.big_img { padding-bottom:30px; }
+    div.cfs01_full_top h3 { font-size:18px; font-weight:bold; color:#222; padding-bottom:20px; }
+    div.cfs01_full_top h3.title { font-size:20px; font-weight:normal; color:#006633; font-style:italic; padding-bottom:20px; }
+    div.cfs01_full_top p.t1 { font-size:14px; color:#666; line-height:1.6; padding:0 0 30px 10px; }
+    div.cfs01_full_top span.btn_coffee_info_more { display:block; padding-bottom:40px; margin-left:-10px; }
+    div.cfs01_full_top span.btn_coffee_info_more a { font-size:12px; font-weight:bold; color:#222; padding:30px 0 2px 20px; width:140px; height:18px; } 
+    div.cfs01_full_top span.btn_coffee_info_more a img { vertical-align:middle; }
+
+    div.cfs01_bottom { background:#f4f4f2; width:100%; padding:40px 0 70px 0; }
+    div.cfs01_bottom ul.cfs01_bottom_list { margin-left:-25px; }
+    div.cfs01_bottom ul.cfs01_bottom_list:after { content:""; display:block; clear:both; }
+
+    ul.cfs01_bottom_list li { float:left; width:350px; margin-left:25px; }
+    ul.cfs01_bottom_list li p.img{ position:relative; width:350px; height:150px; margin-bottom:20px; }
+
+    ul.cfs01_bottom_list li p.img span.dim_txt1{ display:block; width:341px; height:35px; position:absolute; left:0; bottom:0;background:#9b704d; border-bottom-left-radius:3px; border-bottom-right-radius:3px; font-size:16px; color:#ffffff; line-height:29px; padding-left:9px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt1 span{ font-size:14px; color:#fff; line-height:35px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt2{ display:block; width:341px; height:35px; position:absolute; left:0; bottom:0;background:#924c2e; border-bottom-left-radius:3px; border-bottom-right-radius:3px; font-size:16px; color:#ffffff; line-height:29px; padding-left:9px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt2 span{ font-size:14px; color:#fff; line-height:35px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt3{ display:block; width:341px; height:35px; position:absolute; left:0; bottom:0;background:#4f2c1d; border-bottom-left-radius:3px; border-bottom-right-radius:3px; font-size:16px; color:#ffffff; line-height:29px; padding-left:9px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt3 span{ font-size:14px; color:#fff; line-height:35px; }
+    
+    ul.cfs01_bottom_list li dl.cfs01_text dt h4{ font-size:14px; color:#222; margin-bottom:15px; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p{ font-size:14px; color:#666; line-height:1.6; }
+
+    /* coffee_story 커피이야기 2번 탭 - CHOOSE YOUR ESPRESSO */
+    div.cfs02_full_top p.big_img { padding-bottom:30px; }
+    div.cfs02_full_top h3 { font-size:18px; font-weight:bold; color:#222; padding-bottom:20px; }
+    div.cfs02_full_top p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; }
+    div.cfs02_full_top dl dt { font-size:16px; font-weight:bold; color:#006633; padding-bottom:15px; }
+    div.cfs02_full_top dl dd p.txt1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:5px; }
+    div.cfs02_full_top dl dd p.txt2 { font-size:12px; color:#666; line-height:1.6; background:url("../img/coffee/icon_bot_story1.png") 2px 5px no-repeat; padding-left:15px; }
+    div.cfs02_full_top p.btn_coffee_shop_more { padding:20px 0 40px 0; margin-left:-10px; }
+    div.cfs02_full_top p.btn_coffee_shop_more a { font-size:12px; font-weight:bold; color:#222; padding:30px 0 2px 0; width:128px; height:18px; margin-left: 10px; } 
+    div.cfs02_full_top p.btn_coffee_shop_more a img { vertical-align:middle; padding-left:5px; }
+
+    div.cfs02_bottom { background:#f4f4f2; width:100%; padding:40px 0 70px 0; }
+    div.cfs02_bottom h4 { font-size:18px;  font-weight:bold; color:#222; padding-bottom:20px; }
+    
+    ul.scfs02_list li:after { content:""; display:block; clear:both; }
+    ul.scfs02_list li div.scfs02_list_l { float:left; }
+    ul.scfs02_list li div.scfs02_list_l ul { margin-left:-10px;padding-right:28px; }
+    ul.scfs02_list li div.scfs02_list_l ul:after { content:""; display:block; clear:both; }
+    ul.scfs02_list li div.scfs02_list_l ul li{ float:left; margin-left:10px; margin-bottom:10px; width:255px; }
+    ul.scfs02_list li dl.scfs02_list_r { position:relative; float:left; padding:15px 0 10px 0; width:550px; height:141px; }
+    ul.scfs02_list li dl.scfs02_list_r dt { font-size:16px; color:#006633; font-weight:bold; margin-bottom:15px; }
+    ul.scfs02_list li dl.scfs02_list_r dd p { font-size:14px; color:#555; line-height:1.6; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more { position:absolute; left:0; bottom:10px; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a { font-size:12px; font-weight:bold; color:#222; padding:30px 0 2px 0; width:128px; height:18px; } 
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a img { vertical-align:middle; padding-left:5px; }
+   
+	/* coffee_story 커피이야기 3번 탭 - 최상의 아라비카 원두 */
+    div.higherAravica_wrap h3 { font-size:18px; font-weight:bold; color:#222; padding-bottom:20px; }
+    dl.higherAravica { padding-bottom:60px; }
+    
+    dl.higherAravica > dd { position:relative; height:332px; padding:30px; border-bottom-left-radius:3px; border-bottom-right-radius:3px; background:#000; }
+    dl.higherAravica > dd span.bigImg_bg { position:absolute; right:140px; top:-100px; }
+    dl.higherAravica > dd div.youtube { float:left; width:550px; height:330px; }
+    dl.higherAravica > dd dl.text { float:left; width:450px; height:330px; text-align:center; }
+    dl.higherAravica > dd dl.text > dt { font-size:18px; color:#e2d9c2; margin-bottom:15px; margin-top:145px; }
+    dl.higherAravica > dd dl.text > dd { font-size:14px; color:#fff; line-height:1.6; }
+    
+    div.aravica_info_01 { padding-bottom:40px; }
+    div.aravica_info_01:after { content:""; display:block; clear:both; }
+    div.aravica_info_01 p.img { float:left; width:550px; }
+    div.aravica_info_01 dl.text { float:left; width:520px; height:174px; padding:60px 0 0 30px; }
+    div.aravica_info_01 dl.text dt { font-size:20px; color:#006633; font-style:italic; padding-bottom:20px;  }
+    div.aravica_info_01 dl.text dd p { font-size:14px; color:#666; line-height:1.6; padding-left:10px; }
+
+    div.aravica_info_02 { padding-bottom:60px; }
+    div.aravica_info_02:after { content:""; display:block; clear:both; }
+    div.aravica_info_02 p.img { float:left; width:520px; padding:0 0 0 30px; }
+    div.aravica_info_02 dl.text { float:left; width:550px; height:184px; padding:50px 0 0 0px; }
+    div.aravica_info_02 dl.text dt { font-size:20px; color:#006633; font-style:italic; padding-bottom:20px;  }
+    div.aravica_info_02 dl.text dd p { font-size:14px; color:#666; line-height:24px; padding-left:10px; }
+
+    div.aravica_info_03 { padding-bottom:5px; background:#f4f4f2; }
+    div.aravica_info_03:after { content:""; display:block; clear:both; }
+    div.aravica_info_03 p.img { float:left; width:550px; }
+    div.aravica_info_03 dl.text { float:left; width:520px; height:319px; padding:95px 0 0 30px; }
+    div.aravica_info_03 dl.text dt { font-size:20px; color:#006633; font-style:italic; padding-bottom:20px;  }
+    div.aravica_info_03 dl.text dd p { font-size:14px; color:#666; line-height:1.6; padding-left:10px; }
+
+    div.aravica_info_04 { padding-bottom:60px; background:#f4f4f2; }
+    div.aravica_info_04:after { content:""; display:block; clear:both; }
+    div.aravica_info_04 p.img { float:left; width:520px; padding:0 0 0 30px; }
+    div.aravica_info_04 dl.text { float:left; width:550px; height:184px; padding:50px 0 0 0px; }
+    div.aravica_info_04 dl.text dt { font-size:20px; color:#006633; font-style:italic; padding-bottom:20px;  }
+    div.aravica_info_04 dl.text dd p { font-size:14px; color:#666; line-height:1.6; padding-left:10px; }
+
+    div.aravica_info_05 { padding:60px 0 70px 0; }
+    div.aravica_info_05:after { content:""; display:block; clear:both; }
+    div.aravica_info_05 p.img { float:left; width:550px; }
+    div.aravica_info_05 dl.text { float:left; width:520px; height:174px; padding:60px 0 0 30px; }
+    div.aravica_info_05 dl.text dt { font-size:20px; color:#006633; font-style:italic; padding-bottom:20px;  }
+    div.aravica_info_05 dl.text dd p { font-size:14px; color:#666; line-height:1.6; padding-left:10px; }
+    
+    /* coffee_story 커피이야기 4번 탭 - 한 잔의 커피가 완성되기까지 */
+    div.coffeeRoasting_wrap h3 { font-size:18px; font-weight:bold; color:#222; margin-bottom:20px; padding-top:60px;}/* 20210914 수정 */
+    div.coffeeRoasting_wrap h3.title { font-size:20px; font-weight:normal; color:#006633; margin-bottom:15px; padding-top:0; font-style:italic; }/* 20210914 수정 */
+    div.coffeeRoasting_wrap h3.title span { display:block; padding-left:10px; }
+    div.coffeeRoasting_wrap p.big_img { padding-bottom:30px; }   
+    div.coffeeRoasting_wrap p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; padding-left:15px; }
+    div.coffeeRoasting_wrap p.t2 { font-size:14px; color:#444; line-height:1.6; padding-bottom:40px; }
+
+    div.coffeeRoasting_info { padding-bottom:60px; }
+    div.coffeeRoasting_info:after { content:""; display:block; clear:both; }
+    div.coffeeRoasting_info p.img { float:left; width:550px; height:381px; }
+    div.coffeeRoasting_info dl.text { float:left; width:520px; height:381px; padding:0 0 0 30px; }
+    div.coffeeRoasting_info dl.text dt { font-size:18px; color:#006633; line-height:1.4; } 
+    div.coffeeRoasting_info dl.text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    
+    div.coffeeBlending_wrap { background:#f4f4f2; /*height:580px;*/ padding-bottom:70px; }/* 20210914 수정 */
+    div.coffeeBlending_wrap:after { content:""; display:block; clear:both; }
+    
+    p.blending_img { float:left; width:525px; padding:0 0 0 25px;  }
+    div.blending_text { float:left; width:550px; }
+    div.blending_text h3 { font-size:18px; font-weight:bold; color:#222; padding:60px 0 15px 10px; }
+    div.blending_text h3.blending { font-size:18px; font-weight:bold; color:#222; padding:35px 0 15px 10px; }
+    div.blending_text p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    div.blending_text dl.blendingInfo_text { float:left; width:560px; }
+    div.blending_text dl.blendingInfo_text dt { font-size:20px; color:#006633; padding-bottom:10px; line-height:1.4; font-style:italic; } /* 20210930 수정 */
+    div.blending_text dl.blendingInfo_text dt span { display:block; padding-left:10px; } 
+    div.blending_text dl.blendingInfo_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; padding-left:10px; }
+    div.blending_text dl.blendingInfo_text dd p.text2 { font-size:14px; color:#444; line-height:1.6; padding-left:10px; }
+    div.blending_text dl.blendingInfo_text dd p.text3 { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic;  }
+
+    /* coffee_story 커피이야기 4번 탭 - 한 잔의 커피가 완성되기까지 - (조달) */
+    div.coffeeObtain_wrap { background:#f4f4f2; padding-bottom:60px; }/* 20210914 수정 */
+    div.coffeeObtain_wrap h3 { font-size:18px; font-weight:bold; color:#222; padding-top:60px; padding-bottom:30px; }/* 20210914 수정 */
+    div.coffeeObtain_wrap p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; }
+    div.coffeeObtain_wrap p.bigImg01 { position:relative;}
+    div.coffeeObtain_wrap p.bigImg01 span{ position:absolute; left:0px; top:228px; }
+
+    div.coffeeObtain_wrap dl.obtainInfo_text { margin-left:408px; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; padding-top:30px; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dt span { display:block; padding-left:10px; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 { font-size:14px; color:#666; line-height:1.6; padding-bottom:30px; padding-left:12px; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text2 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; padding-left:12px; }
+
+    /* coffee_story 커피이야기 4번 탭 - 한 잔의 커피가 완성되기까지 - (재배) */
+    div.coffeeCultivation_wrap { background:#fff; margin-bottom:60px; }/* 20210914 수정 */
+    div.cultivation_wrap { padding-bottom:45px; }
+    div.cultivation_wrap:after { content:""; display:block; clear:both; }
+
+    p.cultivation_img { float:left; width:550px; }
+    div.cultivation_text { float:left; width:520px; padding:0 0 0 30px; }
+    div.cultivation_text h3 { font-size:18px; font-weight:bold; color:#222; margin:0 0 20px 0; }
+    div.cultivation_text p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; }
+    div.cultivation_text p.t2 { font-size:14px; color:#444; line-height:1.6; }
+    /* 20210914 추가 */
+    div.coffeeCultivation_wrap div.cultivation_wrap { padding-bottom:0; }
+    div.coffeeCultivation_wrap h3 { font-size:18px; font-weight:bold; color:#222; margin:0 0 20px 0; }
+    div.coffeeCultivation_wrap dl.cultivation_text { float:left; width:520px; padding:0 0 0 30px; }
+    div.coffeeCultivation_wrap dl.cultivation_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; }
+    div.coffeeCultivation_wrap dl.cultivation_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:15px; }
+    /* //20210914 추가 */
+
+    div.cultivationInfo_wrap:after { content:""; display:block; clear:both; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text { float:left; width:505px; padding:0 45px 0 0; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dt { font-size:20px; color:#006633; padding-bottom:20px; line-height:1.4; font-style:italic; text-align: right; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text1 { font-size:14px; color:#444; line-height:1.6; text-align: right; padding-bottom:15px; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text2 { font-size:14px; color:#444; line-height:1.6; text-align: right; }
+    div.cultivationInfo_wrap p.cultivationInfo_img { float:left; width:550px; }
+
+    /* 커피이야기 5번 탭 (클로버&reg; 커피 추출 시스템) */   
+    div.cfs05_full_top p.big_img { padding-bottom:30px; }
+    div.cfs05_full_top h3 { font-size:18px; font-weight:bold; color:#222; padding-bottom:15px; }
+    div.cfs05_full_top h3.title { font-size:20px; font-weight:normal; color:#006633; line-height:1.6; font-style:italic; }
+    div.cfs05_full_top h3.title span { display:block; padding-left:10px; }
+    div.cfs05_full_top p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:30px; padding-left:10px; }
+    
+    div.cloverExtraction_ber { position:relative; width:100%; max-width:1100px; margin:0 auto; height:60px; border-radius:3px; background:#000 url("../img/coffee/icon_cloverExtraction_ber.jpg") 20px center no-repeat; margin-bottom:40px; }
+    div.cloverExtraction_ber dl { margin-left:60px; }
+    div.cloverExtraction_ber dl:after { content:""; display:block; clear:both; }
+    div.cloverExtraction_ber dl dt { float:left; font-size:14px; color:#958351; line-height:60px; height:60px; background: url("../img/coffee/line_cloverExtraction_ber.jpg") right center no-repeat; padding-right:10px; }
+    div.cloverExtraction_ber dl dd { float:left; font-size:14px; color:#fff; line-height:60px; height:60px; padding-left:10px; }
+    div.cloverExtraction_ber p.btn_cloverExtraction { position:absolute; right:30px; top:22px; }
+    div.cloverExtraction_ber p.btn_cloverExtraction a { font-size:12px; font-weight:bold; color:#fff; padding:30px 0 2px 0; width:98px; height:18px; margin-left: 10px; }
+    div.cloverExtraction_ber p.btn_cloverExtraction a img { vertical-align:middle; padding-left:5px; }
+    
+    div.cloverExtraction_info_01 { padding-bottom:50px; }
+    div.cloverExtraction_info_01:after { content:""; display:block; clear:both; }
+	div.cloverExtraction_info_01 div.coffee_content:after { content:""; display:block; clear:both; }
+
+    div.cloverExtraction_info_01 dl.ceInfo_text{ float:left; width:520px; height:auto; padding-right:30px; }
+    div.cloverExtraction_info_01 dl.ceInfo_text dt { font-size:18px; color:#222; font-weight:bold; padding-bottom:10px; padding-left:10px; }
+    div.cloverExtraction_info_01 dl.ceInfo_text p.text1 { font-size:20px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+    div.cloverExtraction_info_01 dl.ceInfo_text p.text1 span { display:block; padding-left:10px; }
+    div.cloverExtraction_info_01 dl.ceInfo_text p.text2 { font-size:14px; color:#666; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    div.cloverExtraction_info_01 dl.ceInfo_text p.text3 { font-size:14px; color:#666; line-height:1.6; padding-bottom:5px; padding-left:10px; }
+    div.cloverExtraction_info_01 dl.ceInfo_text p.text4 { font-size:12px; color:#666; line-height:1.6; padding-left:10px; }
+    div.cloverExtraction_info_01 p.ceInfo_img{ float:left; width:550px; }
+
+    div.cloverExtraction_info_02 { padding-bottom:70px; }
+    div.cloverExtraction_info_02:after { content:""; display:block; clear:both; }
+    div.cloverExtraction_info_02 p.ceInfo_img{ float:left; width:550px; height:300px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text{ float:left; width:520px; height:auto; padding:0 0 0 30px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dt { font-size:18px; color:#222; font-weight:bold; margin-bottom:10px; padding-left:10px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text1 { font-size:20px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text1 span { display:block; padding-left:10px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text2 { font-size:14px; color:#666; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text3 { font-size:14px; color:#666; line-height:1.6; padding-left:10px;  }
+
+	/* 161013 최상의 커피를 즐기는 법 리저브 탭 내용 */
+	div.cloverExtraction_info_res { padding-bottom:50px; }
+    div.cloverExtraction_info_res:after { content:""; display:block; clear:both; }
+	div.cloverExtraction_info_res div.coffee_content:after { content:""; display:block; clear:both; }
+
+	dl.ceInfo_text_res{ float:left; width:520px; height:auto; padding:0 0 0 30px; }
+    dl.ceInfo_text_res dt { font-size:18px; color:#222; font-weight:bold; margin-bottom:10px; padding-left:10px; }
+    dl.ceInfo_text_res p.text1 { font-size:20px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+	dl.ceInfo_text_res p.text1 span { display:block; padding-left:10px; }
+    dl.ceInfo_text_res p.text2 { font-size:14px; color:#666; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    dl.ceInfo_text_res p.text3 { font-size:14px; color:#666; line-height:1.6; padding-left:10px;  }
+	p.ceInfo_img_res{ float:left; width:550px; }
+	
+	dl.ceInfo_text_res2{ float:left; width:520px; height:auto; padding:0; }
+    dl.ceInfo_text_res2 dt { font-size:18px; color:#222; font-weight:bold; margin-bottom:10px; padding-left:10px; }
+    dl.ceInfo_text_res2 p.text1 { font-size:20px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+	dl.ceInfo_text_res2 p.text1 span { display:block; padding-left:10px; }
+    dl.ceInfo_text_res2 p.text2 { font-size:14px; color:#666; line-height:1.6; padding-bottom:20px; padding-left:10px; }
+    dl.ceInfo_text_res2 p.text3 { font-size:14px; color:#666; line-height:1.6; padding-left:10px;  }
+	p.ceInfo_img_res2{ float:right; width:550px; }
+
+	dl.ceInfo_text_res i.reseve_ico img,
+	dl.ceInfo_text_res2 i.reseve_ico img { margin:-15px 0 0 5px; }
+	/* 161013 최상의 커피를 즐기는 법 리저브 탭 내용 end */
+
+    /* 제품 상세보기 하단공통 */
+    div.productView_footmenu { padding:40px 0 60px 0; background:#f4f4f2; }
+    div.productView_footmenu div.productView_footmenu_inner { width:1100px; margin:0 auto; }
+    
+    div.productView_bottom p.tit { font-size:18px; font-weight:bold; color:#333; margin-bottom:20px; }
+    div.productView_bottom div.productRel_wrap ul { width:100%; }
+    div.productView_bottom div.productRel_wrap ul:after { content:""; display:block; clear:both; }
+    div.productView_bottom div.productRel_wrap li { width:33.3333%; float:left; }
+    div.productView_bottom div.productRel_wrap li dl { width:350px; margin-bottom:10px; }
+    div.productView_bottom div.productRel_wrap li dl:after { content:""; display:block; clear:both; }
+    div.productView_bottom div.productRel_wrap li dt { float:left; width:160px; height:160px; overflow:hidden; }
+    div.productView_bottom div.productRel_wrap li dt img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    div.productView_bottom div.productRel_wrap li dt img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+
+    div.productView_bottom div.productRel_wrap li dd { float:right; width:170px; height:160px; position:relative; }
+    div.productView_bottom div.productRel_wrap li dd p.t1 { font-size:14px; color:#222; font-weight:bold; margin-bottom:10px; }
+    div.productView_bottom div.productRel_wrap li dd p.t2 { font-size:14px; color:#666; line-height:1.4; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn { position:absolute; left:-14px; bottom:0; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a { font-size:12px; font-weight:bold; color:#222; padding:30px 0 2px 0; width:128px; height:18px; margin-left: 10px; text-indent:-20000px; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a img { vertical-align:middle; padding-left:5px; }
+    
+    div.product_view_wrap1 { width:1100px; padding-bottom:40px; border-bottom:1px solid #ddd; margin-bottom:40px; }
+    div.product_view_wrap1:after { content:""; display:block; clear:both; }
+    div.product_view_wrap1 div.product_view_pic { width:450px; float:left; }
+    div.product_view_wrap1 div.product_view_pic ul { width:450px; }
+    div.product_view_wrap1 div.product_view_pic:after { content:""; display:block; clear:both; }
+    div.product_view_wrap1 div.product_view_pic ul li { float:left; }
+    div.product_view_wrap1 div.product_view_pic div.product_big_pic { height:470px; margin-bottom:8px; position:relative; width:450px; }
+    div.product_view_wrap1 div.product_view_pic div.product_big_pic p.more_btn { position:absolute; right:15px; bottom:15px; }
+    div.product_view_wrap1 div.product_view_pic ul.product_thum li { margin-right:8px; }
+    div.product_view_wrap1 div.product_view_pic ul.product_thum li.last { margin-right:0; }
+
+    #product_thum_wrap img { width:106px; }
+    div.zoomWindowContainer div { border:1px solid #ddd !important; }
+
+    div.product_view_wrap1 div.product_view_detail { width:610px; float:right; position:relative; }
+    div.product_view_wrap1 div.product_view_detail div.myAssignZone { position:relative; }
+    .myAssignZone header { border-bottom:2px solid #333; margin-bottom:20px; padding-bottom:18px; }
+    .myAssignZone header h4 { color:#222; font-size:24px; font-weight:bold; width:68%; }
+    div.product_view_wrap1 div.product_view_detail h4 span { font-size:14px; font-weight:normal; color:#666; }
+    div.product_view_wrap1 div.product_view_detail p.t1 { font-size:14px; color:#444; line-height:1.6; padding-bottom:190px; }
+    div.product_view_wrap1 div.product_view_detail p.t001 { font-size:14px; color:#444; line-height:1.6; padding-bottom:55px; }
+
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste { background:#f4f4f2; border-radius:3px; color:#666; font-size:14px; height:52px; line-height:52px; margin-bottom:40px; width:95%; padding-left:5%; }
+
+    /*
+	div.product_view_wrap1 div.product_view_detail p.icon_blond { background:#f4f4f2 url("../img/coffee/icon_blond-1.png") 20px center no-repeat; }
+    div.product_view_wrap1 div.product_view_detail p.icon_medium { background:#f4f4f2 url("../img/coffee/icon_medium-1.png") 20px center no-repeat; }
+	div.product_view_wrap1 div.product_view_detail p.icon_dark { background:#f4f4f2 url("../img/coffee/icon_dark-1.png") 20px center no-repeat; }
+	*/
+
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste img { margin:5px 10px 0 0; }
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste strong { color:#222; font-size:16px; font-weight:normal; height:16px; line-height:16px; margin-right:10px; padding-right:10px; background:url('../img/coffee/coffee_line_bg.jpg') right center no-repeat; }
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste span.info { color:#666; }
+
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste span { color:#222; font-size:14px; }
+
+	/* 160816 나만의 원두 추가 */
+	div.product_view_detail div.myDrink { position:absolute; right:0; top:7px; }
+	div.product_view_detail div.myDrink a { display:block; width:138px; height:28px; line-height:28px; background:#006633; font-size:12px; color:#fff; text-align:center; border-radius:3px; }
+	div.product_view_detail div.myAssignZone .storeInfo{display:block; padding-top: 20px; color:#444; font-size:16px} /*20171204 추가*/
+
+	.only_my_drink2 { position:absolute; left:50%; top:270px; margin-left:-170px; width:340px; border-radius:3px; overflow:hidden; z-index:10001; min-width:320px; }
+	.only_my_drink2 div.only_my_head { height:56px; line-height:56px; position:relative; background:#8c8279;; }
+	.only_my_drink2 div.only_my_head p.tit { font-size:16px; font-weight:bold; color:#fff; padding-left:30px; }
+	.only_my_drink2 div.only_my_head p.close { position:absolute; right:20px; top:15px; }
+	.only_my_drink2 div.only_my_head p.close a { display:block; width:22px; height:22px; transition:transform 1s; }
+	.only_my_drink2 div.only_my_head p.close a:hover { transform:rotate(180deg); }
+	.only_my_drink2 div.only_my_cont { background:#fff; padding:30px; }
+	.only_my_drink2 div.only_my_cont .drink2_cont_input { background:#fff; padding:0 0 30px 0; }
+	.only_my_drink2 div.only_my_cont .drink2_cont_input input { border:1px solid #ddd; border-radius:3px; width:100%; height:28px; }
+	.only_my_drink2 ul.btn_list { width:70%; margin:0 auto; }
+	.only_my_drink2 ul.btn_list:after { content:""; display:block; clear:both; }
+	.only_my_drink2 ul.btn_list li { float:left; width:48%; margin:0 1%; }
+	.only_my_drink2 ul.btn_list li a { display:block; height:30px; line-height:30px; font-size:12px; color:#fff; font-weight:bold; text-align:center; border-radius:3px; }
+	.only_my_drink2 ul.btn_list li.li1 a { background:#006633; }
+	.only_my_drink2 ul.btn_list li.li2 a { background:#222; }
+
+	.only_my_dimm { position:fixed; left:0; top:0; width:100%; height:100%; background:#0a0907; z-index:99; opacity:0.7; filter:alpha(opacity=70); display:none; }
+	.only_my_drink { position:absolute; left:50%; top:150px; margin-left:-210px; width:420px; border-radius:3px; overflow:hidden; z-index:10001; min-width:320px; }
+	.only_my_drink div.only_my_head { height:56px; line-height:56px; position:relative; background:#8c8279; }
+	.only_my_drink div.only_my_head p.tit { font-size:16px; font-weight:bold; color:#fff; padding-left:30px; }
+	.only_my_drink div.only_my_head p.close { position:absolute; right:20px; top:15px; }
+	.only_my_drink div.only_my_head p.close a { display:block; width:22px; height:22px; transition:transform 1s; }
+	.only_my_drink div.only_my_head p.close a:hover { transform:rotate(180deg); }
+	.only_my_drink div.only_my_cont { background:#fff; padding:30px; }
+	.only_my_drink div.my_kind_view { border:1px solid #ddd; border-radius:3px; padding:20px 20px 10px 20px; margin-bottom:30px; }
+	.only_my_drink div.my_kind_view p.tit { font-size:16px; font-weight:bold; color:#222; padding-bottom:15px; border-bottom:1px solid #ddd; margin-bottom:20px; }
+	.only_my_drink div.my_kind_view ul { width:100%; }
+	.only_my_drink div.my_kind_view ul:after { content:""; display:block; clear:both; }
+	.only_my_drink div.my_kind_view li { width:50%; float:left; margin-bottom:7px; }
+	.only_my_drink div.my_kind_view li input { vertical-align:middle; }
+	.only_my_drink div.my_kind_view li label { font-size:14px; color:#666; }
+
+	.only_my_drink p.drink_tit { width:100%; height:40px; line-height:40px; font-size:16px; font-weight:bold; color:#222; background:#f4f4f2; border-radius:3px; text-indent:18px; margin-bottom:20px; }
+	.only_my_drink div.my_drink_sel { width:105%; height:432px; }
+
+	.only_my_drink div.my_drink_sel ul.drink_area { width:100%; }
+	.only_my_drink div.my_drink_sel ul.drink_area:after { content:""; display:block; clear:both; }
+	.only_my_drink div.my_drink_sel ul.drink_area li { float:left; width:49%; margin:0.5%; }
+	.only_my_drink div.my_drink_sel ul.drink_area li dl { width:100%; }
+	.only_my_drink div.my_drink_sel ul.drink_area li dl dt { height:0; margin-bottom:10px; overflow:hidden; width:100%; padding-bottom:94%; }
+	.only_my_drink div.my_drink_sel ul.drink_area li dl dd { font-size:12px; text-align:center; line-height:1.4; margin-bottom:10px; height:35px; }
+	.only_my_drink div.my_drink_sel ul.drink_area li dl dd a { color:#666; }
+
+	div.my_drink_sel .mCSB_scrollTools .mCSB_draggerRail { width:10px; background:#f4f4f2; }
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger { height:33px !important; }
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width:10px; background:#666 !important; }
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover { background:#666; }
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background:#666; }
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar:hover,
+	div.my_drink_sel .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar:hover { background:#666; }
+	div.my_drink_sel .mCSB_inside > .mCSB_container { margin-right:20px; }
+
+	.only_my_drink dl.my_sel_drink { width:100%; }
+	.only_my_drink dl.my_sel_drink:after { content:""; display:block; clear:both; }
+	.only_my_drink dl.my_sel_drink dt { width:37%; float:left; }
+	.only_my_drink dl.my_sel_drink dd { width:58%; float:right; }
+	.only_my_drink dl.my_sel_drink dd p.t1 { font-size:16px; font-weight:bold; color:#222; margin-bottom:20px; }
+	.only_my_drink dl.my_sel_drink dd p.t1 span { font-size:14px; color:#666; font-family:'Arial'; }
+	.only_my_drink dl.my_sel_drink dd p.t1 a.myFavorite { position:relative; bottom:3px; }
+
+	.only_my_drink dl.my_sel_drink div.select_box { height:28px; border:1px solid #ddd; border-radius:3px; position:relative; top:4px; width:100%; background:#fff url("../img/coffee/select_arrow.png") no-repeat 96% center; margin-bottom:10px; }
+	.only_my_drink dl.my_sel_drink div.select_box label.value{ display:block; margin:0 10px 0 10px; text-align:left; height:28px; line-height:28px;text-indent:4px; font-size:12px; /*color:#b7312c;*/ font-family:"nbg"; overflow:hidden; }
+	.only_my_drink dl.my_sel_drink div.select_box select { padding:0 10px 0 10px; /*position:absolute; left:0; top:0px;*/ height:28px; text-align:left; line-height:28px; font-size:12px; /*color:#b7312c;*/ border:0;background:transparent; -webkit-appearance:none;-moz-appearance:none; appearance:none; font-family:"nbg"; /*filter:alpha(opacity=0); opacity:0; z-index:20;*/ width:100%; }/* 접근성_20171213 수정 */
+	.only_my_drink dl.my_sel_drink div.select_box select::-ms-expand {display: none;} /* 접근성_20171213 추가 */
+
+	.only_my_drink div.personal_opt { margin:20px 0; padding:20px 0 0; border-top:1px solid #222; }
+
+	.only_my_drink div.personal_opt div.select_box { height:28px; border:1px solid #ddd; border-radius:3px; position:relative; top:4px; width:100%; background:#fff url("../img/coffee/select_arrow.png") no-repeat 96% center; margin-bottom:8px; }
+	.only_my_drink div.personal_opt div.select_box label.value{ display:block; margin:0 10px 0 10px; text-align:left; height:28px; line-height:28px;text-indent:4px; font-size:12px; color:#444; font-family:"nbg"; overflow:hidden; }
+	.only_my_drink div.personal_opt div.select_box select { padding:0 10px 0 10px;/* position:absolute; left:0; top:0px;*/ height:28px; text-align:left; line-height:28px; font-size:12px; color:#444; border:0;background:transparent; -webkit-appearance:none;-moz-appearance:none; appearance:none; font-family:"nbg"; /*filter:alpha(opacity=0); opacity:0; z-index:20;*/ width:100%; }/* 접근성_20171213 수정  */
+  .only_my_drink div.personal_opt div.select_box select::-ms-expand {display: none;} /* 접근성_20171213 추가 */
+  
+	.only_my_drink p.btn_ps_opt { margin-top:20px; }
+	.only_my_drink p.btn_ps_opt a { display:block; height:40px; line-height:40px; text-align:center; font-size:14px; color:#222; font-weight:bold; background:#fff; border-radius:3px; border:1px solid #222; }
+	.only_my_drink p.btn_ps_opt a img { vertical-align:middle; }
+
+	.only_my_drink ul.btn_list { border-top:1px solid #ddd; width:100%; margin:20px auto 0; padding-top:20px; }
+	.only_my_drink ul.btn_list:after { content:""; display:block; clear:both; }
+	.only_my_drink ul.btn_list li { float:left; width:48%; margin:0 1%; }
+	.only_my_drink ul.btn_list li a { display:block; height:30px; line-height:30px; font-size:12px; color:#fff; font-weight:bold; text-align:center; border-radius:3px; }
+	.only_my_drink ul.btn_list li.li1 a { background:#006633; }
+	.only_my_drink ul.btn_list li.li2 a { background:#222; }
+	/* 160816 나만의 원두 추가 end */
+
+
+	div.product_view_wrap1 div.product_view_detail div.product_investigate { padding:24px 0 10px 0; position:relative; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list:after { content:""; display:block; clear:both; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list01 { float:left; width:300px; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list02 { float:right; width:300px; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img { position:relative; width:300px; height:104px; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.product_investigate_txt { display:block; width:278px; height:33px; position:absolute; left:0; bottom:0; font-size:14px; color:#fff; line-height:33px; padding:0 11px 0 11px; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.product_investigate_txt span.btn_r { padding-left:10px; }
+    
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.c_2a1b15 { display:block; width:300px; height:33px; position:absolute; left:0; bottom:0; background:#2a1b15; filter:alpha(opacity=80); opacity:0.8; border-bottom-left-radius:3px; border-bottom-right-radius:3px; }
+    
+    div.product_view_wrap1 div.product_view_detail div.myLine_up { position:absolute; right:0; top:-20px; }
+    div.product_view_wrap1 div.product_view_detail div.myLine_up a { display:block; width:196px; height:28px; line-height:28px; background:#c69214; font-size:12px; color:#fff; text-align:center; border-radius:3px; }
+
+    div.product_view_wrap1 div.product_view_detail div.product_info_head { height:46px; line-height:46px; position:relative; border-top:1px solid #ddd; margin-top:20px;}
+    div.product_view_wrap1 div.product_view_detail div.product_info_head p.gram { color:#666; float:right; font-size:16px; font-weight:bold; padding-left:10px; padding-top:15px; }
+    div.product_view_wrap1 div.product_view_detail div.product_info_head div.card_enro { position:absolute; right:0; top:9px; }
+    div.product_view_wrap1 div.product_view_detail div.product_info_head div.card_enro a { display:block; height:28px; line-height:28px; text-align:center; padding:0 10px; background:#006633; color:#ffffff; font-size:12px; border-radius:3px; }
+    
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.bbs_search { height:46px; }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.select_box { position:relative; left:0; top:20px; float:left; width:297px; height:36px; border:1px solid #ddd; border-radius:3px; background:#fff url("../img/coffee/select_arrow.png") no-repeat 276px center; }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.select_box label.value { display:block; margin:0 10px; text-align:left; height:28px; line-height:36px; text-indent:4px; font-size:16px; color:#444; font-family:"nbg"; overflow:hidden; }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.select_box select{ padding:0 10px 0 10px; position:absolute; left:0; top:0px; width:299px; height:28px;text-align:left;line-height:28px;font-size:12px; color:#444; border:0;background:#fff; font-family:"nbg"; filter:alpha(opacity=0); opacity:0; z-index:20; }
+            
+    div.product_view_wrap1 div.product_info_li { padding:17px 13px; border-bottom:1px solid #ddd; margin-bottom:10px; }
+    div.product_view_wrap1 div.product_info_li ol li { font-size:12px; color:#666; margin-bottom:10px; }
+    div.product_view_wrap1 div.product_info_li ol li.last { margin-bottom:0; }
+
+    div.product_view_wrap1 div.product_sns_wrap { position:relative; height:28px; }
+    div.product_view_wrap1 div.product_sns_wrap ul.product_sns {float: right;  } /* 20170731   width 값 삭제 sns  삭제에 의한 수정*/
+    div.product_view_wrap1 div.product_sns_wrap ul.product_sns:after { content:""; display:block; clear:both; }
+    div.product_view_wrap1 div.product_sns_wrap ul.product_sns li { width:28px; float:left; margin-left:7px; }/* 20170731   margin-right,을 margin-left 로 수정 : sns  삭제에 의한 수정*/
+    div.product_view_wrap1 div.product_sns_wrap ul.product_sns li.last { margin-right:0; }
+    div.product_view_wrap1 p.product_assign { font-size:12px; color:#555; padding-top:5px; }
+    div.product_view_wrap1 p.product_assign a { font-weight:bold; color:#006633; border-bottom:1px solid #006633 }
+
+    div.product_view_wrap2 { padding-bottom:40px; }
+    div.product_view_wrap2:after { content:""; display:block; clear:both; }
+    div.product_view_wrap2 div.productInvestigate_left { float:left; width:685px; padding-right:40px; }
+    div.product_view_wrap2 div.productInvestigate_left p.text { font-size:14px; color:#444; line-height:1.6; margin-bottom:40px; }
+    div.product_view_wrap2 div.productInvestigate_left ul { margin-left:-25px; }
+    div.product_view_wrap2 div.productInvestigate_left ul:after { content:""; display:block; clear:both; }
+    div.product_view_wrap2 div.productInvestigate_left ul li { float:left; width:330px; margin-left:25px; }
+    div.product_view_wrap2 div.productInvestigate_left ul li p { float:left; width:330px;  margin-bottom:20px; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dt { font-size:14px; color:#444; font-weight:bold; margin-bottom:15px; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd { font-size:12px; color:#666; line-height:18px; }
+
+    div.product_view_wrap2 div.productInvestigate_right { float:right; width:335px; background:#f4f4f2; border-radius:3px; padding:0 20px 0 20px; }
+    div.product_view_wrap2 div.productInvestigate_right dl dt { color:#222; font-size:16px; font-weight:bold; margin-bottom:15px; padding-top:30px; }
+    div.product_view_wrap2 div.productInvestigate_right dl dd { border-bottom:1px solid #ddd; color:#666; font-size:14px; line-height:22px; padding-bottom:28px; }
+    div.product_view_wrap2 div.productInvestigate_right dl dd.last { border-bottom:0; }
+    div.product_view_wrap2 div.productInvestigate_right dl dd p { padding-bottom:30px; }
+    div.product_view_wrap2 div.productInvestigate_right dl dd span { display:inline-block; margin:0 0 0 10px; }
+
+    /* 나와 어울리는 커피 찾기 coffee_productFinder */
+    p.find_text { font-size:16px; color:#444; margin-bottom:30px; }
+    p.find_text span { font-weight:bold; }
+    div.findWrap { width:100%; height:700px; overflow:hidden; position:relative; background:url("../img/coffee/findWrap_bg.jpg") 50% 0; }
+    div.find_frame { width:1100px; height:700px; margin:0 auto; }
+    div.find_section { width:1100px; height:469px; padding-top:85px; position:absolute; }
+    div.find_section1 { top:0; }
+    div.find_section2 { top:700px; }
+    div.find_section3 { top:1400px; }
+
+    div.findWrap p.find_con { margin-bottom:90px; position:relative; text-align:center; }
+    div.findWrap p.find_con span { font-size:14px; color:#666; }
+    
+    div.findWrap ul.find_taste { width:1100px; }
+    div.findWrap ul.find_taste:after { content:""; display:block; clear:both; }
+    div.findWrap ul.find_taste li { float:left; width:242px; height:280px; margin-right:43px; position:relative; }
+    div.findWrap ul.find_taste li.last { margin-right:0; }
+    div.findWrap ul.find_taste dt { margin-bottom:20px; }
+    div.findWrap ul.find_taste dd { font-size:14px; text-align:center; }
+    div.findWrap ul.find_taste dd a { color:#444; }
+    
+    div.find_frame ul li dl { width:100%; }
+
+    div.findWrap ul.find_taste01 li > dl { position:absolute; left:0; top:500px; opacity:0; }
+    div.findWrap ul.find_taste02 li > dl { position:absolute; top:500px; }
+    div.findWrap ul.find_taste03 li > dl { position:absolute; top:500px; }
+
+    div.findWrap ul.find_taste02,
+    div.findWrap ul.find_taste03 { width:812px; margin:0 auto; }
+
+    /* 나와 어울리는 커피 찾기 coffee_productFinder_list */
+    div.productFinder_list { background:#fff; }
+    div.productFinder_list p.stext { font-size:16px; color:#444; padding-bottom:30px; }
+
+    div.coffee_productFinder_list { position:relative; width:100%; background:#f2efea; }
+    div.coffee_productFinder_list_inner { width: 2000px; border: 0; margin: 0 auto; position:relative; left: 50%; top: 0; margin-left: -1000px; }
+
+    div.coffee_productFinder_list div.pF_bg1{ background:url("../img/coffee/productFinder_bg.png") 50% 50% no-repeat; background-size:auto 100%;}
+    div.coffee_productFinder_list div.pF_bg2{ background:url("../img/coffee/productFinder_bg2.png") 50% 50% no-repeat; background-size:auto 100%;}
+    div.coffee_productFinder_list div.pF_bg3{ background:url("../img/coffee/productFinder_bg3.png") 50% 50% no-repeat; background-size:auto 100%;}
+    div.coffee_productFinder_list p.pFtit1{ padding:50px 0 30px 0; }
+    div.coffee_productFinder_list p.pFtit2{ padding:0 0 15px 0; }
+    div.coffee_productFinder_list p.pFtext{ padding:0 0 40px 0; }
+
+    div.finder_list { padding-bottom:40px; }
+    div.finder_list > dl > dt { position:absolute;left:-9999px;font-size:0;width:0;height:0;overflow:hidden;text-indent:-9999px; }
+    div.finder_list > dl > dd > ul { width: 1120px; position:relative; left:-10px; top:-10px; }
+    div.finder_list > dl > dd > ul:after { content:""; display:block; clear:both; }
+    div.finder_list > dl > dd > ul > li { width:260px; float:left; margin:10px; position:relative; }
+    div.finder_list > dl > dd > ul > li > div.finder_list_cover { width:262px; height:302px; background:url("../img/coffee/product_cover.png") 0 0 no-repeat; position:absolute; left:0; top:0; cursor:pointer; }
+    div.finder_list > dl > dd > ul li dl { width:258px; border:1px solid #e1e1e1; }
+    div.finder_list > dl > dd > ul li dt { width:258px; height:244px; position:relative; }
+    div.finder_list > dl > dd > ul li dt ul { position:absolute; left:9px; bottom:10px; }
+    div.finder_list > dl > dd > ul li dt ul li { float:left; margin-right:4px; }
+    div.finder_list > dl > dd > ul li dt ul li { float:left; margin-right:4px; }
+    div.finder_list > dl > dd > ul li dd { font-size:14px; color:#444; height:54px; line-height:54px; text-align:center; background:#fff; }
+    div.finder_list > dl > dd > ul li dd a { display:block; }
+
+    /* (나와 어울리는 커피 찾기) 결과 150614  */
+    div.productFinder_bg { background: url("../img/coffee/bg-finder-top.png"); }
+    div.pFinder_list_viewbg { background:url("../img/coffee/pFinder_bg.png"); }
+
+    div.productFinder_list_view { background-color:#fff; }
+    section.cf_productFinder_wrap { width:1100px; margin:0 auto; position:relative; }
+    article.cf_productFinder_inner { padding:50px 0; }
+    article.cf_productFinder_inner:after { content:""; display:block; clear:both; }
+
+    div.cf_productFinder_pic { width:450px; float:left; position:relative; }
+    div.cf_productFinder_pic p { width:450px; height:450px; overflow:hidden; }
+    div.cf_productFinder_pic p img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    div.cf_productFinder_pic p img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    div.cf_productFinder_ditail { width:610px; float:right; position:relative; }
+    div.cf_productFinder_ditail h3 { font-size:24px; font-weight:bold; color:#222; border-bottom:2px solid #333; padding-bottom:10px; margin-bottom:20px; }
+    div.cf_productFinder_ditail h3 span { font-size:14px; font-family:"Arial"; font-weight:normal; color:#666; }
+    div.cf_productFinder_ditail p.title { font-size:14px; color:#444; font-weight:bold; margin-bottom:40px; line-height:1.4; }
+    div.cf_productFinder_ditail p.text {  font-size:14px; color:#666; line-height:1.6; }
+
+    section.cf_pFinder_bottom { padding:50px 0; background: url("../img/coffee/bg-finder-top.png"); background-position:-140px -30px; }
+    article.cf_pFinder_bottom_inner { width:1100px; margin:0 auto; position:relative; overflow:hidden; }
+
+    ul.cf_pf_list { margin-left:-20px; }
+    ul.cf_pf_list:after { content:""; display:block; clear:both; }
+    ul.cf_pf_list li { float:left; margin-left:20px; }
+    ul.cf_pf_list li dl dt { width:260px; height:245px; overflow:hidden; }
+    ul.cf_pf_list li dl dt img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    ul.cf_pf_list li dl dt img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    ul.cf_pf_list li dl dd { font-size:14px; color:#444; text-align:center; padding:15px 0; }
+
+    /* (에스프레소 음료) 150614 */
+    section.cf_espressoBottom_wrap { background:#f4f4f2; padding:40px 0 80px 0; }
+
+    article.cf_espressoBottom_inner,
+    article.cf_espressoTop_inner { width:1100px; margin:0 auto; position:relative; overflow:hidden; }
+
+    dl.cf_espressoClasslcs_info { padding:30px 0 60px 0;}
+    dl.cf_espressoClasslcs_info dt { font-size:20px; color:#006633; font-style:italic; line-height:1.6; padding-bottom:20px; }
+    dl.cf_espressoClasslcs_info dt  span { display:block; padding-left:10px; }
+    dl.cf_espressoClasslcs_info dd { font-size:14px; color:#666; line-height:1.6; padding-left:10px; }
+    dl.cf_espressoClasslcs_info dd span.cf_dd_t1 { display:block; padding-top:10px; }
+    dl.cf_espressoClasslcs_info dd p.last { margin-top:30px; }
+
+    ul.cf_espressoClasslcs_list { margin-left:-24px; } /* 20210914 수정 */
+    ul.cf_espressoClasslcs_list:after { content:""; display:block; clear:both; }
+    ul.cf_espressoClasslcs_list li { float:left; margin-left:24px; }
+    ul.cf_espressoClasslcs_list li dl dt { width:350px; height:210px; overflow:hidden; } 
+    ul.cf_espressoClasslcs_list li dl dt img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    ul.cf_espressoClasslcs_list li dl dt img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    ul.cf_espressoClasslcs_list li dl dd { height:100px; font-size:14px; color:#666; line-height:1.6; padding-top:20px; margin-bottom:20px; }
+    
+    
+    /*  셀렉트박스 디자인 150616 추가 */
+    #cf_select_wrap .select,
+    #cf_select_wrap2 .select,
+    #cf_select_wrap3 .select { width:236px; padding-right:10px;height:38px;background:url("../img/util/sbox_arrow_down.png") 96% center no-repeat #fff; border:1px solid #ddd; border-radius:3px;text-indent:10px;text-align:left;font-size:16px;color:#444; overflow:hidden; }
+    #cf_select_wrap .select:hover,
+    #cf_select_wrap2 .select:hover,
+    #cf_select_wrap3 .select:hover { cursor:pointer; }
+    #cf_select_wrap .opt,
+    #cf_select_wrap2 .opt,
+    #cf_select_wrap3 .opt { width:247px; position:absolute; left:0px; top:38px; border:1px solid #eee; background:#fff; z-index:10; border-radius:3px; }
+    #cf_select_wrap .opt li,
+    #cf_select_wrap2 .opt li,
+    #cf_select_wrap3 .opt li { border-bottom:1px solid #eee; }
+    #cf_select_wrap .opt li span,
+    #cf_select_wrap2 .opt li span,
+    #cf_select_wrap3 .opt li span { position:relative; left:10px; }
+    #cf_select_wrap .opt li label,
+    #cf_select_wrap2 .opt li label,
+    #cf_select_wrap3 .opt li label {display:inline-block; text-align:left; line-height:36px; height:38px; font-size:14px; color:#444; margin-left:3px; padding-left:25px; cursor:pointer;}
+    #cf_select_wrap .opt li input,
+    #cf_select_wrap2 .opt li input,
+    #cf_select_wrap3 .opt li input { vertical-align:middle; }
+    #cf_select_wrap,
+    #cf_select_wrap2,
+    #cf_select_wrap3 { width:249px; position:absolute; right:0; top:23px; }
+    #cf_select_wrap .opt li.last,
+    #cf_select_wrap2 .opt li.last,
+    #cf_select_wrap3 .opt li.last { border-bottom:0; }
+
+	ul.opt li label.mark01 { background:url("../img/menu/smark01.png") 0 7px no-repeat; background-size:21px auto; }
+	ul.opt li label.mark02 { background:url("../img/menu/smark02.png") 0 7px no-repeat; background-size:21px auto; }
+	ul.opt li label.mark03 { background:url("../img/menu/smark03.png") 0 7px no-repeat; background-size:21px auto; }
+	ul.opt li label.mark04 { background:url("../img/menu/smark04.png") 0 7px no-repeat; background-size:21px auto; }
+	ul.opt li label.mark05 { background:url("../img/menu/smark05.png") 0 7px no-repeat; background-size:21px auto; } /*20171204 추가*/
+
+    sup { vertical-align:super; font-size:12px; }
+
+    .cfst_select_box,
+    .cf_select_box { display:none; }
+
+    /* 리저브 상세 슬라이드 */
+    .m_view_slide { display:none; }
+
+    /* 나와 어울리는 커피 찾기 상세 */
+    .m_cf_productFinder_pic { display:none; }
+
+    /* 150625 추가 css 리저브 상세 */
+    .cfrsTitl { font-size:16px; color:#b06546; font-style:italic; padding:10px 0 20px 0; } /*20170718 수정*/
+
+    p.cf_s_p { position:relative; }
+    p.cf_s_p span.cf_s_span { position:absolute; left:10px; top:13px; font-size:14px; color:#444; }
+
+    .lineup_pop_wrap { background:#fff; border-radius:3px; height:980px; left:-250px; position:absolute; top:50px; width:570px; z-index:20001; display:none; }
+    .lineup_pop_ttl { background:#8c8279; border-radius:3px 3px 0 0; color:#fff; float:left; font-size:16px; font-weight:bold; height:56px; line-height:56px; position:relative; text-indent:30px; width:100%; }
+    .lineup_pop_ttl a { background:url("../img/coffee/btn_lineup_close.png"); display:block; height:22px; overflow:hidden; position:absolute; right:10px; text-indent:-20000px; top:17px; width:22px; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+    .lineup_pop_ttl a:hover { transform:rotate(180deg); }
+
+    .lineup_cont { background:url("../img/coffee/bean_taste_arrow.png") 522px 112px no-repeat; border-radius:0 0 3px 3px; float:left; height:904px; width:570px; }
+    .lineup_cont_copy { color:#444; font-size:16px; float:left; margin:30px 0 0 30px; width:100%; }
+    .lineup_cont_tbl { border-top:1px solid #222; float:left; margin:23px 0 0 30px; }
+    .lineup_cont_tbl thead tr th { background:#f4f4f2; border-bottom:1px solid #ddd; border-right:1px solid #ddd; color:#444; font-size:12px; font-weight:bold; height:46px; text-align:center; vertical-align:middle; }
+    .lineup_cont_tbl tbody tr td { background:#fff; border-bottom:1px solid #ddd; border-right:1px solid #ddd; color:#666; font-size:12px; height:46px; padding-left:10px; vertical-align:middle; }
+    .lineup_cont_tbl tbody tr td.nbr { border-right:none; }
+    .lineup_cont_tbl tbody tr td.h62 { height:62px; }
+    .lineup_cont_tbl tbody tr td.tac { text-align:center; }
+    .lineup_cont_tbl tbody tr td span { font-size:11px; }
+    .lineup_cont_tbl tbody tr td strong.blonde { color:#9b704d; font-weight:bold; }
+    .lineup_cont_tbl tbody tr td strong.medium { color:#924c2e; font-weight:bold; }
+    .lineup_cont_tbl tbody tr td strong.dark { color:#4f2c1d; font-weight:bold; }
+
+    .btn_lineup_close { float:left; height:30px; margin-top:20px; width:100%; }
+    .btn_lineup_close a { background:#222; border-radius:3px; color:#fff; display:block; font-size:12px; font-weight:bold; height:30px; line-height:30px; margin:0 auto; text-align:center; width:60px; }
+	.coffee_sub_tit_wrap { height:inherit; }
+	.coffee_sub_tit_wrap div.sub_tit_inner { height:inherit; padding-bottom:20px; }
+	.coffee_sub_tit { font-size:16px; color:#666; padding-top:10px; }
+
+	div.reserve_ing_tit { width:1100px; height:60px; line-height:60px; background:#222; border-radius:3px; font-size:18px; font-weight:bold; color:#fff; margin-bottom:30px; }
+	div.reserve_ing_tit p { padding-left:20px; }
+
+	div.reserve_end_tit { width:1100px; height:60px; line-height:60px; background:#222; border-radius:3px; font-size:18px; font-weight:bold; color:#fff; margin-bottom:30px; }
+	div.reserve_end_tit p { padding-left:20px; }
+	/* 150909 DOM 수정 구명준 */
+	.lineup_pop_wrap p.coffee_i_poin { float:right; color:#666; font-size:12px; padding:10px 12% 0 0; }
+	/* 150909 DOM 수정 구명준 end */
+	
+	/* 리저브 인포 DOM 추가 */
+	.bnr_rserve_mid { background:url("../img/coffee/bnr_rserve_bg.png") 95% center no-repeat #f4f4f2; padding:40px 160px 40px 50px; }
+	
+	.bnr_rserve_ttl { color:#006633; display:block; font-size:20px; font-weight:normal; font-style:italic; margin-bottom:20px; }
+	.bnr_rserve_txt { color:#444; font-size:14px; line-height:1.6; }
+
+	/* 170105 황기흠 수정 */
+	.reserve_info_wrap { border:1px solid #e5e5e5; margin:0 auto 55px; padding:55px 0; text-align:center; /* width:1000px; */ }
+	.reserve_info_ttl {  margin:0 auto 25px; width:396px; } /* 이미지  수정 20170713*/ 
+	.reserve_info_txt { line-height:1.6; margin-bottom:30px;  color: #222;  }/* 20170713  수정*/
+	.reserve_info_ttl .m {display: none; }/* 20170713  추가*/
+
+	/*.icon_reserve { background:url("../img/coffee/icon_reserve_info.png") no-repeat; height:176px; margin:0 auto 40px; width:711px; } 20170713  기존이미지*/
+	.icon_reserve {position: relative; width:534px; margin: 0 auto 40px;  } /*20170713  변경*/
+	.icon_reserve img {width: 100%;  }
+	.icon_reserve img.m {display: none; }
+	.icon_reserve ul {width: 0; height: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; text-indent: -9999px; } /* 20170713 edit*/
+	.icon_reserve li { text-indent:-20000px; }
+	
+	.reserve_info_warn { color:#666; font-size:14px; line-height:1.6; margin:0 auto 40px; }
+	.w880 { display:none; }
+
+	.btn_reserve_more a { background:#754737; border-radius:3px; color:#fff; display:block; font-size:14px; height:45px; line-height:45px; margin:0 auto; width:315px; } /*20170713 수정*/
+
+	.reserve_pakage_img { margin-top:55px; width:100%; }
+	/* 170105 황기흠 수정 end */
+
+	/* 리저브 인포 DOM 추가 end */
+
+@media screen and (min-width:1099px) and (max-width:1589px) {
+	/* 메인 동영상 슬라이드 추가 - 구명준 */
+	.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div.video { height:0; width:100% !important; padding:0 0 27% 0; position:relative; left:0; margin-left:0; top:0; }
+	/* 메인 동영상 슬라이드 추가 end */
+}
+
+@media screen and (min-width:961px) and (max-width:1099px) {
+
+	/* 160718 상세 프로모션 및 사이렌오더 추가 */
+	div.productView_footmenu_inner { width:96%; }
+	div.productView_top_left { width:50%; }
+	div.productView_top_right { width:49.8%; }
+	div.productView_top_right dl { width:100%; }
+	div.productView_top_right dt { width:41.53%; }
+	div.productView_top_right dd { width:55.47%; }
+	/* 160718 상세 프로모션 및 사이렌오더 추가 end */
+
+	/* 메인 동영상 슬라이드 추가 - 구명준 */
+	.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div.video { height:0; width:100% !important; padding:0 0 32% 0; position:relative; left:0; margin-left:0; top:0; }
+	/* 메인 동영상 슬라이드 추가 end */
+
+    /* 메인 */
+    .coffeeSlideArea { height:300px; }
+    .coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div { height:300px; width:1500px !important; position:relative; left:50%; margin-left:-750px; top:0; }
+    .coffeeSlideArea .bxslide_btn_wrap { top:125px; }
+    .coffeeSlideArea #prevBtn, 
+	.coffeeSlideArea #nextBtn { top:130px; }
+    .coffeeSlideArea #prevBtn a { width:38.25px; height:38.25px; }
+    .coffeeSlideArea #nextBtn a { width:38.25px; height:38.25px; }
+
+    .coffee_bottomSlideArea { height:300px; }
+    .coffee_bottomSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_bottom_slider li div.bg { height:300px; width:1500px !important; position:relative; left:50%; margin-left:-750px; top:0; }
+    .coffee_bottomSlideArea .bxslide_btn_wrap { top:125px; }
+    .coffee_bottomSlideArea #prevBtn2, 
+	.coffee_bottomSlideArea #nextBtn2 { top:130px; }
+    .coffee_bottomSlideArea #prevBtn2 a { width:38.25px; height:38.25px; }
+    .coffee_bottomSlideArea #nextBtn2 a { width:38.25px; height:38.25px; }
+
+    /* 150722 성연욱 추가 */
+    ul.coffee_bottom_slider li.slide-main_01 div.text { width:360px; top:50px; margin-left:60px; }
+    ul.coffee_bottom_slider li.slide-main_01 div.btn_text { margin-left:60px; top:200px; }
+
+    ul.coffee_bottom_slider li.slide-main_02 div.text { width:360px; top:50px; left:5%; margin-left:0; }
+    ul.coffee_bottom_slider li.slide-main_02 div.btn_text { top:200px; left:5%; margin-left:0; }
+
+    ul.coffee_bottom_slider li.slide-main_03 div.text { width:360px; top:50px; margin-left:60px; }
+    ul.coffee_bottom_slider li.slide-main_03 div.btn_text { margin-left:60px; top:200px; }
+    /* 150722 성연욱 추가 end */
+
+    section.coffee_choice_wrap { height:300px; }
+    section.coffee_reserve_wrap { height:300px; }
+    section.coffee_espresso_wrap { height:300px; }
+    section.coffee_best_wrap { height:300px; }
+    div.coffee_wrap_inner { width:100%; }
+
+    p.coffee_choice_txt { left:58%; top:65px; }
+    div.coffee_choice_btn { left:58%; top:206px; }
+
+    p.coffee_reserve_txt { left:5%; top:65px; }
+    div.coffee_reserve_btn { left:5%; top:206px; }
+    p.coffee_reserve_btn { left:50%; margin-left:-413px; top:210px; }
+
+    p.coffee_espresso_txt { left:58%; top:65px; }
+    div.coffee_espresso_btn { left:58%; top:206px; }
+
+    p.coffee_best_txt { left:5%; top:65px; }
+    div.coffee_best_btn { left:5%; top:206px; }
+
+    /* 스타벅스 리저브 */
+    section.content_top div.coffee_content { width:96%; margin:0 auto; }
+    div.summary_full p.t1 { letter-spacing:-0.9px; }
+    div.content_bottom div.coffee_content { width:96%; margin:0 auto; }
+    /*
+	div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-10%; margin-left:-52.3%; }
+    div.product_list_wrap ul.product_list > li { margin-left:4.5454%; width:27.333%; }
+    div.product_list_wrap ul.product_list > li img { width:100%; }
+    div.product_list_wrap ul.product_list li dl { width:100%; }
+    div.product_list_wrap ul.product_list li dt { width:100%; height:inherit; }
+	*/
+    div.content_bottom ul.product_list { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.content_bottom ul.product_list > li { width:23.6363%; margin:0.6%; }
+    div.content_bottom ul.product_list > li dl { width:100%; height:auto; }
+    div.content_bottom ul.product_list > li dl dt { width:100%; height:auto; }
+
+    
+    /* 커피 제품 view */    
+    div.coffee_content { width:96%; margin-left:-48%; }
+    div.product_view_wrap1 { width:100%; }
+    div.product_view_wrap1 div.product_view_pic { width:40.9090%; }
+    div.product_view_wrap1 div.product_view_detail { width:55.4545%; }
+
+    div.product_view_wrap1 div.product_view_pic div.product_big_pic { width:100%; height:auto; }
+    div.product_view_wrap1 div.product_view_pic ul { width:100%; }
+    div.product_view_wrap1 div.product_view_pic ul.product_thum li { width:24%; margin-right:1.2%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list01 { width:48%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list02 { width:48%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img { width:100%; height:auto; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.c_2a1b15 { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.product_investigate_txt { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_info_head { margin-top:0px; }
+    div.zoomWindowContainer div { width:100% !important; height:100% !important; left:0 !important; top:0 !important; }
+    div.zoomLens { border:0 !important; background:none !important; }
+
+    div.product_view_wrap2 { width:100%; }
+    div.product_view_wrap2 div.productInvestigate_left { width:62.2727%; padding-right:3.6363%; }
+    div.product_view_wrap2 div.productInvestigate_left p.text { font-size:12px; letter-spacing:-0.1px; }
+    div.product_view_wrap2 div.productInvestigate_right { width:30.4545%; padding: 0 1.8181% 0 1.8181%; }
+    div.product_view_wrap2 div.productInvestigate_left ul { width:100%; margin-left:-2.2727%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li { width:45.5%; margin-left:2.2727%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li p { width:100%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd { font-size:11px; letter-spacing: -0.9px; }
+
+    div.productView_footmenu div.productView_footmenu_inner { width:96%; margin:0 auto;}
+    div.productView_bottom div.productRel_wrap li dl { width:100%; }
+    div.productView_bottom div.productRel_wrap li dl dt { width:48%; height:auto; }
+    div.productView_bottom div.productRel_wrap li dl dd { width:46%; padding:0 3%; height:auto; }
+
+    div.productView_bottom div.productRel_wrap li dd p.t2 { font-size:12px; margin-bottom:10%; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn { position:static; font-size:12px; width:97px;  }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a { width:100%; margin-left:0px; }
+    /* 커피 제품 view end */
+
+    /* 150618 커피 리스트 */
+    div.product_list > dl > dd > ul { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list > dl > dd > ul > li { width:23.6363%; margin:0.6%; }
+    div.product_list > dl > dd > ul li dl { width:100%; height:auto; }
+    div.product_list > dl > dd > ul li dl dt { width:100%; height:auto; }
+
+    /* 150619 (에소프레소 음료) */
+    article.cf_espressoBottom_inner, 
+    article.cf_espressoTop_inner { width:96%; }
+    
+    ul.cf_espressoClasslcs_list { width:100%; margin-left:-1.33%; }
+    ul.cf_espressoClasslcs_list li { width:32%; margin-left:1.33%; }
+    ul.cf_espressoClasslcs_list li dl dt { width:100%; height:auto; }
+    ul.cf_espressoClasslcs_list li dl dd { height:120px; text-align:justify; }
+    ul.cf_espressoClasslcs_list li dl dd br { display:none; }
+
+    /* 150619 (에소프레소 음료) 도피오 */
+    dl.cf_espressoClasslcs_info dt span { display:inline; }
+    dl.cf_espressoClasslcs_info dd p br { display:none; }
+
+    /* 150619 (최상의 커피를 즐기는 법) */
+   div.coffee_higher_enjoy dl.content_tabmenu dt.tab { width:24%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:26.1%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:50.2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:74.1%; margin:0; }
+	
+	/* div.coffee_higher_enjoy dl.content_tabmenu dt.tab { width:19%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { width:100%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { width:100%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:21.2%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:40.3%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:59.4%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 { left:78.1%; margin:0; } 
+	*/
+
+    div.higher_enjoy_youtube { width:100%; }
+    div.higher_enjoy_youtube iframe { width:100%; margin:0 auto; }
+    div.coffee_content { width:96%; margin:0 auto; left:auto; }
+    ul.coffee_info li { width:100%; }
+    ul.coffee_info li p.coffee_info_img { width:45.4545%; height:auto; margin:0; }
+    ul.coffee_info li dl.coffee_info_text { width:45.4545%; float:right; }
+    ul.coffee_info li dl.coffee_info_text dd p { text-align:justify; }
+    ul.coffee_info li dl.coffee_info_text dd p br { display:none; }
+
+	/* 탭5개 */
+	/* 20210914 수정 */
+    div.coffee_story dl.content_tabmenu dt.tab { width:19.2%; }
+    div.coffee_story dl.content_tabmenu dt.tab a { width:auto; }
+    div.coffee_story dl.content_tabmenu dt.tab.on a { width:auto; }
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_02 { left:21.2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:40.4%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:59.6%; margin:0; } /* 20170821  수정*/
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:78.8%; margin:0; } /* 20170821  수정*/
+    /* //20210914 수정 */
+
+	/* 160829 수정 (커피이야기) 탭4개
+	div.coffee_story dl.content_tabmenu dt.tab { width:23.8%; }
+    div.coffee_story dl.content_tabmenu dt.tab a { width:100%; }
+    div.coffee_story dl.content_tabmenu dt.tab.on a { width:100%; }
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:26%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:49.9%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:73.7%; margin:0; }
+	*/
+
+    div.cfs01_bottom ul.cfs01_bottom_list { width:100%; margin-left:-1.33%; }
+    div.cfs01_bottom ul.cfs01_bottom_list li { width:32%; margin-left:1.33%; }
+    ul.cfs01_bottom_list li p.img { width:100%; height:auto; margin-bottom:20px; }
+    ul.cfs01_bottom_list li p.img span.dim_txt1,
+    ul.cfs01_bottom_list li p.img span.dim_txt2,
+    ul.cfs01_bottom_list li p.img span.dim_txt3 { width:97%; }
+    ul.cfs01_bottom_list li dl.cfs01_text dt h4 { letter-spacing:-1px; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p { text-align:justify; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p br { display:none; }
+
+    ul.scfs02_list { width:100%; } 
+    ul.scfs02_list li div.scfs02_list_l { width:60%; }
+    ul.scfs02_list li dl.scfs02_list_r { width:40%; float:right; padding:0; height:175px; }
+    ul.scfs02_list li dl.scfs02_list_r dd p { text-align:justify; }
+    ul.scfs02_list li dl.scfs02_list_r dd p br { display:none; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a { padding:0; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a img { vertical-align:top; padding:0; }
+
+    /* (커피이야기) 탭3 */
+    dl.higherAravica > dd span.bigImg_bg { right:8%; }
+    dl.higherAravica > dd div.youtube { width:50%; }
+    dl.higherAravica > dd dl.text { width:48%; float:right; }
+
+    div.aravica_info_01 p.img { width:50%; }
+    div.aravica_info_01 dl.text { float:right; width:48%; height:auto; padding:0; margin-top:5%; }
+
+    div.aravica_info_02 dl.text { width:48%; height:auto; padding:0; margin-top:3%; }
+    div.aravica_info_02 p.img { float:right; width:48%;}
+
+    div.aravica_info_03 p.img { width:50%; }
+    div.aravica_info_03 dl.text { float:right; width:48%; height:auto; padding:0; margin-top:10%; }
+
+    div.aravica_info_04 dl.text { width:48%; height:auto; padding:0; margin-top:6%; }
+    div.aravica_info_04 p.img {  float:right; width:48%; margin-top:4%; }
+
+    div.aravica_info_05 p.img { width:50%; }
+    div.aravica_info_05 dl.text { float:right; width:48%; height:auto; padding:0; margin-top:4%; }
+    
+    div.higherAravica_wrap dl.text { text-align:justify; }
+    div.higherAravica_wrap dl.text br { display:none; }
+
+    /* 4번 탭 */
+    div.coffeeRoasting_info p.img { width:50%; height:381px; }
+    div.coffeeRoasting_info dl.text { width:48%; height:381px; padding:0 0 0 2%; text-align:justify; }
+    div.coffeeRoasting_info dl.text br { display:none; }
+    div.coffeeRoasting_wrap h3.title span { display:inline; padding-left:2%; }
+    
+    div.coffeeBlending_wrap { height:auto}
+    div.blending_text { width:48%; padding-bottom:8%; }
+    p.blending_img { float:right; width:40%; padding:0;}
+    div.coffeeObtain_wrap {padding-bottom:120px;}/* 20210914 추가 */
+    div.coffeeObtain_wrap dl.obtainInfo_text { margin-left:44%; text-align:justify; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dt span { display:inline; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 br { display:none; }
+
+    p.cultivation_img { width:50%; }
+    div.cultivation_text { width:48%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.cultivation_text p.t1 br { display:none; }
+    /* 20210914 추가 */
+    div.coffeeCultivation_wrap dl.cultivation_text { width:48%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.coffeeCultivation_wrap dl.cultivation_text p.text1 br { display:none; }
+    /* //20210914 추가 */
+
+    div.cultivationInfo_wrap dl.cultivationInfo_text { width:52%; }
+    div.cultivationInfo_wrap p.cultivationInfo_img { float:right; width:43%; }
+
+    /* 탭 5번 */
+    div.cloverExtraction_info_01 dl.ceInfo_text { width:45%; text-align:justify; }
+    div.cloverExtraction_info_01 dl.ceInfo_text br { display:none; }
+    div.cloverExtraction_info_01 p.ceInfo_img { float:right; width:48%;}
+    
+    div.cloverExtraction_info_02 p.ceInfo_img { width:50%; height:300px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text {  float:right; width:45%; height:auto; padding:0 0 0 2%; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd br { display:none; }
+    
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text1 span { display:inline; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text2,
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text3 { text-align:justify; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text2 br,
+    div.cloverExtraction_info_02 dl.ceInfo_text p.text3 br { display:none; }
+
+	dl.ceInfo_text_res,
+	dl.ceInfo_text_res2 { width:51%; }
+
+	dl.ceInfo_text_res { padding:0 0 0 1%; }
+
+	dl.ceInfo_text_res p.text1,
+	dl.ceInfo_text_res2 p.text1 { font-size:18px; }
+
+	p.ceInfo_img_res,
+	p.ceInfo_img_res2 { width:48%; }
+
+    /* 스타벅스 리저브 상세 */
+    div.product_view_wrap1 div.product_view_detail p.t1 { padding-bottom:20%; }
+
+    /* 나와 어울리는 커피 찾기 */
+    div.find_frame { width:96%; }
+    div.find_section { width:96%; padding-top:10%; }
+    div.findWrap ul.find_taste { width:100%; }
+    div.findWrap ul.find_taste li { width:21%; margin-right:4%; }
+
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:21%; margin-right:16.4%;}
+
+    /* 나와 어울리는 커피 찾기 상세 */
+    section.cf_productFinder_wrap { width:96%; }
+    div.cf_productFinder_pic { width:40%; }
+    div.cf_productFinder_pic p { width:100%; }
+    div.cf_productFinder_pic p img{ width:100%; }
+    div.cf_productFinder_ditail { width:55%; }
+    article.cf_pFinder_bottom_inner { width:96%; }
+
+    ul.cf_pf_list { width:100%; margin-left:2%; }
+    ul.cf_pf_list li { width:30%; margin-left:2%; }
+
+    .myAssignZone header h4 { width:62%; }
+
+    ul.cf_pf_list li dl dt { width:100%; height:inherit; }
+    ul.cf_pf_list li dl dt img { width:100%; }
+
+	div.reserve_ing_tit { width:100%; }
+	div.reserve_end_tit { width:100%; }
+}
+
+@media screen and (min-width:641px) and (max-width:960px) {
+
+	.bnr_rserve_mid { background-size:10% auto; padding:5% 20% 5% 5%; }
+	.bnr_rserve_txt br { display:none; }
+	.icon_reserve { width:60%;   } /* 20170713 수정*/
+
+	/* 160718 상세 프로모션 및 사이렌오더 추가 */
+	div.productView_footmenu_inner { width:96%; }
+	div.productView_top_left { width:50%; }
+	div.productView_top_right { width:49.8%; }
+	div.productView_top_right dl { width:100%; }
+	div.productView_top_right dt { width:41.53%; }
+	div.productView_top_right dd { width:55.47%; }
+	/* 160718 상세 프로모션 및 사이렌오더 추가 end */
+
+	/* 메인 동영상 슬라이드 추가 - 구명준 */
+	.coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div.video { padding:0 0 30% 0; }
+	/* 메인 동영상 슬라이드 추가 end */
+
+    /* 메인 */
+    .coffeeSlideArea { height:200px; }
+    .coffeeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_slider li div { height:200px; width:1000px !important; position:relative; left:50%; margin-left:-500px; top:0; }
+    .coffeeSlideArea .bxslide_btn_wrap { top:75px; }
+    .coffeeSlideArea #prevBtn, 
+	.coffeeSlideArea #nextBtn { top:80px; }
+    .coffeeSlideArea #prevBtn a { width:38.25px; height:38.25px; }
+    .coffeeSlideArea #nextBtn a { width:38.25px; height:38.25px; }
+
+    .coffee_bottomSlideArea { height:200px; }
+    .coffee_bottomSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.coffee_bottom_slider li div.bg { height:200px; width:1000px !important; position:relative; left:50%; margin-left:-500px; top:0; }
+    .coffee_bottomSlideArea .bxslide_btn_wrap { top:75px; }
+    .coffee_bottomSlideArea #prevBtn2, 
+	.coffee_bottomSlideArea #nextBtn2 { top:80px; }
+    .coffee_bottomSlideArea #prevBtn2 a { width:38.25px; height:38.25px; }
+    .coffee_bottomSlideArea #nextBtn2 a { width:38.25px; height:38.25px; }
+
+    /* 150722 성연욱 추가 */
+    ul.coffee_bottom_slider li.slide-main_01 div.text { width:252px; top:40px; margin-left:70px; }
+    ul.coffee_bottom_slider li.slide-main_01 div.btn_text { width:80px; height:22px; line-height:22px; font-size:12px; top:140px; margin-left:70px; }
+
+    ul.coffee_bottom_slider li.slide-main_02 div.text { width:252px; top:50px; left:5%; margin-left:0; }
+    ul.coffee_bottom_slider li.slide-main_02 div.btn_text { width:80px; height:22px; line-height:22px; font-size:12px; top:140px; left:5%; margin-left:0; }
+
+    ul.coffee_bottom_slider li.slide-main_03 div.text { width:252px; top:40px; margin-left:70px; }
+    ul.coffee_bottom_slider li.slide-main_03 div.btn_text { width:80px; height:22px; line-height:22px; font-size:12px; top:140px; margin-left:70px; }
+    /* 150722 성연욱 추가 end */
+
+    section.coffee_choice_wrap { height:200px; }
+    section.coffee_reserve_wrap { height:200px; }
+    section.coffee_espresso_wrap { height:200px; }
+    section.coffee_best_wrap { height:200px; }
+	/* 150806 추가 */
+	section.coffee_hs_wrap { height:200px; }
+
+    div.coffee_wrap_inner { width:100%; }
+    
+    p.coffee_choice_txt { left:60%; top:40px; width:228px; }
+    div.coffee_choice_btn { left:60%; top:140px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+    p.coffee_reserve_txt { left:2%; top:55px; width:184px; }
+    div.coffee_reserve_btn { left:2%; top:130px; width:80px; height:22px; line-height:22px; font-size:12px; }
+    p.coffee_reserve_btn { width:80px; height:22px; line-height:22px; font-size:12px; left:50%; margin-left:-276px; top:140px; }
+
+    p.coffee_espresso_txt { left:60%; top:40px; width:252px;  }
+    div.coffee_espresso_btn { left:60%; top:140px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+    p.coffee_best_txt { left:2%; top:40px; width:220px; }
+    div.coffee_best_btn { left:2%; top:140px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	/*  150806 추가 */
+	 p.coffee_hs_txt { left:60%; top:40px; width:252px;  }
+    div.coffee_hs_btn { left:60%; top:140px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+    /* 스타벅스 리저브 */
+    section.content_top div.coffee_content { width:96%; margin:0 auto; }
+    div.summary_full p.t1 { letter-spacing:-0.9px; }
+    div.content_bottom div.coffee_content { width:96%; margin:0 auto; }
+    /*
+	div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-10%; margin-left:-50%; }
+    div.product_list_wrap ul.product_list > li { margin-left:4.5454%; width:43.333%; }
+	*/
+    div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list_wrap ul.product_list > li { width:23.6363%; margin:0.6%; }
+    div.product_list_wrap ul.product_list li dl { width:100%; height:auto; }
+    div.product_list_wrap ul.product_list li dl dt { width:100%; height:auto; }
+
+    /* 커피 제품 view */    
+    div.coffee_content { width:96%; margin-left:-48%; }
+    div.product_view_wrap1 { width:100%; }
+    div.product_view_wrap1 div.product_view_pic { width:40.9090%; }
+    div.product_view_wrap1 div.product_view_detail { width:55.4545%; }
+
+    div.product_view_wrap1 div.product_view_pic div.product_big_pic { width:100%; height:auto; }
+    div.product_view_wrap1 div.product_view_pic ul { width:100%; }
+    div.product_view_wrap1 div.product_view_pic ul.product_thum li { width:24%; margin-right:1.2%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list01 { width:48%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list02 { width:48%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img { width:100%; height:auto; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.c_2a1b15 { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.product_investigate_txt { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_info_head { margin-top:0px; }
+    div.zoomWindowContainer div { width:100% !important; height:100% !important; left:0 !important; top:0 !important; }
+    div.zoomLens { border:0 !important; background:none !important; }
+
+    div.product_view_wrap2 { width:100%; }
+    div.product_view_wrap2 div.productInvestigate_left { width:62.2727%; padding-right:3.6363%; }
+    div.product_view_wrap2 div.productInvestigate_left p.text { font-size:12px; letter-spacing:-0.1px; }
+    div.product_view_wrap2 div.productInvestigate_right { width:30.4545%; padding: 0 1.8181% 0 1.8181%; }
+    div.product_view_wrap2 div.productInvestigate_left ul { width:100%; margin-left:-2.2727%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li { width:45.5%; margin-left:2.2727%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li p { width:100%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd { font-size:11px; letter-spacing: -0.9px; }
+
+    div.productView_footmenu div.productView_footmenu_inner { width:96%; margin:0 auto;}
+    div.productView_bottom div.productRel_wrap li dl { width:100%; }
+    div.productView_bottom div.productRel_wrap li dl dt { width:48%; height:auto; }
+    div.productView_bottom div.productRel_wrap li dl dd { width:46%; padding:0 3%; height:auto; }
+
+    div.productView_bottom div.productRel_wrap li dd p.t2 { font-size:12px; margin-bottom:10%; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn { position:static; font-size:12px; width:97px;  }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a { width:100%; margin-left:0px; }
+    div.product_view_wrap1 div.product_view_detail div.myLine_up a { /* width:130px; */ padding:10px 0; height:auto; line-height:1; /* font-size:10px; */ }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.bbs_search { height:46px; }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.select_box{  width:197px; background:#fff url("../img/coffee/select_arrow.png") no-repeat 176px center; }
+    div.product_view_wrap1 div.product_view_detail div.bbs_search div.select_box select{ width:199px; }
+    
+    /* 커피 제품 view end */
+    .sub_tit_wrap div.sub_tit_inner { width:96%; }
+    div.product_list > dl > dd > ul { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list > dl > dd > ul > li { width:23.6363%; margin:0.6%; }
+    div.product_list > dl > dd > ul li dl { width:100%; height:auto; }
+    div.product_list > dl > dd > ul li dl dt { width:100%; height:auto; }
+    
+    /* 150619 (에소프레소 음료) */
+    article.cf_espressoBottom_inner, 
+    article.cf_espressoTop_inner { width:96%; }
+    ul.smap { display:none; }
+
+    ul.cf_espressoClasslcs_list { width:100%; margin-left:-2%; }
+    ul.cf_espressoClasslcs_list li { width:48%; margin-left:2%; }
+    ul.cf_espressoClasslcs_list li dl dt { width:100%; height:auto; text-align:justify; }
+    ul.cf_espressoClasslcs_list li dl dd br { display:none; }
+
+    /* 150619 (에소프레소 음료) 도피오 */
+    dl.cf_espressoClasslcs_info dt span { display:inline; }
+    dl.cf_espressoClasslcs_info dd p br { display:none; }
+
+    /* 150619 (최상의 커피를 즐기는 법) */
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab { width:24%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:26.1%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:50.2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:74.1%; margin:0; }
+	
+	/* div.coffee_higher_enjoy dl.content_tabmenu dt.tab { width:19%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { width:100%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { width:100%; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:21.2%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:40.3%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:59.5%; margin:0; }
+	    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 { left:78.5%; margin:0; } */
+
+    div.higher_enjoy_youtube { width:100%; height:530px; }
+    div.higher_enjoy_youtube iframe { width:100%; margin:0 auto; }
+    div.coffee_content { width:96%; margin:0 auto; left:auto; }
+    ul.coffee_info li { width:100%; }
+    ul.coffee_info li p.coffee_info_img { width:45.4545%; height:auto; margin:0; }
+    ul.coffee_info li dl.coffee_info_text { width:45.4545%; float:right; }
+    ul.coffee_info li dl.coffee_info_text dd p { text-align:justify; }
+    ul.coffee_info li dl.coffee_info_text dd p br { display:none; }
+
+	/* 탭5개 */
+	/* 20210914 수정 */
+	div.coffee_story dl.content_tabmenu dt.tab { width:19.2%; }
+    div.coffee_story dl.content_tabmenu dt.tab a { width:auto; }
+    div.coffee_story dl.content_tabmenu dt.tab.on a { width:auto; }
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_02 { left:21.2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:40.4%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:59.6%; margin:0; }  /* 20170821  수정*/
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:78.8%; margin:0; } /* 20170821  수정*/
+    /* //20210914 수정 */
+
+	/* 160829 수정 (커피이야기) 탭4개
+	div.coffee_story dl.content_tabmenu dt.tab { width:24%; }
+    div.coffee_story dl.content_tabmenu dt.tab a { width:100%; }
+    div.coffee_story dl.content_tabmenu dt.tab.on a { width:100%; }
+    div.coffee_story dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_03 { left:26.2%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_04 { left:50.3%; margin:0; }
+    div.coffee_story dl.content_tabmenu dt.tab_05 { left:74.3%; margin:0; }
+	*/
+
+    div.cfs01_bottom ul.cfs01_bottom_list { width:100%; margin:0; }
+    div.cfs01_bottom ul.cfs01_bottom_list li { width:100%; margin:0; }
+    div.cfs01_bottom ul.cfs01_bottom_list li:after { content:""; display:block; clear:both; }
+    ul.cfs01_bottom_list li p.img { width:48%; height:auto; margin-bottom:30px; float:left; }
+    ul.cfs01_bottom_list li p.img span.dim_txt1,
+    ul.cfs01_bottom_list li p.img span.dim_txt2,
+    ul.cfs01_bottom_list li p.img span.dim_txt3 { width:97%; }
+    ul.cfs01_bottom_list li dl { float:right; width:50%; }
+    ul.cfs01_bottom_list li dl.cfs01_text dt h4 { letter-spacing:-0.5px; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p { text-align:justify; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p br { display:none; }
+
+    ul.scfs02_list { width:100%; } 
+    ul.scfs02_list li div.scfs02_list_l { width:60%; }
+    ul.scfs02_list li div.scfs02_list_l ul li { width:48%;}
+    ul.scfs02_list li dl.scfs02_list_r { width:40%; float:right; padding:0; height:auto; }
+    ul.scfs02_list li dl.scfs02_list_r dd p { text-align:justify; font-size:12px; line-height:1.2; padding-bottom:11%; }
+    ul.scfs02_list li dl.scfs02_list_r dt { margin-bottom:10px; }
+    ul.scfs02_list li dl.scfs02_list_r dd p br { display:none; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more { bottom:0; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a { padding:0; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a img { vertical-align:top; padding:0; }
+    
+    div.cfs02_full_top p.t1 br { display:none; }
+
+    ul.scfs02_list li div.scfs02_list_l ul li { margin-left:2%; margin-bottom:10px; width:48%; }
+
+    /* (커피이야기) 탭3 */
+    dl.higherAravica > dd span.bigImg_bg { right:8%; }
+    dl.higherAravica > dd dl.text > dt { margin-top:42%; }
+    dl.higherAravica > dd div.youtube { width:50%; }
+    dl.higherAravica > dd dl.text { width:48%; float:right; }
+
+    div.aravica_info_01 p.img { width:50%; }
+    div.aravica_info_01 dl.text { float:right; width:48%; height:auto; padding:0; }
+    
+    div.aravica_info_02 dl.text { width:48%; height:auto; padding:0; }
+    div.aravica_info_02 p.img { float:right; width:47%;}
+
+    div.aravica_info_03 p.img { width:50%; }
+    div.aravica_info_03 dl.text { float:right; width:48%; height:auto; padding:0; margin-top:10%; }
+
+    div.aravica_info_04 dl.text { width:48%; height:auto; padding:0; margin-top:6%; }
+    div.aravica_info_04 p.img {  float:right; width:47%; margin-top:4%; }
+    
+    div.aravica_info_05 p.img { width:50%; }
+    div.aravica_info_05 dl.text { float:right; width:48%; height:auto; padding:0; }
+    
+    div.aravica_info_01 dl.text dt,
+    div.aravica_info_02 dl.text dt,
+    div.aravica_info_03 dl.text dt,
+    div.aravica_info_04 dl.text dt,
+    div.aravica_info_05 dl.text dt { font-size:18px; line-height:1.2; }
+    div.aravica_info_01 dl.text dd p,
+    div.aravica_info_02 dl.text dd p,
+    div.aravica_info_03 dl.text dd p,
+    div.aravica_info_04 dl.text dd p,
+    div.aravica_info_05 dl.text dd p { font-size:12px; padding-left:0; }
+    
+    div.higherAravica_wrap dl.text { text-align:justify; }
+    div.higherAravica_wrap dl.text br { display:none; }
+
+    /* 4번 탭 */
+    div.coffeeRoasting_info p.img { width:100%; height:auto; float:none; text-align:center; margin-bottom:6%; }
+    div.coffeeRoasting_info dl.text { width:96%; height:auto; padding:0; text-align:justify; margin:0 auto; }
+    div.coffeeRoasting_info dl.text br { display:none; }
+    div.coffeeRoasting_wrap h3.title { padding-left:2%; }
+    div.coffeeRoasting_wrap h3.title span { display:inline; padding-left:2%; }
+    
+    div.coffeeBlending_wrap { height:auto; position:relative;}
+    div.blending_text { float:none; width:100%; padding-bottom:8%; padding-top:80%; }
+    p.blending_img { float:none; width:100%; position:absolute; top:0; }
+    div.blending_text dl.blendingInfo_text dd p.text2 { padding-bottom:8%; }
+    div.coffeeObtain_wrap dl.obtainInfo_text { margin-left:0; text-align:justify; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dt span { display:inline; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 br { display:none; }
+
+    p.cultivation_img { float:none; width:100%; text-align:center; margin-bottom:6%; }
+    div.cultivation_text { width:95%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.cultivation_text p.t1 br { display:none; }
+    div.cultivation_text p.t2 br { display:none; }
+    /* 20210914 추가 */
+    div.coffeeCultivation_wrap dl.cultivation_text { width:95%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.coffeeCultivation_wrap dl.cultivation_text p.text1 br { display:none; }
+    /* //20210914 추가 */
+
+    div.cultivationInfo_wrap dl.cultivationInfo_text { float:none; width:100%; padding-bottom:0%; padding-top:44%; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dt { text-align:left; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text1{ text-align:left; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text2{ text-align:left; }
+    div.cultivationInfo_wrap p.cultivationInfo_img { float:none; width:100%; position:absolute; top:0; left:50%; margin-left:-47%; }
+
+    div.coffeeObtain_wrap p.bigImg01 span { display:none; }
+    div.cultivationInfo_wrap { position:relative; }
+    
+    /* 탭 5번 */
+    div.cloverExtraction_info_01 { position:relative; }
+    div.cloverExtraction_info_01 dl.ceInfo_text { width:100%; text-align:justify; padding-bottom:0; padding-top:44%; }
+    div.cloverExtraction_info_01 dl.ceInfo_text br { display:none; }
+    div.cloverExtraction_info_01 p.ceInfo_img { float:none; width:100%; height:auto; position:absolute; top:0; left:0%; margin-left:0; text-align:center; }
+
+    div.cloverExtraction_info_01 dl.ceInfo_text dd p.text1 span { display:inline; padding-left:0; }
+
+    div.cloverExtraction_info_02 p.ceInfo_img { float:none; width:100%; height:auto; text-align:center; }
+    div.cloverExtraction_info_02 dl.ceInfo_text {  float:none; width:96%; height:auto; padding:0 0 0 0%; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd br { display:none; }
+    
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text1 span { display:inline; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text2,
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text3 { text-align:justify; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text2,
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text3 br { display:none; }
+
+    div.cfs05_full_top h3.title span { display:inline; padding-left:0; }
+
+    div.cloverExtraction_ber { height:65%; }
+    div.cloverExtraction_ber dl dt { float:none; background:none; height:0; line-height:1.6; padding:2.4% 0; }
+    div.cloverExtraction_ber dl dd { width:50%; height:0; line-height:1.6; padding:0; margin-top:2%; }
+    div.cloverExtraction_ber p.btn_cloverExtraction { right:5%; top:30%; }
+    div.cloverExtraction_ber dl { margin-left:18%; height:120px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dt { margin-top:8%; }
+
+	dl.ceInfo_text_res,
+	dl.ceInfo_text_res2 { float:none; width:100%; }
+
+	dl.ceInfo_text_res { padding:0; }
+
+	dl.ceInfo_text_res p.text1,
+	dl.ceInfo_text_res2 p.text1 { font-size:18px; }
+
+	p.ceInfo_img_res,
+	p.ceInfo_img_res2 { margin-bottom:30px; width:100%; text-align:center; }
+
+    /* 스타벅스 리저브 상세 */
+    div.product_view_wrap1 div.product_view_detail p.t1 { padding-bottom:5%; }
+
+    /* 나와 어울리는 커피 찾기 */
+    div.find_frame { width:96%; }
+    div.find_section { width:96%; padding-top:10%; }
+    div.findWrap ul.find_taste { width:100%; }
+    div.findWrap ul.find_taste li { width:22%; margin-right:4%; }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:21%; margin-right:16.4%; }
+
+    /* 나와 어울리는 커피 찾기 상세 */
+    section.cf_productFinder_wrap { width:96%; }
+    div.cf_productFinder_pic { width:40%; }
+    div.cf_productFinder_pic p { width:100%; }
+    div.cf_productFinder_pic p img{ width:100%; }
+    div.cf_productFinder_ditail { width:55%; }
+    article.cf_pFinder_bottom_inner { width:96%; }
+
+    ul.cf_pf_list { width:100%; margin-left:2%; }
+    ul.cf_pf_list li { width:46%; margin-left:2%; }
+
+    .myAssignZone header h4 { width:61%; }
+
+    ul.cf_pf_list li dl dt { width:100%; height:inherit; }
+    ul.cf_pf_list li dl dt img { width:100%; }
+
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste { height:inherit; line-height:inherit; padding:10px; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste img { width:30px; margin:5px 10px 0 0; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste strong { background: none; margin-top:5px; display:inline-block; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste span { display:block; padding-left:40px; position:relative; top:-7px; }
+
+	div.reserve_ing_tit { width:100%; }
+	div.reserve_end_tit { width:100%; }
+
+	/* 20210915 추가 */
+	div.product_kind_wrap div.product_select_wrap ul { width:100%; margin-bottom:-10px;}
+    div.product_kind_wrap div.product_select_wrap ul li { width: 20%; margin:0 0 10px 0;}
+    /* //20210915 추가 */
+
+	#cf_select_wrap, 
+	#cf_select_wrap2, 
+	#cf_select_wrap3 { left:50%; margin-left:-50%; right:initial; width:100%; }
+	
+	#cf_select_wrap .select,
+	#cf_select_wrap2 .select,
+	#cf_select_wrap3 .select { background-position:98% center; width:98.6%; }
+	
+	#cf_select_wrap .opt,
+	#cf_select_wrap2 .opt,
+	#cf_select_wrap3 .opt { width:100%; }
+}
+
+@media screen and (min-width:641px) and (max-width:880px) {
+
+    div.coffee_story dl.content_tabmenu dt.tab a { font-size:12px; letter-spacing:-1.5px; }
+
+	/* 170105 황기흠 수정 */
+	.reserve_info_warn { color:#666; font-size:14px; line-height:1.6; margin:0 auto 40px; }
+	.w880 { display:block; }
+	/* 170105 황기흠 수정 end */
+}
+
+@media screen and (min-width:641px) and (max-width:734px) {
+
+    div.product_toggle_wrap { width:100%; }
+    dl.product_kind_tab dt { position:absolute; top:30px; width:30%; }
+    dl.product_kind_tab dt a { width:100%;}
+    dl.product_kind_tab dt.dt1 { left:0; }
+    dl.product_kind_tab dt.dt2 { left:180px; }
+    dl.product_kind_tab dt.dt3 { left:360px; }
+
+    div.cfs01_full_top h3.title { letter-spacing:-0.5px; }
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+
+    div.productView_bottom div.productRel_wrap li { width:33.3333%; }
+    div.productView_bottom div.productRel_wrap li dt { float:none; width:160px !important; margin:0 auto; margin-bottom:20px; }
+    div.productView_bottom div.productRel_wrap li dd { float:none; width:160px !important; margin:0 auto; }
+    div.zoomWindowContainer div { width:100% !important; height:100% !important; left:0 !important; top:0 !important; }
+    div.zoomLens { border:0 !important; background:none !important; }
+
+    /* 커피 제품 view end */
+    div.product_list > dl > dd > ul { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list > dl > dd > ul > li { width:31.6363%; margin:0.8%; }
+    div.product_list > dl > dd > ul li dl { width:100%; height:auto; }
+    div.product_list > dl > dd > ul li dl dt { width:100%; height:auto; }
+
+    div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list_wrap ul.product_list > li { width:31.6363%; margin:0.8%; }
+    div.product_list_wrap ul.product_list li dl { width:100%; height:auto; }
+    div.product_list_wrap ul.product_list li dl dt { width:100%; height:auto; }
+}
+
+@media screen and (max-width:640px) {
+ .w640 { display:block; }/*20170821 추가 2차*/
+	/* 170105 황기흠 수정 */
+	/* .reserve_coffee_cont_top { width:96%; margin:0 auto; } 기존 소스*/
+	 .reserve_coffee_cont_top { margin:0 18px; } /* 20170718 수정소스*/
+	section.content_top div.coffee_content.reserve_coffee_cont { width:100%; }
+	.reserve_info_wrap { margin:0 auto; padding:30px 0; }
+	.reserve_info_ttl {margin:0 auto 15px; width:42%; } /* 이미지 수정 20170713*/
+	.reserve_info_ttl  .p { display: none; } /*  20170713  추가*/
+	.reserve_info_ttl  .m { display: block; } /*  20170713  추가*/
+	.reserve_info_ttl  img {width: 100%; } /*  20170713  추가*/
+	.bnr_rserve_mid { background-position:center 90%; padding:5% 5% 35%; }
+	.bnr_rserve_ttl { font-size:18px; }
+	.bnr_rserve_txt br { display:none; }
+	.icon_reserve { background:url("../img/coffee/m_icon_reserve_info2-1.png") no-repeat; background-size:100% auto; width:65%; } /* 20170713*/
+	.reserve_info_warn {margin: 0 40px 40px 40px; letter-spacing: -.3px; font-size:12px} /* 20170718 수정*/
+	.btn_reserve_more a { width:70%; } /* 20170713 수정*/
+	.icon_reserve img.p {display: none; }/* 20170713 수정*/
+	.icon_reserve img.m {display: block; }/* 20170713 수정*/
+	/* 170105 황기흠 수정 end */
+
+	#cf_select_wrap, 
+	#cf_select_wrap2, 
+	#cf_select_wrap3 { left:50%; margin-left:-50%; right:initial; width:100%; }
+	
+	#cf_select_wrap .select,
+	#cf_select_wrap2 .select,
+	#cf_select_wrap3 .select { background-position:98% center; width:98.6%; }
+	
+	#cf_select_wrap .opt,
+	#cf_select_wrap2 .opt,
+	#cf_select_wrap3 .opt { width:100%; }
+
+	/* 160718 상세 프로모션 및 사이렌오더 추가 */
+	div.productView_footmenu_inner { width:96%; }
+	div.productRel_wrap li { width:100%; float:none; margin-bottom:10px; }
+	div.productRel_wrap li dl { width:100%; }
+	div.productRel_wrap li dt { width:45%; height:auto; }
+	div.productRel_wrap li dt img { width:100%; }
+	div.productRel_wrap li dd { width:52%; padding-left:3%; height:auto; }
+	div.productRel_wrap li dd:after { content:""; display:block; clear:both; }
+	div.productRel_wrap li dd p.more_btn { position:static; float:right; }
+	div.productRel_wrap li dd p.t2 { margin-bottom:10px; }
+
+	div.productView_top { margin-bottom:40px; }
+
+	div.productView_top_left { float:none; width:100%; border-bottom:1px solid #ddd; padding-bottom:10px; margin-bottom:30px; }
+	div.productView_top_right { float:none; width:100%; }
+
+	div.productView_top_left p.more { right:0; width:20px; }
+	div.productView_top_right dl { width:100%; }
+	div.productView_top_right dt { width:40%; }
+	div.productView_top_right dd { width:57%; }
+
+	.productView_footmenu_inner p.m_hidden_btn { width:100%; height:36px; line-height:36px; background:#006633; border-radius:3px; margin-bottom:30px; }
+	.productView_footmenu_inner p.m_hidden_btn a { display:block; color:#fff; font-weight:bold; font-size:13px; text-align:center; }
+
+	div.productView_top_right p.reserve_btn { display:none; }
+	.productView_footmenu p.m_hidden_btn { display:block; }
+	/* 160718 상세 프로모션 및 사이렌오더 추가 end */
+
+	/* 메인 동영상 슬라이드 추가 - 구명준 */
+	.respon_video { width:100%; padding-bottom:20%; background:#000; position:relative; }
+	.respon_video iframe { left:0 !important; margin-left:0 !important; height:90% !important; position:absolute; width:100% !important; }
+
+	div.m_main_slide .bx-wrapper .bx-viewport { height:0 !important; padding-bottom:140% !important; }
+	/* 메인 동영상 슬라이드 추가 - 구명준  end */
+
+    .coffeeSlideArea { display:none; }
+    .coffee_bottomSlideArea { display:none; }
+
+    section.coffee_choice_wrap { height:inherit; }
+    section.coffee_reserve_wrap { height:inherit; }
+    section.coffee_espresso_wrap { height:inherit; }
+    section.coffee_best_wrap { height:inherit; }
+	/* 150806 추가  */
+	section.coffee_hs_wrap { height:inherit; }
+
+    div.coffee_wrap_inner { width:100%; }
+
+    p.coffee_choice_txt { width:320px; left:50%; top:130px; margin-left:-160px; }
+    p.coffee_reserve_txt { width:320px; left:50%; top:130px; margin-left:-160px; }
+    p.coffee_espresso_txt { width:320px; left:50%; top:130px; margin-left:-160px; }
+    p.coffee_best_txt { width:320px; left:50%; top:130px; margin-left:-160px; }
+	/* 150806 추가  */
+    p.coffee_hs_txt { width:320px; left:50%; top:130px; margin-left:-160px; }
+
+    div.coffee_choice_btn { left:50%; margin-left:-60.5px; top:310px; }
+    div.coffee_reserve_btn { left:50%; margin-left:-60.5px; top:360px; }
+    p.coffee_reserve_btn { left:50%; margin-left:-60.5px; top:360px; }
+    div.coffee_espresso_btn { left:50%; margin-left:-60.5px; top:280px; }
+    div.coffee_best_btn { left:50%; margin-left:-60.5px; top:280px; }
+	/* 150806 추가  */
+    div.coffee_hs_btn { left:50%; margin-left:-60.5px; top:290px; }
+
+    .m_main_b_slide { display:block; overflow:hidden; position:relative; border-bottom:2px solid #0d6035; }
+    .m_main_b_slide .bx-wrapper { margin:0 auto; }
+    .m_main_b_slide .bx-wrapper img { width:100%; }
+
+    .m_main_b_slide .bx-wrapper .bx-prev { display:none; }
+    .m_main_b_slide .bx-wrapper .bx-next { display:none; }
+
+    .m_main_b_slide #mb_prevBtn { position:absolute; left:3%; top:38%; z-index:9997; }
+    .m_main_b_slide #mb_nextBtn { position:absolute; right:3%; top:38%; z-index:9997; }
+    .m_main_b_slide #mb_prevBtn a { 
+        display:block;
+        background: url("../img/common/arrow_left.png") no-repeat center center transparent;
+        width:51px;
+        height:51px;
+        text-indent:-20000px;
+        border:2px solid #fff;
+        border-radius:27.5px;
+        -webkit-border-radius:27.5px;
+        transition:background-color .7s, color .7s;
+        -webkit-transition:background-color .7s, color .7s;
+    }
+    .m_main_b_slide #mb_prevBtn a:hover { background:#fff url("../img/common/arrow_left_on.png") no-repeat center center; border:2px solid #fff; }
+
+    .m_main_b_slide #mb_nextBtn a { 
+        display:block;
+        background:url("../img/common/arrow_right.png") no-repeat center center transparent;
+        width:51px;
+        height:51px;
+        text-indent:-20000px;
+        border:2px solid #fff;
+        border-radius:27.5px;
+        -webkit-border-radius:27.5px;
+        transition:background-color .7s, color .7s;
+        -webkit-transition:background-color .7s, color .7s;
+    }
+    .m_main_b_slide #mb_nextBtn a:hover { background:#fff url("../img/common/arrow_right_on.png") no-repeat center center; border:2px solid #fff; }
+    .m_main_b_slide li { position:relative; }
+    .m_main_b_slide p.txt { position:absolute; width:300px; left:50%; top:130px; margin-left:-150px; }
+    .m_main_b_slide p.btn { width:121px; border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:50%; margin-left:-60.5px; top:310px; }
+    .m_main_b_slide p.btn a { color:#fff; display:block; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+    .m_main_b_slide p.btn a:hover { background:#ffffff; color:#222; }
+
+    .m_main_b_controller { bottom:5%; height:12px; position:absolute; text-align:center; width:100%; z-index:9999; }
+
+    .m_main_b_controls { display:inline-block; height:12px; position:relative; width:9px; }
+    .m_main_b_controls div.bx-controls-auto { position:absolute; }
+    .m_main_b_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+    .m_main_b_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause2-1.png") 0 0; height:15px; width:15px; }
+    .m_main_b_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+    .m_main_b_controls div.bx-controls-auto a.bx-stop:hover,
+    .m_main_b_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+    .m_main_b_pagers { display:inline-block; height:12px; }
+    .m_main_b_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:8px; }
+    .m_main_b_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+    .m_main_b_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/coffee/icon/visual_off2-1.png") 0 0; height:15px; width:15px; }
+    .m_main_b_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/coffee/icon/visual_on.png") 0 0; height:15px; width:15px; }
+
+    article.cf_espressoBottom_inner, 
+    article.cf_espressoTop_inner { width:96%; }
+    ul.smap { display:none; }
+
+    /*  .sub_tit_wrap div.sub_tit_inner { width:96%;} 기존소스*/
+    .sub_tit_wrap div.sub_tit_inner { margin: 0 18px; } /*20170718 수정*/
+	.sub_tit_wrap h2 {width: 70%; }/*20170713 추가*/
+
+    ul.cf_espressoClasslcs_list { width:100%; }
+    ul.cf_espressoClasslcs_list li { width:100%; }
+    ul.cf_espressoClasslcs_list li dl { margin-left:1.5%; }
+    ul.cf_espressoClasslcs_list li dl dt { width:100%; height:auto; }
+    ul.cf_espressoClasslcs_list li dl dd br { display:none; }
+
+    /* 150619 (에소프레소 음료) 도피오 */
+    dl.cf_espressoClasslcs_info dt span { display:inline; }
+    dl.cf_espressoClasslcs_info dd p br { display:none; }
+    /* (에소프레소 음료) 도피오 하단 공통 */
+    div.productView_footmenu div.productView_footmenu_inner { width:96%; }
+    div.productView_bottom div.productRel_wrap li { width:100%; float:none; margin-bottom:40px; }
+    div.productView_bottom div.productRel_wrap li dl { width:100%; }
+    div.productView_bottom div.productRel_wrap li dt { width:40%; height:auto; }
+    div.productView_bottom div.productRel_wrap li dt img { width:100%; }
+    div.productView_bottom div.productRel_wrap li dd { width:56%; height:auto; }
+
+    div.productView_bottom div.productRel_wrap li dd p.more_btn { position:absolute; left:0; bottom:0; left:auto; }
+    div.productView_bottom div.productRel_wrap li dd p.more_btn a { margin:0; padding:0; }
+    div.productView_bottom div.productRel_wrap li dd p.t2 { padding-bottom:16%; }
+
+    /* 150619 (최상의 커피를 즐기는 법) */
+    div.higher_enjoy_titl { display:none; }
+   	div.coffee_higher_enjoy dl.content_tabmenu dt.tab { width:80%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { line-height:20px !important; width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { width:100%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:21.2%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:40.3%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:59.4%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 { left:78.1%; margin:0; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 a { line-height:20px !important; padding-top:0; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05.on a { line-height:20px !important; }
+	div.higher_enjoy_youtube { width:100%; margin-top:40px; }
+    div.higher_enjoy_youtube iframe { width:100%; margin:0 auto; }
+    div.coffee_content { width:96%; margin:0 auto; left:auto; }
+    ul.coffee_info li { width:100%;  }
+    ul.coffee_info li p.coffee_info_img { width:92.8181%; height:auto; margin:auto; float:none; }
+    ul.coffee_info li p.coffee_info_img img { width:100%; }
+    ul.coffee_info li dl.coffee_info_text { width:92.4545%; float:none; margin:0 auto; margin:20px; }
+    ul.coffee_info li dl.coffee_info_text dd p { text-align:justify; }
+    ul.coffee_info li dl.coffee_info_text dd p br { display:none; }
+
+	.reserve_bt_txt i { font-size:14px; }
+
+    div.higher_enjoy_youtube { width:100%; height:185px; }
+    div.higher_enjoy_youtube iframe { width:100%; margin:0 auto; }
+    /* (커피이야기) */
+    div.cfs01_full_top h3.title { letter-spacing:-1px; }
+    
+    div.cfs01_bottom ul.cfs01_bottom_list { width:100%; margin:0; }
+    div.cfs01_bottom ul.cfs01_bottom_list li { width:100%; margin:0; }
+
+    ul.cfs01_bottom_list li p.img { width:96%; height:auto; margin:0 auto; }
+    ul.cfs01_bottom_list li p.img span.dim_txt1,
+    ul.cfs01_bottom_list li p.img span.dim_txt2,
+    ul.cfs01_bottom_list li p.img span.dim_txt3 { width:93.5%; height:55px; line-height:55px; padding-left:3%;}
+    ul.cfs01_bottom_list li dl { width:96%; margin:0 auto; padding:30px 0; }
+    ul.cfs01_bottom_list li dl.cfs01_text dt h4 { letter-spacing:-0.5px; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p { text-align:justify; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p br { display:none; }
+
+    ul.scfs02_list { width:100%; } 
+    ul.scfs02_list li div.scfs02_list_l { width:96%; float:none; }
+    ul.scfs02_list li dl.scfs02_list_r { width:87%; float:none; padding:0; height:auto; margin-top:30px; }
+    ul.scfs02_list li dl.scfs02_list_r dd p { text-align:justify; font-size:12px; line-height:1.2; padding-bottom:11%; }
+    ul.scfs02_list li dl.scfs02_list_r dt { margin-bottom:10px; }
+    ul.scfs02_list li dl.scfs02_list_r dd p br { display:none; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more { bottom:0; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a { padding:0; }
+    ul.scfs02_list li dl.scfs02_list_r dd span.btn_coffee_more a img { vertical-align:top; padding:0; }
+    
+    div.cfs02_full_top p.t1 br { display:none; }
+    ul.scfs02_list li div.scfs02_list_l ul { margin-left:0; padding-right:0;}
+    ul.scfs02_list li div.scfs02_list_l ul li { margin-left:2%; margin-bottom:10px; width:47%; margin:0; }
+    ul.scfs02_list li div.scfs02_list_l ul li.last { float: right; }
+
+    /* (커피이야기) 탭3 */
+    dl.higherAravica > dd span.bigImg_bg { right:auto; left:32%; top:-14%; width:35%; }
+    dl.higherAravica > dd span.bigImg_bg img { width:100%; }
+    dl.higherAravica > dd dl.text > dt { margin-top:42%; letter-spacing:-1px; }
+    dl.higherAravica > dd { height:332px; padding:23% 5% 35% 5%; }
+
+    dl.higherAravica > dd div.youtube { width:100%; margin-bottom:10%; }
+    dl.higherAravica > dd dl.text { width:90%; float:none; margin:0 auto; }
+
+    div.aravica_info_01 p.img { width:100%; float:none; text-align:center; margin-bottom:30px; }
+    div.aravica_info_01 dl.text { float:none; width:93%; height:auto; padding:0; margin:0 auto; }
+    
+    div.aravica_info_02 { position:relative; padding-bottom:52%; } /* 20210914 수정 */
+    div.aravica_info_02 dl.text { float:none; width:93%; height:auto; padding:0; margin-left:-47%; margin-top:30px; position:absolute; top:42.9%; left:50%; } /* 20210914 수정 */
+    div.aravica_info_02 p.img { width:100%; float:none; text-align:center; padding:0; } /* 20210914 수정 */
+    
+    div.aravica_info_03 { padding-bottom:30%; }
+    div.aravica_info_03 p.img { width:100%; text-align:center; float:none; padding-bottom:30%; }
+    div.aravica_info_03 dl.text { float:none; width:93%; height:auto; padding:0; margin-left:-47%; position:absolute; top:78%; left:50%; }
+    
+    div.aravica_info_04 { position:relative; padding-bottom:30%; }
+    div.aravica_info_04 dl.text { float:none; width:93%; height:auto; padding:0; margin-left:-47%; position:absolute; top:68%; left:50%; }
+    div.aravica_info_04 p.img { width:100%; float:none; text-align:center; padding:0; padding-bottom:30%;  }
+    
+    div.aravica_info_05 { position:relative; }
+    div.aravica_info_05 p.img { width:100%; float:none; text-align:center; padding-bottom:30%; }
+    div.aravica_info_05 dl.text { float:none; width:93%; height:auto; padding:0; margin-left:-47%; position:absolute; top:68%; left:50%; }
+    
+    div.aravica_info_01 dl.text dt,
+    div.aravica_info_02 dl.text dt,
+    div.aravica_info_03 dl.text dt,
+    div.aravica_info_04 dl.text dt,
+    div.aravica_info_05 dl.text dt { font-size:18px; line-height:1.2; }
+    div.aravica_info_01 dl.text dd p,
+    div.aravica_info_02 dl.text dd p,
+    div.aravica_info_03 dl.text dd p,
+    div.aravica_info_04 dl.text dd p,
+    div.aravica_info_05 dl.text dd p { font-size:12px; padding-left:0; }
+    
+    div.higherAravica_wrap dl.text { text-align:justify; }
+    div.higherAravica_wrap dl.text br { display:none; }
+
+    /* 4번 탭 */
+    div.coffeeRoasting_info p.img { width:100%; height:auto; float:none; text-align:center; margin-bottom:6%; }
+    div.coffeeRoasting_info dl.text { width:96%; height:auto; padding:0; text-align:justify; margin:0 auto; }
+    div.coffeeRoasting_info dl.text br { display:none; }
+    div.coffeeRoasting_wrap h3.title { padding-left:2%; }
+    div.coffeeRoasting_wrap h3.title span { display:inline; padding-left:2%; }
+    
+    div.coffeeBlending_wrap { height:auto; position:relative;}
+    div.blending_text { float:none; width:100%; padding-bottom:8%; padding-top:80%; }
+    p.blending_img { float:none; width:100%; position:absolute; top:0; }
+    div.blending_text dl.blendingInfo_text dd p.text2 { padding-bottom:8%; }
+    div.coffeeObtain_wrap dl.obtainInfo_text { margin-left:0; text-align:justify; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dt span { display:inline; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1 br { display:none; }
+
+    p.cultivation_img { float:none; width:100%; text-align:center; margin-bottom:6%; }
+    div.cultivation_text { width:95%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.cultivation_text p.t1 br { display:none; }
+    div.cultivation_text p.t2 br { display:none; }
+    /* 20210914 추가 */
+    div.coffeeCultivation_wrap dl.cultivation_text { width:95%; height:auto; padding:0 0 0 2%; text-align:justify; }
+    div.coffeeCultivation_wrap dl.cultivation_text p.text1 br { display:none; }
+    /* //20210914 추가 */
+
+    div.cultivationInfo_wrap dl.cultivationInfo_text { float:none; width:100%; padding-bottom:0%; padding-top:44%; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dt { text-align:left; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text1{ text-align:left; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dd p.text2{ text-align:left; }
+    div.cultivationInfo_wrap p.cultivationInfo_img { float:none; width:100%; position:absolute; top:0; left:50%; margin-left:-47%; }
+
+    div.coffeeObtain_wrap p.bigImg01 span { display:none; }
+    div.cultivationInfo_wrap { position:relative; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dt { text-align:left; }
+    div.cultivationInfo_wrap dl.cultivationInfo_text dt br { display:none; }
+
+    /* 탭 5번 */
+    div.cloverExtraction_info_01 { position:relative; }
+    div.cloverExtraction_info_01 dl.ceInfo_text { width:100%; text-align:justify; padding-bottom:8%; padding-top:62%; }
+    div.cloverExtraction_info_01 dl.ceInfo_text br { display:none; }
+    div.cloverExtraction_info_01 p.ceInfo_img { float:none; width:100%; height:auto; position:absolute; top:0; }
+
+    div.cloverExtraction_info_01 dl.ceInfo_text dd p.text1 span { display:inline; padding-left:0; }
+
+    div.cloverExtraction_info_02 p.ceInfo_img { float:none; width:100%; height:auto; text-align:center; }
+    div.cloverExtraction_info_02 dl.ceInfo_text {  float:none; width:96%; height:auto; padding:0 0 0 2%; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd br { display:none; }
+    
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text1 span { display:inline; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text2,
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text3 { text-align:justify; padding-left:0; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text2,
+    div.cloverExtraction_info_02 dl.ceInfo_text dd p.text3 br { display:none; }
+
+    div.cfs05_full_top h3.title span { display:inline; padding-left:0; }
+
+    div.cloverExtraction_ber { height:65%; }
+    div.cloverExtraction_ber dl dt { float:none; background:none; height:0; line-height:1.6; padding:2.4% 0; }
+    div.cloverExtraction_ber dl dd { width:50%; height:0; line-height:1.6; padding:0; margin-top:5%; }
+    div.cloverExtraction_ber p.btn_cloverExtraction { right:5%; top:30%; }
+    div.cloverExtraction_ber dl { margin-left:18%; height:120px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dt { margin-top:8%; }
+    
+    div.coffee_story div.cfst_select_box_wrap,
+    div.coffee_higher_enjoy div.cf_select_box_wrap { width:96%; margin:0 auto; }
+    div.cfst_select_box_wrap div.cfst_select_box,
+    div.coffee_higher_enjoy div.cf_select_box { display:block; width:100%; height:28px; border:1px solid #ddd; border-radius:3px; position:relative; background:#fff url("../img/coffee/select_arrow.png") no-repeat 98% center; }
+    div.cfst_select_box_wrap div.cfst_select_box label.value,
+    div.coffee_higher_enjoy div.cf_select_box label.value { display:block; margin:0 10px 0 10px; text-align:left; height:28px; line-height:28px;text-indent:4px; font-size:12px; color:#444; font-family:"nbg"; overflow:hidden; }
+    div.cfst_select_box_wrap div.cfst_select_box select,
+    div.coffee_higher_enjoy div.cf_select_box select { padding:0 10px 0 10px; position:absolute; left:0; top:0; width:100%; height:28px; text-align:left; line-height:28px; font-size:12px; color:#444; border:0; background:#fff; font-family:"nbg"; filter:alpha(opacity=0); opacity:0; z-index:20; }
+    
+    div.coffee_story dl.content_tabmenu,
+    div.coffee_higher_enjoy dl.content_tabmenu { padding-top:3%; }
+
+	dl.ceInfo_text_res,
+	dl.ceInfo_text_res2 { float:none; width:100%; }
+
+	dl.ceInfo_text_res { padding:0; }
+
+	dl.ceInfo_text_res p.text1,
+	dl.ceInfo_text_res2 p.text1 { font-size:18px; }
+
+	p.ceInfo_img_res,
+	p.ceInfo_img_res2 { margin-bottom:30px; width:100%; text-align:center; }
+	
+	dl.ceInfo_text_res dt,
+	dl.ceInfo_text_res2 dt,
+	dl.ceInfo_text_res p.text2,
+	dl.ceInfo_text_res2 p.text2,
+	dl.ceInfo_text_res p.text3,
+	dl.ceInfo_text_res2 p.text3 { padding-left:0; }
+
+	dl.ceInfo_text_res p.text2 br,
+	dl.ceInfo_text_res2 p.text2 br,
+	dl.ceInfo_text_res p.text3 br,
+	dl.ceInfo_text_res2 p.text3 br { display:none; }
+
+	/*20170718추가*/
+	.reserve_info_txt { width: 100%; margin: 0 auto 30px; font-size:12px; }
+	.reserve_info_txt  br {display: block !important; }
+	.reserve_info_ttl{width: 50%; }
+
+    /* 스타벅스 리저브 */
+    section.content_top div.coffee_content { width:96%; margin:0 auto; }
+   .cfrsTitl {margin-bottom: 20px;; padding: 0 10px;  }/*20170718 수정*/
+    div.summary_full p.t1 {margin: 0 5px; letter-spacing:-0.2px; font-size: 12px;  } /* 20170718 수정*/
+	div.summary_full p.t2{margin: 0 5px; letter-spacing:-0.2px; font-size: 12px;}
+    div.content_bottom div.coffee_content { width:96%; margin:0 auto; }
+	div.summary_full h3 {line-height: 18px; font-size:15px; font-weight:bold; color:#222; margin: 0 0 15px 0; text-align: center; letter-spacing: -0.5px; text-align: center} /* 20170718 수정  골드색으로 수정*/
+    /*
+	div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-10%; margin-left:-50%; }
+    div.product_list_wrap ul.product_list > li { margin-left:4.5454%; width:43.333%; }
+    */
+    div.product_list_wrap ul.product_list { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list_wrap ul.product_list > li { width: 42.5%; margin:3.5%; }
+    div.product_list_wrap ul.product_list li dl { width:100%; height:auto; }
+    div.product_list_wrap ul.product_list li dl dt { width:100%; height:auto; }
+
+    /* 리저브 상세 슬라이드 */
+    div.product_view_wrap1 div.product_view_pic { display:none; }
+    div.product_view_wrap1 div.product_view_pic div.product_big_pic { display:none; }
+    .m_view_slide { display:block; }
+    div.product_view_wrap1 div.product_view_detail { width:100%; float:none; padding-top:2%; }
+    div.product_view_wrap1 div.product_view_detail p.t1 { padding-bottom:2%; }
+
+    div.m_view_slide { display:block; overflow:hidden; position:relative; width:96%; margin:0 auto; }
+    div.m_view_slide .bx-wrapper img { width:100%; }
+    .m_view_slide .bx-wrapper .bx-prev { display:none; }
+    .m_view_slide .bx-wrapper .bx-next { display:none; }
+
+    .m_view_slide #prevBtn { position:absolute; left:3%; top:38%; z-index:2; }
+    .m_view_slide #nextBtn { position:absolute; right:3%; top:38%; z-index:2; }
+    .m_view_slide #prevBtn a { 
+        display:block;
+        background: url("../img/common/arrow_left.png") no-repeat center center transparent;
+        width:51px;
+        height:51px;
+        text-indent:-20000px;
+        border:2px solid #fff;
+        border-radius:27.5px;
+        -webkit-border-radius:27.5px;
+        transition:background-color .7s, color .7s;
+        -webkit-transition:background-color .7s, color .7s;
+    }
+    .m_view_slide #prevBtn a:hover { background:#fff url("../img/common/arrow_left_on.png") no-repeat center center; border:2px solid #fff; }
+
+    .m_view_slide #nextBtn a { 
+        display:block;
+        background:url("../img/common/arrow_right.png") no-repeat center center transparent;
+        width:51px;
+        height:51px;
+        text-indent:-20000px;
+        border:2px solid #fff;
+        border-radius:27.5px;
+        -webkit-border-radius:27.5px;
+        transition:background-color .7s, color .7s;
+        -webkit-transition:background-color .7s, color .7s;
+    }
+    .m_view_slide #nextBtn a:hover { background:#fff url("../img/common/arrow_right_on.png") no-repeat center center; border:2px solid #fff; }
+
+    .m_view_controller { bottom:20px; height:12px; position:absolute; text-align:center; width:100%; z-index:9999; }
+
+    .m_view_controls { display:inline-block; height:12px; position:relative; width:9px; }
+    .m_view_controls div.bx-controls-auto { position:absolute; }
+    .m_view_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+    .m_view_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause.png") 0 0; height:15px; width:15px; }
+    .m_view_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+    .m_view_controls div.bx-controls-auto a.bx-stop:hover,
+    .m_view_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+    .m_view_pagers { display:inline-block; height:12px; }
+    .m_view_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:8px; }
+    .m_view_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+    .m_view_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/coffee/icon/visual_off.png") 0 0; height:15px; width:15px; }
+    .m_view_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/coffee/icon/visual_on.png") 0 0; height:15px; width:15px; }
+
+    div.product_view_wrap1 { width:100%; }
+    ul.product_thum { overflow:hidden; }
+    div.product_view_wrap1 div.product_view_detail p.t1 { text-align:justify; }
+    div.product_view_wrap1 div.product_view_detail p.t1  br { display:none; }
+
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list01,
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li.investigate_list02 { float:none; width:100%; margin-bottom:4%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img { width:100%; height:auto; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img > img { width:100%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.c_2a1b15 { width:99.8%; }
+    div.product_view_wrap1 div.product_view_detail div.product_investigate ul.product_investigate_list li p.product_investigate_img span.product_investigate_txt { width:98%; }
+
+    div.product_view_info {  width:94%; margin:0 auto; }
+    div.product_view_wrap2 div.productInvestigate_left { float:none; width:100%; padding-right:0; }
+    div.product_view_wrap2 div.productInvestigate_left p.text { margin-bottom:4%; text-align:justify; }
+    div.product_view_wrap2 div.productInvestigate_left p.text br { display:none; }
+    
+    div.product_view_wrap2 div.productInvestigate_left ul { margin-left:0; width:96%; margin:0 auto; }
+    div.product_view_wrap2 div.productInvestigate_left ul li { float:none; width:100%; margin-left:0; margin-bottom:4%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li p { float:left; width:100%; margin-bottom:4%; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd { text-align:justify; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd span.br { display:block; }
+    div.product_view_wrap2 div.productInvestigate_left ul li dl dd br { display:none; }
+    div.product_view_wrap2 div.productInvestigate_right { float:none; width:94%; }
+
+    /* 커피 리스트 */
+    div.product_toggle_wrap { width:100%; }
+    dl.product_kind_tab dt { position:absolute; top:30px; width:32%; }
+    dl.product_kind_tab dt a { width:100%;}
+    dl.product_kind_tab dt.dt1 { left:0; }
+    dl.product_kind_tab dt.dt2 { left:33%; }
+    dl.product_kind_tab dt.dt3 { left:66%; }
+    div.product_kind_wrap div.product_select_wrap ul { width:100%; }
+    div.product_kind_wrap div.product_select_wrap ul li { width: 50%;margin-right: 0;margin-bottom:2%; } /* 20210813 수정 */
+
+    /* 150622 커피 리스트 */
+    div.product_list > dl > dd > ul { width:100%; position:relative; left:50%; top:-0.8%; margin-left:-50%; }
+    div.product_list > dl > dd > ul > li { width: 42.5%; margin:3.5%; }
+    div.product_list > dl > dd > ul li dl { width:100%; height:auto; }
+    div.product_list > dl > dd > ul li dl dt { width:100%; height:auto; }
+
+    div.product_view_wrap1 div.product_view_detail div.myLine_up { /*display:none; position:static;*/ width:100%; margin-bottom:10px; }
+    div.product_view_wrap1 div.product_view_detail div.myLine_up a { width:100%; height:36px; line-height:36px; }
+    div.product_view_wrap1 div.product_view_detail p.t001 { padding:0 0 20px 0; }
+
+    /* 나와 어울리는 커피 찾기 */
+    div.findWrap p.find_con { margin-bottom:5%; }
+    div.find_frame { width:96%; }
+    div.find_section { width:96%; padding-top:10%; }
+    div.findWrap ul.find_taste01 { width:60%; margin-left:20%; }
+    div.findWrap ul.find_taste li { height:190px; }
+    div.findWrap ul.find_taste01 li { width:40%; margin-right:10%; height:208px; }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:21%; margin-right:16.4%; }
+    div.findWrap ul.find_taste02,
+    div.findWrap ul.find_taste03 { width:90%; margin-left:23%; }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:26%; margin-right:10%; }
+    div.findWrap ul.find_taste02 li.ft2_t03,
+    div.findWrap ul.find_taste03 li.ft3_t03 { float:none; position:absolute; top:88%; left:38%; }
+
+    /* 나와 어울리는 커피 찾기 상세 */
+    section.cf_productFinder_wrap { width:96%; }
+    div.cf_productFinder_pic { width:100%; /*display:none !important;*/ }
+    div.cf_productFinder_pic p { width:100%; }
+    div.cf_productFinder_pic p img{ width:100%; }
+    div.cf_productFinder_ditail { width:55%; }
+    article.cf_pFinder_bottom_inner { width:96%; }
+
+    ul.cf_pf_list { width:100%; margin-left:2%; }
+    ul.cf_pf_list li { width:46%; margin-left:2%; }
+
+    .m_cf_productFinder_pic { /*display:block;*/ display:none; margin-bottom:4%; }
+    div.m_cf_productFinder_pic p { width:100%; height:auto; overflow:hidden; text-align:center; }
+    div.m_cf_productFinder_pic p img { transition: transform 1s; -webkit-transition: -webkit-transform 1s; }
+    div.m_cf_productFinder_pic p img:hover { transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); }
+    div.cf_productFinder_ditail { width:100%; margin-top:4%; }
+    div.cf_productFinder_ditail p.text { text-align:justify; }
+    div.cf_productFinder_ditail p.text br { display:none; }
+    div.cf_productFinder_ditail p.title { margin-bottom:8%; line-height:1.6; }
+    
+    ul.cf_pf_list li dl dt { width:100%;  height:auto; }
+
+    div.coffee_story dl.content_tabmenu, div.coffee_higher_enjoy dl.content_tabmenu { padding-top:16px; }
+    /*yys*/
+    dt.box_bg { display:block; width:96%; margin:0 auto; height:35px; background:#fff url("../img/coffee/select_arrow-1.png") no-repeat 98% 15px; border:1px solid #ddd; border-radius:3px; margin-bottom:30px; } /* 이미지 경로 수정했음. 20170713*/
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab.on a { height:20px; line-height:20px; color:#222; background:none; text-align:left; display:block; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab a { height:20px; line-height:20px; color:#222; background:none; text-align:left; display:none; border:0; }
+
+    div.coffee_story  dl.content_tabmenu dt.tab.on a { height:20px; line-height:20px; color:#222; background:none; text-align:left; display:block; }
+    div.coffee_story  dl.content_tabmenu dt.tab a { height:20px; line-height:20px; color:#222; background:none; text-align:left; display:none; border:0; }
+	div.coffee_story  dl.content_tabmenu dt.tab_04 a{top: -15px !important ;} /*20170821 수정 2차*/
+    div.coffee_story dl.content_tabmenu dt.tab_05 h3 { height:20px; line-height:20px; }
+
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_01 { left:4%; top:27px; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_02 { left:4%; top:52px; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_03 { left:4%; top:79px; width:30%; }
+    div.coffee_higher_enjoy dl.content_tabmenu dt.tab_04 { left:4%; top:104px; }
+	div.coffee_higher_enjoy dl.content_tabmenu dt.tab_05 { left:4%; top:129px; }
+
+	/* 20210914 수정 */
+    div.coffee_story  dl.content_tabmenu dt.tab_01 { left:4%; top:26px; margin:0; }  /* 20170821  top  수정 */
+    div.coffee_story  dl.content_tabmenu dt.tab_02 { left:4%; top:54px; margin:0; }/* 20170821  top  수정 */
+    div.coffee_story  dl.content_tabmenu dt.tab_03 { left:4%; top:82px; margin:0; }/* 20170821  top  수정 */
+    div.coffee_story  dl.content_tabmenu dt.tab_04 { left:4%; top:110px; margin:0; }/* 20170821  top  수정 */
+    div.coffee_story  dl.content_tabmenu dt.tab_05 { left:4%; top:134px; margin:0; }/* 20170821  top  수정 */
+    /* //20210914 수정 */
+
+    .myAssignZone header { margin-bottom:10px; }
+	.myAssignZone header h4 { width:100%; }
+
+    div.blending_text h3.blending { padding-top:95px; } /* 20210914 수정 */
+
+	.lineup_pop_wrap { width:96%; left:2%; }
+	.lineup_cont { width:100%; background:url("../img/coffee/bean_taste_arrow.png") 99% 112px no-repeat; }
+	.lineup_cont_copy { margin:30px 0 0 5%; width:95%; }
+	.lineup_cont_tbl { margin:23px 0 0 5%; width:88%; }
+
+	div.cf_productFinder_pic { width:100%; }
+	div.cf_productFinder_pic p { height:inherit; text-align:center; }
+	article.cf_productFinder_inner { padding:0 0 50px 0; }
+
+	div.reserve_ing_tit { width:100%; }
+	div.reserve_end_tit { width:100%; }
+
+	/* 150824 성연욱 추가 */
+	div.product_list_wrap ul.product_list li dd a { text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+	div.product_list_wrap ul.product_list li dd a img {width: 18px; }/* 20170713 추가*/
+
+	div.reserve_ing_tit p { font-size:13px; padding-left:0; text-align: center}
+	div.reserve_end_tit p { font-size:13px; }
+
+	/* 리저브 세미나 */
+	.bnr_rseminar { background:url("../img/coffee/rseminar/bnr_rs_m.png") center top no-repeat; background-size:100% auto; padding-bottom:74.3%; }
+
+	.btn_rs_view { left:7.7192%; top:83.9622%; }
+	/* 리저브 세미나 end */
+
+	/* 160816 나만의 원두 추가 */
+	div.product_view_detail div.myDrink { position:static; margin-bottom:10px; }
+	div.product_view_detail div.myDrink a { width:100%; height:38px; line-height:38px; font-size:14px; }
+}
+
+@media screen and (min-width:600px) and (max-width:639px) {
+
+    div.higher_enjoy_youtube { width:100%; height:350px; }
+    div.higher_enjoy_youtube iframe { width:100%; margin:0 auto; }
+
+    dl.higherAravica > dd div.youtube { width:100%; margin-bottom:10%; height:330px; }
+}
+
+@media screen and (max-width:480px) {
+
+	.reserve_info_wrap { margin:10px auto 45px; } /*20170718수정*/
+	.bnr_rserve_mid { background-size:24% auto; }
+	.reserve_info_txt { width: 240px}
+	/*.reserve_info_txt  br {display: block !important; }
+	.reserve_info_ttl{width: 50%; }*/
+	.reserve_info_txt br { display:none; }
+	.icon_reserve {width: 90%;  margin:0 auto 40px;  background:url("../img/coffee/m_icon_reserve_info2-1.png") no-repeat; background-size:100% auto; } /* 20170713 수정*/
+	
+	div.productView_top { margin-bottom:20px; }
+	div.productView_top_right p.tit { font-size:14px; }
+	div.productView_top_right p.txt { font-size:12px; }
+	
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste { height:inherit; line-height:inherit; padding:10px; width:inherit; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste img { width:30px; margin:5px 10px 0 0; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste strong { background:none; margin-top:5px; display:inline-block; }
+	div.product_view_wrap1 div.product_view_detail p.coffee_taste span { display:block; padding-left:40px; position:relative; top:-7px; }
+
+	/* 160816 나만의 원두 추가 */
+	.only_my_drink { width:96%; margin-left:-48%; }
+	.only_my_drink div.my_drink_sel ul.drink_area li dd { height:45px; }
+
+	.only_my_drink dl.my_sel_drink dd p.t1 { margin-bottom:5px; }
+	.only_my_drink dl.my_sel_drink dt { float:none; width:100%; margin-bottom:20px; }
+	.only_my_drink dl.my_sel_drink dt img { width:100%; }
+	.only_my_drink dl.my_sel_drink dd { float:none; width:100%; }
+
+	.only_my_drink ul.btn_list { width:100%; }
+
+	.only_my_drink2 { width:96%; margin-left:-48%; top:270px; }
+
+	dl.ceInfo_text_res i.reseve_ico,
+	dl.ceInfo_text_res2 i.reseve_ico { display:inline-block; width:30px; }
+	dl.ceInfo_text_res i.reseve_ico img,
+	dl.ceInfo_text_res2 i.reseve_ico img { margin:-5px 0 0 5px; width:100%; }
+}
+
+@media screen and (min-width:320px) and (max-width:599px) {
+
+    div.higher_enjoy_youtube { width:100%; height:300px; margin:0 auto; }
+    
+    ul.cfs01_bottom_list li p.img span.dim_txt1,
+    ul.cfs01_bottom_list li p.img span.dim_txt2,
+    ul.cfs01_bottom_list li p.img span.dim_txt3 { width:96.9%; height:30px; line-height:30px; font-size:12px; }
+    ul.cfs01_bottom_list li dl { width:96%; margin:0 auto; padding:30px 0; }
+    ul.cfs01_bottom_list li dl.cfs01_text dt h4 { letter-spacing:-1px; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p { text-align:justify; }
+    ul.cfs01_bottom_list li dl.cfs01_text dd p br { display:none; }
+
+    dl.higherAravica > dd div.youtube { width:100%; margin-bottom:10%; height:235px; }
+    dl.higherAravica > dd span.bigImg_bg { right:auto; left:32%; top:-8%; width:35%;}
+
+    dl.higherAravica > dd { height:320px; padding:20% 5% 40% 5%; }
+    div.blending_text p.t1 { text-align:justify; padding-left:0; padding-bottom:8%; }
+    div.blending_text p.t1 br { display:none; }
+    div.blending_text dl.blendingInfo_text { float:none; width:100%; }
+    div.blending_text dl.blendingInfo_text dt span { display:inline; padding-left:0; }
+    div.coffeeRoasting_info dl.text dd p.text1,
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text1,
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text2,
+    div.coffeeRoasting_wrap p.t1 ,
+    div.blending_text dl.blendingInfo_text dd p.text1,
+    div.blending_text dl.blendingInfo_text dd p.text2 { padding-left:0; text-align:justify; }
+    div.coffeeObtain_wrap dl.obtainInfo_text dd p.text2 br,
+    div.blending_text dl.blendingInfo_text dd p.text1 br,
+    div.blending_text dl.blendingInfo_text dd p.text2 br { display:none; }
+
+    div.cloverExtraction_ber { height:65%; }
+    div.cloverExtraction_ber dl dt { float:none; background:none; height:0; line-height:1.6; padding:2.4% 0; }
+    div.cloverExtraction_ber dl dd { width:85%; height:0; line-height:1.6; padding:0; margin-top:5%; }
+    div.cloverExtraction_ber p.btn_cloverExtraction { right:auto; left:20%; bottom:10%; top:auto; }
+    div.cloverExtraction_ber dl { margin-left:24%; height:150px; }
+    div.cloverExtraction_info_02 dl.ceInfo_text dt { margin-top:8%; padding-left:0; }
+
+    div.product_view_wrap2 div.productInvestigate_right { float:none; padding:0 2%; width:96%; }
+
+    dl.product_kind_tab dt a { font-size:12px; letter-spacing:-1px;}
+    dl.product_kind_tab dt.dt3 { width:36%; }
+    div.product_list > dl > dd > ul li dd { font-size:12px; }
+    div.product_list > dl > dd > ul li dt ul { width:100%; }
+    div.product_list > dl > dd > ul li dt ul li { width:20%; }
+    div.product_list > dl > dd > ul li dt ul li img { width:100%; }
+    
+    div.product_view_wrap1 div.product_view_detail p.coffee_taste { font-size:12px; }
+
+    div.content_bottom div.product_list_wrap ul.product_list li dd { font-size:12px; }
+    div.content_bottom div.product_list_wrap ul.product_list li dt ul { width:100%; }
+    div.content_bottom div.product_list_wrap ul.product_list li dt ul li { width:20%; }
+    div.content_bottom div.product_list_wrap ul.product_list li dt ul li img { width:100%; }
+}
+
+@media screen and (min-width:319px) and (max-width:400px) {
+
+    /* 나와 어울리는 커피 찾기 */
+    div.findWrap p.find_con { margin-bottom:25%; }
+    div.find_frame { width:96%; }
+    div.find_section { width:96%; padding-top:10%; }
+    div.findWrap ul.find_taste01 { width:91%;  margin-left:9%; }
+    div.findWrap ul.find_taste li { height:190px; }
+    div.findWrap ul.find_taste01 li { width:40%; margin-right:10%; height:208px;  }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:21%; margin-right:16.4%; }
+    div.findWrap ul.find_taste02,
+    div.findWrap ul.find_taste03 { width:100%; margin-left:3%; }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:46%; margin-right:2%; }
+    div.findWrap ul.find_taste02 li.ft2_t03,
+    div.findWrap ul.find_taste03 li.ft3_t03 { float:none; position:absolute; top:90%; left:24%; } /* 20210923 문법오류 수정 */
+}
+
+@media screen and (max-width:320px) {
+
+    /* 나와 어울리는 커피 찾기 */
+    div.findWrap p.find_con { margin-bottom:25%; }
+    div.find_frame { width:96%; }
+    div.find_section { width:96%; padding-top:10%; }
+    div.findWrap ul.find_taste01 { width:91%;  margin-left:9%; }
+    div.findWrap ul.find_taste li { height:190px; }
+    div.findWrap ul.find_taste01 li { width:40%; margin-right:10%; height:208px;  }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:21%; margin-right:16.4%; }
+    div.findWrap ul.find_taste02,
+    div.findWrap ul.find_taste03 { width:100%; margin-left:3%; }
+    div.findWrap ul.find_taste02 li,
+    div.findWrap ul.find_taste03 li { width:46%; margin-right:2%; }
+    div.findWrap ul.find_taste02 li.ft2_t03,
+    div.findWrap ul.find_taste03 li.ft3_t03 { float:none; position:absolute; top:90%; left:24%; }
+}

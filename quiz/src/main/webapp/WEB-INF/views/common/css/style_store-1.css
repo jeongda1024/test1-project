@@ -1,0 +1,3154 @@
+﻿@charset 'utf-8';
+	.pop_gcard_store_map p.btn_opt_chk3 { display:none; }
+	/* 150925 - 구명준 */
+	.st_instagram_wrap_inner { margin-bottom:20px; width:100%; }
+	.st_instagram_wrap { background:#fff; position:relative; width:100%; padding-top:20px; display:none !important; } /* 인스타그램 연동 문제로 display:none 처리 */
+	.st_instagram_wrap:after { content:""; display:block; clear:both; }
+	.st_instagram_title { display:inline-block !important; position:relative; width:100%; }
+	.st_instagram_title p{ color:#222; font-size:14px; font-weight:bold; line-height:1.4; margin-top:20px; display:none; } /* 인스타그램 연동 문제로 display:none 처리 */
+	.st_instagram_title p strong { color:#006633; }
+	.st_instagram_title .btn_sti_more { display:block; width:50px; height:22px; line-height:22px; border:1px solid #ddd; border-radius:3px; text-align:center; background:#fff;  color:#444; font-size:12px; position:absolute; right:30px; top:-5px; }
+	.st_instagram_wrap ul li { float:left; position:relative; }
+	.st_instagram_wrap p.footer_award_btn a { display:block; text-indent:10px; }
+	.st_instagram_slider { display:inline-block; }
+	.st_instagram_slider li a img { margin:0 auto; width:100%; }
+	.st_instagram_wrap_inner img { width:100%; }
+
+	.st_instagram_wrap #prevBtn { position:absolute; left:-3%; top:35%; z-index:2; }
+	.st_instagram_wrap #nextBtn { position:absolute; right:0; top:35%; z-index:2; }
+	.st_instagram_wrap #prevBtn a { 
+		display:block;
+		width:55px;
+		height:55px;
+	}
+
+	.st_instagram_wrap #prevBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+	.st_instagram_wrap #prevBtn a img.arrow_on { opacity:0; }
+	.st_instagram_wrap #prevBtn a img.arrow_on:hover { opacity:1; }
+
+	.st_instagram_wrap #nextBtn a { 
+		display:block;
+		width:55px;
+		height:55px;
+	}
+
+	.st_instagram_wrap #nextBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+	.st_instagram_wrap #nextBtn a img.arrow_on { opacity:0; }
+	.st_instagram_wrap #nextBtn a img.arrow_on:hover { opacity:1; }
+
+	.st_instagram_wrap .bx-wrapper .bx-prev { display:none; }
+	.st_instagram_wrap .bx-wrapper .bx-next { display:none; }
+	
+	.fpark_aip_visual { margin-bottom:40px; }
+	.fpark_aip_visual p.tl { color:#222; font-size:18px; font-weight:bold; line-height:1.4; margin-bottom:20px; }
+	.fpark_aip_visual .fpark_aip_wrap { border-radius:3px; width:100%; height:350px; overflow:hidden; background:#eee; }
+	/* 150925 - 구명준 end */
+	/* 150608 - 문진욱 */
+	img.m_pic { display:none; }
+
+	.store_map_wrap { height:800px; width:100%; }
+
+	.store_map_wrap form fieldset legend { font-size:0; height:0; line-height:0; margin:0; overflow:hidden; padding:0; text-indent:-20000px; width:0; }
+
+	.bnr_slider_wrap { height:360px; margin:30px auto 70px; position:relative; width:1193px; }
+	.bnr_slider_wrap p.store_bnr_tit { font-size:18px; color:#222; font-weight:bold; margin-bottom:20px; text-align:center} /*20170713수정*/ 
+	.bnr_slider_wrap ul li { float:left; height:325px; position:relative; width:340px; }
+	.bnr_slider_wrap ul li img { border-radius:3px; text-align:center; margin:0 auto; }
+	.bnr_slider_wrap ul li p { bottom:0; color:#444; font-size:14px; line-height:20px; position:absolute; text-align:center; width:100%; }
+	.bnr_slider_wrap ul li p span { color:#666; font-size:12px; }
+
+	.bnr_slider_wrap div.bx-controls-direction a { height:42px; position:absolute; top:144px; width:26px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-prev { background:url("../img/msr/sceGift/slide_arrow_l.png") no-repeat; display:block; left:-46px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-next { background:url("../img/msr/sceGift/slide_arrow_r.png") no-repeat; display:block; right:-46px; }
+
+	.bnr_slider_control_pager { bottom:-33px; height:12px; position:absolute; text-align:center; width:100%; }
+
+	.bnr_slider_controls { display:inline-block; height:12px; position:relative; width:9px; }
+	.bnr_slider_controls div.bx-controls-auto { position:absolute; }
+	.bnr_slider_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+	.bnr_slider_controls div.bx-controls-auto a.bx-stop,
+	.bnr_slider_controls div.bx-controls-auto a.bx-stop:hover { background:url("../img/common/bnr_slider_play.png") left 0; height:12px; width:9px; } /*20180412 수정*/
+	.bnr_slider_controls div.bx-controls-auto a.bx-start,
+	.bnr_slider_controls div.bx-controls-auto a.bx-start:hover { background:url("../img/common/bnr_slider_play.png") right 0; height:12px; width:9px; } /*20180412 수정*/
+	/*.bnr_slider_controls div.bx-controls-auto a.bx-stop:hover,
+	.bnr_slider_controls div.bx-controls-auto a.bx-start:hover { background-position:-9px 0; }*/ /*20180412 삭제*/
+
+	.bnr_slider_pagers { display:inline-block; height:12px; }
+	.bnr_slider_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:5px; }
+	.bnr_slider_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+	.bnr_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/common/bnr_slider_pager.png") -13px 0; height:12px; width:13px; }
+	.bnr_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/common/bnr_slider_pager.png") 0 0; height:12px; width:13px; }
+
+	.store_map_layer { background:#fff; border-radius:3px; box-shadow:2px 0px 3px 0px rgba(0, 0, 0, 0.2); -webkit-box-shadow:2px 0px 3px 0px rgba(0, 0, 0, 0.2); left:20px; position:absolute; top:20px; width:300px; z-index:7; }
+
+	.store_map_layer_ttl { display:block; position:relative; }
+	.store_map_layer_ttl h2 { color:#222; font-size:20px; padding:25px 0 15px 20px; }
+	.store_map_layer_ttl h2 img { width:70px; }
+	.map_layer_toggle { height:44px; position:absolute; right:10px; top:12px; width:44px; }
+	.map_layer_toggle a { background:url("../img/store/map_layer_arrow_u.png"); background-size:100% auto; display:block; height:44px; overflow:hidden; text-indent:-20000px; width:44px; }
+	.map_layer_toggle a.on { background:url("../img/store/map_layer_arrow_d.png"); background-size:100% auto; }
+
+	.store_map_layer_cont { /*display:none;*/ background: #fff; height:670px; position:relative; width:300px; }
+	.store_map_layer_cont header { float:left; height:40px; position:absolute; top:0; width:33.3%; }
+	.store_map_layer_cont header.quick_search,
+	.store_map_layer_cont header.loca_search { border-right:1px solid #ddd; }
+	.store_map_layer_cont header.quick_search { left:0; }
+	.store_map_layer_cont header.loca_search { left:33.5%; }
+	.store_map_layer_cont header.my_store { left:66.9%; } 
+	.store_map_layer_cont header h3 { background:#fff; border-bottom:1px solid #ddd; border-top:1px solid #ddd; height:38px; line-height:38px; text-align:center; width:100%; }
+	.store_map_layer_cont header h3 a { display:block; color:#444; font-size:12px; height:100%; width:100%; }
+	.store_map_layer_cont header h3.on { background:#006633; border:none; height:38px; line-height:38px; }
+	.store_map_layer_cont header h3.on a { color:#fff; }
+
+	/* 150831 성연욱 - 추가 */
+	.store_no_event { font-size:18px; font-weight:bold; text-align:center; padding:100px 0; }
+	/* 150831 성연욱 - 추가 end */
+
+	/* 150819 성연욱 - 앱 스토어 수정
+	#container.app .store_map_layer_cont { height:inherit; }
+	#container.app .store_map_layer_cont header { width:50%; }
+	#container.app .store_map_layer_cont header.loca_search { left:50%; }
+	#container.app .btn_opt_chk1 { top:17px !important; }
+	#container.app .store_map_layer_ttl h2 { padding:25px 0 15px 20px; }
+	#container.app .store_map_layer_ttl h2 img { width:70px; }
+	#container.app .store_pop_info { display:none; }
+	#container.app .result_num_wrap.myStoreInfo { padding-top:0; line-height:50px; }
+	#container.app .result_list ul li strong img { display:none; }
+	#container.app .shopArea_pop01_inner article.shopArea_bar_wrap { display:none; } */
+
+	/* 150904 앱 스토어 추가 */
+	.opt_select_cont div.all_store_wrap { border-bottom:1px solid #ddd; padding:10px 0; }
+	.opt_select_cont p.all_store { margin:0; height:inherit; width:100px; font-size:11px; }
+	.opt_select_cont p.all_store:after { content:""; display:block; clear:both; }
+	.opt_select_cont p.all_store label { text-indent:0; margin-left:3px; margin-top:3px; }
+	.opt_select_cont p.all_store span { font-weight:bold; font-size:12px; }
+	p.btn_storemap_quick { position:absolute; right:10px; bottom:10px; z-index:9; width:50px; }
+	.store_map_wrap ul.opt_sel_btns { width:121px; position:absolute; right:50px; top:6px; }
+	.store_map_wrap ul.opt_sel_btns li { float:left; }
+	.store_map_wrap ul.opt_sel_btns li.li1 { margin-right:5px; }
+	.store_map_wrap ul.opt_sel_btns li a { display:block; color:#fff; border-radius:3px; height:28px; line-height:28px; text-align:center; font-size:12px; }
+	.store_map_wrap ul.opt_sel_btns li.li1 a { background:#666; width:74px; }
+	.store_map_wrap ul.opt_sel_btns li.li2 a { background:#006633; width:40px; }
+	/* 150904 앱 스토어 추가 end */
+
+	article.shopArea_bar_wrap div.no_event_result { text-align:center; padding-top:10px; color:#666; font-size:14px; line-height:1.2; }
+
+	.store_map_layer_cont article { padding:38px 0 0 0; }
+
+	.quick_search_input { background:#006633; height:60px; width:100%; }
+	.quick_search_inner { background:#fff; border:1px solid #ddd; border-radius:3px; float:left; height:38px; margin:10px 0 0 10px; position:relative; width:278px; }
+	.quick_search_inner input { border:none; float:left; height:100%; margin-left:2%; padding:0; width:96%; }
+	.quick_search_inner a { background:url("../img/store/icon_magnifier.png"); display:block; height:23px; overflow:hidden; position:absolute; right:7px; top:7px; text-indent:-20000px; width:19px; }
+
+	.result_num_wrap,
+	.result_num_wrap2 { background:#f4f4f2; color:#444; font-size:14px; height:54px; line-height:54px; position:relative; text-indent:20px; width:100%; }
+	.result_num_wrap3 { background:#f4f4f2; color:#444; font-size:14px; height:54px; line-height:54px; position:relative; text-indent:40px; width:100%; }
+	.result_num_wrap strong,
+	.result_num_wrap2 strong,
+	.result_num_wrap3 strong { font-size:14px; }
+
+	.result_num_wrap.myStoreInfo { line-height:inherit; height:44px; padding-top:5px; }
+	.store_pop_info { font-size:12px; color:#666; display:block; height:20px; line-height:20px; padding-top:5px; }
+
+	.result_num_wrap2 { margin-top:20px; }
+
+	.result_list_wrap { background:#fff; height:400px; position:relative; width:100%; }
+	.result_list_wrap p.no_result { color:#666; font-size:12px; line-height:18px; margin-top:20px; text-align:center; width:100%; }
+	.app_result_list_wrap { background:#fff; height:528px; position:relative; width:100%; }
+	.app_result_list_wrap p.no_result { color:#666; font-size:12px; line-height:18px; margin-top:20px; text-align:center; width:100%; }
+
+	p.btn_opt_chk { background:url("../img/store/icon_opt_chk.png") 10px 12px no-repeat #fff; border:1px solid #222; border-radius:3px; box-shadow:2px 2px 2px 0px rgba(0, 0, 0, 0.2); -webkit-box-shadow:2px 2px 2px 0px rgba(0, 0, 0, 0.2); /*display:none;*/ height:33px; left:30px; line-height:33px; position:absolute; top:725px; width:84px; z-index:7; }
+	p.btn_opt_chk a { color:#666; display:block; font-size:12px; font-weight:bold; height:100%; text-indent:30px; width:100%; }
+
+	.result_list { height:550px; width:100%; }
+	.result_list2 { height:540px; width:100%; }
+	.result_list3 { height:470px; width:100%; }
+	.result_list ul,
+	.result_list2 ul,
+	.result_list3 ul { margin:0 auto; width:280px; }
+	.result_list ul li,
+	.result_list2 ul li,
+	.result_list3 ul li { border-bottom:1px solid #ddd; height:100px; position:relative; width:270px; }
+	.result_list ul li strong,
+	.result_list2 ul li strong,
+	.result_list3 ul li strong { color:#444; float:left; font-size:14px; height:20px; line-height:20px; margin-top:8px; width:100%; }
+	.result_list ul li strong img,
+	.result_list2 ul li strong img,
+	.result_list3 ul li strong img { margin-left:5px; }
+	.result_list ul li p.result_details,
+	.result_list2 ul li p.result_details,
+	.result_list3 ul li p.result_details { color:#666; float:left; font-size:12px; margin-top:5px; line-height:1.4; width:80%; }
+	.result_list ul li i,
+	.result_list2 ul li i,
+	.result_list3 ul li i { background-size:100% auto; display:block; height:60px; overflow:hidden; position:absolute; right:5px; text-indent:-20000px; top:22px; width:38px; }
+
+	.result_list3 { padding-bottom:20px; }
+
+	/* 150805 케익예약 매장팝업 */
+	.pop_gcard_store_map .result_list ul li,
+	.pop_gcard_store_map .result_list2 ul li,
+	.pop_gcard_store_map .result_list3 ul li { border-bottom:1px solid #ddd; height:120px; position:relative; width:270px; background:none; }
+	p.btn_select_store { position:absolute; @left:10px; bottom:10px; }
+	p.btn_select_store a { display:block; width:90px; height:28px; line-height:28px; background:#222; color:#fff; font-size:12px; text-align:center; border-radius:3px; }
+	/* 150805 케익예약 매장팝업 end */
+	
+	.loca_step2_frame { height:440px; }
+
+	.result_list .mCustomScrollBox,
+	.result_list2 .mCustomScrollBox,
+	.result_list3 .mCustomScrollBox { height:93%; padding-bottom:0; }
+/*	.result_list.myFavoriteStore .mCustomScrollBox { height:80%; }*/
+	.result_list .mCSB_inside > .mCSB_container,
+	.result_list2 .mCSB_inside > .mCSB_container,
+	.result_list3 .mCSB_inside > .mCSB_container { margin-right:0; }
+	.result_list .mCSB_scrollTools .mCSB_draggerRail,
+	.result_list2 .mCSB_scrollTools .mCSB_draggerRail,
+	.result_list3 .mCSB_scrollTools .mCSB_draggerRail { width:5px; }
+	.result_list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	.result_list .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.result_list .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { background-color:#222; }
+	.result_list2 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	.result_list2 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.result_list2 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { background-color:#222; }
+	.result_list3 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	.result_list3 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.result_list3 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { background-color:#222; }
+	
+	.loca_step2_cont .mCSB_inside > .mCSB_container { margin-right:0; }
+	.loca_step2_cont .mCSB_scrollTools .mCSB_draggerRail { width:5px; }
+	.loca_step2_cont .mCSB_scrollTools .mCSB_draggerContainer { left:10px; }
+	.loca_step2_cont .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	.loca_step2_cont .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.loca_step2_cont .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { background-color:#222; }
+	
+	.loca_step2_cont ul .mCSB_inside > .mCSB_container { margin-right:0; }
+	.loca_step2_cont ul .mCSB_scrollTools .mCSB_draggerRail { width:5px; }
+	.loca_step2_cont ul .mCSB_scrollTools .mCSB_draggerContainer { left:10px; }
+	.loca_step2_cont ul .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	.loca_step2_cont ul .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.loca_step2_cont ul .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { background-color:#222; }
+
+	i.pin_reg0 { background:url("../img/store/pin/pin_reg0.png"); }
+	i.pin_reg1 { background:url("../img/store/pin/pin_reg1.png"); }
+	i.pin_reg2 { background:url("../img/store/pin/pin_reg2.png"); }
+	i.pin_reg3 { background:url("../img/store/pin/pin_reg3.png"); }
+	i.pin_reg4 { background:url("../img/store/pin/pin_reg4.png"); }
+	i.pin_reg5 { background:url("../img/store/pin/pin_reg5.png"); }
+	i.pin_reg6 { background:url("../img/store/pin/pin_reg6.png"); }
+	i.pin_reg7 { background:url("../img/store/pin/pin_reg7.png"); }
+	i.pin_reg8 { background:url("../img/store/pin/pin_reg8.png"); }
+	i.pin_reg9 { background:url("../img/store/pin/pin_reg9.png"); }
+	i.pin_reg10 { background:url("../img/store/pin/pin_reg10.png"); }
+	i.pin_reg11 { background:url("../img/store/pin/pin_reg11.png"); }
+	i.pin_reg12 { background:url("../img/store/pin/pin_reg12.png"); }
+	i.pin_reg13 { background:url("../img/store/pin/pin_reg13.png"); }
+	i.pin_reg14 { background:url("../img/store/pin/pin_reg14.png"); }
+	i.pin_reg15 { background:url("../img/store/pin/pin_reg15.png"); }
+	i.pin_reg16 { background:url("../img/store/pin/pin_reg16.png"); }
+	i.pin_reg17 { background:url("../img/store/pin/pin_reg17.png"); }
+	i.pin_reg18 { background:url("../img/store/pin/pin_reg18.png"); }
+	i.pin_reg19 { background:url("../img/store/pin/pin_reg19.png"); }
+	i.pin_reg20 { background:url("../img/store/pin/pin_reg20.png"); }
+	i.pin_reg21 { background:url("../img/store/pin/pin_reg21.png"); }
+	i.pin_reg22 { background:url("../img/store/pin/pin_reg22.png"); }
+	i.pin_reg23 { background:url("../img/store/pin/pin_reg23.png"); }
+	i.pin_reg24 { background:url("../img/store/pin/pin_reg24.png"); }
+	i.pin_reg25 { background:url("../img/store/pin/pin_reg25.png"); }
+	i.pin_reg26 { background:url("../img/store/pin/pin_reg26.png"); }
+	i.pin_reg27 { background:url("../img/store/pin/pin_reg27.png"); }
+	i.pin_reg28 { background:url("../img/store/pin/pin_reg28.png"); }
+	i.pin_reg29 { background:url("../img/store/pin/pin_reg29.png"); }
+	i.pin_reg30 { background:url("../img/store/pin/pin_reg30.png"); }
+	i.pin_reg31 { background:url("../img/store/pin/pin_reg31.png"); }
+	i.pin_reg32 { background:url("../img/store/pin/pin_reg32.png"); }
+	i.pin_reg33 { background:url("../img/store/pin/pin_reg33.png"); }
+	i.pin_reg34 { background:url("../img/store/pin/pin_reg34.png"); }
+	i.pin_reg35 { background:url("../img/store/pin/pin_reg35.png"); }
+	i.pin_reg36 { background:url("../img/store/pin/pin_reg36.png"); }
+	i.pin_reg37 { background:url("../img/store/pin/pin_reg37.png"); }
+	i.pin_reg38 { background:url("../img/store/pin/pin_reg38.png"); }
+	i.pin_reg39 { background:url("../img/store/pin/pin_reg39.png"); }
+	i.pin_reg40 { background:url("../img/store/pin/pin_reg40.png"); }
+	i.pin_reg41 { background:url("../img/store/pin/pin_reg41.png"); }
+	i.pin_reg42 { background:url("../img/store/pin/pin_reg42.png"); }
+	i.pin_reg43 { background:url("../img/store/pin/pin_reg43.png"); }
+	i.pin_reg44 { background:url("../img/store/pin/pin_reg44.png"); }
+	i.pin_reg45 { background:url("../img/store/pin/pin_reg45.png"); }
+	i.pin_reg46 { background:url("../img/store/pin/pin_reg46.png"); }
+	i.pin_reg47 { background:url("../img/store/pin/pin_reg47.png"); }
+	i.pin_reg48 { background:url("../img/store/pin/pin_reg48.png"); }
+	i.pin_reg49 { background:url("../img/store/pin/pin_reg49.png"); }
+	i.pin_reg50 { background:url("../img/store/pin/pin_reg50.png"); }
+
+	i.pin_res0 { background:url("../img/store/pin/pin_res0.png"); }
+	i.pin_res1 { background:url("../img/store/pin/pin_res1.png"); }
+	i.pin_res2 { background:url("../img/store/pin/pin_res2.png"); }
+	i.pin_res3 { background:url("../img/store/pin/pin_res3.png"); }
+	i.pin_res4 { background:url("../img/store/pin/pin_res4.png"); }
+	i.pin_res5 { background:url("../img/store/pin/pin_res5.png"); }
+	i.pin_res6 { background:url("../img/store/pin/pin_res6.png"); }
+	i.pin_res7 { background:url("../img/store/pin/pin_res7.png"); }
+	i.pin_res8 { background:url("../img/store/pin/pin_res8.png"); }
+	i.pin_res9 { background:url("../img/store/pin/pin_res9.png"); }
+	i.pin_res10 { background:url("../img/store/pin/pin_reg10.png"); }
+	i.pin_res11 { background:url("../img/store/pin/pin_reg11.png"); }
+	i.pin_res12 { background:url("../img/store/pin/pin_reg12.png"); }
+	i.pin_res13 { background:url("../img/store/pin/pin_reg13.png"); }
+	i.pin_res14 { background:url("../img/store/pin/pin_reg14.png"); }
+	i.pin_res15 { background:url("../img/store/pin/pin_reg15.png"); }
+	i.pin_res16 { background:url("../img/store/pin/pin_reg16.png"); }
+	i.pin_res17 { background:url("../img/store/pin/pin_reg17.png"); }
+	i.pin_res18 { background:url("../img/store/pin/pin_reg18.png"); }
+	i.pin_res19 { background:url("../img/store/pin/pin_reg19.png"); }
+	i.pin_res20 { background:url("../img/store/pin/pin_reg20.png"); }
+	i.pin_res21 { background:url("../img/store/pin/pin_reg21.png"); }
+	i.pin_res22 { background:url("../img/store/pin/pin_reg22.png"); }
+	i.pin_res23 { background:url("../img/store/pin/pin_reg23.png"); }
+	i.pin_res24 { background:url("../img/store/pin/pin_reg24.png"); }
+	i.pin_res25 { background:url("../img/store/pin/pin_reg25.png"); }
+	i.pin_res26 { background:url("../img/store/pin/pin_reg26.png"); }
+	i.pin_res27 { background:url("../img/store/pin/pin_reg27.png"); }
+	i.pin_res28 { background:url("../img/store/pin/pin_reg28.png"); }
+	i.pin_res29 { background:url("../img/store/pin/pin_reg29.png"); }
+	i.pin_res30 { background:url("../img/store/pin/pin_reg30.png"); }
+	i.pin_res31 { background:url("../img/store/pin/pin_reg31.png"); }
+	i.pin_res32 { background:url("../img/store/pin/pin_reg32.png"); }
+	i.pin_res33 { background:url("../img/store/pin/pin_reg33.png"); }
+	i.pin_res34 { background:url("../img/store/pin/pin_reg34.png"); }
+	i.pin_res35 { background:url("../img/store/pin/pin_reg35.png"); }
+	i.pin_res36 { background:url("../img/store/pin/pin_reg36.png"); }
+	i.pin_res37 { background:url("../img/store/pin/pin_reg37.png"); }
+	i.pin_res38 { background:url("../img/store/pin/pin_reg38.png"); }
+	i.pin_res39 { background:url("../img/store/pin/pin_reg39.png"); }
+	i.pin_res40 { background:url("../img/store/pin/pin_reg40.png"); }
+	i.pin_res41 { background:url("../img/store/pin/pin_reg41.png"); }
+	i.pin_res42 { background:url("../img/store/pin/pin_reg42.png"); }
+	i.pin_res43 { background:url("../img/store/pin/pin_reg43.png"); }
+	i.pin_res44 { background:url("../img/store/pin/pin_reg44.png"); }
+	i.pin_res45 { background:url("../img/store/pin/pin_reg45.png"); }
+	i.pin_res46 { background:url("../img/store/pin/pin_reg46.png"); }
+	i.pin_res47 { background:url("../img/store/pin/pin_reg47.png"); }
+	i.pin_res48 { background:url("../img/store/pin/pin_reg48.png"); }
+	i.pin_res49 { background:url("../img/store/pin/pin_reg49.png"); }
+	i.pin_res50 { background:url("../img/store/pin/pin_reg50.png"); }
+
+	.map_marker_pop { border:none; border-radius:3px; width:294px; }
+	.map_marker_pop header { background:#8c8279; color:#fff; font-size:14px; font-weight:bold; line-height:20px; padding:10px 0; text-indent:20px; }
+	.map_marker_pop header img { margin-left:5px; }
+	.map_marker_pop article { height:163px; position:relative; width:294px; }
+	.map_marker_pop_inner { height:143px; margin:0 auto; width:254px; }
+	.icon_wrap { border-bottom:1px solid #ddd; height:40px; width:254px; }
+	.icon_wrap_l { float:left; height:20px; margin-top:10px; width:177px; }
+	.icon_wrap_r { float:right; height:20px; margin-top:10px; width:77px; }
+	.icon_wrap_l img { float:left; margin-right:3px; }
+	.icon_wrap_l img.icon1 { margin-top:1px; }
+	.icon_wrap_l img.icon2 { margin-top:1px; }
+	.icon_wrap_l img.icon3 { margin-top:2px; }
+	.icon_wrap_l img.icon4 { margin-top:1px; }
+	.icon_wrap_l img.icon5 { margin-top:1px; }
+	.icon_wrap_r img { float:left; margin-right:5px; width:20px; }
+
+	.map_marker_pop_inner div.cont_wrap { height:103px; position:relative; width:254px; }
+	.map_marker_pop_inner div.cont_wrap p { color:#666; float:left; font-size:12px; min-height:14px; line-height:14px; margin-top:10px; padding-left:17px; width:237px; }
+	.map_marker_pop_inner div.cont_wrap p.addr { background:url("../img/store/icon_addr.png") 0 0 no-repeat; }
+	.map_marker_pop_inner div.cont_wrap p.tel { background:url("../img/store/icon_tel.png") 0 0 no-repeat; }
+	.map_marker_pop_inner div.cont_wrap p.tel a { color:#666; }
+
+	.map_marker_pop_inner div.cont_wrap a.btn_marker_detail { background:#222; border-radius:3px; bottom:0; color:#fff; display:block; font-size:12px; font-weight:bold; height:30px; left:50%; line-height:30px; margin-left:-45px; position:absolute; text-align:center; width:90px; }
+
+	.loca_step1 { height:602px; width:300px; }
+	.loca_step1_ttl { background:#006633; color:#fff; font-size:14px; height:60px; line-height:60px; text-indent:20px; }
+
+	.loca_step1_cont,
+	.loca_step2_cont { border-top:1px solid #ddd; float:left; margin:10px 0 0 10px; width:281px; }
+	.loca_step1_cont ul { height:520px; overflow:hidden; }
+	
+	.loca_step1_cont ul li,
+	.loca_step2_cont ul li { border-bottom:1px solid #ddd; float:left; height:40px; line-height:40px; width:140px; }
+	.loca_step1_cont ul li a,
+	.loca_step2_cont ul li a { color:#444; display:block; font-size:14px; height:100%; text-indent:20px; width:100%; }
+	.loca_step1_cont ul li a:hover,
+	.loca_step2_cont ul li a:hover { color:#006633; text-decoration:underline; }
+
+	.loca_step2 { display:none; height:572px; width:300px; }
+	.loca_step2_ttl { background:#006633; color:#fff; font-size:14px; height:60px; line-height:60px; text-indent:20px; }
+
+	.loca_step3 { display:none; }
+
+	.result_num_wrap3 a.btn_prev { background:url("../img/store/btn_prev.png"); display:block; height:16px; left:20px; overflow:hidden; position:absolute; text-indent:-20000px; top:18px; width:10px; }
+
+	.before_login { display:none; }
+	.before_login p.login_guide { color:#666; font-size:12px; line-height:18px; margin:30px auto 0; text-align:center; width:240px; }
+	.before_login a { background:#222; border-radius:3px; color:#fff; display:block; font-size:12px; font-weight:bold; height:28px; line-height:28px; margin:20px auto; text-align:center; width:73px; }
+
+	.opt_select_pop { background:#fff; border:2px solid #222; border-radius:3px; box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); -webkit-box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); display:none; height:517px; left:40px; position:absolute; top:90px; width:256px; z-index:8; }
+	.opt_select_ttl { background:#f4f4f2; color:#222; font-size:14px; font-weight:bold; height:43px; line-height:43px; position:relative; text-indent:20px; width:256px; }
+	.opt_select_ttl a { background:url("../img/store/btn_opt_pop_close.png"); display:block; height:14px; overflow:hidden; position:absolute; right:10px; text-indent:-20000px; top:14px; width:14px; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+	.opt_select_ttl a:hover { transform:rotate(180deg); }
+	
+	.opt_apply_btn { display:block; width:42px; height:28px; line-height:28px; background:#666; border-radius:3px; font-size:12px; color:#fff; text-align:center; position: absolute; right:50px; top:7px; }
+
+	.opt_select_cont { float:left; height:449px; margin-left:20px; width:216px; }
+	.opt_select_cont dl { border-bottom:1px solid #ddd; width:216px; }
+	.opt_select_cont dl dt,
+	.opt_select_cont dl dd { font-size:12px; margin-top:10px; }
+	.opt_select_cont dl dd { height:16px; line-height:16px; }
+	.opt_select_cont dl dd.left,
+	.opt_select_cont dl dd.right { float:left; width:100%; }
+	.opt_select_cont dl dd div.ez-checkbox,
+	.opt_select_cont dl dd input,
+	.opt_select_cont dl dd label { float:left; text-indent:20px; }
+	.opt_select_cont dl dd div.ez-checkbox { height:13px; margin:2px 5px 0 0; width:13px; }
+	.opt_select_cont dl dt { color:#444; float:left; font-weight:bold; width:100%; }
+	.opt_select_cont dl dd { color:#666; margin-top:7px; }
+/* 	.opt_select_dl1 { height:125px; }
+	.opt_select_dl2 { height:125px; }
+	.opt_select_dl3 { height:214px; } */
+
+	.opt_select_cont .mCSB_inside > .mCSB_container { margin-right:0; }
+	.opt_select_cont .mCSB_scrollTools { right:-5px; }
+	.opt_select_cont .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background:#222; margin:0 auto; width:4px; }
+	.opt_select_cont .mCSB_scrollTools .mCSB_draggerRail { background:#000; height:auto; }
+
+	.opt_select_cont p { border:none; height:37px; margin-top:10px; }
+	.opt_select_cont p div.ez-checkbox,
+	.opt_select_cont p input,
+	.opt_select_cont p label { float:left; text-indent:20px; }
+	.opt_select_cont p div.ez-checkbox { height:13px; margin:2px 5px 0 0; width:13px; }
+
+	.opt_select_cont dl dd label.icon01 { background:url("../img/store/store_icon/icon01.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon02 { background:url("../img/store/store_icon/icon03.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon03 { background:url("../img/store/store_icon/icon02.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon04 { background:url("../img/store/store_icon/icon04.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon05 { background:url("../img/store/store_icon/icon05.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon06 { background:url("../img/store/store_icon/icon06.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon07 { background:url("../img/store/store_icon/icon07.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon08 { background:url("../img/store/store_icon/icon08.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon09 { background:url("../img/store/store_icon/icon09.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon10 { background:url("../img/store/store_icon/icon10.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon11 { background:url("../img/store/store_icon/icon11.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon12 { background:url("../img/store/store_icon/icon12.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon13 { background:url("../img/store/store_icon/icon13.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon14 { background:url("../img/store/store_icon/icon14.png") left center no-repeat; }
+	.opt_select_cont p label.icon15 { background:url("../img/store/store_icon/icon15.png") left center no-repeat; color:#006633; font-size:12px; font-weight:bold; height:16px; line-height:16px; }
+	.opt_select_cont dl dd label.icon16 { background:url("../img/store/store_icon/icon16.png") left center no-repeat; }
+	.opt_select_cont dl dd label.icon17 { background:url("../img/store/store_icon/icon17.png") left center no-repeat; }
+
+	.my_visit_log_wrap { background:#006633; display:table; height:60px; width:300px; }
+	.my_visit_log_wrap p { color:#fff; display:table-cell; font-size:14px; height:60px; line-height:18px; padding:0 20px; vertical-align:middle; }
+
+	.result_list p.btn_more,
+	.result_list2 p.btn_more,
+	.result_list3 p.btn_more { background:#f4f4f2; border-radius:3px; display:table; font-weight:bold; height:24px; margin:0 auto; text-align:center; width:220px; }
+	.result_list p.btn_more a,
+	.result_list2 p.btn_more a,
+	.result_list3 p.btn_more a { display:table-cell; color:#444; font-size:12px; height:24px; vertical-align:middle; width:100%; }
+	.result_list p.btn_more a img,
+	.result_list2 p.btn_more a img,
+	.result_list3 p.btn_more a img { margin-top:2px; }
+
+	/* 150608 - 문진욱 end */
+
+	/* 150610 성연욱 */
+
+	/* 커뮤니티 스토어 매장 */
+	.community_store_wrap { width:1100px; margin:0 auto; }
+	.community_store_wrap dl.cs_visual { width:1100px; margin-bottom:35px; }
+	.community_store_wrap dl.cs_visual dt { margin-bottom:28px; }
+	.community_store_wrap dl.cs_visual dd p.p1 { color:#006633; font-size:20px; font-style:italic; margin-bottom:20px; }
+	.community_store_wrap dl.cs_visual dd p.p2 { font-size:14px; color:#666; line-height:1.6; }
+	.community_store_wrap dl.cs_visual dd p.p2 span { letter-spacing:-1px; }
+
+	.cs_know_area { background:#f4f4f2; padding:40px 0; }
+	.cs_know_area div.cs_know_inner { width:1100px; margin:0 auto; background:url('../img/store/wondu_bg.png') 0 11px no-repeat; }
+
+	.cs_know_area p.tit { font-size:18px; font-weight:bold; color:#222222; margin-bottom:20px; }
+
+	.cs_know_area dl.cs_intro { width:1100px; }
+	.cs_know_area dl.cs_intro:after { content:""; display:block; clear:both; }
+	.cs_know_area dl.cs_intro dt { float:left; width:580px }
+	.cs_know_area dl.cs_intro dd { float:right; width:520px; padding-top:7px; }
+	.cs_know_area dl.cs_intro dd p.p1 { font-size:16px; font-weight:bold; color:#222; }
+	.cs_know_area dl.cs_intro dd p.p2 { font-size:14px; color:#666; line-height:1.6; }
+	.cs_know_area dl.cs_intro dd strong { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:20px 0; line-height:1.2; }
+
+	.cs_young { background:url("../img/store/cs_pic2.png") right top no-repeat; height:240px; margin-top:40px; width:1100px; }
+	.cs_young strong { color:#006633; font-size:20px; font-style:italic; font-weight:normal; line-height:1.4; }
+	.cs_young p { color:#666; font-size:14px; line-height:22px; margin-top:20px; width:30%; }
+
+	.cs_know_area p.cs_intro_pic { text-align:right; }
+	/* 커뮤니티 스토어 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_wrap { width:1100px; margin:0 auto; }
+	.myhand_store_vis { width:1100px; height:220px; margin-bottom:20px; }
+	.myhand_store_vis p.p1 { font-size:18px; color:#ffffff; text-align:center; padding-top:77px; margin-bottom:20px; }
+	.myhand_store_vis p.p2 { font-size:38px; font-weight:bold; color:#ffffff; text-align:center; }
+
+	.myhand_store_info { width:1100px; margin-bottom:216px; }
+	.myhand_store_info:after { content:""; display:block; clear:both; }
+	.myhand_store_info dt { float:right; width:508px; position:relative; }
+	.myhand_store_info dd { float:left; width:550px; padding-top:58px; }
+
+	.myhand_store_info dt p { position:absolute; top:0; right:-23px; }
+	.myhand_store_info dd p.p1 { font-size:18px; color:#222; margin-bottom:8px; }
+	.myhand_store_info dd p.p2 { font-size:28px; color:#006633; margin-bottom:30px; }
+	.myhand_store_info dd p.p3 { font-size:14px; color:#444444; line-height:1.4; margin-bottom:17px; }
+	.myhand_store_info dd p.p3 span { font-weight:bold; }
+	.myhand_store_info dd p.p4 { font-size:14px; color:#666666; line-height:1.4; margin-bottom:38px; }
+	.myhand_store_info dd ul.app_btn { width:268px; }
+	.myhand_store_info dd ul.app_btn li { float:left; }
+	.myhand_store_info dd ul.app_btn li.li1 { margin-right:5px; }
+	.myhand_store_info dd ul.app_btn li a { display:block; height:30px; line-height:30px; font-size:12px; font-weight:bold; color:#ffffff; border-radius:3px; }
+	.myhand_store_info dd ul.app_btn li.li1 a { padding-left:27px; width:98px; background:#222222 url('../img/store/icon_app1.png') 10px center no-repeat; }
+	.myhand_store_info dd ul.app_btn li.li2 a { padding-left:27px; width:111px; background:#222222 url('../img/store/icon_app2.png') 10px center no-repeat; }
+
+	.myhand_end_info { padding:25px 20px; background:#f4f4f2; margin-bottom:80px; position:relative; }
+	.myhand_end_info p { font-size:14px; color:#444444; line-height:1.4; }
+	.myhand_end_info p.go { position:absolute; right:20px; top:25px; width:232px; }
+	.myhand_end_info p.go img { vertical-align:middle; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	/* 드라이브 스루 매장 */
+	.drive_through_track { width:100%; height:663px; background:url('../img/store/drive_through_bg.jpg') 0 0 repeat; margin-top:40px; position:relative; overflow:hidden; }
+	.drive_through_rail { width:1414px; height:663px; background:url('../img/store/drive_through_rail2.png') 0 0 no-repeat; position:absolute; top:0; left:50%; margin-left:-707px; }
+	.drive_through_inner { width:1414px; height:663px; position:relative; }
+
+	.drive_through_track p.drive_tit { position:absolute; left:160px; top:40px; display:none; }
+
+	.drive_through_track div.drive_car { width:93px; height:97px; background:url('../img/store/drive_car-1.png') 0 0 no-repeat; position:absolute; left:80px; top:-110px; z-index:2; }
+
+	.drive_through_track div.step1_obj { position:absolute; left:354px; top:139px; z-index:3; }
+	.drive_through_track div.step2_obj { position:absolute; left:848px; top:80px; z-index:3; }
+	.drive_through_track div.step3_obj { position:absolute; left:528px; top:378px; z-index:3; }
+
+	.drive_through_track div.step1_txt { position:absolute; left:522px; top:116px; z-index:3; display:none; }
+	.drive_through_track div.step2_txt { position:absolute; left:848px; top:241px; z-index:3; display:none; }
+	.drive_through_track div.step3_txt { position:absolute; left:741px; top:526px; z-index:3; display:none; }
+
+	.drive_through_track div.step1_flag { position:absolute; left:558px; top:188px; z-index:1; }
+	.drive_through_track div.step2_flag { position:absolute; left:1073px; top:188px; z-index:1; }
+	.drive_through_track div.step3_flag { position:absolute; left:752px; top:401px; z-index:3; }
+
+	.drive_through_track div.cloud_bg1 { position:absolute; left:1161px; top:39px; }
+	.drive_through_track div.cloud_bg2 { position:absolute; left:1084px; top:112px; }
+	.drive_through_track div.cloud_bg3 { position:absolute; left:0; top:329px; }
+
+	.drive_through_track div.store_bg { position:absolute; right:85px; bottom:0; }
+
+	.m_drive_wrap { display:none; }
+
+	.drive_through_know_wrap { background:#f4f4f2; padding-bottom:70px; }
+	.drive_through_know { width:1100px; margin:0 auto; }
+	.drive_through_know p.tit { font-size:18px; font-weight:bold; color:#222222; padding-top:40px; margin-bottom:20px; font-family:'Arial'; }
+	.drive_through_know ul { width:1100px; background:url('../img/store/drive_through_bg.png') 0 0 repeat;}
+	.drive_through_know ul li:after { content:""; display:block; clear:both; }
+	/* 150611 구명준 수정 */
+	.drive_through_know ul li.li1 { margin-bottom:50px;}
+	.drive_through_know ul li dl { width:1100px; }
+	.drive_through_know ul li dl:after { content:""; display:block; clear:both; }
+	.drive_through_know ul li.li1 dl dt { float:left; width:550px; }
+	.drive_through_know ul li.li1 dl dd { float:left; width:520px; padding-left:30px; }
+	.drive_through_know ul li.li1 dl dd p.p1 { color:#222; font-size:16px; font-weight:bold; margin-bottom:20px; }
+	.drive_through_know ul li.li1 dl dd p.p2 { color:#666; font-size:14px; line-height:1.6; margin-top:20px; }
+
+	.drive_through_know ul li.li2 dl dt { float:right; width:550px; }
+	.drive_through_know ul li.li2 dl dd { float:left; width:550px; }
+	.drive_through_know ul li.li2 dl dd p.p1 { color:#222; font-size:16px; font-weight:bold; margin-bottom:20px; }
+	.drive_through_know ul li.li2 dl dd p.p3 { font-size:14px; color:#666; line-height:1.6; margin:20px 0; }
+	.drive_through_know ul dd p.go { font-size:12px; color:#222; font-weight:bold; width:103px; }
+	.drive_through_know ul dd p.go a { border-bottom:1px dashed #222; display:block; padding-bottom:3px;  }
+	.drive_through_know ul dd p.go img { vertical-align:middle; }
+	/* 150611 구명준 수정 end */
+	/* 드라이브 스루 매장 end */
+
+	/* 150610 성연욱 end */
+
+	/* 150610 구명준 */
+
+	.st_cont{ left:50%; margin:0 0 0 -550px; position:relative; width:1100px; }
+	/* 비쥬얼 슬라이드 */
+	/* 20150611 서브 메인 슬라이드 bxslider 로 교체 */
+	/*.storeSlideArea { width:100%; height:0; padding:0 0 35% 0; position:relative; overflow:hidden; }*/
+	.storeSlideArea { width:100%; height:400px; position:relative; overflow:hidden; }
+	.storeSlideArea .bxslide-main { width:100%; position:relative; z-index:1; }
+	.storeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.store_slider { width:100%; }
+	.storeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.store_slider li div { height:0; width:100% !important; padding:0 0 35% 0; position:relative; left:0; margin-left:0; top:0; }
+
+	ul.store_slider li div.video iframe { left:0 !important; margin-left:0 !important; height:100% !important; position:absolute; width:100% !important; }
+
+	/* 170106 일시적용 */
+
+	.temporary_store_bnr { background:#fff; }
+	.bnr_temp_store { background:url("../img/store/bnr_temp_store.jpg") center top no-repeat; height:400px; position:relative; }
+	.bnr_temp_store_inner { height:100%; left:50%; margin-left:-550px; position:absolute; top:0; width:1100px; }
+	.bnr_temp_store_txt_wrap { height:220px; left:-21px; position:absolute; top:80px; width:492px; }
+	.bnr_temp_store_txt { background:url("../img/store/bnr_temp_store_txt.png") no-repeat; background-size:100% auto; height:172px; left:0; overflow:hidden; position:absolute; text-indent:-20000px; top:0; width:492px; }
+	.btn_temp_store { border:2px solid #fff; border-radius:5px; bottom:0; left:20px; height:34px; position:absolute; width:121px; }
+	.btn_temp_store a { color:#fff; display:block; font-size:14px; height:100%; line-height:34px; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	.btn_temp_store a:hover { background:#fff; color:#222; }
+
+	.store_yt_layer { display:none; height:600px; left:50%; margin-left:-450px; position:absolute; top:230px; width:900px; z-index:105; }
+	.store_yt_layer iframe { height:100%; position:absolute; width:100%; }
+
+	.store_yt_close { background:url('../img/main/dday/btn_close.png') no-repeat; height:22px; position:absolute; right:-32px; top:0; width:22px; z-index:106; }
+	.store_yt_close a { display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+
+	/* 170106 일시적용 end */
+
+	.storeSlideArea .bxslide_btn_wrap { width:100%; height:55px; position:absolute; left:0; top:175px; z-index:2; }
+	.storeSlideArea .bx-wrapper .bx-prev { display:none; }
+	.storeSlideArea .bx-wrapper .bx-next { display:none; }
+
+	/* 150708 성연욱 - 투명한 버튼으로 수정 */
+	.storeSlideArea #prevBtn { position:absolute; left:3%; top:44%; z-index:2; }
+	.storeSlideArea #nextBtn { position:absolute; right:3%; top:44%; z-index:2; }
+	.storeSlideArea #prevBtn a { 
+		display:block;
+		width:55px;
+		height:55px;
+	}
+
+	.storeSlideArea #prevBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+	.storeSlideArea #prevBtn a img.arrow_on { opacity:0; }
+	.storeSlideArea #prevBtn a img.arrow_on:hover { opacity:1; }
+
+	.storeSlideArea #nextBtn a { 
+		display:block;
+		width:55px;
+		height:55px;
+	}
+
+	.storeSlideArea #nextBtn a img { left:0; position:absolute; transition:opacity .5s ease-in-out; -webkit-transition:opacity .5s ease-in-out; -moz-transition:opacity .5s ease-in-out; -o-transition:opacity .5s ease-in-out; }
+	.storeSlideArea #nextBtn a img.arrow_on { opacity:0; }
+	.storeSlideArea #nextBtn a img.arrow_on:hover { opacity:1; }
+	/* 150708 성연욱 - 투명한 버튼으로 수정 end */
+
+	.store_slider_control_pager { bottom:20px; height:12px; position:absolute; text-align:center; width:100%; z-index:9999; }
+
+	.store_slider_controls { display:inline-block; height:12px; position:relative; width:9px; }
+	.store_slider_controls div.bx-controls-auto { position:absolute; }
+	.store_slider_controls div.bx-controls-auto a { display:block; overflow:hidden; text-indent:-20000px; }
+	.store_slider_controls div.bx-controls-auto a.bx-stop { background:url("../img/coffee/icon/pause.png") 0 0; height:15px; width:15px; }
+	.store_slider_controls div.bx-controls-auto a.bx-start { background:url("../img/coffee/icon/play.png") 0 0; height:15px; width:15px; }
+	.store_slider_controls div.bx-controls-auto a.bx-stop:hover,
+	.store_slider_controls div.bx-controls-auto a.bx-start:hover { background-position:0 0; }
+
+	.store_slider_pagers { display:inline-block; height:12px; }
+	.store_slider_pagers div.bx-pager div.bx-pager-item { float:left; margin-left:8px; }
+	.store_slider_pagers div.bx-pager div.bx-pager-item a { display:block; overflow:hidden; text-indent:-20000px; }
+	.store_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link { background:url("../img/coffee/icon/visual_off.png") 0 0; height:15px; width:15px; }
+	.store_slider_pagers div.bx-pager div.bx-pager-item a.bx-pager-link.active { background:url("../img/coffee/icon/visual_on.png") 0 0; height:15px; width:15px; }
+	/* 20150611 서브 메인 슬라이드 bxslider 로 교체 end */
+
+	/* news 영역 */
+	section.store_newsArea_wrap { position:relative; width:100%; }
+	article.store_newsArea { height:70px; }
+	div.store_newsArea_left { float:left; width:50%; height:70px; background:#333333; }
+	div.store_newsArea_right { float:right; width:50%; height:70px; background:url('../img/store/s_useInfo_bg.jpg') 0 0 repeat; }
+
+	div.store_newsArea_bg { width:1100px; height:70px; position:absolute; left:50%; top:0; margin-left:-550px; background:url('../img/menu/newsArea_bg.jpg') 0 0 no-repeat; }
+	div.store_newsArea_bg:after{content:"";display:block;clear:both;}
+	div.store_newsArea_bgl { width:729px; height:70px; line-height:70px; float:left; position:relative; }
+	div.store_newsArea_bgr { width:371px; height:70px; float:right; background:url('../img/store/s_useInfo_cup.png') 21px 11px no-repeat; position:relative; }
+
+	div.store_newsArea_bgl p.tit a { font-size:14px; color:#cccccc; }
+	div.store_newsArea_bgl p.tit span { display:inline-block; width:95px; text-align:center; }
+	div.store_newsArea_bgl p.tit span img { vertical-align:middle; }
+	div.store_newsArea_bgl p.btn { position:absolute; right:73px; top:18px; }
+
+	div.store_newsArea_bgr p.tit { padding:19px 0 0 104px; }
+	div.store_newsArea_bgr p.btn { position:absolute; left:321px; top:18px; }
+
+	/* 1.나의 일상이 되는 또 다른 공간 커피 한 잔의 여유를 만나는 스타벅스 매장 */
+	article.store_bn_inner { width:1100px; margin:0 auto; position: relative; }
+	section.store_bn1_section { width:100%; height:430px; background:url('../img/store/store_bn1_171109.jpg') 20% 50% no-repeat; background-size:auto 100%; background-size:cover; position:relative; }
+	
+	div.store_bn1_txt { width:330px; position:absolute; left:760px; top:98px; }
+	div.store_bn1_btn { width:121px; border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:760px; top:253px; }
+	div.store_bn1_btn a { color:#fff; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	div.store_bn1_btn a:hover { background:#ffffff; color:#222222; }
+
+	/* 2.차에서 경험하는 새로운 스타벅스 드라이브 스루 Drive Thru 매장 */
+	section.store_bn2_section { width:100%; height:430px; background:url('../img/store/store_bn2_img01.jpg') 80% 50% no-repeat; background-size:auto 100%; background-size:cover; position:relative; }
+	
+	div.store_bn2_txt { width:366px; position:absolute; left:0; top:129px; }
+	div.store_bn2_btn { width:121px; border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:0; top:262px; }
+	div.store_bn2_btn a { color:#222; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	div.store_bn2_btn a:hover { background:#222; color:#fff; }
+
+	/* 3.최고 그 이상의 가치 스타벅스 리저브™ 커피 */
+	section.store_bn3_section { width:100%; height:430px; background:url('../img/store/store_bn3_img01.jpg') 20% 50% no-repeat; background-size:auto 100%; background-size:cover; position:relative; }
+	
+	div.store_bn3_txt { width:325px; position:absolute; left:760px; top:129px; }
+	div.store_bn3_btn { width:121px; border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:760px; top:264px; }
+	div.store_bn3_btn a { color:#fff; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	div.store_bn3_btn a:hover { background:#ffffff; color:#222222; }
+
+	/* 4.지역사회와 소통하는 매장 따뜻한 마음이 만든 커뮤니티 스토어 */
+	section.store_bn4_section { width:100%; height:430px; background:url('../img/store/store_bn4_img01.jpg') 80% 50% no-repeat; background-size:auto 100%; background-size:cover; position:relative; }
+	
+	div.store_bn4_txt { width:393px; position:absolute; left:0; top:142px; }
+	div.store_bn4_btn { width:121px; border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:0; top:279px; }
+	div.store_bn4_btn a { color:#222; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	div.store_bn4_btn a:hover { background:#222; color:#fff; }
+
+	/* 5.내 손 안의 스타벅스 매장 스타벅스 카드 애플리케이션 */
+	section.store_bn5_section { width:100%; height:430px; background:url('../img/store/store_bn5_img01.jpg') 20% 50% no-repeat; background-size:auto 100%; background-size:cover; position:relative; }
+	
+	/* 161223 위치 수정 */
+	div.store_bn5_txt { width:530px; position:absolute; left:650px; top:132px; }
+	div.store_bn5_btn { width:121px; border:2px solid #fff; border-radius:3px; height:34px; line-height:34px; position:absolute; left:650px; top:267px; }
+	div.store_bn5_btn a { color:#fff; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	div.store_bn5_btn a:hover { background:#fff; color:#222; }
+	/* 161223 위치 수정 end */
+
+	/* 161223 청담스타 */
+	.store_bn6_section { width:100%; height:430px; background:url("../img/store/store_bn6_img01_01.jpg") 80% 50% no-repeat; background-size:cover; position:relative; }
+	.store_bn6_txt { width:559px; position:absolute; left:0; top:130px; }
+	.store_bn6_btn { width:121px; border:2px solid #222; border-radius:3px; height:34px; line-height:34px; position:absolute; left:0; top:268px; }
+	.store_bn6_btn a { color:#222; display:block; font-size:14px; height:100%; text-align:center; width:100%; -webkit-transition:background-color .7s, color .7s; transition:background-color .7s, color .7s; }
+	.store_bn6_btn a:hover { background:#222; color:#fff; }
+	/* 161223 청담스타 end */
+	/* Menu Main end */
+
+	/* (스타벅스 리저브 매장) */
+	section.reserve_store_full { margin-bottom:40px; }
+	section.reserve_store_full p.f_img { margin-bottom:30px; }
+	.st_cont .f_text{text-align:center}/*20170713 추가*/
+	article.f_text h3 { font-size:18px; color:#222222; font-weight:bold; padding-top:20px; padding-bottom:25px; } /*20170713 수정*/
+	article.f_text dl dt { font-size:20px; color:#b06546; padding-bottom:20px; font-style:italic; } /*20170713 수정*/
+	article.f_text dl dd p {max-width:980px; margin:0 auto; padding-bottom:10px; font-size:14px; color:#444444; line-height:1.6; } /*20170713 수정*/
+
+	/* (스타벅스 리저브 매장) bottom */
+	section.reserve_store_bottom {padding:40px 0 160px;} /*20170713수정*/
+	section.reserve_store_bottom h3 { font-size:22px; color:#222222; font-weight:normal;  background:#f4f4f2; padding-bottom:20px; }
+	article.reserveStore_bottom01 { height:260px; background:url('../img/store/reserveStore_bottom01_bg.png') 0 0 no-repeat; }
+	article.reserveStore_bottom01 h4 { font-size:16px; color:#222222; font-weight:bold; padding:20px 0 10px 425px;  letter-spacing: -0.5px} /*20170718수정*/
+	dl.rs_bottom01 { padding:0 0 0 425px;} /*20170713수정*/
+	dl.rs_bottom01 dt { color:#b06546; font-size:20px; font-style:italic; margin:10px 0; line-height:1.2; letter-spacing:-0.5px; }
+	dl.rs_bottom01 dd p { color:#666; font-size:14px; line-height:24px; letter-spacing: -0.8px}  /*20170718수정*/
+
+	article.reserveStore_bottom02 { height:399px; background:url('../img/store/reserveStore_bottom02_1_bg.png') left 0 no-repeat; margin-top:45px; } /*20170713수정*/
+	article.reserveStore_bottom02 h4 { font-size:16px; color:#222222; font-weight:bold; padding:0 0 10px 425px; letter-spacing: -0.5px} /*20170718수정*/
+	dl.rs_bottom02 { padding:0 0 0 425px;} /*20170713수정*/
+	/*dl.rs_bottom02 dt { font-size:16px; color:#222; font-weight:bold; }
+	dl.rs_bottom02 dd strong { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:20px 0; line-height:1.2; }
+	dl.rs_bottom02 dd p.t2 { font-size:14px; color:#666; font-weight:normal; line-height:1.6; padding-bottom:20px; } 
+	dl.rs_bottom02 dd p.t2 span { display:block; padding-left:10px; }
+	dl.rs_bottom02 dd p.t3 { font-size:14px; color:#666; font-weight:normal; line-height:1.6; padding-left:10px; }
+	dl.rs_bottom02 dd p.t4 { font-size:12px; color:#666; font-weight:normal; line-height:1.6; padding-left:10px; }*/ /*20170713삭제*/
+
+	/*20170713추가*/
+	article.reserveStore_bottom01 h4 { font-size:16px; color:#222222; font-weight:bold; padding:20px 0 10px 425px;}
+	dl.rs_bottom02 { padding:0 0 0 425px;} /*20170713수정*/
+	dl.rs_bottom02 dt { color:#b06546; font-size:20px; font-style:italic; margin:10px 0; line-height:1.2; letter-spacing:-0.5px; }
+	dl.rs_bottom02 dd p { color:#666; font-size:14px; line-height:24px; letter-spacing: -0.8px}  /*20170718수정*/
+	dl.rs_bottom02 dd p:last-child{margin-top:10px} /*20170718추가*/
+
+	p.link01 { margin:70px 0 25px; text-align:center} /*20170713수정*/
+	p.link01 a{display:inline-block; width:317px; height:45px; line-height:44px; font-size:14px; color:#fff; text-align:center; background:#754737; border-radius:5px} /*20170713추가*/
+
+	article.reserveStore_bottom02 p.t_last { font-size:14px; color:#666; font-weight:normal; line-height:1.6; /*margin-bottom:35px;*/ padding-top:5px; text-align:center} /*20170713수정*/
+  
+  /* 20180110 티바나 특화음료 추가 */
+  .reserve_beverage { width:100%; background: url('../img/store/reserve_beverage_bg.png'); background-size: cover;}
+	.reserve_bev_wrap { width:100%; max-width: 1100px; margin: 0 auto; padding-bottom: 50px; }
+	.reserve_bev_wrap h5 { text-align: center; padding-top:190px; color:#af6445; font-size:17px; line-height: 1; background: url('../img/store/reserve_logo.png') 50% 45% no-repeat; }
+	.reserve_bev_wrap p { color:#ddd; font-size: 14px; line-height:24px; text-align: center; padding:15px 0; font-weight: 400 }
+	.reserve_bev_wrap p strong { font-weight: 900 }
+  .beverage_slide_wrap { /*height:334px;*/ width:100%; position:relative; overflow:hidden; padding-bottom: 20px; }
+	.beverage_slide_wrap .swiper-slide { float:left; width:258px !important; padding:10px; }
+	.beverage_slide_wrap .swiper-slide img { max-height: 268px; }
+	.beverage_slide_wrap .swiper-wrapper { margin-bottom: 20px; }
+	.beverage_slide_wrap:before { content:''; position:absolute; left:0; width:133px; top:0; bottom:0; opacity:.7; background:#000 url('../img/store/reserve_beverage_bg.png');  z-index:5;}
+	.beverage_slide_wrap:after { content:''; position:absolute; right:0; width:133px; top:0; bottom:0; opacity:.7; background:#000 url('../img/store/reserve_beverage_bg.png');  z-index:5;}
+	.beverage_slide_wrap .swiper-container-horizontal > .swiper-scrollbar{ background:#ddd; height: 3px; }
+	.beverage_slide_wrap .swiper-scrollbar-drag { background:#754737; }
+	.beverage_slide_wrap .bev_name { font-weight:bold; color:#ddd; display:block; font-size:15px; margin-top:15px; text-align:center; } 
+  /* //20180110 티바나 특화음료 추가 */
+
+	/* 20170713 추가 : 스타벅스 리저브 매장 스타일 수정 */
+	.reserveStoreWrap .sub_tit_wrap h2{padding-top:35px} 
+
+
+	/* 170105 황기흠 수정 */
+	section.reserve_store_middle01 {position:relative; background-color: #f7f6f3; /* background:url('../img/store/reserve_middle_bimg01.png') center top no-repeat; */ } /*20200901 수정*/
+	section.reserve_store_middle01 h3 {position:absolute; top:65px; left:0; font-size:16px; color:#222222; font-weight:bold; padding:0 0 16px 0; background:url('../img/store/reserve_store_tit_bg.png') no-repeat 0 bottom}/*20170713 수정*/
+	article.reserveStore_middle01 {padding-top:76px; height:260px; background-image: url('../../upload/common/img/main/2020/res_bean_201216.png'); background-position:103% 62%; background-repeat: no-repeat; } /*20201222  수정 */
+	dl.rs_middle01 { padding:60px 0 20px 0; width:560px; }/*20170713 수정*/
+	dl.rs_middle01 dt { font-size:16px; color:#222; font-weight:bold; }
+	dl.rs_middle01 dd strong { color:#b06546; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:15px 0 10px; line-height:1.8; }/*20170713 수정*/
+	dl.rs_middle01 dd p.t2 { font-size:14px; color:#666; font-weight:normal; line-height:1.6; padding-bottom:20px; word-break: keep-all; } 
+	dl.rs_middle01 dd p.t2 span { display:block; padding-left:10px; }
+	
+	section.reserve_store_middle02 { background:#fff; padding:60px 0 20px; } /*20170713 수정*/
+	section.reserve_store_middle02 .m_t30 { margin-top:30px; }
+	section.reserve_store_middle02 .st_cont h3{font-size:18px; text-align:center}/*20170713 추가*/
+
+	article.reserveStore_bottom03 { height:324px; background:url('../img/store/reserveStore_bottom03_bg.jpg') 0 0 no-repeat; margin-top:50px; }
+	dl.rs_bottom03 { padding:0 0 0 570px; }
+	dl.rs_bottom03 dt { font-size:16px; color:#222; font-weight:bold; }
+	dl.rs_bottom03 dd strong { color:#b06546; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:20px 0; line-height:1.2; } /*20170713 수정*/
+	section.reserve_store_middle02 .m_t30 { margin-top:30px; }
+	dl.rs_bottom03 dd p { font-size:14px; color:#666; line-height:1.6; } 
+
+	section.reserveStore_ber_wrap { position:relative; height:77px; background:#000000; }
+	article.reserveStore_ber_innner{ left:50%; margin:0 0 0 -550px; position:relative; width:1100px;}
+	article.reserveStore_ber_innner dl { font-size:0; position:relative; }
+	article.reserveStore_ber_innner dl dt { display:inline-block; font-size:0; vertical-align:middle; }
+	article.reserveStore_ber_innner dl dt:after { clear:both; content:""; display:block; }
+	article.reserveStore_ber_innner dl dt .reserve_store_ico { display:inline-block; vertical-align:middle; }
+	article.reserveStore_ber_innner dl dt .reserve_store_ico img { display:block; width:100%; max-width:none; }
+	article.reserveStore_ber_innner dl dt p { color:#b06546; display:inline-block; font-family:'Arial'; font-size:18px; font-weight:700; margin-left:10px; vertical-align:middle; } /*20170713 수정*/
+	section.reserve_store_middle02 .m_t30 { margin-top:30px; }
+	article.reserveStore_ber_innner dl dd { display:inline-block; font-size:14px; color:#b2b2b2; line-height:77px; height:77px; padding-left:15px; position:relative; vertical-align:middle; }
+	article.reserveStore_ber_innner dl dd:before { background-color:#373737; content:""; display:block; height:12px; left:7px; position:absolute; top:32px; width:1px; }
+	article.reserveStore_ber_innner dl dd span { font-size:14px; color:#ffffff;}
+	/* 170105 황기흠 수정 end */
+
+	/* (드라이브 스루 매장) */
+	strong.dt_emphasis { color:#006633; font-size:20px; font-weight:normal; font-style:italic; line-height:1.3; }
+	article.full_text p { font-size:14px; color:#666; line-height:22px; }
+	article.full_text p span { color:#444; }
+	article.full_text figure.full_img { margin:25px 0; }
+	/* 150610 구명준 end */
+
+	/* 161202 황기흠 셀렉트 박스 추가 */
+	section.driveStore_ber_wrap { position:relative; height:80px; background:#006633; }
+	article.driveStore_ber_innner { left:50%; margin-left:-550px; position:absolute; top:0; width:1100px; }
+	article.driveStore_ber_innner dl:after { content:""; display:block; clear:both; }
+	article.driveStore_ber_innner dl dt { float:left; }
+	article.driveStore_ber_innner dl dd { float:left; font-size:14px; color:#fff; line-height:76px; height:76px; padding:4px 0 0 10px; }
+
+	section.driveStore_ber_wrap .driveStore_selector_wrap { left:0; position:absolute; top:0; width:100%; }
+	section.driveStore_ber_wrap .driveStore_selector_inner { height:40px; margin:0 auto; padding:20px 0; position:relative; width:1100px; }
+	section.driveStore_ber_wrap .driveStore_selector_area { position:absolute; right:0; }
+	section.driveStore_ber_wrap dl.driveStore_selector { height:40px; position:relative; width:330px; }
+	section.driveStore_ber_wrap dl.driveStore_selector:after { clear:both; content:""; display:block; }
+	section.driveStore_ber_wrap dl.driveStore_selector dt { color:#fff; float:left; font-size:16px; height:40px; line-height:40px; width:100px; }
+	section.driveStore_ber_wrap dl.driveStore_selector dd { float:left; color:#444; font-size:12px; height:40px; line-height:40px; width:230px; }
+	section.driveStore_ber_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 200px center; border:1px solid #ddd; border-radius:3px; position:relative; left:0; top:0; float:left; width:228px; height:38px; }
+	section.driveStore_ber_wrap .select_box label.value { color:#444; display:block; font-size:14px; font-family:'nbg'; height:38px; margin:0 10px; line-height:38px; overflow:hidden; text-align:left; text-indent:4px; vertical-align:middle; }
+	section.driveStore_ber_wrap .select_box select { background-color:#fff; border:0; color:#444; display:block; font-size:14px; font-family:'nbg'; height:38px; left:0; opacity:0; filter:alpha(opacity=0); padding:0 10px; position:absolute; top:0; vertical-align:middle; width:230px; z-index:20; }
+	/* 161202 황기흠 셀렉트 박스 추가 end */
+
+	.my_store_tabs_wrap { position:relative; }
+
+	.my_store_tabs_wrap header { float:left; height:55px; position:absolute; top:0; width:50%; }
+	.my_store_tabs_wrap header.my_store_tab1 { left:0; }
+	.my_store_tabs_wrap header.my_store_tab2 { left:50%; }
+	.my_store_tabs_wrap header h4 { background:#a39085; height:55px; line-height:55px; text-align:center; width:100%; }
+	.my_store_tabs_wrap header h4 a { display:block; color:#fff; font-size:12px; height:100%; width:100%; }
+	.my_store_tabs_wrap header h4.on { background:#55443a; height:55px; line-height:55px; }
+	.my_store_tabs_wrap header h4.on a { color:#fff; }
+
+	.my_store_tabs_wrap article { padding:55px 0 0 0; }
+	
+	.myFavListNoResult,
+	.myVisitListNoResult { font-size:14px; color:#666; text-align:center; line-height:1.4; padding:20px; }
+
+	p.btn_opt_chk3 { bottom:auto !important; display:block; left:160px !important; right:auto !important; top:34px !important; z-index:10; }
+
+	.store_height_wrap { left:0; position:absolute; top:120px; }
+
+	/* 150921 구명준 추가 */
+	.community_store_wrap dl.pfood_visual,
+	.community_store_wrap dl.fpark_visual { width:1100px; margin-bottom:35px; }
+	.community_store_wrap dl.pfood_visual dt,
+	.community_store_wrap dl.fpark_visual dt { margin-bottom:28px; }
+	.community_store_wrap dl.pfood_visual dd p.p1, 
+	.community_store_wrap dl.fpark_visual dd p.p1 { color:#006633; font-size:20px; font-style:italic; line-height:1.2; margin-bottom:20px; }
+	.community_store_wrap dl.pfood_visual dd p.p2,
+	.community_store_wrap dl.fpark_visual dd p.p2 { font-size:14px; color:#666; line-height:1.6; }
+	.community_store_wrap dl.pfood_visual dd p.p3 { font-size:14px; color:#666; line-height:1.6; padding:25px 0 0 0; }
+
+	.fpark_know_area { background:#f4f4f2; padding:40px 0 0 0; }
+	.fpark_know_area div.fpark_know_inner { width:1100px; margin:0 auto; background:url('../img/store/fpark_bg.png') 0 bottom no-repeat; padding-bottom:-60px; }
+
+	.fpark_know_area p.tit { font-size:18px; font-weight:bold; color:#222222; margin-bottom:20px; }
+
+	.fpark_know_area dl.fpark_intro { width:1100px; }
+	.fpark_know_area dl.fpark_intro:after { content:""; display:block; clear:both; }
+	.fpark_know_area dl.fpark_intro dt { float:left; width:580px }
+	.fpark_know_area dl.fpark_intro dd { float:right; width:520px; }
+	.fpark_know_area dl.fpark_intro dd p.p1 { font-size:16px; font-weight:bold; color:#222; margin-bottom:25px; }
+	.fpark_know_area dl.fpark_intro dd p.p2 { font-size:14px; color:#666; line-height:1.6; margin-bottom:25px; }
+	.fpark_know_area dl.fpark_intro dd strong { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:0 0 20px 0; line-height:1.2; }
+
+	.fpark_young { width:1100px; }
+	.fpark_young .fpark_b_intro { width:1100px; padding:45px 0 60px 0; }
+	.fpark_young .fpark_b_intro:after { content:""; display:block; clear:both; }
+	.fpark_young dl.fpark_b_intro dt { float:right; width:550px }
+	.fpark_young dl.fpark_b_intro dd { float:left; width:520px; }
+	.fpark_young dl.fpark_b_intro dd p.p1 { font-size:16px; font-weight:bold; color:#222; margin-bottom:20px; }
+	.fpark_young dl.fpark_b_intro dd p.p2 { font-size:14px; color:#666; line-height:1.6; margin-bottom:25px; }
+	.fpark_young dl.fpark_b_intro dd strong { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:0 0 20px 0; line-height:1.2; }
+	
+	.pfood_know_area { background:#f4f4f2; padding:60px 0; }
+	.pfood_know_area div.pfood_know_inner { width:1100px; margin:0 auto; }
+
+	.pfood_know_area p.tit { font-size:18px; font-weight:bold; color:#222222; margin-bottom:20px; }
+	
+	.pfood_know_area dl.pfood_intro { width:1100px; }
+	.pfood_know_area dl.pfood_intro:after { content:""; display:block; clear:both; }
+	.pfood_know_area dl.pfood_intro dt { float:left; width:580px;}
+	.pfood_know_area dl.pfood_intro dd { float:right; width:520px; }
+	.pfood_know_area dl.pfood_intro dd p.p1 { font-size:16px; font-weight:bold; color:#222; }
+	.pfood_know_area dl.pfood_intro dd p.p2 { font-size:14px; color:#666; line-height:1.6; margin-bottom:25px; }
+	.pfood_know_area dl.pfood_intro dd p.p3 { font-size:14px; color:#666; line-height:1.6; }
+	.pfood_know_area dl.pfood_intro dd strong { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:0 0 20px 0; line-height:1.2; }
+
+	.stor_aip_wrap { width:100%; overflow:hidden; margin:0 auto; }
+	.stor_aip_wrap .stor_aip_inner { padding:20px 0; width:100%; height:240px; }
+
+	.stor_hite_wrap { width:100%; overflow:hidden; margin:0 auto; }
+	.stor_hite_wrap .stor_hite_inner { padding:20px 0; width:100%; }
+	.stor_hite_wrap .stor_hite_inner dl:after { content:""; display:block; clear:both; }
+	.stor_hite_wrap .stor_hite_inner dl dt { font-size:14px; font-weight:bold; color:#222; margin-bottom:15px; }
+	.stor_hite_wrap .stor_hite_inner dl dd { float:left; width:24.3%; }
+	.stor_hite_wrap .stor_hite_inner dl dd p { padding:4%; }
+	.stor_hite_wrap .stor_hite_inner dl dd img { width:100%; height:100%; }
+	/* 150921 구명준 추가 end */
+
+	/* 160902 스타필드 추가 */
+	.sf_rough_wrap { background:url("../img/store/sf_rough_img.png") 0 0 no-repeat; background-size:50% auto; height:325px; margin:40px 0; }
+	.sf_rough_inner { padding-left:580px; width:520px; }
+	.sf_rough_inner p.t1 { color:#222; font-size:16px; font-weight:bold; margin-bottom:20px; }
+	.sf_rough_inner p.p1 { color:#006633; font-size:20px; font-style:italic; line-height:1.4; margin-bottom:20px; }
+	.sf_rough_inner p.p2 { font-size:14px; color:#666; line-height:1.4; }
+
+	.sfield_know_inner { width:1100px; margin:0 auto; }
+
+	.sfield_list_wrap { margin-top:40px; }
+	.sfield_list_inner { padding-bottom:50px; }
+	.sfield_list_inner p.list_ttl { background:url("../img/store/list_ttl_line.gif") center center repeat-x; font-size:16px; font-weight:bold; color:#222;  margin-bottom:20px; }
+	.sfield_list_inner p.list_ttl span { background:#f4f4f2; padding-right:10px; }
+	.sfield_list_inner strong.list_str { color:#006633; display:block; font-size:20px; font-style:italic; font-weight:normal; margin-bottom:30px; line-height:1.2; }
+	.sfield_list_inner ul { margin-left:-70px; }
+	.sfield_list_inner ul:after { clear:both; content:""; display:block; }
+	.sfield_list_inner ul li { float:left; margin-left:70px; width:319px; text-align:center; }
+	.sfield_list_inner ul li figure { background:#fff; border-radius:3px; margin-bottom:30px; padding:10px 0; }
+	.sfield_list_inner ul li strong { color:#444; display:block; font-size:20px; line-height:1.2; margin-bottom:10px; }
+	.sfield_list_inner ul li strong span.en { color:#5b5b5b; display:block; font-weight:normal; }
+	.sfield_list_inner ul li p { color:#5b5b5b; line-height:1.2; }
+
+	/* 161208 황기흠 셀렉트 박스 추가 */
+	section.sfield_bar_wrap { position:relative; height:80px; background:#006633;  }
+	article.sfield_bar_inner { left:50%; margin-left:-550px; position:absolute; top:0; width:1100px; }
+	article.sfield_bar_inner dl.sfield_bar { line-height:80px; height:80px; }
+	article.sfield_bar_inner dl.sfield_bar:after { content:""; display:block; clear:both; }
+	article.sfield_bar_inner dl.sfield_bar dt { float:left; font-size:18px; font-family:Arial; color:#fff; }
+	article.sfield_bar_inner dl.sfield_bar dt img { margin-right:10px; vertical-align:middle; }
+	article.sfield_bar_inner dl.sfield_bar dd { float:left; font-size:14px; color:#fff; padding-left:20px; }
+
+	section.sfield_bar_wrap .sfield_selector_wrap { left:0; position:absolute; top:0; width:100%; }
+	section.sfield_bar_wrap .sfield_selector_inner { height:40px; margin:0 auto; padding:20px 0; position:relative; width:1100px; }
+	section.sfield_bar_wrap .sfield_selector_area { position:absolute; right:0; }
+	section.sfield_bar_wrap dl.sfield_selector { height:40px; position:relative; width:330px; }
+	section.sfield_bar_wrap dl.sfield_selector:after { clear:both; content:""; display:block; }
+	section.sfield_bar_wrap dl.sfield_selector dt { color:#fff; float:left; font-size:16px; height:40px; line-height:40px; width:100px; }
+	section.sfield_bar_wrap dl.sfield_selector dd { float:left; color:#444; font-size:12px; height:40px; line-height:40px; width:230px; }
+	section.sfield_bar_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 200px center; border:1px solid #ddd; border-radius:3px; position:relative; left:0; top:0; float:left; width:228px; height:38px; }
+	section.sfield_bar_wrap .select_box label.value { color:#444; display:block; font-size:14px; font-family:'nbg'; height:38px; margin:0 10px; line-height:38px; overflow:hidden; text-align:left; text-indent:4px; vertical-align:middle; }
+	section.sfield_bar_wrap .select_box select { background-color:#fff; border:0; color:#444; display:block; font-size:14px; font-family:'nbg'; height:38px; left:0; opacity:0; filter:alpha(opacity=0); padding:0 10px; position:absolute; top:0; vertical-align:middle; width:230px; z-index:20; }
+	/* 160902 스타필드 추가 end */
+	/* 161208 황기흠 셀렉트 박스 추가 end */
+
+	p.st_insta_addtxt { color:#222; font-size:12px; display:none; } /* 인스타그램 연동 문제로 display:none 처리 */
+
+	/* 20160205 김민호 추가 */
+	.holiday_notice { display:none; position:absolute; top:20%;  left:50%; margin-left:-245px; z-index:99; }
+	.holiday_notice_close { width:100%; margin-bottom:10px; height:27px; }
+	.holiday_notice_close a { float:right; height:30px; width:30px; background:url('../img/store/holiday_close_btn.png') 0 0 no-repeat; text-indent:-20000px; display:block; height:100%; transition:transform 1s; }
+	.holiday_notice_close a:hover { transform: rotate(180deg); }
+	.holiday_notice .todayPop_zoon { height:30px; }
+	.holiday_notice .todayPop_txt { margin-left:5px; color:#fff; }
+	/* 20160205 김민호 추가 end */
+
+	p.btn_opt_chk1 { left:170px !important; top:95px !important; }
+
+
+	/* 160912 스타필드 */
+	.starField_visual_wrap { background:url("../img/store/starField_visual_bg.jpg") center center no-repeat; background-size:cover; height:900px; width:100%; }/* 20180116 height 수정 */
+	.starField_visual_inner { height:100%; margin:0 auto; position:relative; width:1100px; }
+	/* 161208 이미지 수정 */
+	.ttl_teavana { background:url("../img/store/ttl_teavana2.png") 0 0 no-repeat; background-size:100% auto; height:326px; left:50%; margin-left:-270px; position:absolute; top:140px; width:540px; }
+	/* 161208 이미지 수정 end */
+	.visual_teavana { background:url("../img/store/visual_teavana.png") 0 0 no-repeat; background-size:100% auto; bottom:-4.2%; height:396px; left:50%; margin-left:-328px; position:absolute; width:656px; z-index:1; }
+	
+	/* 161208 위치 수정 */
+	.map_teavana { background:url("../img/store/map_teavana3.png") 0 0 no-repeat; background-size:100% auto; top:-84px; height:130px; left:51px; position:absolute; width:460px; z-index:1} /*20170816수정*/
+	.map_teavana a {flaot:left; display:inline-block; height:100%; width:48%} /*20170816수정*/
+	.map_teavana a.TVN1{width:60%} /*20170816추가*/
+	.map_teavana a.TVN2{width:37%} /*20170816추가*/
+	/* 161208 위치 수정 end */
+	.map_teavana_pop,
+	.map_teavana_pop2{ display:none; position:absolute; bottom:33px; z-index:99; } /*20170816수정*/
+	.map_teavana_pop a,
+	.map_teavana_pop2 a{ display:block; height:50px; position:absolute; right:10px; top:10px; width:50px; } /*20170816수정*/
+	
+	.starField_line_up { background:#1d2683; height:40px; line-height:40px; text-align:center; }
+	.starField_line_up p { color:#fff; font-size:14px; }
+
+	/* 170131 황기흠 수정 */
+	.starField_know_area { background:url("../img/store/starField_area_bg.jpg") center center no-repeat; background-size:cover; height:1950px; width:100%; } /*20171221 수정*/
+	.starField_know_inner { height:100%; margin:0 auto; position:relative; width:1100px; }
+	.starField_know_each { position:relative; }
+	
+	.starField_know_each01 { left:246px; position:absolute; top:81px; z-index:2; }
+	.sf_know_img01 { position:absolute; right:0; top:106px; width:316px; }
+
+	.starField_know_each02 { left:439px; position:absolute; top:424px; z-index:2; }
+	.sf_know_img02 { left:-340px; position:absolute; top:0; width:755px; }
+
+	.starField_know_each03 { left:170px; position:absolute; top:836px; width:475px; z-index:2; }
+	.starField_know_each03 > .sf_know_txt > strong { padding-right:154px; }
+	.sf_know_img03 { left:610px; position:absolute; top:0; width:943px; }
+
+	.starField_know_each04 { display:none; left:551px; position:absolute; top:1250px; z-index:2; }
+	.sf_know_img04 { display:none; left:0; position:absolute; top:1010px; width:559px; }
+
+	/*20171221 수정 : 시작*/
+	.starField_know_each05 { left:520px; position:absolute; top:1230px; width:550px; z-index:2; }
+	.starField_know_each05 > .sf_know_txt > strong { padding-right:30px; }
+	.sf_know_img05 { position:absolute; top:1050px; left:50px; width:770px; }
+	/*20171221 수정 : 끝*/
+
+	/*20171221 추가 : 시작*/
+	.starField_know_each06 { position:absolute; top:1600px; left:70px; width:486px; z-index:2; } /* 20180116 width, left 수정 */
+	.starField_know_each06 > .sf_know_txt > strong { padding-right:220px; }
+	.sf_know_img06 { bottom:0; right:-200px; position:absolute; width:770px; }
+	/*20171221 추가 : 끝*/
+
+	.sf_know_txt strong { border-bottom:1px solid #1d2682; color:#1d2682; display:inline-block; font-weight:normal; padding:0 15px 2px 15px; position:relative; }
+	.sf_know_txt i.ttl_circle { background:#1d2682; border-radius:50%; bottom:-6px; display:block; height:12px; left:-6px; position:absolute; width:12px; }
+	.sf_know_txt i.ttl_circle2 { left:auto; right:-6px; }
+	.sf_know_txt p { color:#666; font-size:14px; line-height:1.4; margin-top:20px; }
+	.sf_know_txt p em { color:#006633; display:block; font-size:20px; font-style:normal; margin-bottom:16px; }
+	.sf_btn_more { background:url("../img/store/sf_btn_more.png") 0 0 no-repeat; display:block; height:53px; margin-top:-27px; width:53px; text-indent:-99999px; position:absolute; left:44.7%;}/*20191107 수정*/
+	.sf_btn_more2 { left:-55px; position:absolute; top:0; }
+	/* 170131 황기흠 수정 end */
+
+	/*20171221 수정 : 팝업 tea 추가*/
+	.teavana_dimm { background:#000; display:none; height:100%; left:0; opacity:0.7; filter: alpha(opaicty=70); position:fixed; top:0; width:100%; z-index: 98; }
+	.teavana_drink_pop,
+	.teavana_md_pop,
+	.teavana_tea_pop { background:#fff; box-shadow:14px 20px 67px -28px #000; display:none; left:50%; margin-left:-408.5px; max-width:817px; position:absolute; top:50%; width:100%; z-index:99; }
+	/*s::20180920 수정 : teavana_drink_pop 추가*/
+	.teavana_tea_pop,
+	.teavana_drink_pop{max-width:550px; margin-left:-275px}
+	/*e::20180920 수정 : teavana_drink_pop 추가*/
+	.teavana_pop_head { background:#8c8279; height:60px; }
+	.pop_cont_inner { position:relative; }
+	.teavana_md_pop .teavana_pop_tit { background:url("../img/store/teavana/teavana_md_ttl.png") center center no-repeat; height:60px; text-indent:-20000px; text-align:center; }
+	.teavana_drink_pop .teavana_pop_tit,
+	.teavana_tea_pop .teavana_pop_tit { background:url("../img/store/teavana/teavana_drink_ttl.png") center center no-repeat; height:60px; text-indent:-20000px; text-align:center; }
+	.teavana_drink_pop .close,
+	.teavana_md_pop .close,
+	.teavana_tea_pop .close { position:absolute; right:30px; top:17px; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+	.teavana_drink_pop .close:hover,
+	.teavana_md_pop .close:hover,
+	.teavana_tea_pop .close:hover { transform:rotate(180deg); }
+	.teavana_md_list { display:table; padding:37px 40px 0; margin-left:-9px; width:100%; }
+	.teavana_md_list li { display:inline-table; margin:0 0 10px 9px; vertical-align:top; width:140px; }
+	.teavana_md_list li a { display:block; height:100%; width:100%; }
+	.teavana_md_list li figure { height:140px; overflow:hidden; width:140px; }
+	.teavana_md_list li figure img { width:100%; }
+	.teavana_md_list li p { text-align:center; line-height:1.5; margin:15px 0 5px; padding:0 5px; width:130px; }
+	
+	.teavana_drink_list { display:table; padding:30px 40px; margin-left:-51px; width:100%; }
+	.teavana_drink_list li { display:inline-table; margin:0 0 10px 51px; vertical-align:top; width:210px; }
+	.teavana_drink_list li a { display:block; height:100%; width:100%; }
+	.teavana_drink_list li figure { height:210px; overflow:hidden; width:210px; }
+	.teavana_drink_list li figure img { width:100%; }
+	.teavana_drink_list li p { color:#666; font-size:14px; text-align:center; line-height:1.5; margin:15px 0 5px; width:210px; }
+	.teavana_drink_list li p strong { color:#444; display:block; font-size:20px; text-align:center; }
+	.teavana_drink_list li p span { color:#5b5b5b; display:block; font-size:16px; margin-bottom:10px; text-align:center; }
+	/* 160912 스타필드 end */
+
+	/* 청담프리미엄 */
+	.cheongdam_visual_wrap { background:url("../img/store/cheongdam/cheongdam_visual_bg.jpg") center center no-repeat; background-size:cover; height:900px; width:100%; }
+	.cheongdam_visual_inner { margin:0 auto; position:relative; width:1100px; }
+	.ttl_cheongdam { background:url("../img/store/cheongdam/ttl_cheongdam.png") no-repeat; height:384px; left:50%; margin-left:-350px; position:absolute; top:154px; width:700px; }
+
+	.btn_visual_area { left:50%; margin-left:-329px; position:absolute; top:633px; width:658px; }
+	.btn_visual_area:after { clear:both; content:""; display:block; }
+
+	.btn_visual_area a { background:#000; border:1px solid #bd9357; border-radius:5px; color:#bd9357; display:block; font-size:25px; font-weight:bold; float:left; height:62px; line-height:62px; margin-left:23px; opacity:.7; filter:alpha(opacity=70); text-align:center; width:202px; transition:background-color .7s, color .7s; -webkit-transition:background-color .7s, color .7s; }
+	.btn_visual_area a.btn_visual01 { margin-left:0; }
+	.btn_visual_area a:hover { background:#bd9357; color:#2f1902; opacity:1; filter:alpha(opacity=100); }
+
+	.section_line { background:url("../img/store/cheongdam/section_line_bg.jpg") repeat-x; height:41px; width:100%; }/* 이미지경로 원복*/
+	.section_inner { height:100%; margin:0 auto; position:relative; width:1100px; }
+	.section_inner.chungdam { width: 92%; }/*20170911*/
+	.section_ttl { background:url("../img/store/cheongdam/ico_sec_line.png") 0 10px no-repeat; color:#2e1901; font-size:12px; line-height:41px; padding-left:30px; text-transform:uppercase; width:180px; }
+	.ico_line_sec01 { background:url("../img/store/cheongdam/ico_line_sec01.png") no-repeat; display:block; height:30px; left:50%; margin-left:-24px; position:absolute; top:6px; width:48px; }
+	.ico_line_sec02 { background:url("../img/store/cheongdam/ico_line_sec02.png") no-repeat; display:block; height:30px; left:50%; margin-left:-24px; position:absolute; top:6px; width:48px; }
+	.ico_line_sec03 { background:url("../img/store/cheongdam/ico_line_sec03.png") no-repeat; display:block; height:30px; left:50%; margin-left:-24px; position:absolute; top:6px; width:48px; }
+	.ico_line_sec04 { background:url("../img/store/cheongdam/ico_line_sec04.png") no-repeat; display:block; height:30px; left:50%; margin-left:-24px; position:absolute; top:6px; width:48px; }
+
+	.cheongdam_vr_wrap { background:url("../img/store/cheongdam/cheongdam_vr_bg.jpg") center center no-repeat; background-size:cover; height:1298px; overflow:hidden; position:relative; width:100%; }
+	.cheongdam_vr1 { height:540px; position:absolute; right:-20px; top:0; width:1215px; }
+	.cheongdam_vr2 { height:678px; position:absolute; left:-65px; top:287px; width:1080px; }
+	.cheongdam_vr3 { bottom:0; height:487px; position:absolute; right:-20px; width:1190px; }
+
+	.vr1_txt { background:url("../img/store/cheongdam/store_1f_txt.png") no-repeat; height:174px; position:absolute; right:1185px; top:63px; width:490px;  }
+	.vr2_txt { background:url("../img/store/cheongdam/store_2f_txt.png") no-repeat; height:174px; left:1010px; position:absolute; top:614px; width:675px; }
+	.vr3_txt { background:url("../img/store/cheongdam/store_3f_txt.png") no-repeat; height:174px; position:absolute; right:1035px; top:1020px; width:675px; }
+
+	.special_coffee_wrap {width:100%;  height:1100px; padding-top: 40px; background:url("../img/store/cheongdam/special_coffee_bg.jpg") center center no-repeat; background-size:cover; box-sizing: border-box;  } /* 이미지경로 원복   20170804  수정 : 20170804   포지션 값*/
+	.ttl_specoffee { background:url("../img/store/cheongdam/ttl_specoffee.png") no-repeat center center;  height:155px; /*left:50%; margin-left:-370px;  position:absolute; top:72px; width:730px;*/text-align: center; }/* 이미지경로 원복  20170804  수정  포지션 값 수정*/
+
+	.ico_sepcial_list { left:50%; margin-left:-347px; position:absolute; top:238px; width:694px; }
+	.ico_sepcial_list:after { clear:both; content:""; display:block; }
+	.ico_sepcial_list li { float:left; height:138px; margin-left:34px; width:148px; }
+	.ico_sepcial_list li:first-child { margin-left:0; }
+	.ico_sepcial_list li a { display:block; height:100%; text-indent:-20000px; width:100%; }
+	.ico_sepcial_list li a.sepcial_list01 { background:url("../img/store/cheongdam/specoffee02_off.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list02 { background:url("../img/store/cheongdam/specoffee01_off.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list03 { background:url("../img/store/cheongdam/specoffee04_off.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list04 { background:url("../img/store/cheongdam/specoffee03_off.png") no-repeat; }
+
+	.ico_sepcial_list li a.sepcial_list01:hover { background:url("../img/store/cheongdam/specoffee02_on.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list02:hover { background:url("../img/store/cheongdam/specoffee01_on.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list03:hover { background:url("../img/store/cheongdam/specoffee04_on.png") no-repeat; }
+	.ico_sepcial_list li a.sepcial_list04:hover { background:url("../img/store/cheongdam/specoffee03_on.png") no-repeat; }
+
+	/* 20170804  청담 리저브 아이콘 개선 으로 인한 추가*/
+	.ico_sepcial_list2 { height: 163px;   margin: 13px auto; padding: 0 90px;  }
+	.ttl_specoffee2{padding: 0 30px;  text-align: center;  }
+	.ico_sepcial_list2:after { clear:both; content:""; display:block; }
+	.ico_sepcial_list2 li { float:left; width: 15%; margin-left:2%; }
+	.ico_sepcial_list2 li:first-child { margin-left:0; }
+	.ico_sepcial_list2 li a { display:block; height:100%; text-indent:-20000px; width:100%; }
+	.ico_sepcial_list2 li.sepcial_list02, .ico_sepcial_list2 li.sepcial_list04, .ico_sepcial_list2 li.sepcial_list06{ margin-top: 25px; }
+	.ico_sepcial_list2 li.sepcial_list05 {margin-top: 8px; }
+	.ico_sepcial_list2 li a {display: block; }
+	.ico_sepcial_list2 li a .off {display: block; }
+	.ico_sepcial_list2 li a .on {display: none; }
+	.ico_sepcial_list2 li a.hover .off {display: none}
+	.ico_sepcial_list2 li a.hover .on{display: block; }
+	/*.ico_sepcial_list2 li.sepcial_list01 a{ background-image:url("../img/store/cheongdam/newSpeCoffe01_off.png")  }
+	.ico_sepcial_list2 li.sepcial_list02 a{ background-image:url("../img/store/cheongdam/newSpeCoffe02_off.png") ; }
+	.ico_sepcial_list2 li.sepcial_list03 a{ background-image:url("../img/store/cheongdam/newSpeCoffe03_off.png") ; }
+	.ico_sepcial_list2 li.sepcial_list04 a{ background-image:url("../img/store/cheongdam/newSpeCoffe04_off.png") ; }
+	.ico_sepcial_list2 li.sepcial_list05 a{ background-image:url("../img/store/cheongdam/newSpeCoffe05_off.png") ; }
+	.ico_sepcial_list2 li.sepcial_list06 a{background-image:url("../img/store/cheongdam/newSpeCoffe06_off.png") ; }
+
+	.ico_sepcial_list2 li.sepcial_list01 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe01_on.png") ; }
+	.ico_sepcial_list2 li.sepcial_list02 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe02_on.png") ; }
+	.ico_sepcial_list2 li.sepcial_list03 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe03_on.png") ; }
+	.ico_sepcial_list2 li.sepcial_list04 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe04_on.png") ; }
+	.ico_sepcial_list2 li.sepcial_list05 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe05_on.png") ; }
+	.ico_sepcial_list2 li.sepcial_list06 a:hover { background-image:url("../img/store/cheongdam/newSpeCoffe06_on.png") ; }*/
+
+	.layer_howtoEnjoy {position: absolute; width: 642px; top: 50%; left: 50%;   background: #fff;  z-index: 1000; }
+	.layer_howtoEnjoy h3 {height: 73px; line-height: 73px; background: #b06546; font-size: 25px; color: #fff; text-align: center; font-weight: 500; }
+	.layer_howtoEnjoy .layerConts {padding: 40px 62px 80px 62px; }
+	.layer_howtoEnjoy  .close_Layer{position: absolute; top: 22px; right: 22px; }
+	.layer_howtoEnjoy   #showBox > div {width: 518px; overflow: hidden;}
+	.layer_howtoEnjoy #imgBox {position: relative; width:10000px;  }
+	.layer_howtoEnjoy #imgBox li{float: left; width: 518px; }
+	.layer_howtoEnjoy #imgBox li h4:before {content: ''; display: block; width: 32px; height: 4px; margin-bottom: 25px; background: #292929}
+	.layer_howtoEnjoy #imgBox li h4 {; color: #222; font-size: 23px; font-weight: normal; color: #222222; font-family: nbg; }
+	.layer_howtoEnjoy #imgBox li h4 strong{display: block;  margin-bottom: 10px; font-size: 25px; font-family: "Arial", sans-serif; }
+	.layer_howtoEnjoy #imgBox li img {margin-top: 30px; }
+	.layer_howtoEnjoy #imgBox li  p{line-height: 24px; margin-top: 24px; font-size: 14px; color: #444444; }
+	.layer_howtoEnjoy  #showBox > a {position: absolute; display: block ; top: 50%; margin-top: -15px; }
+	.layer_howtoEnjoy  #showBox > a.prev {left: 22px}
+	.layer_howtoEnjoy  #showBox > a.next{right: 22px; }
+	.layer_howtoEnjoy  ol.m{display: none; }
+	
+	/* 20170804  청담 리저브 아이콘 개선 으로 인한 추가 끝*/
+
+
+	.reserve_bt_txt { margin-bottom:50px; padding:0px; text-align:center; }
+	.reserve_bt_txt i { font-size:16px; color:#006633; font-weight:normal; line-height:1.6; padding-bottom:10px; font-style:italic; }
+
+
+	.special_coffee_slide { width:980px;  height:620px; top:20px; margin:0 auto; overflow:hidden; position:relative;  }
+	.special_coffee_slide .swiper-wrapper .swiper-slide { width:430px; }
+	.special_coffee_slide .swiper-wrapper .swiper-slide a { display:block; height:100%; width:100%; }
+
+	.special_coffee_wrap .swiper-button-prev { background:url("../img/store/cheongdam/coffee_slide_arrow_l.png") no-repeat; height:143px; left:-50px; margin-top:78px; width:73px; } /* 이미지  링크 원복*/
+	.special_coffee_wrap .swiper-button-next { background:url("../img/store/cheongdam/coffee_slide_arrow_r.png") no-repeat; height:143px; right:-50px; margin-top:78px; width:73px; } /* 이미지  링크 원복*/
+
+	.spe_coffee1 { background:url("../img/store/cheongdam/cofslide01_off.png") no-repeat; height:100%; width:100%;  background-size: 100%; } /* 이미지  링크 원복*/
+	.spe_coffee2 { background:url("../img/store/cheongdam/cofslide02_off.png") no-repeat; height:100%; width:100%; background-size: 100%; } /* 이미지  링크 원복*/
+	.spe_coffee3 { background:url("../img/store/cheongdam/cofslide03_off.png") no-repeat; height:100%; width:100%; background-size: 100%; } /* 이미지  링크 원복*/
+	.spe_coffee4 { background:url("../img/store/cheongdam/cofslide04_off.png") no-repeat; height:100%; width:100%; background-size: 100%; } /* 이미지  링크 원복*/
+
+	.spe_coffee1.on { background:url("../img/store/cheongdam/cofslide01_on.png") no-repeat; height:100%; width:100%; background-size: 100%; } /* 이미지  링크 원복*/
+	.spe_coffee2.on { background:url("../img/store/cheongdam/cofslide02_on.png") no-repeat; height:100%; width:100%; background-size: 100%; } /* 이미지  링크 원복*/
+	.spe_coffee3.on { background:url("../img/store/cheongdam/cofslide03_on.png") no-repeat; height:100%; width:100%;background-size: 100%;  } /* 이미지  링크 원복*/
+	.spe_coffee4.on { background:url("../img/store/cheongdam/cofslide04_on.png") no-repeat; height:100%; width:100%;background-size: 100%;  } /* 이미지  링크 원복*/
+
+	.special_food_wrap { background:url("../img/store/cheongdam/special_food_bg.jpg") center center no-repeat; background-size:cover; height:1010px; width:100%; }
+	.ttl_spefood {/* background:url("../img/store/cheongdam/ttl_spefood.png") no-repeat; height:130px; left:50%; margin-left:-385px; position:absolute; top:72px;  width:770px; */ padding-top: 50px; text-align: center;  } /*20170808 백그라운드 삭제*/
+	.ttl_spefood img{width: 770px; } /*20170808 추가 */
+	.ttl_spefood img.m{display: none; }/*20170809 추가 */
+
+	.ico_food { /*left:50%;  */position:absolute;  transition: .5s} /* 20170911   수정 : left 50%   삭제 */
+	.ico_food a { display:block; height:232px; text-indent:-20000px; width:232px; }
+
+	.food2 { /*margin-left:-400px; */ left: 62%; top:66%; } /*20170911   수정  */
+	.food2 a { background:url("../img/store/cheongdam/spefood01_off_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+	.food3 { /*margin-left:-110px;*/ left: 78%;  top:49%; } /*20170911   수정  */
+	.food3 a { background:url("../img/store/cheongdam/spefood02_off_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+	.food1 { /*margin-left:440px;*/ left: 5%;  top:61%; } /*20170911   수정  */
+	.food1 a { background:url("../img/store/cheongdam/spefood03_off_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+
+	.food2 a:hover { background:url("../img/store/cheongdam/spefood01_on_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+	.food3 a:hover { background:url("../img/store/cheongdam/spefood02_on_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+	.food1 a:hover { background:url("../img/store/cheongdam/spefood03_on_2.png") no-repeat; } /* 20201016 청담스타 수정 */
+
+	.special_md_wrap { background:url("../img/store/cheongdam/special_md_bg.jpg") center center no-repeat; background-size:cover; height:960px; width:100%; }
+	.ttl_spemd {/* background:url("../img/store/cheongdam/ttl_spemd.png") no-repeat; height:177px; left:50%; margin-left:-375px; position:absolute; top:82px; width:750px; */ padding-top: 82px; text-align: center;  }/* 20180808 백그라운드 삭제*/
+	.ttl_spemd  img {width: 750px; } /* 20170808 추가 */
+	.ttl_spemd  img.m{display: none; }/* 20170808 추가 */
+
+	.btn_md_more { left:50%; margin-left:-151px; position:absolute; top:303px; width:302px; }
+	.btn_md_more a { background:#000; border:1px solid #332e2c; border-radius:3px; color:#bd9357; display:block; font-size:20px; height:60px; line-height:60px; text-align:center; width:100%; transition:background-color .7s, color .7s; -webkit-transition:background-color .7s, color .7s; }
+	.btn_md_more a:hover { background:#bd9357; color:#2e1901; }
+
+	.aside_quick_wrap { position:fixed; right:20px; top:300px; z-index:10; }
+	.aside_quick { background:url("../img/store/cheongdam/quick_menu_bg.png") no-repeat; height:369px; width:82px; }
+	.aside_quick li { width:100%; }
+	.aside_quick li a { display:block; height:60px; width:100%; }
+	.aside_quick li a.quick_menu2:hover { background:url("../img/store/cheongdam/quick_menu1.png") no-repeat; height:92px; margin:-15px 0 0 -5px; width:92px; }
+	.aside_quick li a.quick_menu3:hover { background:url("../img/store/cheongdam/quick_menu2.png") no-repeat; height:92px; margin:-15px 0 0 -5px; width:92px; }
+	.aside_quick li a.quick_menu4:hover { background:url("../img/store/cheongdam/quick_menu3.png") no-repeat; height:92px; margin:-15px 0 0 -5px; width:92px; }
+	.aside_quick li a.quick_menu5:hover { background:url("../img/store/cheongdam/quick_menu4.png") no-repeat; height:92px; margin:-15px 0 0 -5px; width:92px; }
+	.aside_quick li a.quick_menu6:hover { background:url("../img/store/cheongdam/quick_menu5.png") no-repeat; height:92px; margin:-15px 0 0 -5px; width:92px; }
+
+	.ico_quick_top1 { background:url("../img/store/cheongdam/ico_quick01.png") no-repeat; cursor:pointer; display:block; height:32px; margin:0 auto 5px; width:64px; }
+	.ico_quick_top2 { background:url("../img/store/cheongdam/ico_quick02.png") no-repeat; cursor:pointer; display:block; height:32px; margin:0 auto 5px; width:64px; }
+	.ico_quick_top3 { background:url("../img/store/cheongdam/ico_quick03.png") no-repeat; cursor:pointer; display:block; height:32px; margin:0 auto 5px; width:64px; }
+	.ico_quick_top4 { background:url("../img/store/cheongdam/ico_quick04.png") no-repeat; cursor:pointer; display:block; height:32px; margin:0 auto 5px; width:64px; }
+	.ico_quick_top5 { background:url("../img/store/cheongdam/ico_quick05.png") no-repeat; cursor:pointer; display:block; height:32px; margin:0 auto 5px; width:64px; }
+
+	.m_aside_quick { background:url("../img/store/cheongdam/m/m_quick_close.png") no-repeat; display:none; height:90px; position:fixed; right:0; bottom:10px; width:90px; z-index:10; }
+	
+/* 팝업 */
+	.cd_pop_dimm { background:#000; bottom:0; display:none; height:100%; left:0; opacity:0.7; filter: alpha(opaicty=70); position:absolute; right:0; top:0; width:100%; z-index:98; }
+	
+	.chungdam_menu_pop, 
+	.chungdam_md_pop { background-color:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; border:2px solid #bd9357; border-radius:20px; display:none; margin-left:-380px; position:absolute; /* top:50%; */ left:50%; width:760px; height:810px; z-index:98; background-size: cover;  }
+	.chungdam_tabmenu {position:relative; font-size:0; text-align:center;  width:100%; margin-top:40px; z-index: 10} /* 20170911  수정*/
+	.chungdam_tabmenu li { display:inline-block; margin-left:2px }
+	.chungdam_tabmenu li:first-child { margin-left:0 }
+	.chungdam_tabmenu li a { background-repeat:no-repeat; background-position:center center; display:block; width:150px; height:45px; text-indent:-20000px; background-color:#bd9357 }
+	.chungdam_tabmenu li:first-child a { border-radius:5px 0 0 5px; }
+	.chungdam_tabmenu li:last-child a { border-radius:0 5px 5px 0; }
+	.chungdam_tabmenu li.on a, .chungdam_tabmenu li a:hover { background-color:#2f1902 }
+	.chungdam_tab_conts {position:relative; width:100%;}
+	.chungdam_tab_cont {display:none;position:relative; width:100%; margin:0 auto; }
+	.chungdam_tab_cont:first-child {display:block}
+	/*  20170911 추가 */
+	.chungdam_tab_cont.chungdam_sandwich{ width:100%;  height: 720px; /* background: url('../img/store/cheongdam/specialFood.png') no-repeat  center  40px; background-size: 100%; */}
+
+	.chungdam_tab_cont .chungdam_slider { overflow:hidden; position:relative; width:100%; height:545px; margin-bottom: 20px; } /* 20201016 청담스타 수정 */
+	.chungdam_tab_cont .chungdam_slider .swiper-slide { float:left; width:33.33%; height:100%; position:relative; }
+	.chungdam_tab_cont .chungdam_thumbs { overflow:hidden; position:relative; margin:37px 32px 0; height:100px; padding-bottom: 30px; } /* 20201016 청담스타 수정 */
+	.chungdam_tab_cont .chungdam_thumbs .swiper-slide { cursor:pointer; width:100px; height:100px; padding:0 8px; }
+	.chungdam_tab_cont .chungdam_thumbs .swiper-slide img { display:block; width:100px; height:100px; max-width:none; }
+	.chungdam_tab_cont .chungdam_thumbs .swiper-slide-active:before { border:4px solid #bd9357; -webkit-box-sizing:border-box; box-sizing:border-box; content:""; display:block; position:absolute; top:0; left:8px; width:100px; height:100%; }
+
+	
+
+	.pop_txt_area { height:145px; padding-top:40px; text-align:center; }
+	.pop_txt_area .pop_ttl { color:#222; display:block; font-size:28px; font-weight:400; }
+	.pop_txt_area .pop_txt { color:#222; font-size:16px; line-height:125%; padding-top:20px; width: 300px; margin: 0 auto; word-break: keep-all; } /* 20201016 청담스타 수정 */
+	.pop_img_area { background-repeat:no-repeat; overflow:hidden; width:100%; height:360px; }
+	.chungdam_tab_cont .btn_chungdam_arrow { background-repeat:no-repeat; display:block; height:34px; position:absolute; top:345px; text-indent:-20000px; width:18px; z-index:2; }
+	.chungdam_tab_cont .btn_chungdam_prev { background-image:url("../img/store/cheongdam/btn_chungdam_prev.png"); left:40px; }
+	.chungdam_tab_cont .btn_chungdam_next { background-image:url("../img/store/cheongdam/btn_chungdam_next.png"); right:40px; }
+	.btn_chungdam_pop_close { display:block; position:absolute; top:40px; right:40px; width:44px; height:44px; text-indent:-20000px; background:url("../img/store/cheongdam/btn_chungdam_pop_close.png") no-repeat; z-index: 100}
+
+	.food_thum { margin:37px auto 0 !important; width:348px; }
+	.food_thum .swiper-pagination-bullet { height:100px; margin:0 8px; opacity:1; position:relative; width:100px; }
+	.food_thum .swiper-pagination-bullet-active:before { border:4px solid #bd9357; -webkit-box-sizing:border-box; box-sizing:border-box; content:""; display:block; position:absolute; top:0; left:0; width:100%; height:100%;  }
+
+	#mdCont .pop_txt_area { height:auto; padding:50px 0; text-align:center; }
+	
+	/* menu class */
+	.chungdam_tabmenu li.chungdam_menu_tab:first-child a { background-image:url("../img/store/cheongdam/chungdam_menu_tab03_off.png"); }
+	.chungdam_tabmenu li.chungdam_menu_tab:nth-child(2) a { background-image:url("../img/store/cheongdam/chungdam_menu_tab01_off.png"); }
+	.chungdam_tabmenu li.chungdam_menu_tab:last-child a { background-image:url("../img/store/cheongdam/chungdam_menu_tab02_off.png"); }
+	.chungdam_tabmenu li.chungdam_menu_tab:first-child.on a, 
+	.chungdam_tabmenu li.chungdam_menu_tab:first-child a:hover { background-image:url("../img/store/cheongdam/chungdam_menu_tab03_on.png"); }
+	.chungdam_tabmenu li.chungdam_menu_tab:nth-child(2).on a, 
+	.chungdam_tabmenu li.chungdam_menu_tab:nth-child(2) a:hover { background-image:url("../img/store/cheongdam/chungdam_menu_tab01_on.png"); }
+	.chungdam_tabmenu li.chungdam_menu_tab:last-child.on a, 
+	.chungdam_tabmenu li.chungdam_menu_tab:last-child a:hover { background-image:url("../img/store/cheongdam/chungdam_menu_tab02_on.png"); }
+	/* 20201016 청담스타 수정 */
+	.menu_pop_img_area01 { background-position:center -322px; background-image:url("../img/store/cheongdam/chungdam2020-sandwich_01.jpg"); }
+	.menu_pop_img_area02 { background-position:center -263px; background-image:url("../img/store/cheongdam/chungdam2020-sandwich_02.jpg"); }
+	.menu_pop_img_area03 { background-position:center -255px; background-image:url("../img/store/cheongdam/chungdam2020-sandwich_03.jpg"); }
+	.menu_pop_img_area04 { background-position:center -213px; background-image:url("../img/store/cheongdam/chungdam2020-cake_01_1.jpg"); } /* 20201026 수정 */
+	.menu_pop_img_area05 { background-position:center -205px; background-image:url("../img/store/cheongdam/chungdam2020-cake_02_1.jpg"); } /* 20201026 수정 */
+	.menu_pop_img_area06 { background-position:center -201px; background-image:url("../img/store/cheongdam/chungdam2020-cake_03_1.jpg"); } /* 20201026 수정 */
+	.menu_pop_img_area07 { background-position:center -213px; background-image:url("../img/store/cheongdam/chungdam2020-bread_01.jpg"); }
+	.menu_pop_img_area08 { background-position:center -213px; background-image:url("../img/store/cheongdam/chungdam2020-bread_02.jpg"); }
+	.menu_pop_img_area09 { background-position:center -213px; background-image:url("../img/store/cheongdam/chungdam2020-bread_03.jpg"); }
+	/* //20201016 청담스타 수정 */
+
+	/* md class */
+	.chungdam_tabmenu li.chungdam_md_tab:first-child a { background-image:url("../img/store/cheongdam/chungdam_md_tab01_off.png"); }
+	.chungdam_tabmenu li.chungdam_md_tab:last-child a { background-image:url("../img/store/cheongdam/chungdam_md_tab02_off.png"); }
+	.chungdam_tabmenu li.chungdam_md_tab:first-child.on a, .chungdam_tabmenu li.chungdam_md_tab:first-child a:hover { background-image:url("../img/store/cheongdam/chungdam_md_tab01_on.png"); }
+	.chungdam_tabmenu li.chungdam_md_tab:last-child.on a, .chungdam_tabmenu li.chungdam_md_tab:last-child a:hover { background-image:url("../img/store/cheongdam/chungdam_md_tab02_on.png"); }
+	.md_pop_img_cup01 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup01.jpg"); }
+	.md_pop_img_cup02 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup02.jpg"); }
+	.md_pop_img_cup03 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup03.jpg"); }
+	.md_pop_img_cup04 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup04.jpg"); }
+	.md_pop_img_cup05 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup05.jpg"); }
+	.md_pop_img_cup06 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup06.jpg"); }
+	.md_pop_img_cup07 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup07.jpg"); }
+	.md_pop_img_cup08 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_cup08.jpg"); }
+	.md_pop_img_reserve01 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve01.jpg"); }
+	.md_pop_img_reserve02 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve02.jpg"); }
+	.md_pop_img_reserve03 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve03.jpg"); }
+	.md_pop_img_reserve04 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve04.jpg"); }
+	.md_pop_img_reserve05 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve05.jpg"); }
+	.md_pop_img_reserve06 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve06.jpg"); }
+	.md_pop_img_reserve07 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve07.jpg"); }
+	.md_pop_img_reserve08 { background-position:center center; background-image:url("../img/store/cheongdam/chungdam_reserve08.jpg"); }
+
+	/* popup content */
+	.cd_pop_content { background-color:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; border:2px solid #bd9357; border-radius:20px; display:none; margin-left:-380px; position:absolute; /* top:50%; */ left:50%; padding-bottom:50px; width:760px; /* height:810px; */ z-index:98; }
+	.cd_pop_content .pop_txt_area { height:115px; padding-top:60px; text-align:center; }
+	.cd_pop_content .pop_txt_area .pop_ttl { color:#222; display:block; font-size:28px; font-weight:400; }
+	.cd_pop_content .pop_txt_area .pop_txt { color:#222; font-size:16px; line-height:125%; padding-top:20px; }
+
+	.cd_pop_content .pop_ibox { width:550px; margin:0 auto; }
+	.cd_pop_content .pop_ibox img { width:100%; }
+	.cd_pop_content .pop_tbox { width:550px; margin:20px auto; padding:20px 0; }
+	.cd_pop_content .pop_tbox p { line-height:20px; }
+
+	.pop_panorama { height:600px; display:none; left:50%; margin-left:-450px; position:absolute; width:900px; z-index:98; }
+	.panorama_close { background:url("../img/main/dday/btn_close.png") no-repeat; height:22px; position:absolute; right:-32px; top:0; width:22px; z-index:106; }
+	.panorama_close a { display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+	.panorama_wrap { height:600px; overflow:hidden; width:900px; }
+
+	.pano-1 { background:url("../img/store/cheongdam/cheongdam_vr_img1.jpg") repeat; height:855px; width:1265px; }
+
+	.tease_cd_layer { display:none; height:600px; left:50%; margin-left:-450px; position:absolute; /* top:20px; */ width:900px; z-index:105;}
+	.tease_cd_layer iframe { height:100%; position:absolute; width:100%; }
+
+	.tease_cd_close { background:url("../img/main/dday/btn_close.png") no-repeat; height:22px; position:absolute; right:-32px; top:0; width:22px; z-index:106; }
+	.tease_cd_close a { display:block; height:100%; overflow:hidden; text-indent:-20000px; width:100%; }
+
+	.m_cdpic { display:none; }
+	sup { vertical-align:super; font-size:12px; }
+	/* 청담프리미엄 end */
+
+/* 반응형 시작 */
+@media screen and (max-width:1600px) {
+	
+	.cheongdam_vr1 { height:auto; width:1000px; }
+	.vr1_txt { background-size:100% auto; right:975px; top:64px; width:350px; }
+
+	.cheongdam_vr2 { height:auto; top:350px; width:920px; }
+	.vr2_txt { background-size:100% auto; left:905px; top:614px; width:450px; }
+
+	.cheongdam_vr3 { height:auto; width:1000px; }
+	.vr3_txt { background-size:100% auto; right:865px; top:1075px; width:450px; }
+}
+
+@media screen and (max-width:1300px) {
+	
+	.cheongdam_vr_wrap { height:800px; }
+	.cheongdam_vr1 { height:auto; width:680px; }
+	.vr1_txt { right:620px; top:30px; width:300px; }
+
+	.cheongdam_vr2 { height:auto; top:190px; width:630px; }
+	.vr2_txt { left:605px; top:370px; width:400px; }
+
+	.cheongdam_vr3 { height:auto; width:670px; }
+	.vr3_txt { right:570px; top:640px; width:400px; }
+
+	.food3 { /*margin-left:220px; */} /*20170911*/
+}
+
+
+@media screen and (min-width:641px) and (max-width:1600px) {
+
+	.store_map_wrap { height:631px; }
+
+	.store_map_layer { width:240px; }
+
+	.store_map_layer_ttl h2 { font-size:20px; padding:25px 0 15px 10px; }
+	.map_layer_toggle { height:30px; top:16px; width:30px; }
+	.map_layer_toggle a { height:30px; width:30px; }
+
+	.store_map_layer_cont { height:440px; width:240px; }
+	.store_map_layer_cont header { height:38px; }
+
+	.quick_search_input { height:50px; }
+	.quick_search_inner { height:28px; margin:10px 0 0 10px; width:218px; }
+
+	.result_num_wrap,
+	.result_num_wrap2 { font-size:12px; height:44px; line-height:44px; text-indent:10px; }
+	.result_num_wrap3 { font-size:12px; height:44px; line-height:44px; text-indent:30px; }
+
+	.result_num_wrap.myStoreInfo { line-height:inherit; height:39px; padding-top:5px; }
+
+	.result_list_wrap { height:286px; }
+
+	.result_list { @height:300px; height:330px; }
+	.result_list.myFavoriteStore { height:235px; }
+	.result_list2 { height:350px; }
+	.result_list3 { height:230px; }
+	.result_list ul,
+	.result_list2 ul,
+	.result_list3 ul { width:220px; }
+	.result_list ul li,
+	.result_list2 ul li,
+	.result_list3 ul li { width:220px; }
+
+	.loca_step1 { height:402px; width:240px; }
+	.loca_step1_ttl { font-size:12px; height:50px; line-height:50px; text-indent:10px; }
+
+	.loca_step2_frame { @height:200px; height:270px; }
+	
+	.loca_step1_cont,
+	.loca_step2_cont { width:221px; }
+	.loca_step1_cont ul { height:330px; }
+	.loca_step2_cont ul { height:290px; }
+	.loca_step1_cont ul li,
+	.loca_step2_cont ul li { height:30px; line-height:30px; width:110px; }
+	.loca_step1_cont ul li a,
+	.loca_step2_cont ul li a { font-size:12px; height:100%; }
+
+	.loca_step2 { height:402px; width:240px; }
+	.loca_step2_ttl { font-size:12px; height:50px; line-height:50px; text-indent:10px; }
+
+	.result_num_wrap3 a.btn_prev { left:10px; top:14px; }
+
+	.my_visit_log_wrap { width:240px; }
+
+	p.btn_opt_chk { top:475px; }
+	
+	.pop_gcard_store_map .result_list ul li,
+	.pop_gcard_store_map .result_list2 ul li,
+	.pop_gcard_store_map .result_list3 ul li { width:220px; }
+
+	p.btn_opt_chk3 { left:120px !important; }
+	p.btn_opt_chk1 { left:120px !important; }
+
+	.opt_select_pop { left:10px; top:80px; }
+
+}
+
+@media screen and (min-width:961px) and (max-width:1099px) {
+	.section_inner{width: 100%; }/*20170804 추가*/
+	.ico_sepcial_list2 {padding: 0 40px; }/*20170804 추가*/
+	/* 161114 김민 추가 */
+	section.reserve_store_middle01 { /* background:url('../img/store/reserve_middle_bimg01.png') 0 0 no-repeat; */ } /* 20200902 수정 */
+	section.reserve_store_middle01 h3 { font-size:16px; color:#222222; font-weight:bold; padding:0 0 10px 0;} /*20170713 수정*/
+	/* 170105 황기흠 수정 */
+	article.reserveStore_middle01 { height:260px; background-position: 95% center; }/*20201016 원두 수정*/
+	/* 170105 황기흠 수정 end */
+	dl.rs_middle01 { width:51%; } /*20200527 수정*/
+	dl.rs_middle01 dd strong { color:#b06546; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:20px 0; line-height:1.8; }/*20170713 수정*/
+	dl.rs_middle01 dd p.t2 { font-size:14px; color:#666; font-weight:normal; line-height:1.6; padding-bottom:20px; } 
+	dl.rs_middle01 dd p.t2 span { display:block; padding-left:10px; }
+	/* 161114 김민 추가 end */
+
+	/* 160912 스타필드 */
+	.starField_visual_inner { width:100%; }
+
+	.map_teavana_pop ,
+	.map_teavana_pop2 { width:100%; }/*20170816 수정*/
+
+	.starField_know_inner { width:100%; }
+	.starField_know_each01 { left:50%; margin-left:-305px; }
+	.starField_know_each03 { left:50%; margin-left:-380px; }
+	/* 170131 황기흠 수정 */
+	.starField_know_each05 { left:425px; }
+	/* 170131 황기흠 수정 end */
+
+	.sf_know_img03 { left:50%; margin-left:60px; }
+	/* 170131 황기흠 수정 */
+	.sf_know_img05 { left:-60px; margin-left:15px; }
+	/* 170131 황기흠 수정 end */
+	/* 160912 스타필드 end */
+
+	/*20171221 추가 :미수정*/
+	.starField_know_each06 { left:51%; margin-left:-380px; } /* 20180116 left 수정 */
+	.sf_know_img06 { left:50%; margin-left:90px; }
+
+	
+	/* 160902 스타필드 추가 */
+	.sf_rough_wrap { height:0; padding-bottom:30%; width:100%; }
+	.sf_rough_inner { padding-left:54%; width:46%; }
+
+	.sfield_know_inner { width:96%; }
+
+	.sfield_list_inner ul { margin-left:-3.3333%; }
+	.sfield_list_inner ul li { margin-left:3.3333%; width:30%; }
+
+	article.sfield_bar_inner { margin-left:-48%; width:96%; }
+	/* 160902 스타필드 추가 end */
+
+	.pfood_know_area div.pfood_know_inner  { width:96%; }
+	.pfood_know_area dl.pfood_intro,
+	.community_store_wrap dl.pfood_visual, 
+	.community_store_wrap dl.fpark_visual { width:100%; }
+	.fpark_young .fpark_b_intro,
+	.fpark_young,	
+	.community_store_wrap dl.fpark_visual { width:100%; }
+	.fpark_know_area dl.fpark_intro { width:100%; }
+	.pfood_know_area dl.pfood_intro dt,
+	.fpark_young dl.fpark_b_intro dt,
+	.fpark_know_area dl.fpark_intro dt { width:48%; }
+	.pfood_know_area dl.pfood_intro dd,
+	.fpark_young dl.fpark_b_intro dd,
+	.fpark_know_area dl.fpark_intro dd { width:48%; }
+	.pfood_know_area dl.pfood_intro dd br,
+	.fpark_young dl.fpark_b_intro dd br,
+	.fpark_know_area dl.fpark_intro dd br { display:none; }
+	/* 메인 */
+	/*.storeSlideArea { height:0; }*/
+	.storeSlideArea { height:400px; }
+
+	/* 170106 수정 */
+	.bnr_temp_store_inner { margin-left:-49%; width:98%; }
+	.bnr_temp_store_txt_wrap { left:-10px; }
+	/* 170106 수정 end */
+
+
+	ul.store_slider li div.video iframe { left:0 !important; margin-left:0 !important; height:100% !important; position:absolute; width:100% !important; }
+	.storeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.store_slider li div { height:0; width:100% !important; position:relative; left:0; margin-left:0; padding:0 0 35% 0; top:0; }
+	.storeSlideArea .bxslide_btn_wrap { top:125px; }
+	.storeSlideArea #prevBtn, .storeSlideArea #nextBtn { top:44%; }
+	.storeSlideArea #prevBtn a { width:38.25px; height:38.25px; }
+	.storeSlideArea #nextBtn a { width:38.25px; height:38.25px; }
+
+	section.store_bn1_section { height:300px; }
+	section.store_bn2_section { height:300px; }
+	section.store_bn3_section { height:300px; }
+	section.store_bn4_section { height:300px; }
+	section.store_bn5_section { height:300px; }
+
+	article.store_bn_inner { width:100%; }
+
+	div.store_bn1_txt { left:65%; top:65px; }
+	div.store_bn1_btn { left:65%; top:206px; }
+
+	div.store_bn2_txt { left:5%; top:65px; }
+	div.store_bn2_btn { left:5%; top:206px; }
+
+	div.store_bn3_txt { left:65%; top:65px; }
+	div.store_bn3_btn { left:65%; top:206px; }
+
+	div.store_bn4_txt { left:5%; top:65px; }
+	div.store_bn4_btn { left:5%; top:206px; }
+
+	div.store_bn5_txt { left:65%; top:65px; }
+	div.store_bn5_btn { left:65%; top:206px; }
+
+	/* 161223 청담스타 */
+	section.store_bn6_section { height:300px; }
+	div.store_bn6_txt { left:5%; top:65px; }
+	div.store_bn6_btn { left:5%; top:206px; }
+	/* 161223 청담스타 end */
+
+
+	.store_map_wrap { height:600px; }
+	
+	.bnr_slider_wrap { height:325px; margin:30px auto 70px; width:860px; }
+	.bnr_slider_wrap ul li { height:325px; }
+
+	.bnr_slider_wrap div.bx-controls-direction a { height:27px; position:absolute; top:147px; width:16px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-prev { background-size:100% auto; left:-36px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-next { background-size:100% auto; right:-36px; }
+
+	.fpark_know_area div.fpark_know_inner { width:96%; background:none; }
+	/* 드라이브 스루 매장 */
+	
+	.st_cont {width:96%; margin:0 0 0 -48%;}
+	.drive_through_know { width:96%; }
+	.drive_through_know ul { width:100% }
+	.drive_through_know ul li dl { width:100%; }
+	.drive_through_know ul li.li1 dl dt { width:50%; }
+	.drive_through_know ul li.li1 dl dd { width:47.2%; padding-left:2.8%; }
+	.drive_through_know ul li.li2 dl dt { width:50%; }
+	.drive_through_know ul li.li2 dl dd { width:50%; }
+
+	article.driveStore_ber_innner { width:96%; margin-left:-48%; }
+
+	.drive_through_track p.drive_tit { left:250px; top:30px; }
+	.drive_through_track div.step2_txt { left:808px; top:201px; }
+	/* 드라이브 스루 매장 end */
+
+	/* 스타벅스 리저브 매장 */
+	article.reserveStore_bottom01 { width:100%; height:auto; background:url('../img/store/reserveStore_bottom01_bg.png') 0 0 no-repeat; background-size:50% auto; }
+	article.reserveStore_bottom01 h4 { padding:0 0 10px 52.7%; }
+	dl.rs_bottom01 { padding-left:52.7%; }
+	dl.rs_bottom01 dd p br { display:none; }
+
+	article.reserveStore_bottom02 {height:auto; background:url('../img/store/reserveStore_bottom02_1_bg.png') 0 0 no-repeat; background-size:50% auto; } /*20170716수정*/
+	article.reserveStore_bottom02 h4 { padding:0 0 10px 52.7%; } /*20170716추가*/
+	dl.rs_bottom02 { padding-left:52.7%;} /*20170716수정*/
+	dl.rs_bottom02 dd br { display:none; }
+	dl.rs_bottom02 dd p.t2 span { display:inline; }
+
+	article.reserveStore_bottom03 { background:url('../img/store/reserveStore_bottom03_bg.jpg') 0 center no-repeat; background-size:47.2727% auto; }
+	dl.rs_bottom03 { padding:0 0 0 51.8181%; }
+
+	article.reserveStore_ber_innner { width:96%; margin:0 0 0 -48%; }
+	/* 스타벅스 리저브 매장 end */
+
+	/* 커뮤니티 스토어 매장 */
+	.community_store_wrap { width:96%; }
+	.community_store_wrap dl.cs_visual { width:100%; }
+	.cs_know_area div.cs_know_inner { width:96%; background:url('../img/store/wondu_bg.png') right bottom no-repeat; background-size:100% auto; }
+
+	.cs_know_area dl.cs_intro { width:100%; }
+	.cs_know_area dl.cs_intro dt { width:50%; }
+	.cs_know_area dl.cs_intro dd { width:47.2727%; }
+
+	.cs_young { width:100%; background-size:50% auto;; }
+	/* 커뮤니티 스토어 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_wrap { width:96%; }
+	.myhand_store_vis { width:100%; height:inherit; }
+
+	.myhand_store_info { width:100%; margin-bottom:100px; }
+	.myhand_store_info dd { width:50%; padding-top:30px; }
+	.myhand_store_info dt { width:46.1818%; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	.bnr_slider_wrap { height:356px; }
+}
+
+/* 161202 황기흠 반응형 셀렉트 박스 해상도 추가 */
+@media screen and (max-width:1100px) {
+	section.driveStore_ber_wrap .driveStore_selector_inner { height:40px; margin:0 2%; padding:20px 0; position:relative; width:96%; }
+	article.driveStore_ber_innner dl dt img.w_pic { display:block; height:66px; margin-top:7px; width:auto; }
+	section.driveStore_ber_wrap dl.driveStore_selector { width:310px; }
+	section.driveStore_ber_wrap dl.driveStore_selector dd { width:210px; }
+	section.driveStore_ber_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 94% center; width:208px; height:38px; }
+	section.driveStore_ber_wrap .select_box select { padding:0 10px; position:absolute; top:0; vertical-align:middle; width:210px; z-index:20; }
+	
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 */
+	section.sfield_bar_wrap .sfield_selector_inner { height:40px; margin:0 2%; padding:20px 0; position:relative; width:96%; }
+	article.sfield_bar_inner dl.sfield_bar { height:80px; }
+	article.sfield_bar_inner dl.sfield_bar dt { font-size:15px; }
+	article.sfield_bar_inner dl.sfield_bar dt img { display:block; float:left; height:30px; margin-top:25px; width:50px; }
+	article.sfield_bar_inner dl.sfield_bar dd { font-size:13px; }
+	section.sfield_bar_wrap dl.sfield_selector { width:310px; }
+	section.sfield_bar_wrap dl.sfield_selector dd { width:210px; }
+	section.sfield_bar_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 94% center; width:208px; height:38px; }
+	section.sfield_bar_wrap .select_box select { padding:0 10px; position:absolute; top:0; vertical-align:middle; width:210px; z-index:20; }
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 end */
+	/* 161208 황기흠 위치 수정 */
+	.map_teavana { left:36px; }
+	/* 161208 황기흠 위치 수정 end */
+}
+
+@media screen and (max-width:960px) {
+
+	/* 청담프리미엄 */
+	.w_cdpic { display:none; }
+	.m_cdpic { display:block; }
+
+	.cheongdam_visual_wrap { background:url("../img/store/cheongdam/m/m_cheongdam_visual_bg.jpg") center center no-repeat; background-size:cover; height:900px; width:100%; }
+	.cheongdam_visual_inner { margin:0 auto; position:relative; width:100%; }
+	.ttl_cheongdam { background:url("../img/store/cheongdam/m/m_ttl_cheongdam.png") no-repeat; height:319px; margin-left:-208px; top:154px; width:416px; }
+	.btn_visual_area { margin-left:-105px; top:520px; width:210px; }
+	.btn_visual_area a { float:none; margin-left:0; margin-bottom:20px; }
+
+	.section_inner { width:100%; }
+	.section_ttl { margin-left:20px; }
+	.ico_line_sec01,
+	.ico_line_sec02,
+	.ico_line_sec03,
+	.ico_line_sec04 { left:initial; margin-left:0; right:20px; }
+
+	.cheongdam_vr_wrap { height:2110px; }
+	.cheongdam_vr1 { height:470px; margin:0 auto; position:static; width:580px; }
+	.cheongdam_vr2 { height:470px; margin:0 auto; position:static; width:580px; }
+	.cheongdam_vr3 { height:470px; margin:0 auto; position:static; width:580px; }
+
+	.vr1_txt { background:url("../img/store/cheongdam/m/m_store_1f_txt.png") no-repeat; height:128px; margin:80px auto 0; position:static; width:640px; }
+	.vr2_txt { background:url("../img/store/cheongdam/m/m_store_2f_txt.png") no-repeat; height:128px; margin:80px auto 0; position:static; width:640px; }
+	.vr3_txt { background:url("../img/store/cheongdam/m/m_store_3f_txt.png") no-repeat; height:128px; margin:80px auto 0; position:static; width:640px; }
+
+	
+	.ttl_specoffee { height:134px; background:url("../img/store/cheongdam/m/m_ttl_specoffee.png") no-repeat  center 0;}/* 이미지  링크 원복   20170804  수정; */
+	.ttl_spefood { /*background:url("../img/store/cheongdam/m/m_ttl_spefood.png") no-repeat; height:102px; left:50%; margin-left:-308px; position:absolute; top:72px; padding-top: 72px;  */} /* 20170808  배경이미지 삭제 */
+	.ttl_spefood img.m{display: block; width: 85%;  margin: auto; } /* 20170809  추가수정 */
+	.ttl_spefood img.p{display: none;  } /* 20170809  추가 */
+	.ttl_spemd {/* background:url("../img/store/cheongdam/m/m_ttl_spemd.png") no-repeat; height:217px; left:50%; margin-left:-308px; position:absolute; top:72px; width:616px; */ padding-top: 72px; text-align: center; } /* 20180808  배경삭제 */
+	.ttl_spemd img {width: 616px; }/* 20170808  추가 */
+	.ttl_spemd img.p {display: none;  }/* 20170808  추가 */
+	.ttl_spemd img.m {display: block; margin: auto;  }/* 20170808  추가 */
+
+	.ttl_specoffee2 {padding: 0 50px; }
+	.ico_sepcial_list2 {width: 100%; box-sizing: border-box; }
+	/*.ico_sepcial_list2 {width: 498px;height: auto;   margin:auto; } 
+	.ico_sepcial_list2 li:nth-child(4) {margin-left: 0; }
+	.ico_sepcial_list2 li.sepcial_list01, .ico_sepcial_list2 li.sepcial_list03, .ico_sepcial_list2 li.sepcial_list06, .ico_sepcial_list2 li.sepcial_list04{ margin-top:15px; }
+	.ico_sepcial_list2 li.sepcial_list02, .ico_sepcial_list2 li.sepcial_list05 {margin-top: 0px; }*/
+
+	.special_coffee_slide { overflow:visible; width:430px; }
+	.special_coffee_wrap .swiper-button-prev,
+	.special_coffee_wrap .swiper-button-next { display:none; }
+	
+	.special_food_wrap { background:url("../img/store/cheongdam/m/m_special_food_bg.jpg") center bottom  no-repeat; background-size:cover; height:1550px; width:100%; } /*20170911*/
+	.food1 { /*margin-left:-45%; */ top: 56%; left: 5%;  }/*20170911*/
+	.food2 { top:78%; left: 60% } /* 20170911 */
+	.food3 { top:17%; left: 65%; } /* 20170911 */
+
+	.ico_sepcial_list { margin-left:-311px; width:622px; }
+	.ico_sepcial_list li { margin-left:10px; }
+
+	.special_md_wrap { background:url("../img/store/cheongdam/m/m_special_md_bg.jpg") center center no-repeat; background-size:cover; height:1108px; width:100%; }
+
+	.tease_cd_layer,
+	.cd_pop_content,
+	.chungdam_menu_pop,
+	/*.chungdam_md_pop { margin-left:-48%;*width:96%;}/*20170911*/
+
+	.tease_cd_close { right:0; top:-20px; }
+
+	.cd_pop_content { padding-bottom:30px; }
+	.cd_pop_content .pop_tbox { margin:20px auto; width:90%; }
+
+	.pop_panorama { height:auto; margin-left:-48%; width:96%; }
+	.panorama_wrap { height:auto; width:100%; }
+	.panorama_close { right:0; top:-30px; }
+	/* 청담프리미엄 end */
+
+/* 	section.driveStore_ber_wrap { height:160px; } */
+	section.driveStore_ber_wrap .driveStore_selector_inner { width:100%; }
+	section.driveStore_ber_wrap .driveStore_selector_area { position:relative; width:100%; }
+	section.driveStore_ber_wrap .driveStore_selector_wrap { background-color:#f4f4f2; left:0; margin-left:0; position:absolute; top:80px; width:100%; z-index:2; }
+	section.driveStore_ber_wrap dl.driveStore_selector { width:96%; }
+	section.driveStore_ber_wrap dl.driveStore_selector dt { color:#444; font-size:16px; width:100px; }
+	section.driveStore_ber_wrap dl.driveStore_selector dd { width:180px; }
+	section.driveStore_ber_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 94% center; width:178px; height:38px; }
+	section.driveStore_ber_wrap .select_box select { padding:0 10px; position:absolute; top:0; vertical-align:middle; width:180px; z-index:20; }
+
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 */
+/* 	section.sfield_bar_wrap { height:160px; } */
+	section.sfield_bar_wrap .sfield_selector_inner { width:100%; }
+	section.sfield_bar_wrap .sfield_selector_area { position:relative; width:100%; }
+	section.sfield_bar_wrap .sfield_selector_wrap { background-color:#f4f4f2; left:0; margin-left:0; position:absolute; top:80px; width:100%; z-index:2; }
+	section.sfield_bar_wrap dl.sfield_selector { width:96%; }
+	section.sfield_bar_wrap dl.sfield_selector dt { color:#444; font-size:16px; width:100px; }
+	section.sfield_bar_wrap dl.sfield_selector dd { width:180px; }
+	section.sfield_bar_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 94% center; width:178px; height:38px; }
+	section.sfield_bar_wrap .select_box select { padding:0 10px; position:absolute; top:0; vertical-align:middle; width:180px; z-index:20; }
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 end */
+
+	/* 170106 수정 */
+
+	.store_yt_layer { height:0; margin-left:-49%; padding-bottom:55%; width:98%; }
+	.store_yt_close { right:0; top:-32px; }
+
+	/* 170106 수정 end */
+
+	  /* 20180110 티바나 특화음료 추가 */
+	.beverage_slide_wrap .swiper-slide { width:27.8% !important; }
+	.beverage_slide_wrap:before, .beverage_slide_wrap:after { width: 53px; }
+  /* //20180110 티바나 특화음료 추가 */
+}
+/* 161202 황기흠 반응형 셀렉트 박스 해상도 추가 end */
+
+
+
+
+
+@media screen and (min-width:641px) and (max-width:960px) {
+	.ico_sepcial_list2{padding: 0 40px; }
+	/* 161114 김민 추가 */
+	section.reserve_store_middle01 { /* background:url('../img/store/reserve_middle_bimg01.png') 0 0 no-repeat; */ } /* 20200902 수정 */
+	section.reserve_store_middle01 h3 {position:relative; font-size:16px; color:#222222; font-weight:bold; padding:0 0 10px 0;}/*20170713 수정*/
+	article.reserveStore_middle01 { height:270px; background-position: 100% center; background-size:45%;} /*20201016 원두 수정*/
+	dl.rs_middle01 { width:55%;  padding-top: 45px; }
+	dl.rs_middle01 dd strong { color:#b06546; display:block; font-size:20px; font-style:italic; font-weight:normal; margin:20px 0; line-height:1.8; }/*20170713 수정*/
+	dl.rs_middle01 dd p.t2 { font-size:14px; color:#666; font-weight:normal; line-height:1.6; padding-bottom:20px; } 
+	dl.rs_middle01 dd p.t2 span { display:block; padding-left:10px; }
+	dl.rs_bottom01 dd p br.for_web { display:none !important; }
+	dl.rs_bottom02 dd p br.for_web { display:none !important; }
+	/* 161114 김민 추가 end */
+
+	/* 160912 스타필드 */
+	.starField_visual_inner { width:100%; }
+
+	.map_teavana_pop,
+	.map_teavana_pop2 { width:100%; }/*20170816 수정*/
+
+	.starField_know_area { height:100%; }
+	.starField_know_inner { width:100%; }
+	.starField_know_each01 { left:50%; margin-left:-48%; padding-top:50px; position:relative; top:0; width:96%; }
+	.sf_know_img01 { left:50%; position:relative; top:50px; width:100%; }
+	
+	.starField_know_each02 { left:50%; margin-left:-48%; position:relative; top:-150px; width:96%; }
+	.sf_know_img02 { left:-40%; position:relative; top:-200px; width:100%; }
+	
+	.starField_know_each03 { left:50%; margin-left:-48%; position:relative; top:-400px; width:96%; }
+	.sf_know_img03 { left:0; position:relative; top:-450px; width:100%; }
+	
+	.starField_know_each04 { left:50%; margin-left:-48%; position:relative; top:-200px; width:96%; }
+	.sf_know_img04 { left:0; position:relative; top:-250px;; width:100%; }
+	
+	/* 170131 황기흠 수정 */
+	.sf_btn_more2 { left:auto; right:0; top:auto; }
+	.sf_know_txt i.ttl_circle2 { left:-6px; right:auto; }
+
+	.starField_know_each05 { top:150px; left:50%; margin-left:-48%; position:relative; width:96%; }
+	.sf_know_img05 { top:-400px; left:0; position:relative; width:100%; }
+	/* 170131 황기흠 수정 end */
+
+	.sf_btn_more { background-color:#fff; border-radius:50%; margin-top:-28px; position:absolute; right:0; }
+	.sf_know_txt strong { display:block; }
+	.sf_know_txt p br { display:none; }
+
+	.starField_know_each03 > .sf_know_txt > strong,
+	.starField_know_each05 > .sf_know_txt > strong,
+	.starField_know_each06 > .sf_know_txt > strong { padding-right:0; }
+	
+	/*20171221 추가 :미수정*/
+	.starField_know_each06 {position:relative;  left:50%; margin-left:-48%; top:0; width:96%; }
+	.sf_know_img06 { left:50%; margin-left:20%; position:relative; bottom:0; width:100%; }
+
+
+
+	.teavana_tea_pop,
+	.teavana_drink_pop,
+	.teavana_md_pop { max-width:none; margin-left:-45%; width:90%; }
+	.teavana_drink_list { margin-left:-3%; width:100%; }
+	.teavana_drink_list li { margin:0 0 10px 3%; width:27%; }
+	.teavana_drink_list li figure { height:auto; width:100%;}
+	.teavana_drink_list li p { width:100%; }
+	.teavana_drink_list li p strong { font-size:16px; }
+	.teavana_drink_list li p span { font-size:14px; }
+
+	.teavana_md_list li { margin:0 0 10px 2%; width:20%; }
+	.teavana_md_list li figure {width:100%; height:auto;}
+	.teavana_md_list li p { width:100%; }
+	/* 160912 스타필드 end */
+
+	/* 160902 스타필드 추가 */
+	.sf_rough_wrap { width:100%; }
+	.sf_rough_inner { padding-left:54%; width:46%; }
+
+	.sfield_know_inner { width:96%; }
+
+	.sfield_list_inner ul { margin-left:-3.3333%; }
+	.sfield_list_inner ul li { margin-left:3.3333%; width:30%; }
+	.sfield_list_inner ul li strong { font-size:16px; }
+	.sfield_list_inner ul li strong span.en { font-size:14px; }
+	.sfield_list_inner ul li p { font-size:12px; }
+
+	article.sfield_bar_inner { margin-left:-48%; width:96%; }
+	/* 160902 스타필드 추가 end */
+
+	.pfood_know_area div.pfood_know_inner  { width:96%; }
+	.fpark_know_area div.fpark_know_inner { width:100%; background:none;}
+	.community_store_wrap dl.pfood_visual,
+	.pfood_know_area dl.pfood_intro,
+	.fpark_young .fpark_b_intro,
+	.fpark_young,
+	.community_store_wrap dl.fpark_visual { width:100%; }
+	.fpark_know_area dl.fpark_intro { width:100%; }
+	.pfood_know_area dl.pfood_intro dt,
+	.fpark_young dl.fpark_b_intro dt,
+	.fpark_know_area dl.fpark_intro dt { width:48%; }
+	.pfood_know_area dl.pfood_intro dd,
+	.fpark_young dl.fpark_b_intro dd,
+	.fpark_know_area dl.fpark_intro dd { width:48%; }
+		.pfood_know_area dl.pfood_intro dd br,
+	.fpark_young dl.fpark_b_intro dd br,
+	.fpark_know_area dl.fpark_intro dd br { display:none; }
+	/* 메인 */
+	/*.storeSlideArea { height:0; }*/
+	.storeSlideArea { height:400px; }
+
+	/* 170106 수정 */
+	.bnr_temp_store_inner { margin-left:-49%; width:98%; }
+	.bnr_temp_store_txt_wrap { left:-10px; }
+	/* 170106 수정 end */
+
+	ul.store_slider li div.video iframe { left:0 !important; margin-left:0 !important; height:100% !important; position:absolute; width:100% !important; }
+	.storeSlideArea .bxslide-main .bx-wrapper .bx-viewport ul.store_slider li div { height:0; width:100% !important; position:relative; left:0; margin-left:0; padding:0 0 35% 0; top:0; }
+	.storeSlideArea .bxslide_btn_wrap { top:75px; }
+	.storeSlideArea #prevBtn, .storeSlideArea #nextBtn { top:44%; }
+	.storeSlideArea #prevBtn a { width:38.25px; height:38.25px; }
+	.storeSlideArea #nextBtn a { width:38.25px; height:38.25px; }
+
+	section.store_bn1_section { height:200px; }
+	section.store_bn2_section { height:200px; }
+	section.store_bn3_section { height:200px; }
+	section.store_bn4_section { height:200px; }
+	section.store_bn5_section { height:200px; }
+
+	article.store_bn_inner { width:100%; }
+
+	div.store_bn1_txt { left:60%; top:45px; width:214px;  }
+	div.store_bn1_btn { left:60%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	div.store_bn2_txt { left:2%; top:45px; width:244px; }
+	div.store_bn2_btn { left:2%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	div.store_bn3_txt { left:60%; top:45px; width:216px;  }
+	div.store_bn3_btn { left:60%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	div.store_bn4_txt { left:2%; top:45px; width:262px; }
+	div.store_bn4_btn { left:2%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	div.store_bn5_txt { left:60%; top:45px; width:240px;  }
+	div.store_bn5_btn { left:60%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+
+	/* 161223 청담스타 */
+	section.store_bn6_section { height:200px; }
+	div.store_bn6_txt { left:2%; top:45px; width:322px; }
+	div.store_bn6_btn { left:2%; top:135px; width:80px; height:22px; line-height:22px; font-size:12px; }
+	/* 161223 청담스타 end */
+
+
+	.store_map_wrap { height:550px; }
+	
+	.bnr_slider_wrap { height:315px; margin:30px auto 70px; width:530px; }
+	.bnr_slider_wrap ul li { height:315px; }
+
+	.bnr_slider_wrap div.bx-controls-direction a { height:27px; position:absolute; top:145px; width:16px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-prev { background-size:100% auto; left:-36px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-next { background-size:100% auto; right:-36px; }
+
+	/* 스타벅스 리저브 매장 */
+	article.reserveStore_bottom01 { width:100%; height:auto; background:url('../img/store/reserveStore_bottom01_bg.png') 0 0 no-repeat; background-size:50% auto; }
+	article.reserveStore_bottom01 h4 { padding:0 0 10px 52.7%; }
+	dl.rs_bottom01 { padding-left:52.7%; }
+	dl.rs_bottom01 dd p br { display:none; }
+
+	article.reserveStore_bottom02 { height:auto; background:url('../img/store/reserveStore_bottom02_1_bg.png') 0 0 no-repeat; background-size:50% auto; } /*20170713수정*/
+	article.reserveStore_bottom02 h4 { padding:0 0 10px 52.7%; } /*20170713추가*/
+	dl.rs_bottom02 { padding-left:52.7%; } /*20170713수정*/
+	dl.rs_bottom02 dd br { display:none; }
+	dl.rs_bottom02 dd p.t2 span { display:inline; }
+
+	article.reserveStore_bottom03 { background:url('../img/store/reserveStore_bottom03_bg.jpg') 0 center no-repeat; background-size:47.2727% auto; }
+	dl.rs_bottom03 { padding:0 0 0 51.8181%; }
+
+	article.reserveStore_ber_innner { width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing: border-box} /*20170717수정*/
+	/* 스타벅스 리저브 매장 end */
+
+	/* 커뮤니티 스토어 매장 */
+	.cs_know_area { padding:40px 0 0 0; }
+
+	.community_store_wrap { width:96%; }
+	.community_store_wrap dl.cs_visual { width:100%; }
+	.cs_know_area div.cs_know_inner { width:96%; background:url('../img/store/wondu_bg.png') right bottom no-repeat; background-size:100% auto; }
+
+	.cs_know_area dl.cs_intro { width:100%; }
+	.cs_know_area dl.cs_intro dt { width:50%; }
+	
+	.cs_know_area dl.cs_intro dd { width:47.2727%; }
+	.cs_know_area dl.cs_intro dd strong { font-size:15px; line-height:1.4; }
+	.cs_young strong { font-size:15px; line-height:1.4; width:45%; display:block; }
+	.cs_young strong br { display:none; }
+	.cs_know_area dl.cs_intro dd p.p2 { font-size:13px; line-height:1.4; }
+	.cs_young p { font-size:13px; line-height:1.4; width:45%; }
+
+	.cs_young { width:100%; min-height:197px; background:url("../img/store/cs_pic2.png") right top no-repeat; background-size:50% auto; }
+	/* 커뮤니티 스토어 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_wrap { width:96%; }
+	.myhand_store_vis { width:100%; height:inherit; margin-bottom:0; }
+
+	.myhand_store_info { width:100%; margin-bottom:130px; }
+	.myhand_store_info dd { width:50%; padding-top:30px; }
+	.myhand_store_info dt { width:46.1818%; margin-top:3%; }
+
+	.myhand_store_info dd p.p3 br { display:none; }
+	.myhand_store_info dd p.p4 br { display:none; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	.bnr_slider_wrap { height:350px; }
+
+	.store_height_wrap { top:70px; }
+
+	p.btn_opt_chk3 { top:45px !important; }
+	p.btn_opt_chk1 { top:45px !important; }
+
+}
+
+@media screen and (min-width:761px) and (max-width:869px) {
+	.myhand_store_info { margin-bottom:100px; }
+	.myhand_store_info dt { margin-top:5%; }
+}
+
+@media screen and (min-width:641px) and (max-width:760px) {
+	.myhand_store_info { margin-bottom:50px; }
+	.myhand_store_info dt { margin-top:10%; }
+}
+
+@media screen and (min-width:801px) and (max-width:960px) {
+	/* 드라이브 스루 매장 */
+	.st_cont {width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing: border-box} /*20170718수정*/
+	.drive_through_know { width:96%; }
+	.drive_through_know ul { width:100% }
+	.drive_through_know ul li dl { width:100%; }
+	.drive_through_know ul li.li1 dl dt { width:50%; }
+	.drive_through_know ul li.li1 dl dd { width:47.2%; padding-left:2.8%; }
+	.drive_through_know ul li.li2 dl dt { width:50%; }
+	.drive_through_know ul li.li2 dl dd { width:48%; padding-right:2%; }
+	.drive_through_know ul li.li1 dl dd p.p2 br { display:none; }
+	.drive_through_know ul li.li2 dl dd p.p3 br { display:none; }
+	strong.dt_emphasis br { display:none; }
+
+	article.driveStore_ber_innner { width:96%; margin-left:-48%; }
+
+	.drive_through_track { display:none; }
+	.m_drive_wrap { display:block; margin-top:30px; padding:30px 0 150px 0; background:url('../img/store/drive_through_bg.jpg') repeat; position:relative; overflow:hidden; }
+	.m_drive_wrap p.tit { width:350px; margin:0 auto 30px; }
+	.m_drive_wrap ul.step { width:100%; margin:0 auto; }
+	.m_drive_wrap ul.step:after { content:""; display:block; clear:both; }
+	.m_drive_wrap ul.step li { float:left; width:32%; padding:0 0.5%; text-align:center; }
+	.m_drive_wrap ul.step li dt { margin-bottom:20px; }
+
+	.m_drive_wrap div.m_store { position:absolute; right:0; bottom:0; width:30%; }
+	.m_drive_wrap div.m_san { position:absolute; left:0; bottom:0; width:20%; }
+	.m_drive_wrap div.m_car { position:absolute; left:-30%; bottom:0; width:30%; }
+
+	.m_drive_wrap div.m_cloud1 { position:absolute; right:-3%; top:5%; width:13%; }
+	.m_drive_wrap div.m_cloud2 { position:absolute; right:10%; top:13%; width:7%; }
+	.m_drive_wrap div.m_cloud3 { position:absolute; left:1%; top:73%; width:12%; }
+	/* 드라이브 스루 매장 end */
+}
+
+@media screen and (min-width:641px) and (max-width:860px) {
+	.pop_gcard_store_map { width:620px !important; margin-left:-310px !important; }
+}
+
+@media screen and (max-width:800px) {
+	/* 드라이브 스루 매장 */
+	.drive_through_track { display:none; }
+	.m_drive_wrap { display:block; margin-top:30px; padding:30px 0 100px 0; background:url('../img/store/drive_through_bg.jpg') repeat; position:relative; overflow:hidden; }
+	.m_drive_wrap p.tit { width:80%; margin:0 auto 30px; position:relative; z-index:3; }
+	.m_drive_wrap ul.step { margin:0 auto; z-index:2; position:relative; }
+	.m_drive_wrap ul.step li { float:none; width:100%; text-align:center; margin-bottom:50px; }
+	.m_drive_wrap ul.step li dt { margin-bottom:20px; }
+
+	.m_drive_wrap div.m_store { position:absolute; right:0; bottom:0; width:30%; }
+	.m_drive_wrap div.m_san { position:absolute; left:0; bottom:0; width:20%; }
+	.m_drive_wrap div.m_car { position:absolute; left:-30%; bottom:0; width:21%; }
+
+	.m_drive_wrap div.m_cloud1 { position:absolute; right:-3%; top:7%; width:20%; }
+	.m_drive_wrap div.m_cloud2 { position:absolute; right:17%; top:10%; width:14%; }
+	.m_drive_wrap div.m_cloud3 { position:absolute; left:3%; top:62%; width:19%; }
+	/* 드라이브 스루 매장 end */
+}
+
+@media screen and (min-width:641px) and (max-width:800px) {
+	/* 드라이브 스루 매장 */
+	.st_cont {width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing:border-box} /*20170718수정*/
+	article.driveStore_ber_innner { width:96%; margin-left:-48%; }
+
+	.drive_through_know { width:96%; }
+	.drive_through_know ul { width:100% }
+	.drive_through_know ul li dl { width:100%; }
+	.drive_through_know ul li.li1 dl dt { width:50%; }
+	.drive_through_know ul li.li1 dl dd { width:47.2%; padding-left:2.8%; }
+	.drive_through_know ul li.li2 dl dt { width:50%; }
+	.drive_through_know ul li.li2 dl dd { width:48%; padding-right:2%; }
+	.drive_through_know ul li.li1 dl dd p.p2 br { display:none; }
+	.drive_through_know ul li.li2 dl dd p.p3 br { display:none; }
+	strong.dt_emphasis br { display:none; }
+
+	.m_drive_wrap ul.step { width:55%; }
+	/* 드라이브 스루 매장 end */
+
+
+}
+
+
+@media screen and (max-width:640px) {
+	/*20170718추가*/
+	article.f_text dl dt{width:90%; font-size:16px; margin: 0 auto}
+	article.f_text h3{width:90%; font-size:15px; padding-top: 0; margin: 0 auto}
+	article.f_text dl dd p{font-size: 12px}
+	dl.rs_bottom02 dd p:last-child{margin-top:20px} /*20170718추가*/
+	
+	/* 170106 일시적용 */
+
+	.temporary_store_bnr { height:0; padding-bottom:154%; }
+	.bnr_temp_store { background:url("../img/store/bnr_temp_store_m.jpg") no-repeat; background-size:100% auto; height:0; padding-bottom:154%; }
+	.bnr_temp_store_inner { margin-left:-49%; width:98%; }
+
+	.bnr_temp_store_txt_wrap { height:0; left:50%; margin-left:-30%; padding-bottom:55%; top:25%; width:60%; }
+	.bnr_temp_store_txt { background:url("../img/store/bnr_temp_store_mtxt.png") no-repeat; background-size:100% auto; height:0; left:0; padding-bottom:70%; position:absolute; top:0; width:100%; }
+
+	.btn_temp_store { left:50%; margin-left:-60.5px; }
+
+	/* 170106 일시적용 end */
+
+	/* 청담프리미엄 */
+	/*.ttl_spefood  ,  .ttl_spemd { background-size:100% auto; margin-left:-240px; width:80%; }  /* 20170808  수정 */
+	.ttl_specoffee{ background-size:80% auto; }
+
+	.cheongdam_vr_wrap { background:url("../img/store/cheongdam/m/m_cheongdam_vr_bg.jpg") no-repeat; height:0; padding-bottom:335%; }
+	.cheongdam_vr1,
+	.cheongdam_vr2,
+	.cheongdam_vr3 { height:auto; width:90%; } 
+
+	
+	.special_coffee_wrap {height: 100%; padding-top: 25px; background: url("../img/store/cheongdam/m.special_coffee_bg.jpg")   no-repeat center bottom;  background-size: cover; }
+	.ttl_specoffee { height:134px; background:url("../img/store/cheongdam/m/m_ttl_specoffee.png") no-repeat  center 0;  background-size: 80%; }/* 이미지  링크 원복   20170804  수정; */
+	/*.ttl_spefood { background:url("../img/store/cheongdam/m/m_ttl_spefood.png") no-repeat; height:102px; left:50%; margin-left:-308px; position:absolute; top:72px; width:616px; }   20170808   삭제*/
+	/*.ttl_spemd {/* background:url("../img/store/cheongdam/m/m_ttl_spemd.png") no-repeat; height:217px; left:50%; margin-left:-308px; position:absolute; top:72px; width:616px;  }20170808   삭제*/
+
+	.ttl_specoffee2 {padding: 0 50px; }
+	.ico_sepcial_list2 {width: 100%; height: auto;   margin: 5px auto; padding: 0 40px; box-sizing: border-box; } 
+	.ico_sepcial_list2  li {width: 27%;  margin-left: 5%}
+	.ico_sepcial_list2  li  a {background-size: 100%;  }
+	.ico_sepcial_list2 li:nth-child(4) {margin-left: 0; }
+	.ico_sepcial_list2 li.sepcial_list01, .ico_sepcial_list2 li.sepcial_list03, .ico_sepcial_list2 li.sepcial_list06, .ico_sepcial_list2 li.sepcial_list04{ margin-top:2%; }
+	.ico_sepcial_list2 li.sepcial_list02, .ico_sepcial_list2 li.sepcial_list05 {margin-top: 0px; }
+	.ico_sepcial_list2 li:first-child , .ico_sepcial_list2 li:nth-child(4){ margin-left: 5%; }
+
+	.vr1_txt,
+	.vr2_txt,
+	.vr3_txt { background-size:100% auto; margin:10% auto 0; width:100%; }  
+	
+	.special_food_wrap { height:882px; }
+	.special_md_wrap { height:882px; }
+
+	.ico_sepcial_list { width:90%; margin: 0 auto; left: 0; top:198px; position: relative; }
+	.ico_sepcial_list li { display:inline-block; float:none; margin-left:0; width:24%; }
+	.ico_sepcial_list li a { background-size:100% auto !important; }
+
+	.food1 { /*margin-left:-54%; /top:500px;*/ } /*20170911*/
+	.food2 {/* top:200px; */}/*20170911*/
+	.food3 { /*margin-left:6%; top:610px; */}/* 20170911*/
+
+	.special_coffee_slide { width: 350px; }
+	.special_coffee_slide .swiper-wrapper .swiper-slide{width: 350px; }
+	
+	/*.chungdam_menu_pop, 
+	.chungdam_md_pop { height:650px; } 20170911*/
+
+	.chungdam_tab_cont 
+	.chungdam_slider { height:395px; }
+
+	.chungdam_tabmenu li { width:30%; }
+	.chungdam_tabmenu li a { width:100%; }
+	.chungdam_menu_tab a { background-size:auto 24%; }
+	.chungdam_md_tab a { background-size:auto 28%; }
+	.btn_chungdam_pop_close { background:url("../img/main/dday/btn_close.png") no-repeat; height:22px; right:0; top:-30px; width:22px; }
+	.pop_txt_area { /* height: 115px; */ height: auto; padding-bottom: 10px; padding-top: 20px; } /* 20201016 청담스타 수정 */
+	#menuCont .pop_img_area { height:260px; background-size:100% auto; } /* 20201016 청담스타 수정 */
+	#mdCont .pop_img_area { height:260px; background-size:100% auto; background-position:center 55%; }
+	.chungdam_tab_cont .btn_chungdam_arrow { top:215px; }
+	
+	/* 20201016 청담스타 수정 */
+	.menu_pop_img_area01 {background-position: center 80%;}
+	.menu_pop_img_area02 {background-position: center 68%;}
+	.menu_pop_img_area03 {background-position: center 75%;}
+	.menu_pop_img_area04 {background-position: center 54%;}
+	.menu_pop_img_area05 {background-position: center 53%;}
+	.menu_pop_img_area06 {background-position: center 52%;}
+	.menu_pop_img_area07 {background-position: center 57%;}
+	.menu_pop_img_area08 {background-position: center 53%;}
+	.menu_pop_img_area09 {background-position: center 58%;}
+	/* //20201016 청담스타 수정 */
+
+	.aside_quick_wrap { right:0; top:initial; bottom:20px; }
+
+	.tease_cd_layer { height:0; padding-bottom:100%; }
+
+	.cd_pop_content .pop_ibox { width:100%; }
+
+	.aside_quick_wrap { display:none; }
+	.m_aside_quick { display:block; }
+	/* 청담프리미엄 end */
+
+
+	/* 161114 김 민 추가 */
+	section.reserve_store_middle01 { /* background:url('../img/store/reserve_middle_bimg01.png') 0 0 no-repeat; */ } /* 20200902 수정 */
+	section.reserve_store_middle01 h3 {top:40px; width:100%; text-align:center; font-size:16px; color:#222222; font-weight:bold; padding:30px 0 20px 0; font-size:16px; background-position:center bottom} /*20170713수정*/
+	article.reserveStore_middle01 { height:260px; background-position: center 95%; background-size:100%; padding-bottom:60%; } /*20201016 원두 수정*/
+	dl.rs_middle01 { width:100%; }
+	dl.rs_middle01 dt{font-size:14px} /*20170718추가*/
+	dl.rs_middle01 dd br { display:none; }
+	dl.rs_middle01 dd strong { color:#b06546; display:block; font-size:16px; font-style:italic; font-weight:normal; margin:10px 0; line-height:1.8; } /*20170713수정*/
+	dl.rs_middle01 dd p.t2 { font-size:12px; color:#666; font-weight:normal; line-height:1.6; padding-bottom:20px; } /*20170718수정*/
+	dl.rs_middle01 dd p.t2 span { display:block; padding-left:10px; }
+	/* 161114 김 민 추가 end */
+
+	/* 170105 황기흠 수정 */
+	section.reserve_store_middle02 { padding:30px 0; }
+	section.reserve_store_middle02 .m_t30 { margin-top:20px; }
+	article.reserveStore_ber_innner dl dt { display:block; padding-top:17px; }
+	article.reserveStore_ber_innner dl dt p { margin-top:-20px; }
+	article.reserveStore_ber_innner dl dd { height:auto; left:34px; line-height:100%; padding-left:0; position:absolute; top:44px; }
+	article.reserveStore_ber_innner dl dd:before { display:none; }
+	/* 170105 황기흠 수정 end */
+	
+	
+	/*20170717추가*/
+	p.link01 a{width:250px}
+	article.reserveStore_ber_innner dl dt p{font-size:16px; margin-left:0}
+	article.reserveStore_ber_innner dl dt .reserve_store_ico{position:relative; left:-5px}
+	
+	/* 160912 스타필드 */
+	.ttl_teavana { margin-left:-240px; width:480px; background-image: url('../../img/store/m/ttl_teavana2.png') } /* 20180117 background 수정 */
+
+	.starField_visual_inner { width:100%; }
+	
+	/* 161208 위치 수정 */
+	.map_teavana { background:url("../img/store/m_map_teavana3.png") 0 0 no-repeat; height:50px; left:0; top:-60px; width:340px; z-index:2; background-size:100% auto; } /*20170816수정*/
+	.map_teavana a.TVN1{width:58%}/*20170816추가*/
+	.map_teavana a.TVN2{width:38%}/*20170816추가*/
+	.map_teavana_pop,
+	.map_teavana_pop2{ left:50%; margin-left:-48%; top:-400px; width:96%; }/*20170816 수정*/
+	/* 161208 위치 수정 end */
+	.starField_know_area { background:url("../img/store/m_starField_area_bg.jpg") 0 0 no-repeat; height:100%; }
+	.starField_know_inner { width:100%; }
+	.starField_know_each01 { left:50%; margin-left:-46.5%; padding-top:50px; position:relative; top:0; width:94%; }
+	.sf_know_img01 { left:0; position:relative; top:20px; width:100%; }
+	
+	.starField_know_each02 { left:50%; margin-left:-46.5%; position:relative; top:-130px; width:94%; }
+	.sf_know_img02 { left:0; position:relative; top:0; width:100%; }
+	
+	/* 170131 황기흠 수정 */
+	.starField_know_each03 { left:50%; margin-left:-46.5%; position:relative; top:-78px; width:94%; }
+	/* 170131 황기흠 수정 end */
+	.sf_know_img03 { left:0; position:relative; top:-100px; width:100%; }
+	
+	.starField_know_each04 { left:50%; margin-left:-46.5%; position:relative; top:30px; width:94%; }
+	.sf_know_img04 { left:0; position:relative; top:0; width:100%; }
+	
+	/* 170131 황기흠 수정 */
+	.starField_know_each05 { top:450px; left:50%; margin-left:-46.5%; position:relative; width:94%; }
+	/* 170131 황기흠 수정 end */
+	.sf_know_img05 { top:-200px; left:0; position:relative; width:100%; padding-bottom:200px}
+	
+	.sf_btn_more { background-color:#fff; border-radius:50%; margin-top:-28px; position:absolute; right:0; }
+	/* 170131 황기흠 수정 */
+	.sf_btn_more2 { background-color:#fff; border-radius:50%; left:auto; position:absolute; right:0; top:auto; }
+	.sf_know_txt i.ttl_circle2 { left:-6px; right:auto; }
+	/* 170131 황기흠 수정 end */
+	.sf_know_txt strong { display:block; }
+	.sf_know_txt p br { display:none; }
+	.sf_know_txt p em { width:80%; }
+	.sf_know_txt p span.starMblock {display:block;}/*20180920 추가*/
+
+	/*20171221 추가 : 미수정*/
+	.starField_know_each06 { top:-200px; left:50%; margin-left:-46.5%; position:relative; width:94%; }
+
+	.starField_know_each03 > .sf_know_txt > strong,
+	.starField_know_each05 > .sf_know_txt > strong,
+	.starField_know_each06 > .sf_know_txt > strong { padding-right:0; }
+
+	.teavana_tea_pop,
+	.teavana_drink_pop,
+	.teavana_md_pop { max-width:none; margin-left:-45%; width:90%; }
+	.teavana_drink_list { margin-left:0; padding:5%; width:90%; }
+	.teavana_drink_list li { float:none; margin:0 0 20px 0; width:100%; }
+	.teavana_drink_list li figure { float:left; height:auto; width:30%; }
+	.teavana_drink_list li p { font-size:12px; float:left; margin:0 0 0 20px; text-align:left; width:62%; }
+	.teavana_drink_list li p strong { font-size:15px; text-align:left; }
+	.teavana_drink_list li p span { font-size:13px; margin-bottom:5px; text-align:left; }
+
+	.teavana_md_list { margin-left:0%; padding:4%; width:92%; }
+	.teavana_md_list li { margin:0 0 10px 2.3%; width:30%; }
+	.teavana_md_list li figure {height:auto;width:100%;}
+	.teavana_md_list li p { font-size:12px; line-height:1.2; margin:10px 0 5px; padding:0; width:100%; }
+	/* 160912 스타필드 end */
+	
+	/* 160902 스타필드 추가 */
+	.sf_rough_wrap { background-size:100% auto; height:initial; width:100%; }
+	.sf_rough_inner { padding-left:1%; padding-top:62%; width:100%; }
+	
+	.sfield_know_inner { width:96%; }
+	.sfield_list_inner { border-bottom:1px solid #ddd; margin-bottom:40px; padding-bottom:20px; }
+	.sfield_list_inner:last-child { border-bottom:none; margin-bottom:0; padding-bottom:50px; }
+	.sfield_list_inner p.list_ttl span { display:none !important; }
+	.sfield_list_inner ul { margin-left:0%; }
+	.sfield_list_inner ul li { float:none; margin-left:0%; margin-bottom:30px; width:100%; }
+	.sfield_list_inner ul li strong { font-size:16px; }
+	.sfield_list_inner ul li figure { margin:0 auto 30px; width:90%; }
+	.sfield_list_inner ul li p { font-size:12px; margin:0 auto; width:90%; }
+
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 */
+	article.sfield_bar_inner { margin-left:-48%; width:96%; }
+	article.sfield_bar_inner dl.sfield_bar { position:relative; }
+	article.sfield_bar_inner dl.sfield_bar dt,
+	article.sfield_bar_inner dl.sfield_bar dd { float:none; }
+	article.sfield_bar_inner dl.sfield_bar dt { line-height:55px; }
+	article.sfield_bar_inner dl.sfield_bar dt { -webkit-box-sizing:border-box; box-sizing:border-box; padding-left:60px; }
+	article.sfield_bar_inner dl.sfield_bar dt img { float:none; left:0; margin-top:0; position:absolute; top:25px; }
+	article.sfield_bar_inner dl.sfield_bar dd { left:40px; position:absolute; top:50px; line-height:0; }
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 end */
+	/* 160902 스타필드 추가 end */
+
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 */
+	/* section.sfield_bar_wrap { height:160px; } */
+	section.sfield_bar_wrap .sfield_selector_inner { width:100%; }
+	section.sfield_bar_wrap .sfield_selector_area { position:relative; width:100%; }
+	section.sfield_bar_wrap .sfield_selector_wrap { background-color:#f4f4f2; left:0; margin-left:0; position:absolute; top:80px; width:100%; z-index:2; }
+	section.sfield_bar_wrap dl.sfield_selector { width:96%; }
+	section.sfield_bar_wrap dl.sfield_selector dt { color:#444; font-size:16px; width:100px; }
+	section.sfield_bar_wrap dl.sfield_selector dd { width:180px; }
+	section.sfield_bar_wrap .select_box { background:#fff url("../img/util/reward/select_arrow.png") no-repeat 94% center; width:178px; height:38px; }
+	section.sfield_bar_wrap .select_box select { padding:0 10px; position:absolute; top:0; vertical-align:middle; width:180px; z-index:20; }
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 end */
+
+	.pfood_know_area div.pfood_know_inner { width:96%; }
+	.pfood_know_area dl.pfood_intro,
+	.pfood_know_area,
+	.community_store_wrap dl.pfood_visual,
+	.community_store_wrap dl.fpark_visual { width:100%; }
+	.fpark_know_area div.fpark_know_inner { width:96%; background:none; }
+	.fpark_know_area dl.fpark_intro { width:100%; }
+	.fpark_young { width:100%; }
+	.pfood_know_area dl.pfood_intro dt,
+	.fpark_young dl.fpark_b_intro dt,
+	.fpark_know_area dl.fpark_intro dt { float:inherit; width:100%; margin:0 auto; text-align: center; }
+	.pfood_know_area dl.pfood_intro dd,
+	.fpark_young dl.fpark_b_intro dd,
+	.fpark_know_area dl.fpark_intro dd { float:inherit; width:100%; margin:0 auto;  padding-top:30px; }
+	.fpark_young .fpark_b_intro { width:100%; }
+	
+	.pfood_know_area dl.pfood_intro dd br,
+	.fpark_young dl.fpark_b_intro dd br,
+	.fpark_know_area dl.fpark_intro dd br { display:none; }
+
+	img.w_pic { display:none; }
+	img.m_pic { display:block; }
+
+	.storeSlideArea { display:none; }
+	.respon_video { width:100%; height:400px; background:#000; position:relative; }
+
+	section.store_bn1_section { height:inherit; }
+	section.store_bn2_section { height:inherit; }
+	section.store_bn3_section { height:inherit; }
+	section.store_bn4_section { height:inherit; }
+	section.store_bn5_section { height:inherit; }
+
+	article.store_bn_inner { width:100%; }
+
+	div.store_bn1_txt { width:300px; left:50%; top:130px; margin-left:-150px; }
+	div.store_bn2_txt { width:300px; left:50%; top:130px; margin-left:-150px; }
+	div.store_bn3_txt { width:300px; left:50%; top:130px; margin-left:-150px; }
+	div.store_bn4_txt { width:300px; left:50%; top:130px; margin-left:-150px; }
+	div.store_bn5_txt { width:300px; left:50%; top:130px; margin-left:-150px; }
+
+	div.store_bn1_btn { left:50%; margin-left:-60.5px; top:290px; }
+	div.store_bn2_btn { left:50%; margin-left:-60.5px; top:290px; }
+	div.store_bn3_btn { left:50%; margin-left:-60.5px; top:290px; }
+	div.store_bn4_btn { left:50%; margin-left:-60.5px; top:290px; }
+	div.store_bn5_btn { left:50%; margin-left:-60.5px; top:310px; }
+
+	/* 161223 청담스타 */
+	section.store_bn6_section { height:inherit; }
+	div.store_bn6_txt { width:300px; left:50%; top:105px; margin-left:-150px; }
+	div.store_bn6_btn { left:50%; margin-left:-60.5px; top:302px; }
+	/* 161223 청담스타 */
+
+	/* 드라이브 스루 매장 */
+	.st_cont {width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing:border-box} /*20170718수정*/
+	article.driveStore_ber_innner { width:96%; margin-left:-48%; position:relative; }
+
+	.drive_through_know { width:96%; }
+	.drive_through_know ul { width:100% }
+	.drive_through_know ul li dl { width:100%; }
+	.drive_through_know ul li.li1 dl dt { width:100%; float:none; margin-bottom:20px; }
+	.drive_through_know ul li.li1 dl dd { width:100%; float:none; padding-left:0; }
+	.drive_through_know ul li.li2 dl dt { width:100%; float:none; margin-bottom:20px; }
+	.drive_through_know ul li.li2 dl dd { width:100%; float:none; }
+	.drive_through_know ul li.li1 dl dd p.p2 br { display:none; }
+	.drive_through_know ul li.li2 dl dd p.p3 br { display:none; }
+	strong.dt_emphasis br { display:none; }
+	/* 드라이브 스루 매장 end */
+
+	/* 스타벅스 리저브 매장 */
+	article.reserveStore_bottom01 { background:none; height:inherit; text-align:center} /*20170713수정*/
+	article.reserveStore_bottom01 h4 { padding:0; margin-top:20px; font-size: 16px}/*20170718수정*/
+	dl.rs_bottom01 { padding:0; }
+
+	article.reserveStore_bottom02 { background:none; height:inherit; text-align:center} /*20170713수정*/
+	article.reserveStore_bottom02 h4 { padding:0; margin-top:20px; font-size: 16px} /*20170718수정*/
+	dl.rs_bottom02 { padding:0; } /*20170713추가*/
+
+	article.reserveStore_bottom03 { background:none; height:inherit; }
+	dl.rs_bottom03 { padding:0; }
+	article.reserveStore_ber_innner { width:96%; margin-left:-48%; position:relative; }
+	/* 스타벅스 리저브 매장 end */
+
+	/* 161202 황기흠 수정 */
+	article.driveStore_ber_innner dl dt { float:none; padding-top:22px; }
+	article.driveStore_ber_innner dl dt img.w_pic { display:none; }
+	/* 161202 황기흠 수정 end */
+	/* 161201 황기흠 수정 */ /* 161202 황기흠 클래스 추가 */
+	article.driveStore_ber_innner dl dt img.m_pic { width:353px; margin:-2px 0 0 0; }
+	article.driveStore_ber_innner dl dd { float:none; padding:0; font-size:13px; position:absolute; left:56px; top:16px; }
+	/* 161201 황기흠 수정 end */ /* 161202 황기흠 클래스 추가 end */
+
+	/* 커뮤니티 스토어 매장 */
+	.community_store_wrap { width:96%; }
+	.community_store_wrap dl.cs_visual { width:100%; }
+	.community_store_wrap dl.cs_visual dt { margin-bottom:20px; }
+	.cs_know_area div.cs_know_inner { width:96%; background:none; }
+
+	.cs_know_area dl.cs_intro { width:100%; }
+	.cs_know_area dl.cs_intro dt { width:100%; float:none; }
+	
+	.cs_know_area dl.cs_intro dd { width:100%; float:none; padding-top:20px; }
+	.cs_know_area dl.cs_intro dd strong { line-height:1.2; }
+	.cs_young strong { line-height:1.2; width:100%; display:block; }
+	.cs_young strong br { display:none; }
+	.cs_know_area dl.cs_intro dd p.p2 { line-height:1.4; }
+	.cs_young p { width:100%; line-height:1.4; }
+
+	.cs_young { width:100%; height:inherit; background:none; }
+	.cs_young strong { padding-top:20px; }
+	/* 커뮤니티 스토어 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_wrap { width:96%; }
+	.myhand_store_vis { width:100%; height:inherit; margin-bottom:0; }
+
+	.myhand_store_info { width:100%; }
+	.myhand_store_info dd { width:100%; float:none; position:relative; padding-top:30px; }
+	.myhand_store_info dt { width:100%; float:none; }
+
+	.myhand_store_info dd p.p3 br { display:none; }
+	.myhand_store_info dd p.p4 br { display:none; }
+
+	.myhand_store_info dd ul.app_btn { left:50% !important; margin-left:-134px; }
+
+	.myhand_end_info p.go { position:static; padding-top:10px; }
+	.myhand_end_info p span { display:inline-block; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	.bnr_slider_wrap { height:275px; margin:30px auto 70px; width:320px; }
+	.bnr_slider_wrap ul li { height:213px; }
+	.bnr_slider_wrap ul li p { font-size:12px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; background:#fff; }
+
+	.bnr_slider_wrap div.bx-controls-direction a { height:27px; position:absolute; top:132px; width:16px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-prev { background-size:100% auto; left:-36px; }
+	.bnr_slider_wrap div.bx-controls-direction a.bx-next { background-size:100% auto; right:-36px; }
+	
+	.loca_step2_frame { height:310px; }
+
+	/* 150806 구명준 추가 */
+	.btn_opt_chk1 { top:28px !important; right:70px !important; left:inherit !important; z-index:15 !important; display:none !important; }
+	.btn_opt_chk2 { display:block !important; position:absolute; top:100px !important; left:0; z-index:1; }
+	.store_map_layer { z-index:10; }
+	.opt_select_pop { z-index:15 !important; }
+	/* 150806 구명준 추가 end */
+	
+	.pop_gcard_store_map { width:96% !important; margin-left:-48% !important; }
+	.pop_gcard_store_map .store_map_layer { top:0; }
+	.pop_gcard_store_map .btn_opt_chk1 { top:17px !important; }
+	.pop_gcard_store_map .result_list ul li, .pop_gcard_store_map .result_list2 ul li, .pop_gcard_store_map .result_list3 ul li { width:96%; }
+
+	dl.rs_bottom02 { width:100%; }
+
+	/*#container.app p.btn_opt_chk3 { right:65px !important; top:18px !important; left:inherit; }*/
+
+	.result_list .mCustomScrollBox,
+	.result_list2 .mCustomScrollBox,
+	.result_list3 .mCustomScrollBox { height:100%; }
+
+	.store_height_wrap { top:60px; width:100%; }
+	div.app > div.store_height_wrap { height:100%; top:0; width:100%; }
+	
+	/* 150921 구명준 추가 */
+	.stor_aip_wrap .stor_aip_inner { padding:20px 0; width:100%; height:200px; }
+	/* 150921 구명준 추가 end */
+	
+	/* 20160205 김민호 추가 */
+	.holiday_notice {  position:absolute; top:20%; margin:0 auto; left:10%;  z-index:99; width:80%; }
+	.holiday_notice_close { float:right; height:27px; width:27px; margin-bottom:10px; }
+	.holiday_notice_close a {  background:url('../img/store/holiday_close_btn.png') 0 0 no-repeat; text-indent:-20000px; display:block; height:100%; transition:transform 1s; }
+	.holiday_notice_close a:hover { transform: rotate(180deg); }
+	.pop_holiday_notice_body img { width:100%; }
+	/* 20160205 김민호 추가 end */
+	
+	/*20170718추가*/
+	dl.rs_bottom01 dt{font-size:16px; width:75%; margin: 10px auto}
+	dl.rs_bottom02 dt{font-size:16px; width:88%; margin: 10px auto}
+	dl.rs_bottom01 dd p,
+	dl.rs_bottom02 dd p{font-size:12px}
+	article.reserveStore_bottom02 p.t_last{font-size:13px}
+	section.reserve_store_middle02 .st_cont h3{font-size:16px}
+	
+	
+
+	/* 20170713 팝업 추가 */
+	.dimd {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background: #000; opacity: .5;  z-index: 900}
+	.layer_howtoEnjoy {position: absolute; width: 95%;  top: 50%; left: 50%;  background: #fff;  z-index: 1000; } /*20170727*/
+	.layer_howtoEnjoy h3 {height: 48px; line-height: 48px; background: #b06546; font-size: 14px; color: #fff;  font-weight: 500; letter-spacing: -.5px;  }
+	.layer_howtoEnjoy .layerConts {padding: 18px; }
+	.layer_howtoEnjoy  .close_Layer{position: absolute; width: 13px; height: 16px; top: 16px; right: 15px; }
+	.layer_howtoEnjoy   #showBox > div {width: 100%;  overflow: hidden;}
+	.layer_howtoEnjoy #imgBox {position: relative; width:10000px;  }
+
+	.layer_howtoEnjoy #imgBox li h4:before {content: ''; display: block; width: 32px; height: 4px; margin-bottom: 10px; background: #292929}
+	.layer_howtoEnjoy #imgBox li h4 {; color: #222; font-size: 20px; font-weight: normal; color: #222222; font-family: nbg; }
+	.layer_howtoEnjoy #imgBox li h4 strong{display: block;  margin-bottom: 5px; 
+font-size: 25px; font-family: "Arial", sans-serif; }
+	.layer_howtoEnjoy #imgBox li img {margin-top: 15px; width: 100%; }
+	.layer_howtoEnjoy #imgBox li  p{line-height:1.25em; margin-top: 12px; font-size: 13px; color: #444444; }
+	.layer_howtoEnjoy  #showBox > a.p {display: none; position: absolute; display: block ; top: 50%; margin-top: -15px; text-indent: -9999px;  }
+	.layer_howtoEnjoy  ol.m{display:block; margin: 0 0 20px 0; text-align: center; }
+	.layer_howtoEnjoy  ol.m li {display: inline-block;  width: 12px; height: 12px; margin-left: 8px; background: #dadada; border-radius: 12px; cursor: pointer; text-indent: -9999px; }
+	.layer_howtoEnjoy  ol.m li:first-child{margin-left: 0; }
+	.layer_howtoEnjoy  ol.m li.now {background: #444444; }
+	.layer_howtoEnjoy  #showBox > a.prev {display: block; width: 15px; height: 29px; left: 20px; background: url('../img/coffee/btn_prev_m.png') no-repeat 0 0 ; text-indent: -9999px; }
+	.layer_howtoEnjoy  #showBox > a.next {display: block; width: 15px; height: 29px; right: 20px; background: url('../img/coffee/btn_next_m.png') no-repeat 0 0 ; text-indent: -9999px; }
+	
+	.layer_howtoEnjoy  ol.m li.swiper-pagination-bullet {opacity: 1;}
+	.layer_howtoEnjoy  ol.m li.swiper-pagination-bullet-active {background: #444444;}
+	
+
+		/* 20180110 티바나 특화음료 추가 */
+	.reserve_bev_wrap h5 { font-size:18px; }
+	.reserve_bev_wrap p { font-size: 14px; line-height:21px; display:block; width:82%; margin: 0 auto; word-break: keep-all;  }
+	.beverage_slide_wrap { width: 86%; min-width: 360px; margin:0 auto; }
+	.beverage_slide_wrap .swiper-slide { width:50% !important; box-sizing: border-box; }
+	.beverage_slide_wrap:before, .beverage_slide_wrap:after { display:none; }
+  /* //20180110 티바나 특화음료 추가 */
+}
+
+@media screen and (min-width:481px) and (max-width:640px) {
+	/* 드라이브 스루 매장 */
+	.m_drive_wrap ul.step { width:72%; }
+	/* 드라이브 스루 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_info { margin-bottom:100px; }
+	.myhand_store_info dt p { position:static; width:360px; margin:0 auto; }
+	.myhand_store_info dd ul.app_btn { position:absolute; left:0; bottom:-435px; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	/* 150708 수정 - 문진욱 */
+
+	.store_map_wrap { height:741px; } /* 150805 수정 구명준 */
+
+	.store_map_layer { border-radius:0; box-shadow:none; -webkit-box-shadow:none; left:0; top:10px; width:100%; }
+	.store_map_layer2 { top:0; }
+	.store_map_layer_cont { width:100%; }
+
+	.store_map_layer_cont header { height:50px; }
+	.store_map_layer_cont header h3 { height:48px; line-height:48px; }
+	.store_map_layer_cont header h3.on { height:48px; line-height:48px; }
+	.store_map_layer_cont header h3 a { font-size:16px; }
+
+	.store_map_layer_cont article { padding:48px 0 0 0; }
+
+	.quick_search_inner { margin:10px 0 0 2.5%; width:95%; }
+
+	p.btn_opt_chk { top:705px; }
+
+	.result_num_wrap,
+	.result_num_wrap2 { font-size:16px; height:60px; line-height:60px; }
+
+	.result_num_wrap.myStoreInfo { line-height:inherit; height:50px; padding-top:10px; }
+
+	.result_num_wrap strong,
+	.result_num_wrap2 strong,
+	.result_num_wrap3 strong { font-size:16px; }
+
+	.result_list ul,
+	.result_list2 ul,
+	.result_list3 ul { width:100%; }
+
+	.result_list ul li,
+	.result_list2 ul li,
+	.result_list3 ul li { width:100%; }
+
+	.result_list ul li strong,
+	.result_list2 ul li strong,	
+	.result_list3 ul li strong { display:block; float:none; font-size:16px; margin:20px 0 0 20px; }
+
+	.result_list ul li p.result_details,
+	.result_list2 ul li p.result_details,
+	.result_list3 ul li p.result_details { float:none; font-size:14px; margin:5px 0 0 20px; width:70%; }
+	
+	p.btn_select_store { left:20px; }
+
+	.result_list ul li i,
+	.result_list2 ul li i,
+	.result_list3 ul li i { right:20px; }
+
+	.opt_select_pop { height:470px; left:50%; margin-left:-45%; width:90%; }
+	.opt_select_ttl { font-size:16px; width:100%; }
+	.opt_select_cont { height:400px; margin-left:5%; width:90%; }
+
+	.opt_select_cont dl { width:100%; }
+	/* .opt_select_dl1,
+	.opt_select_dl2 { height:100px; }
+	.opt_select_dl3 { height:160px; } */
+	.opt_select_cont dl dd.left,
+	.opt_select_cont dl dd.right { width:50%; }
+	.opt_select_cont dl dt { font-size:14px; margin-top:20px; }
+	.opt_select_cont dl dd { font-size:14px; margin-top:10px; }
+
+	.opt_select_cont p { margin-top:20px; }
+
+	.loca_step1,
+	.loca_step2 { width:100%; }
+	.loca_step1_ttl,
+	.loca_step2_ttl { font-size:16px; }
+
+	.loca_step1_cont,
+	.loca_step2_cont { margin:10px 0 0 2%; width:96%; }
+
+	.loca_step2_cont ul { height:450px; }
+
+	.loca_step1_cont ul li,
+	.loca_step2_cont ul li { width:49.6%; }
+
+	.my_visit_log_wrap { width:100%; }
+	.my_visit_log_wrap p { font-size:16px; }
+
+	.result_list2,
+	.result_list3 { height:200px; }
+
+	/* 150708 수정 - 문진욱 end */
+
+	.my_store_tabs_wrap article { padding-top:55px; }
+
+	p.btn_opt_chk3 { bottom:auto !important; left:auto !important; right:70px !important; top:25px !important; display:block !important; }
+}
+
+@media screen and (max-width:480px) {
+
+	/* 청담프리미엄 */
+	.cheongdam_visual_wrap { height:740px; }
+	.ttl_cheongdam { background-size:100% auto; height:240px; margin-left:-150px; top:100px; width:300px; }
+	.btn_visual_area { top:410px; }
+	
+	.ttl_specoffee,
+	.ttl_spefood { /*height:74px; margin-left:-160px; top:42px; width:320px; */ padding-top: 42px; }  /* 20170808  수정 */
+	.ttl_spefood  img {width: 85%; }/* 20170808  추가 */
+
+	.ttl_spemd { /*height:114px; margin-left:-160px; top:42px; width:320px; */; padding-top: 40px; } /*20170808 수정*/
+	.ttl_spemd img {width: 85%; }/* 20170808  추가*/
+	.vr1_txt,
+	.vr2_txt,
+	.vr3_txt { height:90px; }
+	
+	.special_food_wrap { height:840px; } /* 20170911*/
+	.special_md_wrap { height:622px; }
+
+	/*.special_coffee_wrap { height:700px; } */
+	.ico_sepcial_list { top:128px; }
+	.ico_sepcial_list li { height:80px; }
+	.ico_sepcial_list li a { background-size:100% auto !important; }
+
+	.ico_food a,
+	.ico_food a:hover { background-size:100% auto; height:140px; width:140px; }
+	.food1 { top:58%; left: 5%; }/* 20170911*/
+	.food2 { /*margin-left:-70px*/; top:76%; left: 56% } /*20170911*/
+	.food3 { top:19%; left: 58%; } /* 20170911*/
+
+	.special_coffee_slide { height:435px; top:30px; width:300px; }
+	.special_coffee_slide .swiper-wrapper .swiper-slide { background-size:100% auto; width:230px; }
+
+	.btn_md_more { margin-left:-130px; top:183px; width:260px; }
+
+	.chungdam_tabmenu { margin-top:20px; }
+	.chungdam_menu_pop, 
+	.chungdam_md_pop { width: 95%; height:520px; margin-left: -47% } /* 20201016 청담스타 수정 */
+
+	.chungdam_tab_cont .chungdam_slider { height:345px; }
+	.pop_txt_area { height:100px; padding-top:20px; padding-bottom: 10px; } /* 20201016 청담스타 수정 */
+	.pop_txt_area .pop_ttl { font-size:24px; }
+	.pop_txt_area .pop_txt { font-size:14px; padding-top:10px; width: 70%; } /* 20201016 청담스타 수정 */
+	.chungdam_tab_cont .chungdam_thumbs { margin-top:0; }
+	.chungdam_tab_cont .btn_chungdam_arrow { top:195px; }
+	#menuCont .pop_img_area { height:200px;} /* 20201016 청담스타 수정 */
+	#mdCont .pop_img_area { height:200px; background-position:center 50%; }
+	#mdCont .pop_txt_area { height:60px; padding: 40px 0 0; }
+	
+	/* 20201016 청담스타 수정 */
+	.menu_pop_img_area02 {background-position: center 66%;}
+	.menu_pop_img_area03 {background-position: center 72%;}
+	.menu_pop_img_area07 {background-position: center 53%;}
+	.menu_pop_img_area09 {background-position: center 53%;}
+	/* //20201016 청담스타 수정 */
+
+	.chungdam_tab_cont.chungdam_sandwich{ width:100%; height: 480px; /* background: url('../img/store/cheongdam/m/specialFood.png') no-repeat 0 30px; background-size: 100%; */ } /* 20201016 청담스타 수정 */
+
+	.food_thum { margin:0 auto !important; height:80px; width:290px; }
+	.food_thum .swiper-pagination-bullet { height:80px; width:80px; }
+
+	.cd_pop_content { padding-bottom:0; }
+	.cd_pop_content .pop_txt_area { height:95px; padding-top:40px; }
+	.cd_pop_content .pop_txt_area .pop_txt { padding:20px 10px 0; }
+	.cd_pop_content .pop_tbox p { font-size:14px; }
+
+	.m_aside_quick { background-size:100% auto; height:82px; width:82px; }
+	/* 청담프리미엄 end */
+
+
+	/* 160912 스타필드 */
+	.starField_visual_wrap { height:640px; }
+	.ttl_teavana { margin-left:-155px; top:70px; width:310px; }
+
+	.visual_teavana { height:336px; margin-left:-278px; width:556px; bottom: -4.8%; }
+	
+	/* 160912 스타필드 end */
+	/* 161208 황기흠 위치 수정 */
+	.map_teavana { top:-60px; }
+
+	/* 170131 황기흠 수정 */
+	.sf_know_txt strong { font-size:15px; }
+
+	.starField_know_each01 { padding-top:30px; }
+	.sf_know_img01 { left:0; position:relative; top:0; width:100%; }
+	
+	.sf_know_img02 { top:-20px; }
+	.starField_know_each02 { top:-150px; }
+
+	.sf_know_img03 { top:-150px; }
+	.starField_know_each03 { top:-130px; }
+
+	.starField_know_each04 { left:50%; margin-left:-46.5%; position:relative; top:-10px; width:94%; }
+	.sf_know_img04 { left:0; position:relative; top:-40px; width:100%; }
+	
+	.starField_know_each05 { top:310px;}
+	.sf_know_img05 { top:-280px; left:0; position:relative; width:100%; padding-bottom:0}
+
+	/*20180117 수정*/
+	.starField_know_each06 { top:130px;}
+	.sf_know_img06 { /* bottom:170px; */bottom:inherit; top: -220px; left:0; position:relative; width:100%; }/*20180920 수정 : top: -220px 수정*/
+
+	/* 170131 황기흠 수정 end */
+	/* 161208 황기흠 위치 수정 end */
+
+	/* 160902 스타필드 추가 */
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 */
+	article.sfield_bar_inner dl.sfield_bar dt { font-size:12px; line-height:60px; }
+	article.sfield_bar_inner dl.sfield_bar dd { font-size:11px; left:39px; top:48px; }
+	/* 161208 황기흠 반응형 셀렉트 박스 추가 end */
+	/* 160902 스타필드 추가 end */
+
+	div.store_bn1_txt { width:300px; left:50%; top:70px; margin-left:-150px; }
+	div.store_bn2_txt { width:300px; left:50%; top:70px; margin-left:-150px; }
+	div.store_bn3_txt { width:300px; left:50%; top:70px; margin-left:-150px; }
+	div.store_bn4_txt { width:300px; left:50%; top:70px; margin-left:-150px; }
+
+	div.store_bn1_btn { left:50%; margin-left:-60.5px; top:220px; }
+	div.store_bn2_btn { left:50%; margin-left:-60.5px; top:220px; }
+	div.store_bn3_btn { left:50%; margin-left:-60.5px; top:220px; }
+	div.store_bn4_btn { left:50%; margin-left:-60.5px; top:220px; }
+
+	/* 드라이브 스루 매장 */
+	.m_drive_wrap ul.step { width:80%; }
+	/* 드라이브 스루 매장 end */
+
+	/* 내 손 안의 스타벅스 매장 */
+	.myhand_store_info { margin-bottom:100px; }
+	.myhand_store_info dt p { position:static; width:320px; margin:0 auto; }
+	.myhand_store_info dd ul.app_btn { position:absolute; left:0; bottom:-385px; }
+	/* 내 손 안의 스타벅스 매장 end */
+
+	/* 150708 수정 - 문진욱 */
+
+	.store_map_wrap { height:639px; }
+
+	.store_map_layer { border-radius:0; box-shadow:none; -webkit-box-shadow:none; left:0; top:10px; width:100%; }
+	.store_map_layer_cont { width:100%; }
+
+	.store_map_layer_cont header { height:40px; }
+	.store_map_layer_cont header h3 { height:38px; line-height:38px; }
+	.store_map_layer_cont header h3.on { height:38px; line-height:38px; }
+	.store_map_layer_cont header h3 a { font-size:14px; }
+
+	.store_map_layer_cont article { padding:38px 0 0 0; }
+
+	.quick_search_inner { margin:10px 0 0 2.5%; width:95%; }
+
+	p.btn_opt_chk { top:705px; }
+	p.btn_opt_chk3 { bottom:auto !important; left:auto !important; right:70px !important; top:25px !important; display:block !important;  }
+
+	.result_num_wrap,
+	.result_num_wrap2 { font-size:16px; height:60px; line-height:60px; }
+
+	.result_num_wrap.myStoreInfo { height:50px; line-height:inherit; padding-top:10px; }
+
+	.result_num_wrap strong,
+	.result_num_wrap2 strong,
+	.result_num_wrap3 strong { font-size:16px; }
+
+	.result_list ul,
+	.result_list2 ul,
+	.result_list3 ul { width:100%; }
+
+	.result_list ul li,
+	.result_list2 ul li,
+	.result_list3 ul li { width:100%; }
+
+	.result_list ul li strong,
+	.result_list2 ul li strong,	
+	.result_list3 ul li strong { display:block; float:none; font-size:16px; margin:20px 0 0 20px; }
+
+	.result_list ul li p.result_details,
+	.result_list2 ul li p.result_details,
+	.result_list3 ul li p.result_details { float:none; font-size:14px; margin:5px 0 0 20px; width:70%; }
+
+	.result_list ul li i,
+	.result_list2 ul li i,
+	.result_list3 ul li i { right:20px; }
+	/* 옵션 선택 팝업 */
+	.opt_select_pop { /* background:#fff; border:2px solid #222; border-radius:3px; bottom:20px; box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); -webkit-box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); */ display:none; height:517px; left:20px; position:absolute; width:256px; z-index:8; }
+
+	#container.app .store_map_wrap { height:765px; }
+	#container.app .opt_select_pop { /* background:#fff; border:2px solid #222; border-radius:3px; bottom:20px; box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); -webkit-box-shadow:2px 2px 3px 0px rgba(0, 0, 0, 0.2); */ display:none; @height:517px; left:50%; position:absolute; width:96%; z-index:8; margin-left:-48%; top:60px; }
+	#container.app .result_list { @height:352px; } /* 150820 성연욱 */
+	.opt_select_ttl { background:#f4f4f2; color:#222; font-size:14px; font-weight:bold; height:43px; line-height:43px; position:relative; text-indent:20px; width:256px; }
+	.opt_select_ttl a { background:url("../img/store/btn_opt_pop_close.png"); display:block; height:14px; overflow:hidden; position:absolute; right:10px; text-indent:-20000px; top:14px; width:14px; -webkit-transition:-webkit-transform 1s; transition:transform 1s; }
+	.opt_select_ttl a:hover { transform:rotate(180deg); }
+	
+	.opt_apply_btn { display:block; width:42px; height:28px; line-height:28px; background:#666; border-radius:3px; font-size:12px; color:#fff; text-align:center; position: absolute; right:50px; top:7px; }
+
+	.opt_select_cont { float:left; height:400px; margin-left:20px; width:216px; }
+	.opt_select_cont dl { border-bottom:1px solid #ddd; width:216px; }
+	.opt_select_cont dl dt,
+	.opt_select_cont dl dd { font-size:12px; margin-top:10px; }
+	.opt_select_cont dl dd { height:16px; line-height:16px; }
+	.opt_select_cont dl dd.left,
+	.opt_select_cont dl dd.right { float:left; width:100%; }
+	.opt_select_cont dl dd div.ez-checkbox,
+	.opt_select_cont dl dd input,
+	.opt_select_cont dl dd label { float:left; text-indent:20px; }
+	.opt_select_cont dl dd div.ez-checkbox { height:13px; margin:2px 5px 0 0; width:13px; }
+	.opt_select_cont dl dt { color:#444; float:left; font-weight:bold; width:100%; }
+	.opt_select_cont dl dd { color:#666; margin-top:7px; }
+/* 	.opt_select_dl1 { height:98px; }
+	.opt_select_dl2 { height:123px; }
+	.opt_select_dl3 { height:214px; } */
+
+	.opt_select_cont p { border:none; height:37px; margin-top:10px; }
+	.opt_select_cont p div.ez-checkbox,
+	.opt_select_cont p input,
+	.opt_select_cont p label { float:left; text-indent:20px; }
+	.opt_select_cont p div.ez-checkbox { height:13px; margin:2px 5px 0 0; width:13px; }
+
+	.opt_select_cont dl dd label.icon01 { background:url("../img/store/store_icon/icon01.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon02 { background:url("../img/store/store_icon/icon03.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon03 { background:url("../img/store/store_icon/icon02.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon04 { background:url("../img/store/store_icon/icon04.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon05 { background:url("../img/store/store_icon/icon05.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon06 { background:url("../img/store/store_icon/icon06.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon07 { background:url("../img/store/store_icon/icon07.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon08 { background:url("../img/store/store_icon/icon08.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon09 { background:url("../img/store/store_icon/icon09.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon10 { background:url("../img/store/store_icon/icon10.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon11 { background:url("../img/store/store_icon/icon11.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon12 { background:url("../img/store/store_icon/icon12.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon13 { background:url("../img/store/store_icon/icon13.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon14 { background:url("../img/store/store_icon/icon14.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont p label.icon15 { background:url("../img/store/store_icon/icon15.png") left center no-repeat; color:#006633; font-size:11px; font-weight:bold; height:16px; line-height:16px; }
+	.opt_select_cont dl dd label.icon16 { background:url("../img/store/store_icon/icon16.png") left center no-repeat; font-size:11px; }
+	.opt_select_cont dl dd label.icon17 { background:url("../img/store/store_icon/icon17.png") left center no-repeat; font-size:11px; }
+
+	/* 옵션 선택 팝업 end */
+
+	.opt_select_pop { height:470px; left:50%; margin-left:-45%; width:90%; }
+	.opt_select_ttl { font-size:16px; width:100%; }
+	.opt_select_cont { height:400px; margin-left:5%; width:90%; }
+
+	.opt_select_cont dl { width:100%; }
+/* 	.opt_select_dl1,
+	.opt_select_dl2 { height:100px; }
+	.opt_select_dl3 { height:160px; } */
+	.opt_select_cont dl dd.left,
+	.opt_select_cont dl dd.right { width:50%; }
+	.opt_select_cont dl dt { font-size:14px; margin-top:20px; }
+	.opt_select_cont dl dd { font-size:14px; margin-top:10px; }
+
+	.opt_select_cont p { margin-top:20px; }
+
+	.loca_step1,
+	.loca_step2 { width:100%; }
+	.loca_step1_ttl,
+	.loca_step2_ttl { font-size:16px; }
+
+	.loca_step1_cont,
+	.loca_step2_cont { margin:10px 0 0 2%; width:96%; }
+
+	.loca_step1_cont .mCSB_inside > .mCSB_container { margin-right:0; }
+	.loca_step1_cont .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color:#222; }
+	.loca_step1_cont .mCSB_scrollTools .mCSB_draggerRail { width:5px; }
+
+	.loca_step2 { height:340px; }
+	.loca_step2_frame { height:210px; }
+	.loca_step2_cont ul { height:220px; }
+
+	.loca_step1_cont ul li,
+	.loca_step2_cont ul li { height:30px; line-height:30px; width:49.6%; }
+
+	.my_visit_log_wrap { width:100%; }
+	.my_visit_log_wrap p { font-size:16px; }
+
+	.result_list2,
+	.result_list3 { height:200px; }
+
+	/* 150708 수정 - 문진욱 end */
+
+	.my_store_tabs_wrap article { padding-top:55px; }
+
+	p.btn_select_store { left:20px; }
+}
+
+@media screen and (max-width:400px) {
+	/* 170105 황기흠 수정 */
+	article.reserveStore_ber_innner dl dd { font-size:12px; }
+	/* 170105 황기흠 수정 end */
+}
+/* 20180117 추가 */
+@media screen and (max-width:420px) {
+	.starField_know_each05 { top:260px;}
+	.sf_know_img05 { top:-290px;}
+	.starField_know_each06 { top:100px;}
+}
+@media screen and (max-width:375px) {
+	.store_map_wrap { height:475px !important; }
+	div.app > section.store_map_wrap { /* position:absolute !important; */ height:0 !important; padding-bottom:178% !important; }
+	.store_map_layer_cont { height:580px; }
+	.result_list_wrap { height:328px; }
+	.opt_select_pop { height:430px; top:20px; }
+	.opt_select_cont { height:380px; }
+
+	.special_coffee_slide { height:425px; top:25px; width:210px; }/* 20170804 넓이 수정*/
+	.special_coffee_slide .swiper-wrapper .swiper-slide { background-size:100% auto; width:240px; }/* 20170804 넓이 수정*/
+	
+	/* 20180117 추가 */
+	.starField_know_each05 { top:220px;}
+	.sf_know_img05 { top:-290px;}
+	.starField_know_each06 { top:100px;}
+}
+
+
+
+
+/*20170713추가*/
+
+@media screen and (max-width:1099px) {
+	section.reserve_store_bottom{padding-bottom:50px}
+	.reserveStoreWrap .sub_tit_wrap div.sub_tit_inner{width:100%; padding:0 18px; box-sizing:border-box} /*20170718수정*/
+	.st_cont {position:relative; width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing: border-box} /*20170718수정*/
+	article.reserveStore_ber_innner { width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing: border-box} /*20170718수정*/
+}
+
+@media screen and (max-width:640px) {
+	.reserveStoreWrap .sub_tit_wrap div.sub_tit_inner{width:100%; padding:0 18px; box-sizing:border-box} /*20170718수정*/
+	article.reserveStore_ber_innner{width:100%; margin:0 0 0 -50%; padding:0 18px; box-sizing:border-box} /*20170718수정*/
+}
+/*20170713추가*/
+
+
+/* 20170911 추가  */
+@media screen and (max-width: 359px){
+	.special_food_wrap{height: 650px; }
+	.food3 {left: 53%; top: 16%; }
+	.food2 {top: 73%; left: 52%}
+	.food1 {top:55%; }
+	.ico_food a, .ico_food a:hover {width: 128px; height: 128px; }
+}
+
+@media screen and (min-width:360px) and (max-width:384px) {
+	.special_food_wrap{height: 740px; }
+	.food3 {top: 18%}
+	.ttl_specoffee, .ttl_spefood {padding-top: 30px; }	
+}
+@media screen and (min-width:641px) {/* 20180117 추가 */
+	.teavana_drink_list li p.expand strong { margin-right: -20px; margin-left: -20px; }
+	.teavana_drink_list li p.expand span { margin-right: -20px; margin-left: -20px; }
+}
+
+@media screen and (min-width:385px) and (max-width:415px) {
+	.special_food_wrap{height: 820px; }
+	.food3 {top: 18%}
+	.ttl_specoffee, .ttl_spefood {padding-top: 30px; }
+	.chungdam_menu_pop, .chungdam_md_pop {height: 550px; } 
+	.chungdam_tab_cont.chungdam_sandwich {height: 546px}
+	
+}
+
+@media screen and (min-width:900px) and (max-width:950px) {
+	.special_food_wrap{height:1840px; }
+}
+@media screen and (min-width:800px) and (max-width:899px) {
+	.special_food_wrap{height:1700px; }
+}
+@media screen and (min-width:700px) and (max-width:799px) {
+	.special_food_wrap{height:1500px; }
+}
+@media screen and (min-width:600px) and (max-width:699px) {
+	.special_food_wrap{height:1220px; }
+	.ico_food a, .ico_food a:hover{width: 200px ; height: 200px; background-size: 100%; }
+	.food3 {left: 62%; top: 19% }
+	.food2 {top: 76%; left: 55%}
+	.food1 {top:59%; }
+}
+@media screen and (min-width:500px) and (max-width:599px) {
+	.special_food_wrap{height:1100px; }
+	.ico_food a, .ico_food a:hover{width: 180px ; height: 180px; background-size: 100%; }
+	.food2 {top: 76%; left: 53%}
+	.food3 {left: 60%; top: 20% }
+	.food1 {top:60%; }
+}
+@media screen and (min-width:450px) and (max-width:499px) {
+	.special_food_wrap{height:930px; }
+	.ico_food a, .ico_food a:hover{width: 180px ; height: 180px; background-size: 100%; }
+	.chungdam_tab_cont.chungdam_sandwich { height:440px;   }
+	.food2 {top: 76%; left: 53%}
+	.food3 {left: 60%; top: 20% }
+	.food1 {top:60%; }
+}
+
+@media screen and (min-width:1200px) {
+	.ttl_spefood {padding-top: 110px; }
+	/*#cheongdam_section03 .bgPC{position: absolute; top: 30% }
+	#cheongdam_section03 .bgPC img {float: left; width: 48%; }
+	#cheongdam_section03 .bgPC img:first-child{margin-right: 4%; }*/
+}
+
+@media screen and (min-width:480px) and (max-width:641px) {
+	.chungdam_menu_pop, .chungdam_md_pop {width: 95%; height: 670px; margin-left: -47%; overflow: hidden;  } 
+	.chungdam_tab_cont.chungdam_sandwich { width:100%;  height: 580px; /* background: url('../img/store/cheongdam/m/specialFood.png') no-repeat center 30px; background-size: 95%;*/ } /* 20201016 청담스타 수정 */
+	.special_food_wrap {height: 1250px; }
+}
+/*s::20190620 리저브 매장 모바일 줄바꿈 처리 추가*/
+.reserve_bev_wrap .reserve_be_mo {display:none;}
+@media screen and (max-width:640px) {
+	.reserve_bev_wrap .reserve_be_pc {display:none;}
+	.reserve_bev_wrap .reserve_be_mo {display:block;}
+}
+/*e::20190620 리저브 매장 모바일 줄바꿈 처리 추가*/
+
+/*s::20190621 티바나 바 매장 개선*/
+.ttl_teavana.ttl_teaNew {background: url(../img/store/teavana_new/ttl_teavana.png) 0 0 no-repeat; background-size: 100% auto; width:533px; left:0; right:0; top:177px; margin:0 auto;}/*20190626 수정*/
+
+.starField_know_area.starTeavanaNew {position:relative; background: url(../img/store/teavana_new/store_teavana_bg.jpg) center center no-repeat; background-size:cover; width:100%; height:1684px; }
+.starField_know_area.starTeavanaNew .starField_know_inner {position:relative; width:1100px; margin:0 auto;}
+.starField_know_area.starTeavanaNew .starField_know_inner > picture {position:absolute; left:0; margin:0 auto;}
+.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04,
+.starField_know_area.starTeavanaNew .starField_know_each04 {display:block;}
+
+.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img01 {top:0; width:800px; margin-left:-370px;}
+.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img02 {top:0; width:940px; margin-left:600px;}
+.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img03 {top:776px; width:442px; margin-left:50px;}
+.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04 {top:1215px; width:637px; left:auto; left:initial; right:-100px;}
+
+.starField_know_area.starTeavanaNew .starField_know_each01 {right:50px; top:135px; left:auto; left:initial;}
+.starField_know_area.starTeavanaNew .starField_know_each02 {left:180px; top:555px;}
+.starField_know_area.starTeavanaNew .starField_know_each03 {left:530px; top:1000px; margin-left:0;}
+.starField_know_area.starTeavanaNew .starField_know_each04 {left:45px; top:1387px; position:relative;}/*20191107 수정*/
+
+.starField_know_area.starTeavanaNew .starField_know_each03 > .sf_know_txt > strong {padding: 0 15px 2px 15px;}
+.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt > strong {padding-right: 194px; width:44.8%; box-sizing: border-box;}/*20191107 수정*/
+
+.starField_know_area.starTeavanaNew .sf_know_txt p {line-height:1.6;}/*20190626 수정*/
+.starField_know_area.starTeavanaNew p.teavanaTxtMo {display:none;}
+
+/*티바나 매장 지도영역 수정*/
+article.sfield_bar_inner.sfield_inner_new dl.sfield_bar dt img {width:15%; padding-bottom:5px;}
+
+@media screen and (max-width:960px) {
+	.ttl_teavana.ttl_teaNew {background: url(../img/store/teavana_new/m_ttl_teavana.png) 0 0 no-repeat; background-size: 100% auto; width:100%; margin:0 auto; left:0; right:0; max-width:640px;}
+
+	.starField_know_area.starTeavanaNew {position:relative; background: url(../img/store/teavana_new/m_starField_area_bg.jpg) center center no-repeat; background-size: 100% 100%; width:100%; height:3150px;}
+	.starField_know_area.starTeavanaNew .starField_know_inner {width:640px; margin:0 auto;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture {position:relative; display:block; width:640px; margin:0 auto !important; padding-top:60px;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img01 {top:auto; top:initial; margin-left:0;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img02 {top:auto; top:initial; margin-left:0;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img03 {top:auto; top:initial; margin-left:0; text-align:left;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04 {top:auto; top:initial; left:auto; left:initial; right:auto; right:initial; text-align:right;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img03 img.w_pic,
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04 img.w_pic {display:inline-block;}
+
+	.starField_know_area.starTeavanaNew .starField_know_each01,
+	.starField_know_area.starTeavanaNew .starField_know_each02,
+	.starField_know_area.starTeavanaNew .starField_know_each03,
+	.starField_know_area.starTeavanaNew .starField_know_each04 {position:relative; display:block; width:100%; padding-top:40px; margin:0 auto !important; left:auto; left:initial; right:auto; right:initial; top:auto; top:initial;}
+	
+	.starField_know_area.starTeavanaNew .sf_know_txt p br {display:none;}
+	.starField_know_area.starTeavanaNew .sf_know_txt p span {display:block;}
+	
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt > strong {width:100%;}/*20191107 수정*/
+	.sf_btn_more {right:0; left: auto; left: initial;}/*20191107 수정*/
+}
+
+@media screen and (max-width:640px) {
+	.starField_know_area.starTeavanaNew img.w_pic {display:block;}
+	.starField_know_area.starTeavanaNew {position:relative; background: url(../img/store/teavana_new/m_starField_area_bg.jpg) center center no-repeat; background-size: cover; width:100%; height:3400px;}
+ 
+	.starField_know_area.starTeavanaNew .starField_know_inner {width:100%;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img01,
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img02 {width:100%;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img03 {width:100%;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img03 img {width:92%;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04 {width:100%;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture.sf_know_img04 img {width:50%;}
+
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture img {width:100%; height:auto;}
+
+	.starField_know_area.starTeavanaNew .starField_know_each01,
+	.starField_know_area.starTeavanaNew .starField_know_each02,
+	.starField_know_area.starTeavanaNew .starField_know_each03,
+	.starField_know_area.starTeavanaNew .starField_know_each04 {width:90%;}
+
+	.starField_know_area.starTeavanaNew p.teavanaTxtPc {display:none;}
+	.starField_know_area.starTeavanaNew p.teavanaTxtMo {display:block; line-height:1.8;}
+	.starField_know_area.starTeavanaNew p.teavanaTxtMo em {line-height:1.4; display:block; width:100%; font-size:17px;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew p.teavanaTxtMo br {display:block;}
+
+	/*티바나 매장 지도영역 수정*/
+	article.sfield_bar_inner.sfield_inner_new dl.sfield_bar dt {font-weight: bold;}
+	article.sfield_bar_inner.sfield_inner_new dl.sfield_bar dt img {width:auto; padding-bottom:0; top:22px;}
+}
+
+@media screen and (max-width:430px) {
+	.ttl_teavana.ttl_teaNew {top:75px;}
+	.starField_know_area.starTeavanaNew {height:2400px;}
+	.starField_know_area.starTeavanaNew .starField_know_inner > picture {padding-top:40px;}
+
+	.starField_know_area.starTeavanaNew .starField_know_each04 {padding-top:0; position:absolute; bottom:3.3%; left:5%;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt {width:84%;}
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt > strong {padding-right:0;}
+	.starField_know_area.starTeavanaNew .starField_know_each04 .sf_btn_more {right:2.3%; background-color: transparent;}
+}
+
+@media screen and (max-width:380px) {
+	.starField_know_area.starTeavanaNew {height:2300px;}
+	
+	.starField_know_area.starTeavanaNew .starField_know_each04 {bottom:4%;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt {width:82%;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew .starField_know_each04 p.teavanaTxtMo br {display:none;}
+	.starField_know_area.starTeavanaNew .starField_know_each04 p.teavanaTxtMo em br {display:block;}/*20190626 수정*/
+}
+
+@media screen and (max-width:360px) {
+	.starField_know_area.starTeavanaNew {height:2273px;}/*20191107 수정*/
+}
+
+@media screen and (max-width:320px) {
+	.starField_know_area.starTeavanaNew {height:2143px;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew .starField_know_each03 > .sf_know_txt > strong {padding:0 0 2px 15px;}
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt {width:85%;}/*20191107 수정*/
+	.starField_know_area.starTeavanaNew .starField_know_each04 > .sf_know_txt strong {width:93%;}/*20191107 수정*/
+}
+/*티바나 팝업*/
+@media screen and (min-width:641px){
+	.teavana_md_list {padding:37px 40px 10px 40px;}/*20190626 수정*/	
+}
+/*e::20190621 티바나 바 매장 개선*/
+

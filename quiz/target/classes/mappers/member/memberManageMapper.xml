@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.care.quiz.membership.dao.IMemberDAO">
+<!-- 	<select id="memberList" resultType="com.care.quiz.membership.dto.MemberDTO">
+		SELECT * FROM member
+	</select> -->
+	
+<!--
+<select id="memberList" resultType="com.care.quiz.membership.dto.MemberDTO">
+SELECT * FROM member
+</select>
+
+
+
+SQL> SELECT rownum rn, A.* FROM (SELECT * FROM member)A;
+ RN ID GEND EMAIL
+
+ 1 user8 w kys8502@naver.com
+ 2 user9 m kys8502@naver.com
+ 3 user10 n kys8502@naver.com
+ 4 user11 n kys8502@naver.com
+ 5 kyes n kys8502@naver.com
+
+SQL> SELECT B.* FROM(
+ 2 SELECT rownum rn, A.* FROM (SELECT * FROM member)A
+ 3 )B WHERE rn BETWEEN 2 and 3;
+ RN ID GEND EMAIL
+
+ 2 user9 m kys8502@naver.com
+ 3 user10 n kys8502@naver.com
+-->
+	
+	
+	
+	<select id="memberList" resultType="com.care.quiz.membership.dto.MemberDTO">
+		SELECT B.* FROM(
+			SELECT rownum rn, A.* FROM(
+				SELECT * FROM member
+				<choose>
+					<when test="sel=='id'">
+						WHERE id LIKE '%'||#{search}||'%'
+					</when>
+					<when test="sel=='email'">
+						WHERE email LIKE '%'||#{search}||'%'
+					</when>
+				</choose>
+			)A
+		)B WHERE rn BETWEEN #{b} and #{e}
+	</select>
+	
+	<select id="memberCount" resultType="int">
+		SELECT count(*) FROM member
+	</select>
+	
+	
+	<!-- <select id="userAll" resultType="com.care.quiz.membership.dto.AllDTO" parameterType="String">
+		SELECT member.*, postcode.addr1, postcode.addr2
+		FROM member, postcode
+		WHERE member.id = postcode.id AND member.id=#{id}
+	</select> -->
+	
+	<select id="userInfo" resultType="com.care.quiz.membership.dto.MemberDTO">
+		SELECT * FROM member WHERE id=#{id}
+	</select>
+	
+	<select id="postInfo" resultType="com.care.quiz.membership.dto.PostcodeDTO">
+		SELECT zipcode, addr1, addr2 FROM postcode WHERE id=#{id}
+	</select>
+	
+	<select id="userPassword" resultType="com.care.quiz.membership.dto.MemberDTO">
+		SELECT id,pw FROM login WHERE id=#{id}
+	</select>
+	
+	<update id="updateLogin" parameterType="com.care.quiz.membership.dto.LoginDTO">
+		UPDATE login SET pw=#{pw} WHERE id=#{id}
+	</update>
+	
+	<update id="updateMember" parameterType="com.care.quiz.membership.dto.MemberDTO">
+		UPDATE member SET email=#{email} WHERE id=#{id}
+	</update>
+	
+	<update id="updatePost" parameterType="com.care.quiz.membership.dto.PostcodeDTO">
+		UPDATE postcode SET zipcode=#{zipcode}, addr1=#{addr1}, addr2=#{addr2} WHERE id=#{id}
+	</update>
+	
+	<delete id="deleteLogin" parameterType="String">
+		DELETE FROM login WHERE id=#{id}
+	</delete>
+</mapper>

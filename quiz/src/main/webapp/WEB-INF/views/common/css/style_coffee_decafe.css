@@ -1,0 +1,178 @@
+@charset 'utf-8';
+
+@media all  and (min-width:1100px) {
+	div.cfs01_full_top h4.title2 {margin-top: 12px; margin-bottom: 20px; font-size: 20px; color: #658000; font-style: italic; font-weight: normal; }
+	div.cfs01_full_top p.t2 { font-size:14px; color:#444; line-height:24px; padding:0 0 25px 10px; }
+	.cfs01_full_top .big_img .m {display: none; }
+	.decafeStory {margin-top: 25px; }
+	.decafeStory  .top:after ,   .decafeStory  .bottom dl:after , .decafeStory  .bottom .co2 ul:after, .decafeStory  .bottom .co2 ul li p:after{content: ''; display: block ; clear: both; width: 0; height: 0; overflow: hidden; }
+	.decafeStory  .top .imgBox {display: block; float: left; width: 50%; }
+	.decafeStory  .top .imgBox  img {width: 100%; }
+	.decafeStory  .top .imgBox  img.m {display: none; }
+	.decafeStory  .top dl {float: left;  width: 50%; padding: 40px 0 40px 35px ;box-sizing: border-box; }
+	.decafeStory  .top dl  dt {font-size: 20px; color: #658000; font-style: italic; font-weight: normal; }
+	.decafeStory  .top dl  dd {line-height: 24px; margin-top: 30px;  color: #444; font-size: 14px;  }
+	
+	.decafeStory  .bottom {margin-top: 98px; }
+	.decafeStory  .bottom h5 {margin-bottom: 20px; font-size: 18px; color: #222; }
+	.decafeStory  .bottom  > p {line-height: 24px; color: #444; font-size: 14px; }
+	.decafeStory  .bottom dl {margin-top: 50px; }
+	.decafeStory  .bottom .even dt {float: right; width: 50%; }
+	.decafeStory  .bottom .even dd {float: left;width: 50% ;  }
+	.decafeStory  .bottom .odd dt {float: left; width: 50%; }
+	.decafeStory  .bottom .odd dd {float: right;width: 50% ;    }
+	.decafeStory  .bottom dl  dd{height: 226px;  line-height: 30px; padding:0  35px;  background: #f4f4f2; box-sizing: border-box;  font-size: 20px; color: #658000; font-style: italic; font-family: 'nbg' , sans-serif;}
+	.decafeStory  .bottom dl  dd small {display: block; font-size: 14px; color: #444444; font-style: normal; }
+	.decafeStory  .bottom dl  dd.line1{padding-top: 88px;}
+	.decafeStory  .bottom dl  dd.line2{padding-top: 74px;}
+	.decafeStory  .bottom .co2 {margin-top: 40px; }
+	.decafeStory  .bottom .co2  h6 {line-height: 34px; color: #658000; font-size: 18px; }
+	.decafeStory  .bottom .co2  h6 img {margin-right: 12px; vertical-align: top; }
+	.decafeStory  .bottom .co2 ul li{float: left; width: 50%;  }
+	.decafeStory  .bottom .co2 ul li .imgBox {display: block; text-align: center; }
+	.decafeStory  .bottom .co2 ul li p {line-height: 24px; margin-top: 15px ; font-size: 14px; color:#444; }
+	.decafeStory  .bottom .co2 ul li.how3,  .decafeStory  .bottom .co2 ul li.how4{margin-top: 50px; }
+	.decafeStory  .bottom .co2 ul li p .summary {float: left; display: block; margin-left: 8px;  text-align: left;  }
+	.decafeStory  .bottom .co2 ul li:nth-child(odd) p {padding-left: 80px; }
+	.decafeStory  .bottom .co2 ul li:nth-child(even) p {padding-left: 75px; }
+	.decafeStory  .bottom .co2 ul li p .num {display: block; float: left; width: 22px; height: 22px; line-height: 22px; border-radius: 100%; background: #9ac23b ;color: #fff; font-size: 14px; text-align: center; }
+
+
+}
+
+@media all  and (min-width:800px)and  (max-width: 1099px) {
+	div.cfs01_full_top h4.title2 {margin-top: 12px; margin-bottom: 20px; font-size: 20px; color: #658000; font-style: italic; font-weight: normal; }
+	div.cfs01_full_top p.t2 { font-size:14px; color:#444; line-height:24px; padding:0 0 25px 10px; }
+	.cfs01_full_top .big_img .m {display: none; }
+	.decafeStory {margin-top: 25px; }
+	.decafeStory  .top:after ,   .decafeStory  .bottom dl:after , .decafeStory  .bottom .co2 ul:after, .decafeStory  .bottom .co2 ul li p:after{content: ''; display: block ; clear: both; width: 0; height: 0; overflow: hidden; }
+	.decafeStory  .top .imgBox {display: block; float: left; width: 50%; }
+	.decafeStory  .top .imgBox  img {width: 100%; }
+	.decafeStory  .top .imgBox  img.m {display: none; }
+	.decafeStory  .top dl {float: left;  width: 50%; padding: 30px 0 0px 30px ;box-sizing: border-box; }
+	.decafeStory  .top dl  dt {font-size: 18px; color: #658000; font-style: italic; font-weight: normal; }
+	.decafeStory  .top dl  dd {line-height: 22px; margin-top: 20px;  color: #444; font-size: 14px;  }
+	.decafeStory  .top dl  dd br {display: none; }
+	
+	.decafeStory  .bottom {margin-top: 70px; }
+	.decafeStory  .bottom h5 {margin-bottom: 20px; font-size: 18px; color: #222; }
+	.decafeStory  .bottom  > p {line-height: 24px; color: #444; font-size: 14px; }
+	.decafeStory  .bottom dl {margin-top: 50px; }
+	.decafeStory  .bottom .even dt {float: right; width: 50%; }
+	.decafeStory  .bottom .even dd {float: left;width: 50% ;  }
+	.decafeStory  .bottom .odd dt {float: left; width: 50%; }
+	.decafeStory  .bottom .odd dd {float: right;width: 50% ;    }
+	.decafeStory  .bottom dl  dd{height: 226px;  line-height: 30px; padding:0  35px;  background: #f4f4f2; box-sizing: border-box;  font-size: 20px; color: #658000; font-style: italic; font-family: 'nbg' , sans-serif;}
+	.decafeStory  .bottom dl  dd small {display: block; font-size: 14px; color: #444444; font-style: normal; }
+	.decafeStory  .bottom dl  dd.line1{padding-top: 88px;}
+	.decafeStory  .bottom dl  dd.line2{padding-top: 74px;}
+	.decafeStory  .bottom .co2 {margin: 40px 0 80px 0; }
+	.decafeStory  .bottom .co2  h6 {line-height: 34px; color: #658000; font-size: 18px; }
+	.decafeStory  .bottom .co2  h6 img {margin-right: 12px; vertical-align: top; }
+	.decafeStory  .bottom .co2 ul li{float: left; width: 50%;  }
+	.decafeStory  .bottom .co2 ul li .imgBox {display: block; text-align: center; }
+	.decafeStory  .bottom .co2 ul li p {line-height: 20px; margin-top: 15px ; font-size: 14px; color:#444; }
+	.decafeStory  .bottom .co2 ul li.how3,  .decafeStory  .bottom .co2 ul li.how4{margin-top: 50px; }
+	.decafeStory  .bottom .co2 ul li p .summary {float: left; display: block; margin-left: 30px;  margin-top: -22px; text-align: left;  }
+	.decafeStory  .bottom .co2 ul li p {padding: 0 15px; }
+	.decafeStory  .bottom .co2 ul li p br {display: none; }
+	.decafeStory  .bottom .co2 ul li p .num {display: block; float: left; width: 22px; height: 22px; line-height: 22px; border-radius: 100%; background: #9ac23b ;color: #fff; font-size: 14px; text-align: center; }
+}
+
+@media all  and (min-width:900px) and  (max-width: 940px) {
+	.decafeStory  .top dl  {padding-top: 20px}
+}
+@media all  and (min-width:800px) and  (max-width: 899px) {
+	.decafeStory  .top dl  {padding-top: 0px}
+	.decafeStory  .top dl dd {line-height: 20px; margin-top: 10px; }
+}
+
+@media all  and (min-width:640px) and (max-width: 799px) {
+	div.cfs01_full_top h4.title2 {margin-top: 12px; margin-bottom: 20px; font-size: 20px; color: #658000; font-style: italic; font-weight: normal; }
+	div.cfs01_full_top p.t2 { font-size:14px; color:#444; line-height:24px; padding:0 0 25px 10px; }
+	.cfs01_full_top .big_img .m {display: none; }
+	.decafeStory {margin-top: 25px; }
+	.decafeStory  .top:after ,   .decafeStory  .bottom dl:after , .decafeStory  .bottom .co2 ul:after, .decafeStory  .bottom .co2 ul li p:after{content: ''; display: block ; clear: both; width: 0; height: 0; overflow: hidden; }
+	.decafeStory  .top .imgBox {display: block;/*float: left; width: 50%;*/ }
+	.decafeStory  .top .imgBox  img {width: 100%; }
+	.decafeStory  .top .imgBox  img.p {display: none; }
+	.decafeStory  .top dl {/*float: left;  width: 50%; */padding: 40px 35px 0px 35px ; box-sizing: border-box; }
+	.decafeStory  .top dl  dt {font-size: 20px; color: #658000; font-style: italic; font-weight: normal; }
+	.decafeStory  .top dl  dd {line-height: 24px; margin-top: 30px;  color: #444; font-size: 14px;  }
+	
+	.decafeStory  .bottom {margin-top:60px; }
+	.decafeStory  .bottom h5 {margin-bottom: 20px; font-size: 18px; color: #222; }
+	.decafeStory  .bottom  > p {line-height: 24px; color: #444; font-size: 14px; }
+	.decafeStory  .bottom dl {margin-top: 50px; }
+	.decafeStory  .bottom .even dt {float: right; width: 50%; }
+	.decafeStory  .bottom .even dd {float: left;width: 50% ;  }
+	.decafeStory  .bottom .odd dt {float: left; width: 50%; }
+	.decafeStory  .bottom .odd dd {float: right;width: 50% ;    }
+	.decafeStory  .bottom dl  dd{height: 226px;  line-height: 30px; padding:0  35px;  background: #f4f4f2; box-sizing: border-box;  font-size: 20px; color: #658000; font-style: italic; font-family: 'nbg' , sans-serif;}
+	.decafeStory  .bottom dl  dd small {display: block; font-size: 14px; color: #444444; font-style: normal; }
+	.decafeStory  .bottom dl  dd.line1{padding-top: 88px;}
+	.decafeStory  .bottom dl  dd.line2{padding-top: 74px;}
+	.decafeStory  .bottom .co2 {margin: 45px 0 80px 0; }
+	.decafeStory  .bottom .co2  h6 {line-height: 34px; color: #658000; font-size: 18px; }
+	.decafeStory  .bottom .co2  h6 img {margin-right: 12px; vertical-align: top; }
+	.decafeStory  .bottom .co2 ul li{float: left; width: 50%;  }
+	.decafeStory  .bottom .co2 ul li .imgBox {display: block; text-align: center; padding: 0 10px ;}
+	.decafeStory  .bottom .co2 ul li p {line-height: 22px; margin-top: 15px ; font-size: 14px; color:#444; }
+	.decafeStory  .bottom .co2 ul li.how3,  .decafeStory  .bottom .co2 ul li.how4{margin-top: 50px; }
+	.decafeStory  .bottom .co2 ul li p .summary {float: left; display: block; margin-left: 30px;  margin-top: -22px; text-align: left;  }
+	.decafeStory  .bottom .co2 ul li p {padding: 0 15px;}
+	.decafeStory  .bottom .co2 ul li p  br {display: none; }
+	.decafeStory  .bottom .co2 ul li p .num {display: block; float: left; width: 22px; height: 22px; line-height: 22px; border-radius: 100%; background: #9ac23b ;color: #fff; font-size: 14px; text-align: center; }
+
+	
+
+}
+
+
+
+@media all  and (max-width:639px){
+	div.coffee_content.decafeStory {width: 100%; padding: 8px; box-sizing: border-box; }
+	.cfs01_full_top .big_img .p {display: none; }
+	div.cfs01_full_top h4.title2 {line-height: 1.375em; margin-top: 12px; margin-bottom: 20px; padding: 0 10px; font-size: 17px; color: #658000; font-style: italic; font-weight: normal; }
+	div.cfs01_full_top p.t2 { font-size:12px; color:#444; line-height:18px; padding:0 10px 25px 10px; }
+	div.cfs01_full_top p.t2  br {display: none; }
+
+	.decafeStory {margin-top: 25px; }
+	.decafeStory  .top:after ,   .decafeStory  .bottom dl:after , .decafeStory  .bottom .co2 ul:after, .decafeStory  .bottom .co2 ul li p:after{content: ''; display: block ; clear: both; width: 0; height: 0; overflow: hidden; }
+	.decafeStory  .top .imgBox {display: block;/*float: left; width: 50%;*/ }
+	.decafeStory  .top .imgBox  img {width: 100%; }
+	.decafeStory  .top .imgBox  img.p {display: none; }
+	.decafeStory  .top dl {/*float: left;  width: 50%; */padding: 18px 5px 0px 5px ; box-sizing: border-box; }
+	.decafeStory  .top dl  dt {line-height: 1.375em; font-size:17px; color: #658000; font-style: italic; font-weight: normal; }
+	.decafeStory  .top dl  dd {line-height: 18px; margin-top: 15px;  color: #444; font-size: 12px;  }
+	.decafeStory  .top dl  dd  br {display: none; }
+	
+	.decafeStory  .bottom {margin-top:60px; }
+	.decafeStory  .bottom h5 {margin-bottom: 20px; font-size: 15px; color: #222; }
+	.decafeStory  .bottom  > p {line-height: 18px; color: #444; font-size: 12px; }
+	.decafeStory  .bottom dl {margin-top: 50px; }
+	.decafeStory  .bottom .even dt {float: right; width: 50%; }
+	.decafeStory  .bottom .even dd {float: left;width: 50% ;  }
+	.decafeStory  .bottom .odd dt {float: left; width: 50%; }
+	.decafeStory  .bottom .odd dd {float: right;width: 50% ;    }
+	.decafeStory  .bottom dl  dd{height: 226px;  line-height: 30px; padding:0  35px;  background: #f4f4f2; box-sizing: border-box;  font-size: 20px; color: #658000; font-style: italic; font-family: 'nbg' , sans-serif;}
+	.decafeStory  .bottom dl  dd small {display: block; font-size: 14px; color: #444444; font-style: normal; }
+	.decafeStory  .bottom dl  dd.line1{padding-top: 88px;}
+	.decafeStory  .bottom dl  dd.line2{padding-top: 74px;}
+	.decafeStory  .bottom .co2 {margin: 45px 0 80px 0; }
+	.decafeStory  .bottom .co2  h6 {line-height: 34px; color: #658000; font-size: 15px;  text-align: center; }
+	.decafeStory  .bottom .co2  h6 i {display: none }
+	.decafeStory  .bottom .co2  h6 img {margin-right: 12px; vertical-align: top; }
+	.decafeStory  .bottom .co2 ul li{ margin-top: 36px;}
+	.decafeStory  .bottom .co2 ul li:first-child{margin-top: 16px; }
+	.decafeStory  .bottom .co2 ul li .imgBox {display: block; text-align: center; padding: 0 15px ;}
+	.decafeStory  .bottom .co2 ul li p {line-height: 18px; margin-top: 15px ; font-size: 12px; color:#444; }
+
+	.decafeStory  .bottom .co2 ul li p .summary {display: block; float: none; width: auto;   margin-left: 26px;   text-align: left;  }
+	.decafeStory  .bottom .co2 ul li p {padding: 0 12px;}
+	.decafeStory  .bottom .co2 ul li p  br {display: none; }
+	.decafeStory  .bottom .co2 ul li p .num {display: block; float: left; width: 18px; height: 18px; line-height: 18px; border-radius: 100%; background: #9ac23b ;color: #fff; font-size: 14px; text-align: center; }
+
+	
+
+}

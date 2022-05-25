@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.care.quiz.membership.dao.IMemberDAO">
+
+	<select id="isExistId" parameterType="String" resultType="int">
+		SELECT count(*) FROM login WHERE id=#{id}
+	</select>
+	
+	
+	<insert id="insertLogin" parameterType="com.care.quiz.membership.dto.LoginDTO">
+		INSERT INTO login VALUES(#{id}, #{pw})
+	</insert>
+	
+	
+	<insert id="insertMember" parameterType="com.care.quiz.membership.dto.MemberDTO">
+		INSERT INTO member VALUES(#{id}, #{gender}, #{email} )
+	</insert>
+	
+	<insert id="insertPost" parameterType="com.care.quiz.membership.dto.PostcodeDTO">
+		<selectKey keyProperty="no" resultType="int" order="BEFORE">
+			SELECT nvl(max(no),0)+1 FROM postcode
+		</selectKey>
+		INSERT INTO postcode VALUES(#{no}, #{zipcode}, #{addr1}, #{addr2}, #{id})
+	</insert>
+	
+</mapper>

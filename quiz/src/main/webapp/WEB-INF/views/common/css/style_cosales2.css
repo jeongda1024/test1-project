@@ -1,0 +1,2400 @@
+@charset 'utf-8';
+/*********************
+wrap layout
+*********************/
+body {
+    -webkit-text-size-adjust:none;
+}
+.ms_cont_wrap {
+    position: static;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+.ms_cont_wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.ms_cont_wrap .ms_cont {
+    margin: 0;
+    padding: 0;
+}
+
+.co_sales_ttl_inner {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 104px;
+}
+
+.cosales_bnrs img {
+    width: 100%;
+}
+
+.cosales_guide_txt strong {
+    display: block;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+.cosales_guide_txt span {
+    display: block;
+    margin-top: -10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* mobile */
+@media screen and (max-width: 730px) {
+    * {
+        letter-spacing: -0.9px;
+    }
+
+    #mstopWrap {
+        height: 70px;
+        box-sizing: border-box;
+    }
+
+    .ms_cont_wrap {
+        width: 100%;
+        padding: 10px 10px 50px;
+    }
+    .ms_cont_wrap .ms_cont {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .co_sales_ttl_inner {
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        table-layout: fixed;
+        text-align: center;
+    }
+
+    .ms_sub_tit_wrap h4 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .ms_sub_tit_wrap h4 img {
+        height: 17px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+/* pad */
+@media screen and (max-width: 1100px) and (min-width: 730px) {
+    .ms_cont_wrap {
+        width: 100%;
+        padding: 20px 20px 60px;
+    }
+    .ms_sub_tit_wrap h4 {
+        left: 0;
+        padding: 0 20px;
+    }
+    .ms_sub_tit_wrap h4 img {
+        height: 30px;
+    }
+    .co_sales_ttl_inner {
+        width: 100%;
+    }
+}
+
+/*********************
+단체 및 기업 구매 안내 메인
+*********************/
+.cosalse_info {
+    line-height: 1.2;
+    margin: 40px 0 0 0;/*20191227 하단배너 삭제로 인한 여백수정*/
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.cosalse_info article {
+    padding: 20px 20px 40px 30px;
+}
+.cosalse_info .info:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.cosalse_info .info li {
+    float: left;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+.cosalse_info .info li .img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 160px;
+}
+.cosalse_info .egift_card .info li .img img {
+    width: 142px;
+}
+.cosalse_info .info li .txt {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 0 0 27px;
+}
+.cosalse_info .info li .txt strong {
+    display: block;
+    margin: 20px 0 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+.cosalse_info .info li .txt span {
+    display: block;
+    color: #666;
+    font-size: 12px;
+}
+.cosalse_info .info li .txt span i {
+    display: block;
+    font-style: normal;
+}
+.cosalse_info .btn_wrap {
+    margin-top: 25px;
+}
+.cosalse_info .btn {
+    width: 143px;
+    margin: 10px 2px 0 0;
+    background-color: #666;
+    border: 1px solid #666;
+    color: #fff;
+}
+.egift_card {
+    background-color: #f4f4f2;
+}
+.egift_card .info li {
+    width: 100%;
+}
+
+.cosales_b2b_area {
+    position: relative;
+    margin-bottom: 50px;
+}
+.ms_cont .cosales_b2b_area a.bnr_link {
+    background: gold;
+    display: block;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    text-indent: -20000px;
+    overflow: hidden;
+    position: absolute;
+    left: 17.3%; /* 20201103 수정 */
+    bottom: 12%;
+    width: 13%;
+    height: 22%;
+}
+
+/* mobile */
+@media screen and (max-width: 730px) {
+    .cosalse_info article {
+        padding: 0 15px 30px 15px;
+    }
+    .cosalse_info .info li {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cosalse_info .info li .img,
+    .cosalse_info .egift_card .info li .img img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .cosalse_info .info li .txt {
+        display: block;
+        padding: 0;
+    }
+    .cosalse_info .info li .txt strong {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .cosalse_info .info li .txt span {
+        font-size: 13px;
+    }
+    .cosalse_info .info li .txt span i {
+        display: inline-block;
+    }
+    .cosalse_info .btn_wrap:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .cosalse_info .btn_wrap .btn {
+        float: left;
+        width: 49%;
+        height: 38px;
+        line-height: 38px;
+        margin: 5px 0 0 0;
+        padding: 0 5px;
+    }
+    .products .btn_wrap .btn:nth-child(2n+2) {
+        margin-left: 2%;
+    }
+    .egift_card .btn_wrap .btn:first-child {
+        width: 100%;
+    }
+    .egift_card .btn_wrap .btn:last-child {
+        margin-left: 2%;
+    }
+}
+
+/*********************
+단체 및 기업 구매 안내 신청
+*********************/
+
+/* 단체 및 기업구매 e-Gift 구매 신청 안내 팝업 */
+.eGift_buy_info {
+    padding: 20px;
+}
+.eGift_buy_info ul > li {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 35px;
+    padding: 35px 0 0 0;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+.eGift_buy_info ul > li:first-child {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: none;
+}
+.eGift_buy_info .img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 96px;
+    height: 96px;
+}
+.eGift_buy_info .list_style {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+.eGift_buy_info .title {
+    display: block;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 14px;
+}
+.eGift_buy_info ol li {
+    margin-top: 10px;
+}
+.eGift_buy_info ol li em {
+    font-style: normal;
+    color: #444;
+    font-weight: bold;
+    font-size: 15px;
+}
+.eGift_buy_info .info_box {
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+/* 발신번호 사전등록제 팝업 */
+.preregist .info_box {
+    font-size: 14px;
+}
+.preregist .info_box p {
+    margin-top: 20px;
+    text-align: center;
+}
+.preregist .info_box p:first-child {
+    margin-top: 0;
+}
+.preregist_send {
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+.preregist_send .btn_wrap {
+    margin: 20px 0;
+}
+.preregist_send .btn_wrap .btn {
+    width: 112px;
+}
+.preregist_send .number {
+    margin-bottom: 15px;
+}
+.preregist_send .number strong {
+    color: #006633;
+    font-weight: bold;
+    font-style: normal;
+}
+.preregist_send .number span {
+    display: block;
+}
+.preregist_send .btn.green {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.preregist_send .rec {
+    padding: 20px 15px 0 15px;
+}
+.preregist_send .rec span {
+    display: block;
+    margin-bottom: 10px;
+}
+.preregist_send .must {
+    color: #ff0000;
+}
+.preregist_info_box {
+    margin-top: 20px;
+}
+.preregist_info_box .btn {
+    float: right;
+}
+.preregist_info_box .list_style {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* 발신번호 사전등록제란? 팝업 */
+.preregist_info .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #006634;
+}
+.preregist_info .caption {
+    margin-bottom: 10px;
+    color: #333;
+}
+.preregist_info .caption span {
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+    color: #666;
+    font-size: 14px;
+}
+.preregist_info .list_style strong {
+    color: #333;
+}
+.preregist_info .list_style .btn {
+    margin-left: 0;
+    padding: 0 5px;
+}
+
+/* 구입 가능한 금액 */
+.eGift_price {
+    margin-top: 20px;
+}
+.eGift_price .list_style span {
+    font-size: 12px;
+    font-weight: bold;
+}
+.eGift_price .price {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f4f4f2;
+}
+.eGift_price .price strong {
+    font-size: 14px;
+    color: #006633;
+}
+.eGift_price .price strong br {
+    display: none;
+}
+
+/* 예약발송 희망일 */
+.period {
+    margin: 10px 0;
+}
+
+/* 발송 전화번호 */
+.send_number .inp_number {
+    margin: 15px 0;
+}
+.send_number .inp_number .inp_checkbox {
+    clear: both;
+    padding-top: 10px;
+    margin-top: 13px;
+}
+.send_number .inp_number .btn_wrap {
+    float: left;
+    margin-top: 0;
+}
+.send_number .inp_number .btn_wrap span {
+    float: left;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    margin-left: 0;
+}
+.send_number .inp_number .btn_wrap .btn {
+    margin-left: 5px;
+}
+.send_number .btn_txt {
+    color: #006633;
+    text-decoration: underline;
+}
+.send_number .proof {
+    margin: 10px 0;
+}
+.send_number .proof .inp_checkbox {
+    margin-bottom: 10px
+}
+.send_number .proof .inp_checkbox label {
+    font-size: 13px;
+}
+
+/* 메세지 미리보기 팝업 */
+.msg_view {
+    color: #444;
+}
+.msg_view .title {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.msg_view .img img {
+    height: 210px;
+}
+.msg_view .msg_box {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f2;
+}
+.msg_view .msg_box .msg span {
+    font-size: 14px;
+    display: block;
+}
+.img_barcode {
+    width: 315px;
+    margin: 0 auto;
+}
+.img_barcode .img {
+    display: block;
+    width: 100%;
+    height: 51px;
+    background: url(../img/footer/co_sales/img_barcode.jpg) center no-repeat;
+}
+.img_barcode .barcode_num {
+    padding: 5px 5px 0 5px;
+}
+.img_barcode .barcode_num:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.img_barcode .barcode_num span {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Dotum', sans-serif;
+    letter-spacing: -0.2px;
+}
+.img_barcode .barcode_num .card {
+    float: left;
+}
+.img_barcode .barcode_num .pin {
+    float: right;
+}
+.msg_view .msg_box ul {
+    margin-top: 5px;
+}
+.msg_view .msg_box ul li strong {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    font-weight: normal;
+    color: #969696;
+}
+.msg_view .msg_box ul li span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    letter-spacing: -0.9px;
+}
+.msg_view .msg_box ul li strong .spacing {
+    word-spacing: 0.33em;
+}
+.msg_view .info {
+    margin-top: 25px;
+}
+.msg_view .info strong {
+    display: block;
+    margin: 20px 0 5px 0;
+    font-weight: normal;
+}
+.msg_view .info strong,
+.msg_view .info span {
+    display: block;
+    word-break: break-all;
+    word-wrap:break-word;
+    font-size: 13px;
+    color: #444;
+}
+.msg_view .info a {
+    display: block;
+}
+.msg_view .popup_btn_wrap .btn {
+    width: 54px;
+    font-size: 14px;
+}
+
+/* e-Gift Card 이미지 선택 */
+.eGift_card_img {
+    position: relative;
+}
+.eGift_card_img li button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14.29%;
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #d5d5d5;
+    border-left: none;
+    border-bottom-color: #222;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+}
+    .eGift_card_img li:first-child  button {
+        border-left: 1px solid #d5d5d5;
+    }
+    .eGift_card_img li:nth-child(2) button {
+        left: 14.3%;
+    }
+    .eGift_card_img li:nth-child(3) button {
+        left: 28.6%;
+    }
+    .eGift_card_img li:nth-child(4) button {
+        left: 42.8%;
+    }
+    .eGift_card_img li:nth-child(5) button {
+        left: 57.1%;
+    }
+    .eGift_card_img li:nth-child(6) button {
+        left: 71.4%;
+    }
+    .eGift_card_img li:nth-child(7) button {
+        left: 85.7%;
+    }
+.eGift_card_img li ol {
+    display: none;
+    margin-left: -13px;
+    padding-top: 55px;
+}
+.eGift_card_img li ol:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.eGift_card_img li.on ol {
+    display: block;
+}
+.eGift_card_img li.on button {
+    color: #006633;
+    border: 1px solid #222;
+    border-bottom: none;
+}
+.eGift_card_img li ol li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-top: 15px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+.eGift_card_img .info {
+    position: relative;
+    margin-top: 10px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.eGift_card_img label {
+    display: block;
+    cursor: pointer;
+}
+.eGift_card_img .info input[type="radio"] {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+}
+.eGift_card_img .info input[type="radio"] + span {
+    width: 89%;
+    padding-left: 20px;
+}
+.eGift_card_img .info span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 76%;
+}
+
+/* 선물 받으실 분 */
+.mms_recipient .info {
+    margin-bottom: 15px;
+}
+.mms_recipient .info span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.mms_recipient .info span:first-child:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 12px;
+    background-color: #9e9e9e;
+    margin: 0 6px 0 8px;
+}
+.mms_recipient .info em {
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.mms_recipient .list {
+    padding-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.mms_recipient .list dl {
+    box-sizing: border-box;
+}
+.mms_recipient .list dt {
+    display: inline-block;
+    width: 28%;
+    padding-right: 30px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    font-weight: normal;
+    text-align: right;
+}
+.mms_recipient .list dd {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.mms_recipient .list dd input {
+    width: 60%;
+    text-align: right;
+}
+.mms_recipient .list dd label {
+    display: inline-block;
+}
+.mms_recipient .list .total {
+    background-color: #f6f6f6;
+}
+.mms_recipient .list .total dt,
+.mms_recipient .list .total dd {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.mms_recipient .no_list {
+    height: 120px;
+    line-height: 120px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    color: #666;
+    text-align: center;
+}
+
+/* e-Gift 대량 구매 가격 및 수량 테이블 */
+.eGift_select_info .list {
+    margin-top: 25px;
+    padding-top: 35px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.eGift_select_info .list dl {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 0 30px 20px 30px;
+    box-sizing: border-box;
+}
+.eGift_select_info .list dl dt {
+    display: table-cell;
+    width: 25%;
+    font-weight: normal;
+    color: #666;
+    letter-spacing: 1px;
+    font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    font-size: 14px;
+    word-break: break-all;
+}
+.eGift_select_info .list dl dd {
+    position: relative;
+    display: table-cell;
+    text-align: right;
+    color: #666
+}
+.eGift_select_info .list .number {
+    width: 21%;
+}
+.eGift_select_info .list .number label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    line-height: 28px;
+    font-size: 13px;
+}
+.eGift_select_info .list .number input {
+    width: 120px;
+    padding-right: 30px;
+    text-align: right;
+    font-size: 13px;
+    color: #000;
+}
+.eGift_select_info .list .price {
+    width: 33%;
+}
+.eGift_select_info .list .price span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 28px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.eGift_select_info .list .total {
+    padding: 15px 30px;
+    margin-top: 15px;
+    background-color: #f4f4f2;
+}
+.eGift_select_info .list .total span {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+}
+.eGift_select_info .list .total span em {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #006633;
+}
+.eGift_select_info .list .total span em:before {
+    content: ":";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    color: #000;
+    font-weight: normal;
+}
+.eGift_select_info .list .no_list {
+    padding: 20px 0 40px 0;
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+}
+.eGift_select_info .list_view {
+    margin-top: 20px;
+}
+.eGift_select_info .list_view:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.eGift_select_info .list_view .list_style {
+    float: left;
+}
+.eGift_select_info .list_view .list_style li {
+    margin-top: 0;
+}
+.eGift_select_info .list_view .list_style li span,
+.eGift_select_info .list_view .list_style li p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.eGift_select_info .list_view .btn {
+    width: 110px;
+    float: right;
+    font-weight: normal;
+}
+
+/* 결제 방식 */
+.pay_info {
+    padding-left: 10px;
+    margin-top: 19px;
+    color: #666;
+}
+.pay_info p strong {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 14px;
+}
+.pay_info p span {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 16px;
+}
+table.view .pay_info .list_style li {
+    margin-top: 0;
+}
+
+/* 단체 및 기업 스타벅스 e-Gift Card 선물 시 유의사항 팝업 */
+.gift_notice {
+    padding: 10px 15px 0 15px;
+}
+.gift_notice .title {
+    display: block;
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 16px;
+}
+.notice_list {
+    margin-top: 15px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+.notice_list>ul>li {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    table-layout: fixed;
+    margin-bottom: 30px;
+}
+.notice_list .img {
+    display: table-cell;
+    vertical-align: top;
+    width: 95px;
+    height: 95px;
+}
+.notice_list .list_style {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 50px;
+}
+.notice_list ul li p {
+    margin: 15px 0 10px 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+.notice_list ul li p em {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-style: normal;
+}
+.gift_notice .completed {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+}
+.gift_notice .completed .btn {
+    width: 83px;
+}
+.gift_notice .btn.gray {
+    background-color: #838383;
+    border: 1px solid #838383;
+    color: #fff;
+}
+
+/* mobile */
+@media screen and (max-width: 730px) {
+
+    /* 단체 및 기업구매 e-Gift 구매 신청 안내 팝업 & 유의사항 팝업 */
+    .eGift_buy_info {
+        padding: 0;
+    }
+    .eGift_buy_info ul > li > .img,
+    .notice_list .img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .eGift_buy_info ul > li > .img,
+    .eGift_buy_info ul > li > .list_style,
+    .notice_list .img,
+    .notice_list div.list_style {
+        display: block;
+        padding: 0;
+    }
+    .gift_notice {
+        padding: 0;
+    }
+
+    /* 구입 가능한 금액 */
+    .eGift_price .price {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .eGift_price .price strong br {
+        display: block;
+    }
+
+    /* 발송 전화번호 */
+    .send_number .inp_number .btn_wrap {
+        clear: both;
+        width: 100%;
+    }
+    .send_number .inp_number .btn_wrap span {
+        margin-right: 10px;
+    }
+    .send_number .inp_number .btn_wrap .btn {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    /* 연락처 엑셀 업로드 */
+    .inp_file .btn.excel {
+        margin: 10px 0 0 0;
+        clear: both
+    }
+
+    /* e-Gift Card 이미지 선택 */
+    .eGift_card_img li button {
+        font-size: 13px;
+        padding: 0;
+    }
+    .eGift_card_img li ol li {
+        width: 50%;
+    }
+    .eGift_card_img .info {
+        height: 100%;
+    }
+    .eGift_card_img .info .btn {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    .eGift_card_img .info span {
+        width: 100%;
+    }
+
+    /* 미리보기 팝업 */
+    .msg_view .msg_box ul li span {
+        font-size: 13px;
+    }
+
+    /* 선물 받으실 분 */
+    .mms_recipient .list dd input {
+        width: 70%;
+    }
+    .mms_recipient .info span,
+    .mms_recipient .info em {
+        font-size: 13px;
+    }
+
+    /* e-Gift 대량 구매 가격 및 수량 테이블 */
+    .eGift_select_info .list {
+        padding-top: 0;
+    }
+    .eGift_select_info .list dl {
+        display: block;
+        text-align: right;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .eGift_select_info .list dl dt {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .eGift_select_info .list .number {
+        float: left;
+        display: block;
+        width: 49%;
+        /* display: inline-block;
+        width: 46%;
+        margin: 0 2% 10px 2%; */
+    }
+    .eGift_select_info .list .number:nth-child(2) {
+        margin-right: 2%;
+    }
+    .eGift_select_info .list .number input {
+        width: 100%;
+    }
+    .eGift_select_info .list .price {
+        clear: both;
+        width: 100%;
+        /* width: 98%; */
+        display: block;
+        padding-top: 10px;
+    }
+    .eGift_select_info .list .price span {
+        margin-right: 5px;
+    }
+    .eGift_select_info .list .total {
+        margin-top: 0;
+    }
+    .eGift_select_info .list .no_list {
+        padding: 30px 0;
+    }
+    .eGift_select_info .list_view .list_style {
+        float: none;
+        margin-bottom: 15px;
+    }
+    .eGift_select_info .list_view .btn {
+        float: left;
+    }
+}
+
+/* pad */
+@media screen and (max-width: 1100px) and (min-width: 730px) {
+    .eGift_card_img li ol li {
+        width: 33.33333333%;
+    }
+
+    .msg_view .msg_box ul li span {
+        font-size: 13px;
+    }
+
+    .send_number .inp_number .btn_wrap {
+        clear: both;
+        padding-top: 10px;
+    }
+    .send_number .inp_number .btn_wrap .btn {
+        margin: 0 5px 0 0;
+    }
+
+    .inp_file .btn.excel {
+        margin: 10px 0 0 0;
+        clear: both;
+    }
+}
+
+/*********************
+단체 및 기업 구매 내역
+*********************/
+.eGift_purchase_list {
+    margin: 30px 0;
+}
+
+.progress_info {
+    margin: 50px 0 40px 0;
+}
+.progress_info ul {
+    margin-top: 40px;
+}
+.progress_info ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.progress_info ul li {
+    position: relative;
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+.progress_info ul li:first-child {
+    margin-left: 0;
+}
+.progress_info ul li:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 25%;
+    right: -14%;
+    width: 26px;
+    height: 42px;
+    background: url(../img/footer/co_sales/icon_proc_arrow.png) center no-repeat;
+    background-size: 100%;
+}
+.progress_info ul li:last-child:after {
+    display: none;
+}
+.progress_info ul li .title {
+    margin-top: 20px;
+    display: block;
+    color: #222;
+}
+.progress_info ul li p {
+    margin-top: 15px;
+}
+.progress_info ul li span {
+    min-height: 84px;
+    display: block;
+    color: #666;
+}
+.progress_info ul li span em {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    color: #006633;
+}
+
+.purchase_list .info_box {
+    letter-spacing: -0.5px;
+}
+.purchase_list .info_box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.purchase_list .info_box dl {
+    text-align: left;
+    box-sizing: border-box;
+}
+.purchase_list .info_box dl.period_select {
+    float: left;
+    width: 29%;
+}
+.purchase_list .info_box dl.date_select {
+    float: right;
+    width: 67%;
+    text-align: right;
+}
+.purchase_list .info_box dl dt {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.purchase_list .info_box dl dd {
+    display: inline-block;
+    vertical-align: middle;
+}
+.purchase_list .inp_radio {
+    line-height: 28px;
+}
+.purchase_list .inp_radio:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #c1bfb8;
+}
+.purchase_list .inp_radio label {
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.purchase_list .list_style {
+    margin: 15px 0;
+    text-align: right;
+}
+.purchase_list table.list tbody td {
+    padding: 25px 7px;
+    font-size: 12px;
+}
+.purchase_list table.list tbody td .btn {
+    width: 100%;
+    font-weight: normal;
+}
+.purchase_list a.btn_show_order_detail {
+    display: block;
+    color: #222;
+}
+.purchase_list a.btn_show_order_detail.on{
+    text-decoration: underline;
+}
+
+.eGift_download {
+    padding-top: 20px;
+    text-align: center;
+}
+.eGift_download span {
+    display: block;
+    padding: 10px 0 20px 0;
+    font-size: 12px;
+    color: #666;
+}
+.eGift_download .info_box p span {
+    padding: 10px 0;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table.list tbody td.list_detail {
+    padding: 30px 50px;
+    background-color: #f4f4f2;
+    text-align: right;
+}
+table.list tbody td.list_detail .btn {
+    width: auto;
+    font-size: 14px;
+}
+table.list tbody td.list_detail .btn.gray {
+    background-color: #777;
+    border: 1px solid #777;
+}
+
+.list_detail ul {
+    margin: 10px 0;
+    border-top: 1px solid #222;
+}
+.list_detail ul li {
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.list_detail ul li.total {
+    background-color: #ffffff;
+}
+.list_detail ul li span,
+.list_detail ul li strong {
+    display: table-cell;
+    padding: 11px 0;
+    width: 33.33333333333%;
+    vertical-align: middle;
+    text-align: center;
+    color: #222;
+    font-size: 14px;
+}
+.list_detail ul li span:first-child,
+.list_detail ul li strong:first-child  {
+    text-align: left;
+    padding-left: 70px;
+}
+.list_detail ul li span:last-child,
+.list_detail ul li strong:last-child  {
+    text-align: right;
+    padding-right: 70px;
+}
+
+.list_detail.bulk ul li span,
+.list_detail.bulk ul li strong {
+    width: 15%;
+}
+.list_detail.bulk ul li span:first-child,
+.list_detail.bulk ul li strong:first-child  {
+    width: 40%;
+}
+.list_detail.bulk ul li span:last-child,
+.list_detail.bulk ul li strong:last-child  {
+    width: 30%;
+}
+.list_detail.bulk ul li.total strong:first-child {
+    width: 55%;
+}
+
+/* mobile */
+@media screen and (max-width: 730px) {
+    .progress_info ul li {
+        display: block;
+        width: 100%;
+        margin: 30px 0 30px 0;
+    }
+    .progress_info ul li:before {
+        background-size: auto;
+        background-position: center;
+    }
+    .progress_info ul li:after {
+        display: none;
+        /* position: static;
+        margin: 0 auto;
+        padding: 20px 0;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg); */
+    }
+    .progress_info ul li span {
+        min-height: auto;
+    }
+
+    .purchase_list .info_box {
+        padding: 10px;
+    }
+    .purchase_list .info_box dl.period_select,
+    .purchase_list .info_box dl.date_select {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+    .purchase_list .info_box dl dt {
+        padding-right: 5px;
+        font-size: 12px;
+    }
+    .purchase_list .info_box dl dd {
+        width: 84%;
+    }
+    .purchase_list .inp_radio:before {
+        display: none;
+    }
+}
+
+/* pad */
+@media screen and (max-width: 1100px) and (min-width: 730px) {
+    .progress_info {
+        margin: 50px 0 20px 0;
+    }
+    .progress_info ul li {
+        font-size: 12px;
+    }
+    .progress_info ul li:after {
+        top: 22%;
+    }
+    .progress_info ul li .img img {
+        width: 80%;
+    }
+}
+
+/*********************
+common
+*********************/
+.section_row {
+    margin: 30px 0;
+}
+.bx-wrapper {
+    margin: 0 !important;
+}
+
+/* font color */
+.f_b7312c {
+    color: #b7312c;
+}
+.f_3978ce {
+    color: #3978ce;
+}
+
+/* padding */
+.paTop5 {/*20200117 추가*/
+	padding-top:5px;
+}
+/* button */
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn.yellow {
+    background-color: #e2c383;
+    border: 1px solid #bb9f65;
+    color: #222;
+}
+.btn.black {
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+}
+.btn.gray {
+    background-color: #666;
+    border: 1px solid #666;
+    color: #fff;
+}
+.btn.white {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #222;
+}
+.btn.green {
+    background-color: #006633;
+    border: 1px solid #006633;
+    color: #fff;
+}
+.btn.sm {
+    height: 24px;
+    line-height: 24px;
+}
+.btn.md {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.btn.excel {
+    padding: 0;
+    color: #006633;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 14px;
+}
+.btn.excel:before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(../img/footer/co_sales/btn_excel.png) no-repeat;
+}
+
+.btn.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+.btn.disabled:hover,
+.btn.disabled:focus {
+    text-decoration: none;
+}
+
+.btn.complete {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+.btn_wrap {
+    margin-top: 40px;
+}
+.btn_wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn_wrap.center {
+    text-align: center;
+}
+.btn_wrap.right {
+    text-align: right;
+}
+
+/* input */
+.inp_txt {
+    width: 168px;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: 'nbg', sans-serif;
+    letter-spacing: normal;
+    -webkit-appearance: none;
+    font-size: 13px;
+}
+.inp_txt:focus {
+    outline: none;
+}
+.inp_txt.full {
+    width: 100%;
+}
+.inp_txt.object {
+    width: 525px;
+}
+
+input.inp_txt::placeholder {
+    font-family: 'nbg', sans-serif;
+    opacity: 1;
+    color: #767676;
+}
+input.inp_txt::-webkit-input-placeholder {
+    font-family: 'nbg', sans-serif;
+    color: #767676;
+}
+input.inp_txt:-ms-input-placeholder {
+    font-family: 'nbg', sans-serif;
+    color: #767676;
+}
+input.inp_txt:-mos-input-placeholder {
+    font-family: 'nbg', sans-serif;
+    color: #767676;
+}
+input.inp_txt:disabled {
+    background-color: #f4f4f2;
+    opacity:1;
+    color: #757575;
+    -webkit-text-fill-color: inherit;
+}
+/* input.inp_txt:read-only {
+    background-color: #ffffff;
+    opacity:1;
+    color: #757575;
+    -webkit-text-fill-color: inherit;
+} */
+
+.inp_email:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.inp_email .inp_txt,
+.inp_email .select_wrap {
+    float: left;
+    width: 146px;
+}
+.inp_email .select_wrap {
+    margin-left: 6px;
+}
+.inp_email .select_wrap label {
+    font-weight: bold;
+}
+.inp_email .at {
+    float: left;
+    width: 20px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.inp_number:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.inp_number .inp_txt,
+.inp_number .select_wrap {
+    float: left;
+    width: 75px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.inp_number .hypen {
+    float: left;
+    width: 18px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.inp_radio input[type="radio"] {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.inp_radio label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.inp_checkbox input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    margin-right: 0px;
+}
+.inp_checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.inp_datepicker .datepicker {
+    position: relative;
+    width: 168px;
+    display: inline-block;
+}
+.inp_datepicker input[type="text"] {
+    display: inline-block;
+    width: 100%;
+}
+.inp_datepicker label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 28px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: url(../img/common/icon_calendar.gif) no-repeat center #fff;
+    cursor: pointer;
+}
+.inp_datepicker .list_style {
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+.datepicker_wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.datepicker_wrap .inp_datepicker {
+    display: inline-block;
+    vertical-align: middle;
+}
+.datepicker_wrap .inp_datepicker .datepicker {
+    width: 135px;
+}
+.datepicker_wrap .to {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 28px;
+}
+.datepicker_wrap .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: 12px;
+    background-color: #777;
+    border: 1px solid #777;
+    font-weight: normal;
+}
+
+.inp_file:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.inp_file .inp_txt {
+    float: left;
+    width: 202px;
+}
+.inp_file .btn {
+    float: left;
+    margin-left: 5px;
+}
+.inp_file input[type="file"]:focus + label {
+    outline: 1px dotted #000;
+}
+input[type="radio"] {
+    -webkit-appearance: radio;
+    border-radius: 100%;
+}
+
+/* textarea */
+.textarea {
+    width: 100%;
+    height: 98px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: 'nbg', sans-serif;
+    -webkit-appearance: none;
+    font-size: 13px;
+}
+.textarea:focus {
+    outline: 1px dotted #000;
+}
+textarea::placeholder {
+  font-family: 'nbg', sans-serif;
+  opacity: 1;
+  color: #767676;
+}
+textarea::-webkit-input-placeholder {
+   font-family: 'nbg', sans-serif;
+   color: #767676;
+}
+textarea:-ms-input-placeholder {
+   font-family: 'nbg', sans-serif;
+   color: #767676;
+}
+textarea:-mos-input-placeholder {
+   font-family: 'nbg', sans-serif;
+   color: #767676;
+}
+
+/* select box */
+.select_wrap {
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.select_wrap:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
+    background: url(../img/util/sbox_arrow_down.png) no-repeat center;
+}
+.select_wrap label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 30px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #444;
+    font-size: 12px;
+}
+.select_wrap label.on {
+    color: #000;
+}
+.select_wrap select {
+    width: 100%;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.select_wrap select::-ms-expand {
+    display: none;
+}
+
+/* title */
+h5.title {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+h5.title:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+h5.title .must_inp {
+    float: right;
+}
+
+.section_row h5.title {
+    margin-bottom: 20px;
+}
+
+/* list */
+.list_style {
+    color: #666;
+}
+.list_style span {
+    position: relative;
+    display: inline-block;
+    padding-left: 7px;
+    word-break: break-all;
+    font-size: 14px;
+}
+p.list_style span {
+    display: block;
+}
+.list_style span:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background-color: #999;
+}
+.list_style span.f_b7312c:before {/*20200117 문구 및 색상 추가*/
+    background-color: #b7312c;
+}
+.list_style.hypen span:before {
+    top: 9px;
+    width: 6px;
+    height: 1px;
+}
+.list_style .txt_block {
+    display: block;
+    font-style: normal;
+}
+.list_style .txt_block b {
+    display: block;
+    padding-left: 20px;
+    font-weight: normal;
+}
+.list_style li.f_b7312c span:before {
+    background-color:#b7312c;
+}
+.list_style.hypen li.f_b7312c span:before {
+    background-color:#999;
+}
+
+/* table */
+.table_wrap caption {
+    position: static;
+    text-indent:-100000px;
+    height: 1px;
+}
+table.view {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #222;
+}
+table.view tbody th {
+    padding: 15px 10px;
+    background-color: #f4f4f4;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+}
+table.view tbody th .sub {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+table.view tbody th i {
+    display: block;
+    font-style: normal;
+}
+table.view tbody td {
+    padding: 15px 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+table.view .must_inp {
+    font-weight: bold;
+    font-size: 14px;
+}
+table.view .list_style {
+    margin-top: 5px;
+}
+table.view .list_style li {
+    margin-top: 7px;
+    letter-spacing: -0.5px;
+}
+table.view .list_style.hori {
+    display: inline-block;
+    margin: 3px 0 0 10px;
+}
+table.view .msg_txt .list_style {
+    margin-top: 0;
+}
+
+table.list {
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px solid #222;
+}
+table.list thead th {
+    padding: 12px 0;
+    vertical-align: middle;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+table.list tbody td {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    color: #222;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+table.list .no_list span {
+    display: block;
+    padding: 45px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* paging */
+.pager {
+    margin-top: 35px;
+}
+
+/* tab */
+.tab_wrap {
+    position: relative;
+    margin-top: 65px;
+}
+.tab_wrap>ul {
+    padding-top: 40px;
+}
+.tab_wrap>ul>li .tab_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 40px;
+    line-height: 38px;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+.tab_wrap>ul>li:last-child .tab_title {
+    left: auto;
+    right: 0;
+}
+.tab_wrap>ul>li.on .tab_title {
+    background-color: #006633;
+    border: 1px solid #006633;
+    color: #fff;
+}
+.tab_wrap>ul>li.on .tab_content {
+    display: block;
+}
+.tab_content {
+    display: none;
+}
+.tab_content .section_row {
+    margin: 70px 0;
+}
+
+/* popup */
+.popup_wrap {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0,0,0,0.7);
+    filter: alpha(opaicty=70);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: 0.3s all;
+}
+.popup_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+}
+.popup_container.lg {
+    width: 700px;
+}
+.popup_container.md {
+    width: 460px;
+}
+.popup_container.sm {
+    width: 360px;
+}
+.popup_header {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 0 50px 0 25px;
+    border-radius: 3px 3px 0 0;
+    background-color: #8c8279;
+    color: #fff;
+}
+.popup_header strong {
+    display: block;
+    float: left;
+    padding: 16px 0;
+}
+.popup_header strong br {
+    display: none;
+}
+.popup_header.center strong {
+    float: none;
+    text-align: center;
+}
+ .popup_header .btn_popup_close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    background: url(../img/common/btn_login_layer_close.png) no-repeat center;
+    transition: transform 1s;
+}
+.popup_header .btn_popup_close:hover {
+    transform: rotate(180deg);
+}
+.popup_contents {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 3px 3px;
+    font-size: 14px;
+}
+.popup_contents .section_row {
+    margin: 25px 0 0 0;
+}
+.popup_btn_wrap {
+    margin-top: 30px;
+    text-align: center;
+}
+ .popup_btn_wrap .btn {
+    height: 30px;
+    line-height: 30px;
+    width: 83px;
+    margin: 0 1px;
+}
+.lg .popup_btn_wrap .btn {
+    font-size: 14px;
+}
+
+.popup_alert {
+    text-align: center;
+    color: #666;
+}
+.popup_alert p {
+    margin: 5px 0;
+}
+
+.msg_confirm strong {
+    display: block;
+    margin: 15px 0 5px 0;
+    font-weight: normal;
+}
+.msg_confirm em {
+    display: block;
+    font-style: normal;
+    color: #666;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.popup_alert.complete strong {
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+    color: #000;
+}
+
+/* s:: 20210305 팝업 추가 */
+.egift_pop {color: #666; line-height: 1.5; width: 700px;}
+.egift_pop .popup_header strong {float: none; text-align: center;}
+.egift_pop .popup_contents {padding: 30px;}
+.egift_pop .popup_contents .noti {margin-bottom: 20px;}
+.egift_pop .popup_contents .noti > li {margin-top: 20px;}
+.egift_pop .popup_contents .noti > li > strong {position: relative; margin-bottom: 7px;padding-left: 10px;color: #333;display: block;}
+.egift_pop .popup_contents .noti > li > strong:before {content: ''; width: 3px; height: 3px; border-radius: 70%; position: absolute; left: 0; top: 5px; background-color: #333;}
+.egift_pop .popup_contents .noti ul li {position: relative; padding-left: 17px;}
+.egift_pop .popup_contents .noti ul li:before {content: ''; width: 3px; height: 1px; position: absolute; left: 10px; top: 50%; background-color: #000;}
+.egift_pop .popup_contents .popup_info_txt {text-align: center; font-weight: bold;}
+.egift_pop .popup_contents p em {color: #006633; font-style: normal;}
+.egift_pop .popup_contents .popup_btn_wrap {margin-top: 10px;}
+.egift_pop .popup_contents .notPopCheck {display: block; margin-top: 30px; text-align: center;}
+.egiftcard_buy_tbl { border-top:2px solid #a5916e; width:100%; table-layout:fixed; }
+.egiftcard_buy_tbl thead tr th { background:#dedad1; border-bottom:1px solid #cac5c1; border-right:1px solid #cac5c1; color:#333; font-size:14px; font-weight:bold; height:35px; text-align:center; vertical-align:middle; } 
+.egiftcard_buy_tbl tbody tr td { background:#fff; border-bottom:1px solid #cac5c1; border-right:1px solid #cac5c1; color:#666; font-size:12px; line-height:1.4; padding:10px 5px; vertical-align:middle; }
+.egiftcard_buy_tbl thead tr th.nbr,
+.egiftcard_buy_tbl tbody tr td.nbr { border-right:none; }
+.egiftcard_buy_tbl tbody tr td.tc { text-align:center; }
+.egiftcard_buy_tbl tbody tr td.tl {padding-left:13px}
+@media screen and (max-width: 730px) {
+	.popup_container.egift_pop {width: 90% !important;}
+}
+@media screen and (max-width: 480px) {
+	.egift_pop .popup_contents {padding: 18px;}
+}
+/* e:: 20210305 팝업 추가 */
+
+/* etc */
+.must_inp {
+    color: #b7312c;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.info_box {
+    padding: 15px 20px;
+    background-color: #f4f4f2;
+    color: #444;
+}
+
+.msg_txt {
+    margin-bottom:10px;
+}
+
+/* slider */
+.slider_view_control {
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.slider_view_pager .bx-pager-item {
+    display: inline-block;
+}
+.slider_view_pager .bx-pager-link {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    vertical-align: middle;
+    background-color: #b2b2b2;
+    border-radius: 100%;
+    box-sizing: border-box;
+    color: #b2b2b2;
+    font-size: 1px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.slider_view_pager .bx-pager-link.active {
+    border: 3px solid #046240;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+.slider_view_prev,
+.slider_view_next {
+    position: absolute;
+    top: 0;
+    font-size: 0;
+}
+.slider_view_prev {
+    left: 0;
+}
+.slider_view_next {
+    right: 0;
+}
+.slider_view_prev a,
+.slider_view_next a {
+    position: relative;
+    display: block;
+    width: 13px;
+    height: 22px;
+    font-size: 0px;
+    color: #b2b2b2;
+    overflow: hidden;
+}
+.slider_view_prev a,
+.slider_view_next a {
+    width: 13px;
+    height: 22px;
+    background: url(../img/msr/sceGift/slide_arrow_l.png) no-repeat;
+    background-size: 100%;
+}
+.slider_view_next a {
+    background: url(../img/msr/sceGift/slide_arrow_r.png) no-repeat;
+    background-size: 100%;
+}
+.slider_view_prev a.disabled,
+.slider_view_next a.disabled {
+    opacity: 0.6;
+    filter: alpha(opaicty=60);
+}
+
+/* mobile */
+@media screen and (max-width: 730px) {
+
+    /* table */
+    .table_scroll {
+        overflow: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table_scroll table.list {
+        width: 830px;
+    }
+    table.view {
+        border-top: none;
+    }
+    table.view colgroup {
+        display: block;
+    }
+    table.view tbody th {
+        display: block;
+        width: 100%;
+        padding: 10px 0 0 0;
+        background-color: #fff;
+        border-top: 1px solid #222;
+        border-bottom: none;
+    }
+    table.view tbody th br {
+        display: none;
+    }
+    table.view tbody td {
+        display: block;
+        width: 100%;
+        padding: 15px 0 10px 0;
+        border-bottom: none;
+    }
+    table.view .list_style.hori {
+        margin: 5px 0 0 0;
+    }
+
+    /* list */
+    .list_style span {
+        font-size: 13px;
+    }
+
+    /* input */
+    .inp_txt,
+    .inp_txt.object {
+        width: 100%;
+    }
+    .inp_email .inp_txt {
+        width: 47%
+    }
+    .inp_email .select_wrap {
+        clear: both;
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+    .inp_email .at {
+        width: 6%;
+    }
+    .inp_number .inp_txt,
+    .inp_number .select_wrap {
+        width: 30%;
+    }
+    .inp_number .hypen {
+        width: 5%;
+    }
+
+    /* input datepicker */
+    .inp_datepicker label {
+        width: 28px;
+    }
+    .datepicker_wrap .inp_datepicker {
+        float: left;
+        width: 39%;
+    }
+    .datepicker_wrap .inp_datepicker .datepicker {
+        width: 100%;
+    }
+    .datepicker_wrap .inp_datepicker input[type="text"] {
+        padding: 0 5px;
+        font-size: 11px;
+        letter-spacing: -1px;
+    }
+    .datepicker_wrap .to {
+        float: left;
+        width: 5%;
+    }
+    .datepicker_wrap .btn {
+        width: 15%;
+        padding: 0 5px;
+        margin-left: 2%;
+    }
+
+    /* tab */
+    .tab_wrap {
+        margin-top: 30px;
+    }
+    .tab_content .section_row {
+        margin: 30px 0;
+    }
+
+    /* popup */
+    .popup_container,
+    .popup_container.lg {
+        width: 100%;
+    }
+    .popup_container.sm,
+    .popup_container.md {
+        width: 350px;
+    }
+    .popup_header {
+        margin-top: 0;
+        font-size: 15px;
+    }
+    .popup_header strong br {
+        display: block;
+    }
+    .popup_contents {
+        margin-bottom: 0;
+        padding: 20px 15px;
+    }
+    .popup_alert.complete strong {
+        font-size: 18px;
+    }
+
+    /* etc */
+    .msg_txt {
+        font-size: 13px;
+    }
+    .txt_inline br {
+        display: none;
+    }
+
+}
+
+/* 아이폰5/SE/XS 대응 */
+@media screen and (max-width: 320px) {
+    .popup_container.sm,
+    .popup_container.md {
+        width: 95%;
+    }
+    .ms_sub_tit_wrap h4 img {
+        height: 14px;
+    }
+    .img_barcode {
+        width: 100%;
+    }
+    .msg_view .img img {
+        height: 182px;
+    }
+    .inp_file .inp_txt {
+        width: 170px;
+    }
+    .popup_header strong br {
+        display: none;
+    }
+
+}
+
+/* pad */
+@media screen and (max-width: 1100px) and (min-width: 730px) {
+    table.view {
+        table-layout: inherit;
+    }
+    .table_scroll {
+        overflow: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .table_scroll table.list {
+        width: 830px;
+    }
+}
+
+/* 20210305 팝업 추가 */
+#eGiftCardInfo.popup_wrap {opacity: 0;}
+#eGiftCardInfo.popup_wrap .popup_container {display: none;} /*20210311 수정*/
+
+/* 20210520 추가 */
+.cosalse_info .btn_wrap {margin-top:15px;}
+.cosalse_info .btn.w_auto {width:auto;}
+.cosalse_info .products .info li .img {padding-top:20px;}
+.cosalse_info .egift_card .info li .img {padding-top:10px;}
+.cosalse_info .egift_card .info li .img img {width:150px;}
+@media screen and (max-width: 730px) {
+	.cosalse_info .products .info li .img,
+	.cosalse_info .egift_card .info li .img {padding-top:0;}
+	.cosalse_info .egift_card .info li .img img {width:250px;}
+}
+
+/* s::20211115 추가 */
+/* 단체 및 기업 구매 안내(플래너 배너) */
+.ms_cont .cosales_b2b_area.ver2022{display:block;}
+.ms_cont .cosales_b2b_area.ver2022 a.bnr_link{bottom:11%;left:22%;height:25%;} /* 211221 수정 */
+@media screen and (max-width:640px) {
+	.ms_cont .cosales_b2b_area.ver2022 a.bnr_link{bottom:13%;left:17%;width:21%;height:24%;} /* 211221 수정 */
+}
+/* e::20211115 */

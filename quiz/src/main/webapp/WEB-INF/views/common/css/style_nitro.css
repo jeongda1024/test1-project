@@ -1,0 +1,248 @@
+/* common classes */
+.nitro_pstn { background-repeat:no-repeat; background-size:100% auto; left:50%; position:absolute; text-indent:-20000px; }
+.nitro_inner { margin:0 auto; position:relative; width:1100px; }
+.move-txt{ opacity:0; transform:translate(0, 20px); -webkit-transform:translate(0, 20px); transition:1s ease-in-out; }
+.move-txt.move{ opacity:1; transform:translate(0, 0); -webkit-transform:translate(0, 0); }
+.nitro_w_pic { display:block; }
+.nitro_m_pic { display:none; }
+/* common classes end */
+
+/* nitro visial */
+#nitroVisual{ background-color:#000; position:relative; width:100%; }
+.nitro_visual{ background:url("../img/nitro/bg_nitro_visual.jpg") center center no-repeat; background-size:cover; height:1160px; position:relative; width:100%; }
+.nitro_v_prd { background-image:url("../img/nitro/nitro_v_prd.png"); background-repeat:no-repeat; background-size:100% auto; bottom:0; height:1040px; left:50%; margin-left:-324px; position:absolute; text-indent:-20000px; width:1129px; }
+.nitro_v_txt01 { background-image:url("../img/nitro/nitro_v_txt01.png"); background-size:contain; height:212px; margin-left:-494px; top:300px; width:551px; }
+.nitro_v_txt02 { background-image:url("../img/nitro/nitro_v_txt02.png"); background-size:contain; height:108px; margin-left:-380px; top:542px; width:326px; }
+/* nitro visial end */
+
+
+/* 20170519   Min : nitro video   동영상 삭제 
+#nitroVideo{ position:relative; z-index:10; }
+20170519   Min : nitro video   동영상 삭제 */
+
+/*20170519 Min: nitor Video-small 동영상 추가  Start*/
+#nitroVidoe_small {position: absolute; width: 643px; height:325px;  top: 702px; left: 50%; margin-left: -560px; background: #272525; border: 3px solid #d67e42;  box-sizing: border-box; z-index: 10; }
+#nitroVidoe_small  .videoBox {float: left; width: 319px; height: 319px; }
+#nitroVidoe_small .video_mesg {float: none;  line-height: 30px; margin-left: 340px; padding: 110px 25px 0 0  ; font-size: 18.5px; color: #d67e42; letter-spacing: -1.5px; }
+#nitroVidoe_small .video_mesg span:before {content: ''; display: block;  width: 25px; height: 1px; margin-bottom: 25px; background: #d67e42}
+/*20170519 Min: nitor Video-small 동영상 추가  End*/
+
+
+/* nitro information */
+#nitroInfo{ background-image:url("../img/nitro/bg_nitro_info.jpg"); background-repeat:no-repeat; background-size:cover; height:1130px; position:relative; width:100%; }
+.nitro_i_tit { background-image:url("../img/nitro/nitro_i_tit.png"); height:214px; margin-left:-401px; filter: alpha(opacity=0); opacity:0; top:-20px; width:776px; }
+.nitro_i_txt01 { background-image:url("../img/nitro/nitro_i_txt01.png"); height:178px; margin-left:-306px; filter: alpha(opacity=0); opacity:0; top:254px; width:600px; }
+.nitro_i_line { background-color:#969595; display:block; height:1px; left:50%; margin-left:-292px; filter: alpha(opacity=0); opacity:0; position:absolute; top:223px; width:584px; }
+.nitro_extractor { background-image:url("../img/nitro/bg_extractor.png"); height:288px; margin-left:-31px; top:379px; width:69px; z-index:1; }
+.nitro_liquid01 { background-image:url("../img/nitro/bg_liquid01.png"); height:0; margin-left:-11px; top:641px; width:27px; z-index:2; }
+.nitro_liquid02 { background-image:url("../img/nitro/bg_liquid02.png"); height:0; margin-left:-6px; top:664px; width:18px; }
+.nitro_cup { background-image:url("../img/nitro/bg_cup.jpg"); height:329px; margin-left:-65px; top:721px; width:134px; z-index:3; }
+.nitro_liquid03 { background-image:url("../img/nitro/bg_cup_on.jpg"); height:329px; margin-left:-65px; top:721px; width:134px; z-index:2; }
+.nitro_i_txt02 { background-image:url("../img/nitro/nitro_i_txt02.png"); height:138px; margin-left:25px; filter: alpha(opacity=0); opacity:0; top:477px; width:347px; z-index:4; }
+.nitro_i_txt03 { background-image:url("../img/nitro/nitro_i_txt03.png"); height:204px; margin-left:35px; filter: alpha(opacity=0); opacity:0; top:794px; width:300px; z-index:4; }
+.nitro_i_txt04 { background-image:url("../img/nitro/nitro_i_txt04.png"); height:114px; margin-left:-382px; filter: alpha(opacity=0); opacity:0; top:652px; width:348px; z-index:4; }
+/* nitro information end */
+
+/* nitro banner01 */
+#nitrobnr1Wrap{ background-image:url("../img/nitro/bg_nitro_bnr01.jpg"); background-position:center center; background-repeat:no-repeat; background-size:cover; height:360px; position:relative; width:100%; }
+.nitro_bnr_txt01 { background-image:url("../img/nitro/nitro_bnr_txt01.png"); background-repeat:no-repeat; background-size:100% auto; height:115px; left:208px; filter: alpha(opacity=0); opacity:0; position:absolute; text-indent:-20000px; top:111px; width:261px; }
+/* nitro banner01 end */
+
+/* nitro banner02 */
+#nitrobnr2Wrap{ background-image:url("../img/nitro/bg_nitro_bnr02.jpg"); background-position:center center; background-repeat:no-repeat; background-size:cover; height:360px; position:relative; width:100%; }
+.nitro_bnr_txt02 { background-image:url("../img/nitro/nitro_bnr_txt02.png"); background-repeat:no-repeat; background-size:100% auto; height:115px; filter: alpha(opacity=0); opacity:0; position:absolute; right:195px; text-indent:-20000px; top:122px; width:282px; }
+/* nitro banner02 end */
+
+/* nitro banner03 */
+#nitrobnr3Wrap{ background-image:url("../img/nitro/bg_nitro_bnr03.jpg"); background-position:center center; background-repeat:no-repeat; background-size:cover; height:360px; position:relative; width:100%; }
+.nitro_bnr_txt03 { background-image:url("../img/nitro/nitro_bnr_txt03.png"); background-repeat:no-repeat; background-size:100% auto; height:114px; left:256px; filter: alpha(opacity=0); opacity:0; position:absolute; text-indent:-20000px; top:141px; width:216px; }
+/* nitro banner03 end */
+
+/* nitro store */
+.local_btn_wrap.nitro_btn_wrap { width:104px; }
+/* nitro store end */
+
+/* nitro button top */
+.btn_nitro_top { background-image:url("../img/nitro/btn_nitro_top.png"); background-repeat:no-repeat; background-size:100% auto; bottom:100px; display:none; height:46px; left:50%; margin-left:469px; position:fixed; text-indent:-20000px; width:46px; }
+/* nitro button top end */
+
+/*20180524 추가 : 시작*/
+#coldTypeWrap { background:url("../img/nitro/nitroBg.jpg") center center no-repeat #000; background-size:cover; height:813px; position:relative; }
+.coldtype_ttl { background:url("../img/nitro/nitroTit.png") no-repeat; height:72px; left:50%; margin-left:-175px; position:absolute; text-indent:-20000px; top:108px; width:431px; } /*20210111 수정*/
+.coldType_slider { margin:0 auto; overflow:hidden; position:relative; top:227px; width:709px; } /*20210111 수정*/
+.coldType_slider .swiper-wrapper .swiper-slide { width:328px !important; }
+/*20180524 추가 : 끝*/
+
+@media screen and (max-width:1100px) {
+	/* common classes */
+	.nitro_inner { margin:0; width:100%; }
+	/* common classes end */
+
+	/* nitro visial */
+	.nitro_visual { height:870px; }
+	.nitro_v_prd { height:728px; bottom: -36px; margin-left:-130px; width:790px; }/*20170519 Min  Edit: */
+	.nitro_v_txt01 { height:159px;  margin-left:-350px; top:220px; width:413px; }/*20170519 Min  Edit: */
+	.nitro_v_txt02 { height:81px; margin-left:-262px; top:410px; width:244px; }/*20170519 Min  Edit: */
+	/* nitro visial end */
+
+	/*20170519 Min: nitor Video-small 동영상 추가  Start*/
+	#nitroVidoe_small {position: absolute; width: 455px; height:230px;  top: 560px; left: 50%; margin-left: -380px; background: #272525; border: 3px solid #d67e42;  box-sizing: border-box; z-index: 10; }
+	#nitroVidoe_small  .videoBox {float: left; width: 224px; height: 224px; }
+	#nitroVidoe_small .video_mesg {float: none;  line-height:24px; margin-left: 240px; padding: 70px 25px 0 0  ; font-size: 15px; color: #d67e42; letter-spacing: -1.5px; }
+	#nitroVidoe_small .video_mesg span:before {margin-bottom: 18px; }
+	/*20170519 Min: nitor Video-small 동영상 추가  End*/
+	
+	/* nitro banner01 */
+	.nitro_bnr_txt01 { left:50%; margin-left:-600px; }
+	/* nitro banner01 end */
+
+	/* nitro banner02 */
+	.nitro_bnr_txt02 { left:50%; right:auto; margin-left:450px; }
+	/* nitro banner02 end */
+
+	/* nitro banner03 */
+	.nitro_bnr_txt03 { left:50%; margin-left:-555px; }
+	/* nitro banner03 end */
+}
+@media screen and (max-width:960px) {
+	/* common classes */
+	.nitro_w_pic { display:none; }
+	.nitro_m_pic { display:block; }
+	/* common classes end */
+
+	/* nitro visial */
+	#nitroVisual { height:696px; }
+	.nitro_visual { display:block; height:696px; }
+	.nitro_video { display:none; }
+	.nitro_video video { display:none; }
+	.nitro_v_prd { height:624px; margin-left:-150px; width:677px; }/*20170519 Min Edit */
+	.nitro_v_txt01 { height:127px; margin-left:-300px; top:150px; width:330px; }/*20170519 Min Edit */
+	.nitro_v_txt02 { height:65px; margin-left:-230px; top:305px; width:195px; }/*20170519 Min Edit */
+	/* nitro visial end */
+
+	/*20170519 Min: nitor Video-small 동영상 추가  Start*/
+	#nitroVidoe_small {position: absolute; width: 376px; height:190px;  top: 430px; left: 50%; margin-left: -330px; background: #272525; border: 3px solid #d67e42;  box-sizing: border-box; z-index: 10; }
+	#nitroVidoe_small  .videoBox {float: left; width: 184px; height: 184px; }
+	#nitroVidoe_small .video_mesg {float: none;  line-height:24px; margin-left: 200px; padding: 40px 20px 0 0  ; font-size: 14px; color: #d67e42; letter-spacing: -1.5px; }
+	#nitroVidoe_small .video_mesg span:before {margin-bottom: 15px; }
+	/*20170519 Min: nitor Video-small 동영상 추가  End*/
+
+	/* nitro information */
+	#nitroInfo{ height:847px; }
+	.nitro_i_tit { height:161px; margin-left:-302px; width:582px; }
+	.nitro_i_txt01 { height:134px; margin-left:-225px; top:222px; width:450px; }
+	.nitro_i_line { height:1px; margin-left:-219px; top:178px; width:438px; }
+	.nitro_extractor { height:217px; margin-left:-23px; top:300px; width:52px; }
+	.nitro_liquid01 { height:0; margin-left:-8px; top:498px; width:20px; }
+	.nitro_liquid02 { height:0; margin-left:-4px; top:515px; width:13px; }
+	.nitro_cup { height:246px; margin-left:-48px; top:558px; width:100px; }
+	.nitro_liquid03 { height:246px; margin-left:-48px; top:558px; width:100px; }
+	.nitro_i_txt02 { height:103px; margin-left:16px; top:371px; width:260px; }
+	.nitro_i_txt03 { height:153px; margin-left:31px; top:615px; width:225px;}
+	.nitro_i_txt04 { height:86px; margin-left:-290px; top:503px; width:261px; }
+	/* nitro information end */
+
+	/* nitro banner01 */
+	.nitro_bnr_txt01 { height:86px; margin-left:-230px; top:135px; width:196px; }
+	/* nitro banner01 end */
+
+	/* nitro banner02 */
+	.nitro_bnr_txt02 { height:86px; margin-left:80px; top:135px; width:211px; }
+	/* nitro banner02 end */
+
+	/* nitro banner03 */
+	.nitro_bnr_txt03 { height:86px; margin-left:-196px; top:135px; width:162px; }
+	/* nitro banner03 end */
+
+	/* nitro store */
+	.nitro_store_bnr_wrap dl dt { float:none; padding-top:18px; }
+	.nitro_store_bnr_wrap dl dd { float:none; font-size:13px; left:70px; padding:0; position:absolute; top:16px; }
+	.nitro_m_pic { width:328px; }
+	/* nitro store end */
+}
+@media screen and (max-width:640px) {
+	/* common classes */
+	.nitro_pstn { left:0; }
+	/* common classes end */
+
+	/* nitro information */
+	#nitroInfo{ background-image:url("../img/nitro/bg_m_nitro_info.jpg"); height:0; padding-top:197.3438%; }
+	.nitro_i_tit { background-image:url("../img/nitro/m_nitro_i_tit.png"); height:0; left:0; margin:0; padding-top:29.6875%; top:6.57%; width:100%; }
+	.nitro_i_txt01 { background-image:url("../img/nitro/m_nitro_i_txt01.png"); height:0; margin:0; padding-top:28.5937%; top:18.29%; width:100%; }
+	.nitro_i_line { height:1px; margin-left:-40%; top:18.765%; width:80%; }
+	.nitro_extractor { background-image:url("../img/nitro/bg_m_extractor.png"); height:0; left:21.875%; margin:0; padding-top:45.9375%; top:36.5%; width:10.9375%; }
+	.nitro_liquid01 { background-image:url("../img/nitro/bg_m_liquid01.png"); height:0; left:25.3125%; margin:0; padding-top:0; top:57.72%; width:3.75%; }
+	.nitro_liquid02 { background-image:url("../img/nitro/bg_m_liquid02.png"); height:0; left:25.9375%; margin:0; padding-top:0; top:59.54%; width:2.8125%; }
+	.nitro_cup { background-image:url("../img/nitro/bg_m_cup.jpg"); height:0; left:16.5625%; margin:0; padding-top:52.5%; top:64.133%; width:21.25%; }
+	.nitro_liquid03 { background-image:url("../img/nitro/bg_m_cup_on.jpg"); height:0; left:16.5625%; margin:0; padding-top:52.5%; top:64.133%; width:21.25%; }
+	.nitro_i_txt02 { background-image:url("../img/nitro/m_nitro_i_txt02.png"); height:0; left:27.6563%; margin:0; padding-top:22.1875%; top:39.588%; width:64.0625%; }
+	.nitro_i_txt03 { background-image:url("../img/nitro/m_nitro_i_txt03.png"); height:0; left:27.6563%; margin:0; padding-top:28.2813%; top:73.1591%; width:57.5%; }
+	.nitro_i_txt04 { background-image:url("../img/nitro/m_nitro_i_txt04.png"); height:0; left:27.6563%; margin:0; padding-top:18.125%; top:58.9865%; width:60.9375%; }
+	/* nitro information end */
+
+	/* nitro visial */
+	#nitroVisual { height:auto; }
+	.nitro_visual { background-image:url("../img/nitro/bg_m_nitro_visual.jpg"); height:0; padding-top:177.3437%; }
+	.nitro_v_prd { background-image:url("../img/nitro/m_nitro_v_prd.png"); height:0; left:0; margin-left:0; padding-top:104.6875%; width:100%; }
+	.nitro_v_txt01 { background-image:url("../img/nitro/m_nitro_v_txt01_new.png"); height:0; margin-left:0; padding-top:53.125%; top:6.5%; width:100%; }
+	.nitro_v_txt02 { display:none; }
+	/* nitro visial end */
+	
+	/*20170519 Min: nitor Video-small 동영상 추가  Start*/
+	#nitroVidoe_small {position: static; width: 100%; height:100%;  margin:0px;border: 0; }
+	#nitroVidoe_small  .videoBox {float: none; width: 100%; height: 100%; }
+	#nitroVidoe_small .video_mesg {display: none;  }
+	#nitroVidoe_small .video_mesg span:before {margin-bottom: 15px; }
+	/*20170519 Min: nitor Video-small 동영상 추가  End*/
+	
+	/* nitro banner01 */
+	#nitrobnr1Wrap { background-image:url("../img/nitro/bg_m_nitro_bnr01.jpg"); height:0; padding-top:131.25%; }
+	#nitrobnr1Wrap .nitro_inner { height:100%; left:0; position:absolute; top:0; width:100%; }
+	.nitro_bnr_txt01 { background-image:url("../img/nitro/m_nitro_bnr_txt01.png"); height:0; left:0; margin-left:0; padding-top:25.9375%; top:14.17%; width:100%; }
+	/* nitro banner01 end */
+
+	/* nitro banner02 */
+	#nitrobnr2Wrap { background-image:url("../img/nitro/bg_m_nitro_bnr02.jpg"); height:0; padding-top:131.25%; }
+	#nitrobnr2Wrap .nitro_inner { height:100%; left:0; position:absolute; top:0; width:100%; }
+	.nitro_bnr_txt02 { background-image:url("../img/nitro/m_nitro_bnr_txt02.png"); height:0; left:0; margin-left:0; padding-top:25.9375%; top:14.17%; width:100%; }
+	/* nitro banner02 end */
+
+	/* nitro banner03 */
+	#nitrobnr3Wrap { background-image:url("../img/nitro/bg_m_nitro_bnr03.jpg"); height:0; padding-top:131.25%; }
+	#nitrobnr3Wrap .nitro_inner { height:100%; left:0; position:absolute; top:0; width:100%; }
+	.nitro_bnr_txt03 { background-image:url("../img/nitro/m_nitro_bnr_txt03.png"); height:0; left:0; margin-left:0; padding-top:25.9375%; top:14.17%; width:100%; }
+	/* nitro banner03 end */
+
+	/* nitro store */
+	.nitro_m_pic { width:328px !important; }
+	/* nitro store end */
+
+	/*20180524 추가 : 시작*/
+	#coldTypeWrap { background:url("../img/nitro/m_nitroBg.jpg") center center no-repeat #000; background-size:100% auto; height:0; padding-bottom:140%; }
+	.coldtype_ttl { background:url("../img/nitro/m_nitroTit.png") no-repeat; background-size:100% auto; height:117px; left:50%; margin-left:-114px; position:absolute; text-indent:-20000px; top:15%; width:228px; }
+	.coldType_slider { overflow:visible; padding-top:48%; top:0; width:65%; }
+	.coldType_slider .swiper-wrapper .swiper-slide { text-align:center; width:100% !important; }
+	/*20180524 추가 : 끝*/
+}
+
+/*20180524 추가 : 시작*/
+@media screen and (max-width:480px) {
+	.coldtype_ttl { height:80px; margin-left:-94px; width:188px; }
+}
+/*20180524 추가 : 끝*/
+
+@media screen and (max-width:414px) {
+	/* nitro store */
+	.nitro_store_bnr_wrap dl dd { font-size:12px; letter-spacing:-0.05em }
+	/* nitro store end */
+}
+@media screen and (max-width:360px) {
+	/* nitro store */
+	.nitro_store_bnr_wrap dl dd { letter-spacing:-0.075em }
+	/* nitro store end */
+}
+@media screen and (max-width:320px) {
+	/* nitro store */
+	.nitro_store_bnr_wrap dl dd { left:65px; }
+	/* nitro store end */
+}
